@@ -1,0 +1,56 @@
+{
+  "nodes": [
+    {
+      "id": "src/screens/Favorite/Favorite.tsx",
+      "label": "Favorite",
+      "routes": [
+        "/*",
+        "/favoriteu95375"
+      ],
+      "dataModelId": "3:29689",
+      "isRoot": true
+    },
+    {
+      "id": "src/screens/Transform/Transform.tsx",
+      "label": "Transform",
+      "routes": [
+        "/transformu95750"
+      ],
+      "dataModelId": "3:38742"
+    }
+  ],
+  "edges": [
+    {
+      "id": "src/screens/Favorite/Favorite.tsx:76:16-to-src/screens/Transform/Transform.tsx",
+      "source": "src/screens/Favorite/Favorite.tsx",
+      "target": "src/screens/Transform/Transform.tsx",
+      "data": {
+        "viaRoute": "/transformu95750",
+        "trigger": {
+          "element": "<Link\n                  to=\"/transformu95750\"\n                  className=\"flex items-center justify-center w-8 h-8\"\n                >\n                  <ChevronLeftIcon className=\"w-8 h-8 text-variable-collection-grayscale-01-0b0c0e\" />\n                </Link>",
+          "line": 76,
+          "endLine": 81,
+          "column": 16,
+          "endColumn": 23,
+          "sourceFile": "src/screens/Favorite/Favorite.tsx"
+        }
+      }
+    },
+    {
+      "id": "src/screens/Transform/sections/FrameSubsection/FrameSubsection.tsx:12:10-to-src/screens/Favorite/Favorite.tsx",
+      "source": "src/screens/Transform/Transform.tsx",
+      "target": "src/screens/Favorite/Favorite.tsx",
+      "data": {
+        "viaRoute": "/favoriteu95375",
+        "trigger": {
+          "element": "<Link\n            className=\"flex flex-col items-start gap-2.5 w-full\"\n            to=\"/favoriteu95375\"\n          >\n            <div className=\"w-full h-[47px] relative\">\n              <div className=\"absolute top-[calc(50.00%_-_10px)] left-[26px] w-[333px] h-5\">\n                <div className=\"absolute top-[calc(50.00%_-_10px)] left-0 w-[54px] font-body-bold font-[number:var(--body-bold-font-weight)] text-variable-collection-basic-black text-[length:var(--body-bold-font-size)] text-center tracking-[var(--body-bold-letter-spacing)] leading-[var(--body-bold-line-height)] whitespace-nowrap [font-style:var(--body-bold-font-style)]\">\n                  9:41\n                </div>\n\n                <img\n                  className=\"absolute top-[calc(50.00%_-_6px)] right-0.5 w-[27px] h-[13px]\"\n                  alt=\"Battery\"\n                  src=\"https://c.animaapp.com/ppTMEOHB/img/battery-2.svg\"\n                />\n\n                <img\n                  className=\"absolute top-[calc(50.00%_-_5px)] right-9 w-[17px] h-3\"\n                  alt=\"Wifi\"\n                  src=\"https://c.animaapp.com/ppTMEOHB/img/wifi-2.svg\"\n                />\n              </div>\n\n              <img\n                className=\"absolute top-[19px] right-[77px] w-[18px] h-3\"\n                alt=\"Icon mobile signal\"\n                src=\"https://c.animaapp.com/ppTMEOHB/img/icon---mobile-signal-2.svg\"\n              />\n            </div>\n          </Link>",
+          "line": 12,
+          "endLine": 41,
+          "column": 10,
+          "endColumn": 17,
+          "sourceFile": "src/screens/Transform/sections/FrameSubsection/FrameSubsection.tsx"
+        }
+      }
+    }
+  ]
+}

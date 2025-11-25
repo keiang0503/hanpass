@@ -1,0 +1,294 @@
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .all-\[unset\] {
+    all: unset;
+  }
+}
+
+:root {
+  --body-14-b-font-family: "Pretendard", Helvetica;
+  --body-14-b-font-size: 14px;
+  --body-14-b-font-style: normal;
+  --body-14-b-font-weight: 700;
+  --body-14-b-letter-spacing: -0.28px;
+  --body-14-b-line-height: 129.99999523162842%;
+  --body-14-r-font-family: "Pretendard", Helvetica;
+  --body-14-r-font-size: 14px;
+  --body-14-r-font-style: normal;
+  --body-14-r-font-weight: 400;
+  --body-14-r-letter-spacing: -0.28px;
+  --body-14-r-line-height: 129.99999523162842%;
+  --body-14-SB-font-family: "Pretendard", Helvetica;
+  --body-14-SB-font-size: 14px;
+  --body-14-SB-font-style: normal;
+  --body-14-SB-font-weight: 600;
+  --body-14-SB-letter-spacing: -0.28px;
+  --body-14-SB-line-height: 129.99999523162842%;
+  --body-16-r-font-family: "Pretendard", Helvetica;
+  --body-16-r-font-size: 16px;
+  --body-16-r-font-style: normal;
+  --body-16-r-font-weight: 400;
+  --body-16-r-letter-spacing: -0.32px;
+  --body-16-r-line-height: 129.99999523162842%;
+  --body-bold-font-family: "SF Pro Text", Helvetica;
+  --body-bold-font-size: 17px;
+  --body-bold-font-style: normal;
+  --body-bold-font-weight: 400;
+  --body-bold-letter-spacing: -0.40799999237060547px;
+  --body-bold-line-height: 22px;
+  --caption-title-13-b-font-family: "Pretendard", Helvetica;
+  --caption-title-13-b-font-size: 13px;
+  --caption-title-13-b-font-style: normal;
+  --caption-title-13-b-font-weight: 700;
+  --caption-title-13-b-letter-spacing: -0.26px;
+  --caption-title-13-b-line-height: 129.99999523162842%;
+  --caption-title-13-r-font-family: "Pretendard", Helvetica;
+  --caption-title-13-r-font-size: 13px;
+  --caption-title-13-r-font-style: normal;
+  --caption-title-13-r-font-weight: 400;
+  --caption-title-13-r-letter-spacing: -0.26px;
+  --caption-title-13-r-line-height: 129.99999523162842%;
+  --navigation-12-r-font-family: "Pretendard", Helvetica;
+  --navigation-12-r-font-size: 12px;
+  --navigation-12-r-font-style: normal;
+  --navigation-12-r-font-weight: 400;
+  --navigation-12-r-letter-spacing: -0.24px;
+  --navigation-12-r-line-height: 129.99999523162842%;
+  --navigation-12-SB-font-family: "Pretendard", Helvetica;
+  --navigation-12-SB-font-size: 12px;
+  --navigation-12-SB-font-style: normal;
+  --navigation-12-SB-font-weight: 600;
+  --navigation-12-SB-letter-spacing: -0.24px;
+  --navigation-12-SB-line-height: 129.99999523162842%;
+  --title-16-b-font-family: "Pretendard", Helvetica;
+  --title-16-b-font-size: 16px;
+  --title-16-b-font-style: normal;
+  --title-16-b-font-weight: 700;
+  --title-16-b-letter-spacing: -0.32px;
+  --title-16-b-line-height: 129.99999523162842%;
+  --title-18-b-font-family: "Pretendard", Helvetica;
+  --title-18-b-font-size: 18px;
+  --title-18-b-font-style: normal;
+  --title-18-b-font-weight: 700;
+  --title-18-b-letter-spacing: -0.36px;
+  --title-18-b-line-height: 129.99999523162842%;
+  --title-20-b-font-family: "Pretendard", Helvetica;
+  --title-20-b-font-size: 20px;
+  --title-20-b-font-style: normal;
+  --title-20-b-font-weight: 700;
+  --title-20-b-letter-spacing: -0.4px;
+  --title-20-b-line-height: 129.99999523162842%;
+  --title-24-b-font-family: "Pretendard", Helvetica;
+  --title-24-b-font-size: 24px;
+  --title-24-b-font-style: normal;
+  --title-24-b-font-weight: 700;
+  --title-24-b-letter-spacing: -0.48px;
+  --title-24-b-line-height: 129.99999523162842%;
+  --variable-collection-basic-black: rgba(0, 0, 0, 1);
+  --variable-collection-basic-white: rgba(255, 255, 255, 1);
+  --variable-collection-BG-03-f4f7fd: rgba(244, 247, 253, 1);
+  --variable-collection-BG-09-dfe3ec: rgba(223, 227, 236, 1);
+  --variable-collection-blue-01-0d1458: rgba(13, 20, 88, 1);
+  --variable-collection-error-color-red: rgba(242, 0, 0, 1);
+  --variable-collection-grayscale-01-0b0c0e: rgba(11, 12, 14, 1);
+  --variable-collection-grayscale-02-1c253f: rgba(28, 37, 63, 1);
+  --variable-collection-grayscale-03-5e616b: rgba(94, 97, 107, 1);
+  --variable-collection-grayscale-05-717682: rgba(113, 118, 130, 1);
+  --variable-collection-grayscale-06-85888e: rgba(133, 136, 142, 1);
+  --variable-collection-grayscale-07-a3a8bf: rgba(163, 168, 191, 1);
+  --variable-collection-grayscale-10-d3d6e2: rgba(211, 214, 226, 1);
+  --variable-collection-primary-primary-0d56e4: rgba(13, 86, 228, 1);
+  --variable-collection-sub-title01-003fbb: rgba(0, 63, 187, 1);
+}
+
+:root {
+  --animate-spin: spin 1s linear infinite;
+}
+
+.animate-fade-in {
+  animation: fade-in 1s var(--animation-delay, 0s) ease forwards;
+}
+
+.animate-fade-up {
+  animation: fade-up 1s var(--animation-delay, 0s) ease forwards;
+}
+
+.animate-marquee {
+  animation: marquee var(--duration) infinite linear;
+}
+
+.animate-marquee-vertical {
+  animation: marquee-vertical var(--duration) linear infinite;
+}
+
+.animate-shimmer {
+  animation: shimmer 8s infinite;
+}
+
+.animate-spin {
+  animation: var(--animate-spin);
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+@keyframes image-glow {
+  0% {
+    opacity: 0;
+    animation-timing-function: cubic-bezier(0.74, 0.25, 0.76, 1);
+  }
+
+  10% {
+    opacity: 0.7;
+    animation-timing-function: cubic-bezier(0.12, 0.01, 0.08, 0.99);
+  }
+
+  to {
+    opacity: 0.4;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes shimmer {
+  0%,
+  90%,
+  to {
+    background-position: calc(-100% - var(--shimmer-width)) 0;
+  }
+
+  30%,
+  60% {
+    background-position: calc(100% + var(--shimmer-width)) 0;
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate(0);
+  }
+
+  to {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+}
+
+@keyframes marquee-vertical {
+  0% {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(calc(-100% - var(--gap)));
+  }
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 47.4% 11.2%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+
+    --card: transparent;
+    --card-foreground: 222.2 47.4% 11.2%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 215 20.2% 65.1%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 224 71% 4%;
+    --foreground: 213 31% 91%;
+
+    --muted: 223 47% 11%;
+    --muted-foreground: 215.4 16.3% 56.9%;
+
+    --accent: 216 34% 17%;
+    --accent-foreground: 210 40% 98%;
+
+    --popover: 224 71% 4%;
+    --popover-foreground: 215 20.2% 65.1%;
+
+    --border: 216 34% 17%;
+    --input: 216 34% 17%;
+
+    --card: transparent;
+    --card-foreground: 213 31% 91%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 1.2%;
+
+    --secondary: 222.2 47.4% 11.2%;
+    --secondary-foreground: 210 40% 98%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 216 34% 17%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
