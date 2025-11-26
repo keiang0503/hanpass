@@ -13,30 +13,30 @@ export const FrameSubsection = (): JSX.Element => {
             className="flex flex-col items-start gap-2.5 w-full"
             to="/favoriteu95375"
           >
-            <div className="w-full h-47 relative">
-              <div className="absolute pos-center-y-10 pos-left-26 transform-status-content">
-                <div className="absolute pos-center-y-10 left-0 w-clock-time text-body-bold-style text-variable-collection-basic-black text-center whitespace-nowrap">
-                  9:41
-                </div>
+            <div className="w-full h-47 flex items-center justify-between px-6">
+              {/* 왼쪽: 시계 */}
+              <div className="text-body-bold-style text-variable-collection-basic-black whitespace-nowrap">
+                9:41
+              </div>
 
+              {/* 오른쪽: 신호 + WiFi + 배터리 */}
+              <div className="flex items-center gap-1">
                 <img
-                  className="absolute pos-center-y-6 right-0.5 status-battery"
-                  alt="Battery"
-                  src="https://c.animaapp.com/ppTMEOHB/img/battery-2.svg"
+                  className="h-3"
+                  alt="Icon mobile signal"
+                  src="https://c.animaapp.com/ppTMEOHB/img/icon---mobile-signal-2.svg"
                 />
-
                 <img
-                  className="absolute pos-center-y-5 right-9 status-wifi"
+                  className="h-3"
                   alt="Wifi"
                   src="https://c.animaapp.com/ppTMEOHB/img/wifi-2.svg"
                 />
+                <img
+                  className="h-3"
+                  alt="Battery"
+                  src="https://c.animaapp.com/ppTMEOHB/img/battery-2.svg"
+                />
               </div>
-
-              <img
-                className="absolute pos-top-19 pos-right-77 status-signal"
-                alt="Icon mobile signal"
-                src="https://c.animaapp.com/ppTMEOHB/img/icon---mobile-signal-2.svg"
-              />
             </div>
           </Link>
 
@@ -141,7 +141,7 @@ export const FrameSubsection = (): JSX.Element => {
                             <img
                               className="absolute svg-layer-accent-1"
                               alt="Vector"
-                              src="/img/vector.png"
+                              src="https://c.animaapp.com/ppTMEOHB/img/vector.png"
                             />
 
                             <img
@@ -153,7 +153,7 @@ export const FrameSubsection = (): JSX.Element => {
                             <img
                               className="absolute svg-layer-accent-2"
                               alt="Vector"
-                              src="/img/image.png"
+                              src="https://c.animaapp.com/ppTMEOHB/img/image.png"
                             />
 
                             <img

@@ -552,7 +552,7 @@
 
   /* Transform 페이지 국기 아이콘 배경 유틸리티 */
   .flag-icon-bg {
-    background-image: url(https://c.animaapp.com/ppTMEOHB/img/vector-5.svg);
+    background-image: url(/img/vector-5.svg);
     background-size: 100% 100%;
   }
 }

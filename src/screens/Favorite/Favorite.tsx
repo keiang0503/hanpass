@@ -1,4 +1,4 @@
-import { ChevronLeftIcon, CircleIcon, MoreVerticalIcon } from "lucide-react";
+import { ChevronLeftIcon } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "../../components/ui/button";
 import { Card, CardContent } from "../../components/ui/card";
@@ -7,21 +7,21 @@ import { Tabs, TabsList, TabsTrigger } from "../../components/ui/tabs";
 const transferHistoryData = [
   {
     id: 1,
-    countryFlag: "https://c.animaapp.com/ppTMEOHB/img/country.svg",
+    countryFlag: "/img/country.svg",
     name: "Min Se Jung",
     phone: "+9110920293848",
     bankInfo: "계좌 이체 EXIMA Bank 123456",
   },
   {
     id: 2,
-    countryFlag: "https://c.animaapp.com/ppTMEOHB/img/country-1.svg",
+    countryFlag: "/img/country-1.svg",
     name: "Min Se Jung",
     phone: "+9110920293848",
     bankInfo: "계좌 이체 EXIMA Bank 123456",
   },
   {
     id: 3,
-    countryFlag: "https://c.animaapp.com/ppTMEOHB/img/country-2.svg",
+    countryFlag: "/img/country-2.svg",
     name: "Min Se Jung",
     phone: "+9110920293848",
     bankInfo: "계좌 이체 EXIMA Bank 123456",
@@ -36,31 +36,31 @@ export const Favorite = (): JSX.Element => {
     >
       <div className="flex-col items-center justify-center flex-1 grow bg-variable-collection-basic-white flex relative">
           {/* Status Bar */}
-          <header className="flex flex-col items-start gap-2.5 relative self-stretch w-full flex-none">
-            <div className="relative self-stretch w-full status-bar">
-              <div className="absolute pos-center-y-10 pos-left-26 status-bar-content">
-                <div className="absolute pos-center-y-10 left-0 status-time text-body-bold-style text-variable-collection-basic-black text-center whitespace-nowrap">
-                  9:41
-                </div>
+          <header className="flex flex-col items-start w-full bg-variable-collection-basic-white">
+            <div className="w-full h-47 flex items-center justify-between px-6">
+              {/* 왼쪽: 시계 */}
+              <div className="text-body-bold-style text-variable-collection-basic-black whitespace-nowrap">
+                9:41
+              </div>
 
+              {/* 오른쪽: 신호 + WiFi + 배터리 */}
+              <div className="flex items-center gap-1">
                 <img
-                  className="absolute pos-center-y-6 right-0.5 status-battery"
+                  className="h-3"
+                  alt="Icon mobile signal"
+                  src="https://c.animaapp.com/ppTMEOHB/img/icon---mobile-signal-2.svg"
+                />
+                <img
+                  className="h-3"
+                  alt="Wifi"
+                  src="https://c.animaapp.com/ppTMEOHB/img/wifi-2.svg"
+                />
+                <img
+                  className="h-3"
                   alt="Battery"
                   src="https://c.animaapp.com/ppTMEOHB/img/battery-2.svg"
                 />
-
-                <img
-                  className="absolute pos-center-y-5 right-9 status-wifi"
-                  alt="Wifi"
-                  src="https://c.animaapp.com/ppTMEOHB/img/wifi.svg"
-                />
               </div>
-
-              <img
-                className="absolute pos-top-19 pos-right-77 status-signal"
-                alt="Icon mobile signal"
-                src="https://c.animaapp.com/ppTMEOHB/img/icon---mobile-signal-2.svg"
-              />
             </div>
           </header>
 
@@ -80,15 +80,6 @@ export const Favorite = (): JSX.Element => {
                   alt="Mini"
                   src="https://c.animaapp.com/ppTMEOHB/img/mini-2@2x.png"
                 />
-
-                <div className="flex items-center gap-2">
-                  <Button variant="ghost" size="icon" className="h-8 w-8 p-0">
-                    <MoreVerticalIcon className="w-6 h-6 text-variable-collection-grayscale-01-0b0c0e" />
-                  </Button>
-                  <Button variant="ghost" size="icon" className="h-8 w-8 p-0">
-                    <CircleIcon className="w-8 h-8 text-variable-collection-grayscale-01-0b0c0e" />
-                  </Button>
-                </div>
               </div>
             </div>
           </nav>

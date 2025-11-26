@@ -6,6 +6,84 @@ module.exports = {
   ],
   theme: {
     extend: {
+      // 디자인 토큰: 레이아웃 높이
+      height: {
+        'status-bar': '47px',
+        'nav-header': '54px',
+        'input-field': '50px',
+        'heading': '21px',
+        'row': '18px',
+        'coupon': '68px',
+        'shadow-card': '23px',
+        'card-action': '40px',
+        'card-action-row': '29.69px',
+        'divider': '19.8px',
+        'footer-spacer': '16px',
+        'home-indicator': '5px',
+        'status-content': '20px',
+      },
+      // 디자인 토큰: 레이아웃 너비
+      width: {
+        'screen-min': '375px',
+        'status-content': '333px',
+        'clock-time': '54px',
+        'mini-logo': '87px',
+        'coupon-label': '63px',
+        'country-flag': '30px',
+        'home-indicator': '134px',
+        'footer-spacer': '360px',
+        'divider': '1px',
+      },
+      // 디자인 토큰: 최소 높이/너비
+      minHeight: {
+        'screen': '773px',
+      },
+      minWidth: {
+        'screen': '375px',
+      },
+      // 디자인 토큰: 갭/스페이싱
+      gap: {
+        '3px': '3px',
+        '5px': '5px',
+        '13px': '13px',
+        '22': '22px',
+      },
+      // 디자인 토큰: 패딩
+      padding: {
+        '7px': '7px',
+        '8.5': '8.5px',
+        '15': '15px',
+        '22': '22px',
+        '105': '105px',
+      },
+      // 디자인 토큰: 마진
+      margin: {
+        '-1': '-1px',
+        '-8.5': '-8.5px',
+        '-16.5': '-16.5px',
+      },
+      // 디자인 토큰: 포지셔닝
+      spacing: {
+        '11': '11px',
+        '19': '19px',
+        '23': '23px',
+        '26': '26px',
+        '77': '77px',
+      },
+      // 디자인 토큰: border-radius
+      borderRadius: {
+        'bottom-16': '0 0 16px 16px',
+        'pill': '20px',
+        'full-100': '100px',
+        lg: "var(--radius)",
+        md: "calc(var(--radius) - 2px)",
+        sm: "calc(var(--radius) - 4px)",
+      },
+      // 디자인 토큰: box-shadow
+      boxShadow: {
+        'card-sm': '0px 4px 10px rgba(0, 0, 0, 0.1)',
+        'card': '0px 4px 10px rgba(0, 0, 0, 0.1)',
+      },
       colors: {
         "variable-collection-basic-black":
           "var(--variable-collection-basic-black)",
