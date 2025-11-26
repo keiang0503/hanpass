@@ -3,6 +3,7 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { Favorite } from "./screens/Favorite";
 import { Transform } from "./screens/Transform";
 import { PublishingStatus } from "./screens/PublishingStatus";
+import { Components } from "./screens/Components/Components";
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
   {
     path: "/transformu95750",
     element: <Transform />,
+  },
+  {
+    path: "/components",
+    element: <Components />,
   },
 ]);
 

@@ -1,4 +1,5 @@
-import { FolderIcon, CheckCircleIcon, ClockIcon, ExternalLinkIcon, CopyIcon, LockIcon, CheckIcon } from "lucide-react";
+import { FolderIcon, CheckCircleIcon, ClockIcon, ExternalLinkIcon, CopyIcon, LockIcon, CheckIcon, LayoutGridIcon } from "lucide-react";
+import { Link } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 import { DownloadButton, DownloadAllButton } from "../../components/DownloadButton";
 
@@ -77,6 +78,17 @@ export const PublishingStatus = (): JSX.Element => {
             ))}
           </ul>
         </nav>
+
+        {/* 공통 컴포넌트 링크 */}
+        <div className="p-2 border-t border-gray-200">
+          <Link
+            to="/components"
+            className="w-full flex items-center gap-3 px-3 py-2.5 rounded-lg text-left transition-colors hover:bg-blue-50 text-blue-600 border border-blue-200 bg-blue-50/50"
+          >
+            <LayoutGridIcon className="w-5 h-5 flex-shrink-0" />
+            <span className="flex-1 font-medium">공통 컴포넌트</span>
+          </Link>
+        </div>
 
         {/* LNB Footer - Summary */}
         <div className="p-4 border-t border-gray-200 bg-gray-50">
