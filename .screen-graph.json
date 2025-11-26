@@ -1,14 +1,21 @@
 {
   "nodes": [
     {
+      "id": "src/screens/PublishingStatus/PublishingStatus.tsx",
+      "label": "PublishingStatus",
+      "routes": [
+        "/*",
+        "/publishing"
+      ],
+      "isRoot": true
+    },
+    {
       "id": "src/screens/Favorite/Favorite.tsx",
       "label": "Favorite",
       "routes": [
-        "/*",
         "/favoriteu95375"
       ],
-      "dataModelId": "3:29689",
-      "isRoot": true
+      "dataModelId": "3:29689"
     },
     {
       "id": "src/screens/Transform/Transform.tsx",
@@ -21,15 +28,15 @@
   ],
   "edges": [
     {
-      "id": "src/screens/Favorite/Favorite.tsx:76:16-to-src/screens/Transform/Transform.tsx",
+      "id": "src/screens/Favorite/Favorite.tsx:71:16-to-src/screens/Transform/Transform.tsx",
       "source": "src/screens/Favorite/Favorite.tsx",
       "target": "src/screens/Transform/Transform.tsx",
       "data": {
         "viaRoute": "/transformu95750",
         "trigger": {
           "element": "<Link\n                  to=\"/transformu95750\"\n                  className=\"flex items-center justify-center w-8 h-8\"\n                >\n                  <ChevronLeftIcon className=\"w-8 h-8 text-variable-collection-grayscale-01-0b0c0e\" />\n                </Link>",
-          "line": 76,
-          "endLine": 81,
+          "line": 71,
+          "endLine": 76,
           "column": 16,
           "endColumn": 23,
           "sourceFile": "src/screens/Favorite/Favorite.tsx"
@@ -43,7 +50,7 @@
       "data": {
         "viaRoute": "/favoriteu95375",
         "trigger": {
-          "element": "<Link\n            className=\"flex flex-col items-start gap-2.5 w-full\"\n            to=\"/favoriteu95375\"\n          >\n            <div className=\"w-full h-[47px] relative\">\n              <div className=\"absolute top-[calc(50.00%_-_10px)] left-[26px] w-[333px] h-5\">\n                <div className=\"absolute top-[calc(50.00%_-_10px)] left-0 w-[54px] font-body-bold font-[number:var(--body-bold-font-weight)] text-variable-collection-basic-black text-[length:var(--body-bold-font-size)] text-center tracking-[var(--body-bold-letter-spacing)] leading-[var(--body-bold-line-height)] whitespace-nowrap [font-style:var(--body-bold-font-style)]\">\n                  9:41\n                </div>\n\n                <img\n                  className=\"absolute top-[calc(50.00%_-_6px)] right-0.5 w-[27px] h-[13px]\"\n                  alt=\"Battery\"\n                  src=\"https://c.animaapp.com/ppTMEOHB/img/battery-2.svg\"\n                />\n\n                <img\n                  className=\"absolute top-[calc(50.00%_-_5px)] right-9 w-[17px] h-3\"\n                  alt=\"Wifi\"\n                  src=\"https://c.animaapp.com/ppTMEOHB/img/wifi-2.svg\"\n                />\n              </div>\n\n              <img\n                className=\"absolute top-[19px] right-[77px] w-[18px] h-3\"\n                alt=\"Icon mobile signal\"\n                src=\"https://c.animaapp.com/ppTMEOHB/img/icon---mobile-signal-2.svg\"\n              />\n            </div>\n          </Link>",
+          "element": "<Link\n            className=\"flex flex-col items-start gap-2.5 w-full\"\n            to=\"/favoriteu95375\"\n          >\n            <div className=\"w-full h-47 relative\">\n              <div className=\"absolute pos-center-y-10 pos-left-26 transform-status-content\">\n                <div className=\"absolute pos-center-y-10 left-0 w-clock-time text-body-bold-style text-variable-collection-basic-black text-center whitespace-nowrap\">\n                  9:41\n                </div>\n\n                <img\n                  className=\"absolute pos-center-y-6 right-0.5 status-battery\"\n                  alt=\"Battery\"\n                  src=\"https://c.animaapp.com/ppTMEOHB/img/battery-2.svg\"\n                />\n\n                <img\n                  className=\"absolute pos-center-y-5 right-9 status-wifi\"\n                  alt=\"Wifi\"\n                  src=\"https://c.animaapp.com/ppTMEOHB/img/wifi-2.svg\"\n                />\n              </div>\n\n              <img\n                className=\"absolute pos-top-19 pos-right-77 status-signal\"\n                alt=\"Icon mobile signal\"\n                src=\"https://c.animaapp.com/ppTMEOHB/img/icon---mobile-signal-2.svg\"\n              />\n            </div>\n          </Link>",
           "line": 12,
           "endLine": 41,
           "column": 10,

@@ -14,11 +14,11 @@ export const ContainerSubsection = (): JSX.Element => {
   return (
     <section className="flex flex-col items-start gap-2 pt-0 pb-10 px-6 w-full">
       {bulletPoints.map((text, index) => (
-        <div key={index} className="flex items-start gap-[5px] w-full">
+        <div key={index} className="flex items-start gap-5px w-full">
           <div className="relative w-2 h-3.5 flex-shrink-0">
-            <div className="absolute top-[calc(50%_-_1px)] left-[calc(50%_-_2px)] w-1 h-1 bg-variable-collection-grayscale-10-d3d6e2 rounded-sm" />
+            <div className="absolute pos-center-y-1 pos-center-x-2 w-1 h-1 bg-variable-collection-grayscale-10-d3d6e2 rounded-sm" />
           </div>
-          <p className="text-variable-collection-basic-white flex-1 mt-[-1.00px] font-caption-title-13-r font-[number:var(--caption-title-13-r-font-weight)] text-[length:var(--caption-title-13-r-font-size)] tracking-[var(--caption-title-13-r-letter-spacing)] leading-[var(--caption-title-13-r-line-height)] [font-style:var(--caption-title-13-r-font-style)]">
+          <p className="text-variable-collection-basic-white flex-1 mt-neg-1 text-caption-13-r-style">
             {text}
           </p>
         </div>

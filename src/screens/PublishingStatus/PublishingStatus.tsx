@@ -1,35 +1,22 @@
 import { FolderIcon, CheckCircleIcon, ClockIcon, ExternalLinkIcon, CopyIcon, LockIcon, CheckIcon } from "lucide-react";
 import React, { useState, useEffect } from "react";
+import { DownloadButton, DownloadAllButton } from "../../components/DownloadButton";
 
 // 퍼블리싱 화면 데이터
 const publishingData = [
   {
     id: "favorite",
-    name: "Favorite",
+    name: "즐겨찾기",
     path: "/favoriteu95375",
     status: "completed",
     description: "즐겨찾기 및 최근 송금내역 관리 화면",
   },
   {
     id: "transform",
-    name: "Transform",
+    name: "해외송금",
     path: "/transformu95750",
     status: "completed",
     description: "송금 변환 화면",
-  },
-  {
-    id: "home",
-    name: "Home",
-    path: "/home",
-    status: "pending",
-    description: "메인 홈 화면 (예정)",
-  },
-  {
-    id: "transfer",
-    name: "Transfer",
-    path: "/transfer",
-    status: "pending",
-    description: "송금 화면 (예정)",
   },
 ];
 
@@ -149,15 +136,22 @@ export const PublishingStatus = (): JSX.Element => {
                   </button>
                 </div>
                 {selectedData.status === "completed" && (
-                  <a
-                    href={selectedData.path}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1 text-sm text-blue-600 hover:text-blue-800 px-2 py-1"
-                  >
-                    <ExternalLinkIcon className="w-4 h-4" />
-                    새 탭
-                  </a>
+                  <>
+                    <DownloadButton
+                      screenId={selectedData.id}
+                      screenName={selectedData.name}
+                    />
+                    <DownloadAllButton />
+                    <a
+                      href={selectedData.path}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1 text-sm text-blue-600 hover:text-blue-800 px-2 py-1"
+                    >
+                      <ExternalLinkIcon className="w-4 h-4" />
+                      새 탭
+                    </a>
+                  </>
                 )}
               </div>
             </div>

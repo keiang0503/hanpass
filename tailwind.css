@@ -5,6 +5,556 @@
   .all-\[unset\] {
     all: unset;
   }
+
+  /* 폰트 유틸리티 클래스 - Favorite.tsx에서 반복 사용되는 패턴 */
+  .text-body-bold-style {
+    font-family: var(--body-bold-font-family);
+    font-weight: var(--body-bold-font-weight);
+    font-size: var(--body-bold-font-size);
+    font-style: var(--body-bold-font-style);
+    letter-spacing: var(--body-bold-letter-spacing);
+    line-height: var(--body-bold-line-height);
+  }
+
+  .text-body-16-r-style {
+    font-family: var(--body-16-r-font-family);
+    font-weight: var(--body-16-r-font-weight);
+    font-size: var(--body-16-r-font-size);
+    font-style: var(--body-16-r-font-style);
+    letter-spacing: var(--body-16-r-letter-spacing);
+    line-height: var(--body-16-r-line-height);
+  }
+
+  .text-title-24-b-style {
+    font-family: var(--title-24-b-font-family);
+    font-weight: var(--title-24-b-font-weight);
+    font-size: var(--title-24-b-font-size);
+    font-style: var(--title-24-b-font-style);
+    letter-spacing: var(--title-24-b-letter-spacing);
+    line-height: var(--title-24-b-line-height);
+  }
+
+  .text-title-16-b-style {
+    font-family: var(--title-16-b-font-family);
+    font-weight: var(--title-16-b-font-weight);
+    font-size: var(--title-16-b-font-size);
+    font-style: var(--title-16-b-font-style);
+    letter-spacing: var(--title-16-b-letter-spacing);
+    line-height: var(--title-16-b-line-height);
+  }
+
+  .text-body-14-SB-style {
+    font-family: var(--body-14-SB-font-family);
+    font-weight: var(--body-14-SB-font-weight);
+    font-size: var(--body-14-SB-font-size);
+    font-style: var(--body-14-SB-font-style);
+    letter-spacing: var(--body-14-SB-letter-spacing);
+    line-height: var(--body-14-SB-line-height);
+  }
+
+  .text-caption-13-r-style {
+    font-family: var(--caption-title-13-r-font-family);
+    font-weight: var(--caption-title-13-r-font-weight);
+    font-size: var(--caption-title-13-r-font-size);
+    font-style: var(--caption-title-13-r-font-style);
+    letter-spacing: var(--caption-title-13-r-letter-spacing);
+    line-height: var(--caption-title-13-r-line-height);
+  }
+
+  .text-navigation-12-r-style {
+    font-family: var(--navigation-12-r-font-family);
+    font-weight: var(--navigation-12-r-font-weight);
+    font-size: var(--navigation-12-r-font-size);
+    font-style: var(--navigation-12-r-font-style);
+    letter-spacing: var(--navigation-12-r-letter-spacing);
+    line-height: var(--navigation-12-r-line-height);
+  }
+
+  .text-navigation-12-SB-style {
+    font-family: var(--navigation-12-SB-font-family);
+    font-weight: var(--navigation-12-SB-font-weight);
+    font-size: var(--navigation-12-SB-font-size);
+    font-style: var(--navigation-12-SB-font-style);
+    letter-spacing: var(--navigation-12-SB-letter-spacing);
+    line-height: var(--navigation-12-SB-line-height);
+  }
+
+  /* Transform 페이지 추가 폰트 유틸리티 */
+  .text-body-14-r-style {
+    font-family: var(--body-14-r-font-family);
+    font-weight: var(--body-14-r-font-weight);
+    font-size: var(--body-14-r-font-size);
+    font-style: var(--body-14-r-font-style);
+    letter-spacing: var(--body-14-r-letter-spacing);
+    line-height: var(--body-14-r-line-height);
+  }
+
+  .text-body-14-b-style {
+    font-family: var(--body-14-b-font-family);
+    font-weight: var(--body-14-b-font-weight);
+    font-size: var(--body-14-b-font-size);
+    font-style: var(--body-14-b-font-style);
+    letter-spacing: var(--body-14-b-letter-spacing);
+    line-height: var(--body-14-b-line-height);
+  }
+
+  .text-caption-13-b-style {
+    font-family: var(--caption-title-13-b-font-family);
+    font-weight: var(--caption-title-13-b-font-weight);
+    font-size: var(--caption-title-13-b-font-size);
+    font-style: var(--caption-title-13-b-font-style);
+    letter-spacing: var(--caption-title-13-b-letter-spacing);
+    line-height: var(--caption-title-13-b-line-height);
+  }
+
+  .text-title-18-b-style {
+    font-family: var(--title-18-b-font-family);
+    font-weight: var(--title-18-b-font-weight);
+    font-size: var(--title-18-b-font-size);
+    font-style: var(--title-18-b-font-style);
+    letter-spacing: var(--title-18-b-letter-spacing);
+    line-height: var(--title-18-b-line-height);
+  }
+
+  .text-title-20-b-style {
+    font-family: var(--title-20-b-font-family);
+    font-weight: var(--title-20-b-font-weight);
+    font-size: var(--title-20-b-font-size);
+    font-style: var(--title-20-b-font-style);
+    letter-spacing: var(--title-20-b-letter-spacing);
+    line-height: var(--title-20-b-line-height);
+  }
+
+  /* 탭 스타일 - 기본 및 활성 상태 */
+  .tab-text {
+    font-family: var(--body-16-r-font-family);
+    font-weight: var(--body-16-r-font-weight);
+    font-size: var(--body-16-r-font-size);
+    font-style: var(--body-16-r-font-style);
+    letter-spacing: var(--body-16-r-letter-spacing);
+    line-height: var(--body-16-r-line-height);
+    color: var(--variable-collection-grayscale-07-a3a8bf);
+  }
+
+  .tab-trigger[data-state="active"] .tab-text {
+    font-family: var(--title-16-b-font-family);
+    font-weight: var(--title-16-b-font-weight);
+    font-size: var(--title-16-b-font-size);
+    font-style: var(--title-16-b-font-style);
+    letter-spacing: var(--title-16-b-letter-spacing);
+    line-height: var(--title-16-b-line-height);
+    color: var(--variable-collection-sub-title01-003fbb);
+  }
+
+  /* 레이아웃 컨테이너 유틸리티 클래스 */
+  .favorite-screen {
+    min-height: 773px;
+    min-width: 375px;
+  }
+
+  .status-bar {
+    height: 47px;
+  }
+
+  .status-bar-content {
+    width: 333px;
+    height: 20px;
+  }
+
+  .status-time {
+    width: 54px;
+  }
+
+  .status-battery {
+    width: 27px;
+    height: 13px;
+  }
+
+  .status-wifi {
+    width: 17px;
+    height: 12px;
+  }
+
+  .status-signal {
+    width: 18px;
+    height: 12px;
+  }
+
+  .nav-header {
+    height: 54px;
+  }
+
+  .tab-text-width {
+    width: 136px;
+  }
+
+  .country-flag {
+    width: 30px;
+    height: 30px;
+  }
+
+  .card-action-height {
+    height: 40px;
+  }
+
+  .card-action-row {
+    height: 29.69px;
+  }
+
+  .divider-line {
+    width: 1px;
+    height: 19.8px;
+  }
+
+  .footer-spacer {
+    width: 360px;
+    height: 16px;
+  }
+
+  .home-indicator-container {
+    width: 134px;
+  }
+
+  .home-indicator {
+    width: 134px;
+    height: 5px;
+  }
+
+  /* 스페이싱 유틸리티 클래스 */
+  .gap-22 {
+    gap: 22px;
+  }
+
+  .pt-22 {
+    padding-top: 22px;
+  }
+
+  .py-9 {
+    padding-top: 9px;
+    padding-bottom: 9px;
+  }
+
+  .px-105 {
+    padding-left: 105px;
+    padding-right: 105px;
+  }
+
+  .mt-neg-1 {
+    margin-top: -1px;
+  }
+
+  .ml-neg-16 {
+    margin-left: -16.5px;
+  }
+
+  .mr-neg-16 {
+    margin-right: -16.5px;
+  }
+
+  .ml-neg-8 {
+    margin-left: -8.5px;
+  }
+
+  .mr-neg-8 {
+    margin-right: -8.5px;
+  }
+
+  /* 포지셔닝 유틸리티 클래스 */
+  .pos-center-y-10 {
+    top: calc(50% - 10px);
+  }
+
+  .pos-center-y-6 {
+    top: calc(50% - 6px);
+  }
+
+  .pos-center-y-5 {
+    top: calc(50% - 5px);
+  }
+
+  .pos-left-26 {
+    left: 26px;
+  }
+
+  .pos-top-19 {
+    top: 19px;
+  }
+
+  .pos-right-77 {
+    right: 77px;
+  }
+
+  /* 특수 유틸리티 클래스 */
+  .flex-none {
+    flex: 0 0 auto;
+  }
+
+  .rounded-full-100 {
+    border-radius: 100px;
+  }
+
+  .bg-cover-full {
+    background-size: 100% 100%;
+  }
+
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .border-top-solid {
+    border-top-style: solid;
+  }
+
+  /* ========================================
+     Transform 페이지 전용 유틸리티 클래스
+     ======================================== */
+
+  /* Transform 배경색 */
+  .transform-bg {
+    background-color: #455cfa;
+  }
+
+  /* Transform 레이아웃 유틸리티 */
+  .transform-min-width {
+    min-width: 375px;
+  }
+
+  .transform-header-height {
+    height: 47px;
+  }
+
+  .transform-nav-height {
+    height: 54px;
+  }
+
+  .transform-input-height {
+    height: 50px;
+  }
+
+  .transform-heading-height {
+    height: 21px;
+  }
+
+  .transform-row-height {
+    height: 18px;
+  }
+
+  .transform-coupon-height {
+    height: 68px;
+  }
+
+  .transform-shadow-1 {
+    height: 23px;
+  }
+
+  .transform-status-content {
+    width: 333px;
+    height: 20px;
+  }
+
+  /* Transform 스페이싱 유틸리티 */
+  .gap-5px {
+    gap: 5px;
+  }
+
+  .gap-3px {
+    gap: 3px;
+  }
+
+  .gap-13px {
+    gap: 13px;
+  }
+
+  .gap-8-91 {
+    gap: 8px 91px;
+  }
+
+  /* Transform 포지셔닝 유틸리티 */
+  .pos-center-y-1 {
+    top: calc(50% - 1px);
+  }
+
+  .pos-center-x-2 {
+    left: calc(50% - 2px);
+  }
+
+  .pos-center-y-15 {
+    top: calc(50% - 15px);
+  }
+
+  .pos-top-11 {
+    top: 11px;
+  }
+
+  .pos-right-23 {
+    right: 23px;
+  }
+
+  /* Transform 특수 유틸리티 */
+  .rounded-bottom-16 {
+    border-radius: 0px 0px 16px 16px;
+  }
+
+  .shadow-card-sm {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .shadow-card {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .py-7px {
+    padding-top: 7px;
+    padding-bottom: 7px;
+  }
+
+  .py-15 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .bg-white-50 {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+
+  .rounded-pill {
+    border-radius: 20px;
+  }
+
+  .rounded-full-100px {
+    border-radius: 100px;
+  }
+
+  /* Transform 추가 유틸리티 */
+  .h-calc-full-minus-22 {
+    height: calc(100% - 22px);
+  }
+
+  .px-8-5 {
+    padding-left: 8.5px;
+    padding-right: 8.5px;
+  }
+
+  .h-16px {
+    height: 16px;
+  }
+
+  /* Transform 높이 유틸리티 */
+  .h-47 {
+    height: 47px;
+  }
+
+  .h-54 {
+    height: 54px;
+  }
+
+  .h-50 {
+    height: 50px;
+  }
+
+  .h-21 {
+    height: 21px;
+  }
+
+  .h-18 {
+    height: 18px;
+  }
+
+  .h-68 {
+    height: 68px;
+  }
+
+  .h-23 {
+    height: 23px;
+  }
+
+  /* Transform 추가 포지셔닝 유틸리티 */
+  .pos-left-26 {
+    left: 26px;
+  }
+
+  .pos-top-19 {
+    top: 19px;
+  }
+
+  .pos-right-77 {
+    right: 77px;
+  }
+
+  /* SVG 아이콘 레이어 포지셔닝 유틸리티 */
+  /* 복합 SVG 아이콘 내부 요소들의 위치 지정 */
+
+  .svg-layer-accent-1 {
+    width: 0;
+    height: 13.97%;
+    top: 63.41%;
+    left: 70.54%;
+  }
+
+  .svg-layer-main-shape {
+    width: 57.50%;
+    height: 40.00%;
+    top: 30.00%;
+    left: 22.50%;
+  }
+
+  .svg-layer-accent-2 {
+    width: 0;
+    height: 14.00%;
+    top: 62.92%;
+    left: 69.80%;
+  }
+
+  .svg-layer-subtract {
+    width: 70.00%;
+    height: 54.43%;
+    top: 22.50%;
+    left: 15.00%;
+  }
+
+  .svg-layer-center-square {
+    width: 33.59%;
+    height: 33.59%;
+    top: 32.92%;
+    left: 33.20%;
+  }
+
+  .svg-layer-center-rect {
+    width: 25.19%;
+    height: 33.59%;
+    top: 40.40%;
+    left: 33.20%;
+  }
+
+  .svg-layer-inner-shape {
+    width: 58.23%;
+    height: 38.82%;
+    top: 29.14%;
+    left: 22.64%;
+  }
+
+  /* Transform 페이지 추가 너비 유틸리티 */
+  .w-clock-time {
+    width: 54px;
+  }
+
+  .w-mini-logo {
+    width: 87px;
+  }
+
+  .w-coupon-label {
+    width: 63px;
+  }
+
+  /* Transform 페이지 국기 아이콘 배경 유틸리티 */
+  .flag-icon-bg {
+    background-image: url(https://c.animaapp.com/ppTMEOHB/img/vector-5.svg);
+    background-size: 100% 100%;
+  }
 }
 
 :root {
