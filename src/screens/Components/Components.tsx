@@ -217,6 +217,95 @@ const CardShowcase = () => {
         </p>
       </div>
 
+      {/* 실제 사용 예시 섹션 */}
+      <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-4">
+        <h2 className="text-lg font-semibold text-blue-800 mb-2">📌 실제 사용 예시</h2>
+        <p className="text-sm text-blue-700">앱에서 실제로 사용되는 Card 스타일링 패턴입니다.</p>
+      </div>
+
+      {/* Favorite 페이지 스타일 */}
+      <Card className="border border-gray-200">
+        <CardHeader className="pb-2">
+          <CardTitle className="text-sm text-gray-500">Favorite 페이지 - 수취인 카드</CardTitle>
+          <CardDescription>수취인 정보를 표시하는 카드 스타일</CardDescription>
+        </CardHeader>
+        <CardContent>
+          {/* 실제 Favorite 페이지 카드 예시 */}
+          <Card className="flex flex-col items-center relative self-stretch w-full flex-none bg-white rounded-xl border border-solid border-[#dfe3ec]">
+            <CardContent className="p-0 w-full">
+              {/* 국가 + 이름 영역 */}
+              <div className="flex items-center gap-4 px-5 py-4 w-full border-b border-[#dfe3ec]">
+                <div className="w-8 h-8 rounded-full bg-gray-200 flex items-center justify-center text-lg">🇳🇵</div>
+                <div className="flex flex-col">
+                  <span className="font-['Pretendard-SemiBold'] text-[#3a3f47] text-lg">Ashok Limbu</span>
+                </div>
+              </div>
+              {/* 정보 영역 */}
+              <div className="flex flex-col gap-1 px-5 py-4">
+                <div className="flex items-center gap-2">
+                  <span className="text-sm text-[#6e7781]">연락처:</span>
+                  <span className="text-sm text-[#3a3f47]">+977-9841234567</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span className="text-sm text-[#6e7781]">은행:</span>
+                  <span className="text-sm text-[#3a3f47]">Nepal Bank Ltd. (1234567890)</span>
+                </div>
+              </div>
+              {/* 버튼 영역 */}
+              <div className="flex w-full border-t border-[#dfe3ec]">
+                <button className="flex-1 py-3 text-sm text-[#3182f6] font-medium hover:bg-blue-50 border-r border-[#dfe3ec]">
+                  즐겨찾기 등록하기
+                </button>
+                <button className="flex-1 py-3 text-sm text-white font-medium bg-[#3182f6] hover:bg-[#1b64da]">
+                  송금하기
+                </button>
+              </div>
+            </CardContent>
+          </Card>
+          <p className="text-xs text-gray-500 mt-3">
+            사용 위치: <code className="bg-gray-100 px-1 py-0.5 rounded">src/screens/Favorite/Favorite.tsx</code>
+          </p>
+        </CardContent>
+      </Card>
+
+      {/* Transform 페이지 스타일 */}
+      <Card className="border border-gray-200">
+        <CardHeader className="pb-2">
+          <CardTitle className="text-sm text-gray-500">Transform 페이지 - 송금 정보 카드</CardTitle>
+          <CardDescription>환율 및 수수료 정보를 표시하는 카드 스타일</CardDescription>
+        </CardHeader>
+        <CardContent>
+          {/* 실제 Transform 페이지 카드 예시 */}
+          <Card className="w-full bg-[#f4f7fd] rounded-xl border-0">
+            <CardContent className="flex flex-col items-start gap-2.5 p-5">
+              <div className="flex items-center justify-between w-full">
+                <span className="text-sm text-[#6e7781]">송금 환율</span>
+                <span className="text-sm font-medium text-[#3a3f47]">10.11 KRW = 1 NPR</span>
+              </div>
+              <div className="flex items-center justify-between w-full">
+                <span className="text-sm text-[#6e7781]">송금 수수료</span>
+                <span className="text-sm font-medium text-[#3a3f47]">5,000 KRW</span>
+              </div>
+              <div className="flex items-center justify-between w-full">
+                <span className="text-sm text-[#6e7781]">예상 소요 시간</span>
+                <span className="text-sm font-medium text-[#3a3f47]">영업일 기준 1~2일</span>
+              </div>
+            </CardContent>
+          </Card>
+          <p className="text-xs text-gray-500 mt-3">
+            사용 위치: <code className="bg-gray-100 px-1 py-0.5 rounded">src/screens/Transform/sections/FrameSubsection/FrameSubsection.tsx</code>
+          </p>
+        </CardContent>
+      </Card>
+
+      {/* 기본 카드 섹션 구분선 */}
+      <div className="border-t border-gray-200 pt-8">
+        <div className="bg-gray-50 border border-gray-200 rounded-lg p-4 mb-4">
+          <h2 className="text-lg font-semibold text-gray-700 mb-2">📚 기본 컴포넌트 문서</h2>
+          <p className="text-sm text-gray-600">shadcn/ui Card 컴포넌트의 기본 구조와 사용법입니다.</p>
+        </div>
+      </div>
+
       {/* 기본 카드 */}
       <Card>
         <CardHeader>

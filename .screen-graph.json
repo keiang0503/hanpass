@@ -24,9 +24,32 @@
         "/transformu95750"
       ],
       "dataModelId": "3:38742"
+    },
+    {
+      "id": "src/screens/Components/Components.tsx",
+      "label": "Components",
+      "routes": [
+        "/components"
+      ]
     }
   ],
   "edges": [
+    {
+      "id": "src/screens/PublishingStatus/PublishingStatus.tsx:84:10-to-src/screens/Components/Components.tsx",
+      "source": "src/screens/PublishingStatus/PublishingStatus.tsx",
+      "target": "src/screens/Components/Components.tsx",
+      "data": {
+        "viaRoute": "/components",
+        "trigger": {
+          "element": "<Link\n            to=\"/components\"\n            className=\"w-full flex items-center gap-3 px-3 py-2.5 rounded-lg text-left transition-colors hover:bg-blue-50 text-blue-600 border border-blue-200 bg-blue-50/50\"\n          >\n            <LayoutGridIcon className=\"w-5 h-5 flex-shrink-0\" />\n            <span className=\"flex-1 font-medium\">공통 컴포넌트</span>\n          </Link>",
+          "line": 84,
+          "endLine": 90,
+          "column": 10,
+          "endColumn": 17,
+          "sourceFile": "src/screens/PublishingStatus/PublishingStatus.tsx"
+        }
+      }
+    },
     {
       "id": "src/screens/Favorite/Favorite.tsx:71:16-to-src/screens/Transform/Transform.tsx",
       "source": "src/screens/Favorite/Favorite.tsx",
@@ -50,7 +73,7 @@
       "data": {
         "viaRoute": "/favoriteu95375",
         "trigger": {
-          "element": "<Link\n            className=\"flex flex-col items-start gap-2.5 w-full\"\n            to=\"/favoriteu95375\"\n          >\n            <div className=\"w-full h-47 relative\">\n              <div className=\"absolute pos-center-y-10 pos-left-26 transform-status-content\">\n                <div className=\"absolute pos-center-y-10 left-0 w-clock-time text-body-bold-style text-variable-collection-basic-black text-center whitespace-nowrap\">\n                  9:41\n                </div>\n\n                <img\n                  className=\"absolute pos-center-y-6 right-0.5 status-battery\"\n                  alt=\"Battery\"\n                  src=\"https://c.animaapp.com/ppTMEOHB/img/battery-2.svg\"\n                />\n\n                <img\n                  className=\"absolute pos-center-y-5 right-9 status-wifi\"\n                  alt=\"Wifi\"\n                  src=\"https://c.animaapp.com/ppTMEOHB/img/wifi-2.svg\"\n                />\n              </div>\n\n              <img\n                className=\"absolute pos-top-19 pos-right-77 status-signal\"\n                alt=\"Icon mobile signal\"\n                src=\"https://c.animaapp.com/ppTMEOHB/img/icon---mobile-signal-2.svg\"\n              />\n            </div>\n          </Link>",
+          "element": "<Link\n            className=\"flex flex-col items-start gap-2.5 w-full\"\n            to=\"/favoriteu95375\"\n          >\n            <div className=\"w-full h-47 flex items-center justify-between px-6\">\n              {/* 왼쪽: 시계 */}\n              <div className=\"text-body-bold-style text-variable-collection-basic-black whitespace-nowrap\">\n                9:41\n              </div>\n\n              {/* 오른쪽: 신호 + WiFi + 배터리 */}\n              <div className=\"flex items-center gap-1\">\n                <img\n                  className=\"h-3\"\n                  alt=\"Icon mobile signal\"\n                  src=\"https://c.animaapp.com/ppTMEOHB/img/icon---mobile-signal-2.svg\"\n                />\n                <img\n                  className=\"h-3\"\n                  alt=\"Wifi\"\n                  src=\"https://c.animaapp.com/ppTMEOHB/img/wifi-2.svg\"\n                />\n                <img\n                  className=\"h-3\"\n                  alt=\"Battery\"\n                  src=\"https://c.animaapp.com/ppTMEOHB/img/battery-2.svg\"\n                />\n              </div>\n            </div>\n          </Link>",
           "line": 12,
           "endLine": 41,
           "column": 10,
