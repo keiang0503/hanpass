@@ -231,32 +231,32 @@ const CardShowcase = () => {
         </CardHeader>
         <CardContent>
           {/* 실제 Favorite 페이지 카드 예시 */}
-          <Card className="flex flex-col items-center relative self-stretch w-full flex-none bg-white rounded-xl border border-solid border-[#dfe3ec]">
+          <Card className="flex flex-col items-center relative self-stretch w-full flex-none bg-white rounded-xl border border-solid border-variable-collection-BG-09-dfe3ec">
             <CardContent className="p-0 w-full">
               {/* 국가 + 이름 영역 */}
-              <div className="flex items-center gap-4 px-5 py-4 w-full border-b border-[#dfe3ec]">
+              <div className="flex items-center gap-4 px-5 py-4 w-full border-b border-variable-collection-BG-09-dfe3ec">
                 <div className="w-8 h-8 rounded-full bg-gray-200 flex items-center justify-center text-lg">🇳🇵</div>
                 <div className="flex flex-col">
-                  <span className="font-['Pretendard-SemiBold'] text-[#3a3f47] text-lg">Ashok Limbu</span>
+                  <span className="font-body-14-SB text-variable-collection-grayscale-04-3a3f47 text-lg">Ashok Limbu</span>
                 </div>
               </div>
               {/* 정보 영역 */}
               <div className="flex flex-col gap-1 px-5 py-4">
                 <div className="flex items-center gap-2">
-                  <span className="text-sm text-[#6e7781]">연락처:</span>
-                  <span className="text-sm text-[#3a3f47]">+977-9841234567</span>
+                  <span className="text-sm text-variable-collection-grayscale-08-6e7781">연락처:</span>
+                  <span className="text-sm text-variable-collection-grayscale-04-3a3f47">+977-9841234567</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <span className="text-sm text-[#6e7781]">은행:</span>
-                  <span className="text-sm text-[#3a3f47]">Nepal Bank Ltd. (1234567890)</span>
+                  <span className="text-sm text-variable-collection-grayscale-08-6e7781">은행:</span>
+                  <span className="text-sm text-variable-collection-grayscale-04-3a3f47">Nepal Bank Ltd. (1234567890)</span>
                 </div>
               </div>
               {/* 버튼 영역 */}
-              <div className="flex w-full border-t border-[#dfe3ec]">
-                <button className="flex-1 py-3 text-sm text-[#3182f6] font-medium hover:bg-blue-50 border-r border-[#dfe3ec]">
+              <div className="flex w-full border-t border-variable-collection-BG-09-dfe3ec">
+                <button className="flex-1 py-3 text-sm text-variable-collection-blue-02-3182f6 font-medium hover:bg-blue-50 border-r border-variable-collection-BG-09-dfe3ec">
                   즐겨찾기 등록하기
                 </button>
-                <button className="flex-1 py-3 text-sm text-white font-medium bg-[#3182f6] hover:bg-[#1b64da]">
+                <button className="flex-1 py-3 text-sm text-white font-medium bg-variable-collection-blue-02-3182f6 hover:bg-variable-collection-blue-03-1b64da">
                   송금하기
                 </button>
               </div>
@@ -276,19 +276,19 @@ const CardShowcase = () => {
         </CardHeader>
         <CardContent>
           {/* 실제 Transform 페이지 카드 예시 */}
-          <Card className="w-full bg-[#f4f7fd] rounded-xl border-0">
+          <Card className="w-full bg-variable-collection-BG-03-f4f7fd rounded-xl border-0">
             <CardContent className="flex flex-col items-start gap-2.5 p-5">
               <div className="flex items-center justify-between w-full">
-                <span className="text-sm text-[#6e7781]">송금 환율</span>
-                <span className="text-sm font-medium text-[#3a3f47]">10.11 KRW = 1 NPR</span>
+                <span className="text-sm text-variable-collection-grayscale-08-6e7781">송금 환율</span>
+                <span className="text-sm font-medium text-variable-collection-grayscale-04-3a3f47">10.11 KRW = 1 NPR</span>
               </div>
               <div className="flex items-center justify-between w-full">
-                <span className="text-sm text-[#6e7781]">송금 수수료</span>
-                <span className="text-sm font-medium text-[#3a3f47]">5,000 KRW</span>
+                <span className="text-sm text-variable-collection-grayscale-08-6e7781">송금 수수료</span>
+                <span className="text-sm font-medium text-variable-collection-grayscale-04-3a3f47">5,000 KRW</span>
               </div>
               <div className="flex items-center justify-between w-full">
-                <span className="text-sm text-[#6e7781]">예상 소요 시간</span>
-                <span className="text-sm font-medium text-[#3a3f47]">영업일 기준 1~2일</span>
+                <span className="text-sm text-variable-collection-grayscale-08-6e7781">예상 소요 시간</span>
+                <span className="text-sm font-medium text-variable-collection-grayscale-04-3a3f47">영업일 기준 1~2일</span>
               </div>
             </CardContent>
           </Card>
@@ -560,14 +560,14 @@ const DownloadShowcase = () => {
                 <code className="bg-green-100 text-green-700 px-2 py-1 rounded text-sm font-mono">DownloadAllButton</code>
                 <span className="text-gray-700">전체 소스 다운로드 버튼</span>
               </div>
-              <p className="text-sm text-gray-500 mt-1 ml-[140px]">모든 화면과 공통 파일을 ZIP으로 다운로드</p>
+              <p className="text-sm text-gray-500 mt-1 ml-140">모든 화면과 공통 파일을 ZIP으로 다운로드</p>
             </li>
             <li>
               <div className="flex items-start gap-3">
                 <code className="bg-blue-100 text-blue-700 px-2 py-1 rounded text-sm font-mono">DownloadButton</code>
                 <span className="text-gray-700">개별 화면 소스 다운로드 버튼</span>
               </div>
-              <p className="text-sm text-gray-500 mt-1 ml-[140px]">특정 화면의 소스와 관련 파일을 ZIP으로 다운로드</p>
+              <p className="text-sm text-gray-500 mt-1 ml-140">특정 화면의 소스와 관련 파일을 ZIP으로 다운로드</p>
             </li>
           </ul>
         </CardContent>

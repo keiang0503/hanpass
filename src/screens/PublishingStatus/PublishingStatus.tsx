@@ -4,7 +4,20 @@ import React, { useState, useEffect } from "react";
 import { DownloadButton, DownloadAllButton } from "../../components/DownloadButton";
 
 // 퍼블리싱 화면 데이터
-const publishingData = [
+type PublishingItem = {
+  id: string;
+  name: string;
+  path: string;
+  status: "completed" | "pending";
+  description: string;
+  type?: "menu";
+} | {
+  id: string;
+  name: string;
+  type: "section";
+};
+
+const publishingData: PublishingItem[] = [
   {
     id: "favorite",
     name: "즐겨찾기",
@@ -18,6 +31,11 @@ const publishingData = [
     path: "/transformu95750",
     status: "completed",
     description: "송금 변환 화면",
+  },
+  {
+    id: "section-login",
+    name: "로그인",
+    type: "section",
   },
 ];
 
@@ -58,22 +76,30 @@ export const PublishingStatus = (): JSX.Element => {
           <ul className="space-y-1">
             {publishingData.map((item) => (
               <li key={item.id}>
-                <button
-                  onClick={() => setSelectedScreen(item.id)}
-                  className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-lg text-left transition-colors ${
-                    selectedScreen === item.id
-                      ? "bg-blue-50 text-blue-700 border border-blue-200"
-                      : "hover:bg-gray-100 text-gray-700"
-                  }`}
-                >
-                  <FolderIcon className="w-5 h-5 flex-shrink-0" />
-                  <span className="flex-1 font-medium">{item.name}</span>
-                  {item.status === "completed" ? (
-                    <CheckCircleIcon className="w-4 h-4 text-green-500" />
-                  ) : (
-                    <ClockIcon className="w-4 h-4 text-yellow-500" />
-                  )}
-                </button>
+                {item.type === "section" ? (
+                  <div className="px-3 py-2 mt-4 mb-1">
+                    <span className="text-xs font-semibold text-gray-500 uppercase tracking-wider">
+                      {item.name}
+                    </span>
+                  </div>
+                ) : (
+                  <button
+                    onClick={() => setSelectedScreen(item.id)}
+                    className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-lg text-left transition-colors ${
+                      selectedScreen === item.id
+                        ? "bg-blue-50 text-blue-700 border border-blue-200"
+                        : "hover:bg-gray-100 text-gray-700"
+                    }`}
+                  >
+                    <FolderIcon className="w-5 h-5 flex-shrink-0" />
+                    <span className="flex-1 font-medium">{item.name}</span>
+                    {"status" in item && item.status === "completed" ? (
+                      <CheckCircleIcon className="w-4 h-4 text-green-500" />
+                    ) : (
+                      <ClockIcon className="w-4 h-4 text-yellow-500" />
+                    )}
+                  </button>
+                )}
               </li>
             ))}
           </ul>
@@ -130,7 +156,7 @@ export const PublishingStatus = (): JSX.Element => {
               </div>
               <div className="flex items-center gap-2">
                 {/* 브라우저 스타일 URL 바 */}
-                <div className="flex items-center bg-gray-100 rounded-lg border border-gray-200 px-3 py-1.5 min-w-[300px]">
+                <div className="flex items-center bg-gray-100 rounded-lg border border-gray-200 px-3 py-1.5 min-w-input-container">
                   <LockIcon className="w-3.5 h-3.5 text-gray-400 mr-2 flex-shrink-0" />
                   <span className="text-sm text-gray-700 truncate flex-1">
                     {getFullUrl(selectedData.path)}

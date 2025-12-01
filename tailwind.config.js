@@ -40,6 +40,7 @@ module.exports = {
       },
       minWidth: {
         'screen': '375px',
+        'input-container': '300px',
       },
       // 디자인 토큰: 갭/스페이싱
       gap: {
@@ -61,6 +62,7 @@ module.exports = {
         '-1': '-1px',
         '-8.5': '-8.5px',
         '-16.5': '-16.5px',
+        '140': '140px',
       },
       // 디자인 토큰: 포지셔닝
       spacing: {
@@ -115,6 +117,15 @@ module.exports = {
           "var(--variable-collection-primary-primary-0d56e4)",
         "variable-collection-sub-title01-003fbb":
           "var(--variable-collection-sub-title01-003fbb)",
+        // 추가 색상 토큰
+        "variable-collection-grayscale-04-3a3f47":
+          "var(--variable-collection-grayscale-04-3a3f47)",
+        "variable-collection-grayscale-08-6e7781":
+          "var(--variable-collection-grayscale-08-6e7781)",
+        "variable-collection-blue-02-3182f6":
+          "var(--variable-collection-blue-02-3182f6)",
+        "variable-collection-blue-03-1b64da":
+          "var(--variable-collection-blue-03-1b64da)",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

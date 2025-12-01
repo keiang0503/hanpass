@@ -11,6 +11,35 @@
 ### 필수 원칙
 - **매직넘버 사용 금지**: 하드코딩된 픽셀값 대신 `tailwind.config.js`에 정의된 토큰 사용
 - **일관성 유지**: 동일한 UI 요소는 동일한 토큰 사용
+- **임의값 클래스 사용 절대 금지**: `w-[123px]`, `text-[#abc]`, `font-['...']` 등 대괄호 임의값 사용 금지
+
+### 임의값 금지 규칙
+모든 색상, 폰트, 간격, 사이즈 등은 반드시 `tailwind.config.js`의 theme 토큰으로만 정의합니다.
+
+#### ❌ 금지 패턴
+```tsx
+// 픽셀값 임의 사용
+<div className="w-[300px] ml-[140px]">
+// 색상 임의 사용
+<span className="text-[#ff5500] bg-[rgb(255,0,0)]">
+// 폰트 임의 사용
+<p className="font-['Pretendard-SemiBold']">
+```
+
+#### ✅ 올바른 사용법
+```tsx
+// tailwind.config.js에 토큰 정의 후 사용
+<div className="min-w-input-container ml-140">
+// CSS 변수 기반 색상 토큰 사용
+<span className="text-variable-collection-primary-primary-0d56e4">
+// font-family 토큰 사용
+<p className="font-body-14-SB">
+```
+
+#### 새 토큰 추가 방법
+1. `tailwind.config.js`의 `theme.extend` 해당 속성에 토큰 추가
+2. 의미 있는 토큰명 사용 (예: `input-container`, `card-header`)
+3. 주석으로 용도 명시
 
 ### 정의된 토큰 (tailwind.config.js)
 
