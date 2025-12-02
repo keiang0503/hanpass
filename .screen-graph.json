@@ -31,19 +31,99 @@
       "routes": [
         "/components"
       ]
+    },
+    {
+      "id": "src/screens/Login/Login.tsx",
+      "label": "Login",
+      "routes": [
+        "/loginu95001"
+      ],
+      "dataModelId": "40000001:45998"
+    },
+    {
+      "id": "src/screens/Element/Element.tsx",
+      "label": "Element",
+      "routes": [
+        "/elementu95002"
+      ],
+      "dataModelId": "40000001:46464"
+    },
+    {
+      "id": "src/screens/ElementScreen/ElementScreen.tsx",
+      "label": "ElementScreen",
+      "routes": [
+        "/elementscreenu95003"
+      ],
+      "dataModelId": "40000001:46437"
+    },
+    {
+      "id": "src/screens/ElementWrapper/ElementWrapper.tsx",
+      "label": "ElementWrapper",
+      "routes": [
+        "/elementwrapperu95004"
+      ],
+      "dataModelId": "40000001:46422"
+    },
+    {
+      "id": "src/screens/Screen4/Screen4.tsx",
+      "label": "Screen4",
+      "routes": [
+        "/screen4u95005"
+      ],
+      "dataModelId": "40000001:46420"
+    },
+    {
+      "id": "src/screens/Home/Home.tsx",
+      "label": "Home",
+      "routes": [
+        "/homeu95006"
+      ],
+      "dataModelId": "40000001:46231"
+    },
+    {
+      "id": "src/screens/HomeScreen/HomeScreen.tsx",
+      "label": "HomeScreen",
+      "routes": [
+        "/homescreenu95007"
+      ],
+      "dataModelId": "40000001:46356"
+    },
+    {
+      "id": "src/screens/HomeWrapper/HomeWrapper.tsx",
+      "label": "HomeWrapper",
+      "routes": [
+        "/homewrapperu95008"
+      ],
+      "dataModelId": "40000001:46032"
+    },
+    {
+      "id": "src/screens/Screen8/Screen8.tsx",
+      "label": "Screen8",
+      "routes": [
+        "/screen8u95009"
+      ],
+      "dataModelId": "40000001:46294"
+    },
+    {
+      "id": "src/screens/Common/Common.tsx",
+      "label": "Common",
+      "routes": [
+        "/commonu95010"
+      ],
+      "dataModelId": "40000001:46028"
     }
   ],
   "edges": [
     {
-      "id": "src/screens/PublishingStatus/PublishingStatus.tsx:84:10-to-src/screens/Components/Components.tsx",
+      "id": "src/screens/PublishingStatus/PublishingStatus.tsx:180:10-to-src/screens/Components/Components.tsx",
       "source": "src/screens/PublishingStatus/PublishingStatus.tsx",
       "target": "src/screens/Components/Components.tsx",
       "data": {
         "viaRoute": "/components",
         "trigger": {
           "element": "<Link\n            to=\"/components\"\n            className=\"w-full flex items-center gap-3 px-3 py-2.5 rounded-lg text-left transition-colors hover:bg-blue-50 text-blue-600 border border-blue-200 bg-blue-50/50\"\n          >\n            <LayoutGridIcon className=\"w-5 h-5 flex-shrink-0\" />\n            <span className=\"flex-1 font-medium\">공통 컴포넌트</span>\n          </Link>",
-          "line": 84,
-          "endLine": 90,
+          "line": 180,
+          "endLine": 186,
           "column": 10,
           "endColumn": 17,
           "sourceFile": "src/screens/PublishingStatus/PublishingStatus.tsx"
