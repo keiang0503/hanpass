@@ -19,6 +19,22 @@ import { SignupWrapper } from "./screens/SignupWrapper";
 import { SignupScreen } from "./screens/SignupScreen";
 import { Nationality } from "./screens/Nationality";
 import { SignupPhoneEmail } from "./screens/SignupPhoneEmail";
+import { VerificationCode } from "./screens/VerificationCode";
+import { VerificationCodeWechat } from "./screens/VerificationCodeWechat";
+import { SignupEmailTab } from "./screens/SignupEmailTab";
+import { SignupEmailInput } from "./screens/SignupEmailInput";
+import { SignupPhoneInput } from "./screens/SignupPhoneInput";
+import { VerificationCodeTimeout } from "./screens/VerificationCodeTimeout";
+import { NewAccountPhoneInput } from "./screens/NewAccountPhoneInput";
+import { NewAccountPasswordFilled } from "./screens/NewAccountPasswordFilled";
+import { NewAccountPassword } from "./screens/NewAccountPassword";
+import { NewAccountReferral } from "./screens/NewAccountReferral";
+import { NewAccountPasswordWechat } from "./screens/NewAccountPasswordWechat";
+import { PhotoConfirmation } from "./screens/PhotoConfirmation";
+import { PasswordReset } from "./screens/PasswordReset";
+import { SelfieCapture } from "./screens/SelfieCapture";
+import { SelfieVerification } from "./screens/SelfieVerification";
+import { PasswordInputKeypad } from "./screens/PasswordInputKeypad";
 
 const router = createBrowserRouter([
   {
@@ -100,6 +116,70 @@ const router = createBrowserRouter([
   {
     path: "/signupphoneemailu95007",
     element: <SignupPhoneEmail />,
+  },
+  {
+    path: "/verificationcodeu95008",
+    element: <VerificationCode />,
+  },
+  {
+    path: "/signupemailtabu95009",
+    element: <SignupEmailTab />,
+  },
+  {
+    path: "/signupemailinputu95010",
+    element: <SignupEmailInput />,
+  },
+  {
+    path: "/signupphoneinputu95011",
+    element: <SignupPhoneInput />,
+  },
+  {
+    path: "/verificationcodewechatu95012",
+    element: <VerificationCodeWechat />,
+  },
+  {
+    path: "/verificationcodetimeoutu95013",
+    element: <VerificationCodeTimeout />,
+  },
+  {
+    path: "/newaccountphoneinputu95014",
+    element: <NewAccountPhoneInput />,
+  },
+  {
+    path: "/newaccountpasswordfilledu95015",
+    element: <NewAccountPasswordFilled />,
+  },
+  {
+    path: "/newaccountpasswordu95016",
+    element: <NewAccountPassword />,
+  },
+  {
+    path: "/newaccountreferralu95017",
+    element: <NewAccountReferral />,
+  },
+  {
+    path: "/newaccountpasswordwechatu95018",
+    element: <NewAccountPasswordWechat />,
+  },
+  {
+    path: "/photoconfirmationu95019",
+    element: <PhotoConfirmation />,
+  },
+  {
+    path: "/passwordresetu95020",
+    element: <PasswordReset />,
+  },
+  {
+    path: "/selfiecaptureu95021",
+    element: <SelfieCapture />,
+  },
+  {
+    path: "/selfieverificationu95022",
+    element: <SelfieVerification />,
+  },
+  {
+    path: "/passwordinputkeypadu95023",
+    element: <PasswordInputKeypad />,
   },
 ]);
 

@@ -1,0 +1,1 @@
+export { PhotoConfirmation } from "./PhotoConfirmation";
