@@ -1,0 +1,1 @@
+export { SettingsFaceid } from "./SettingsFaceid";

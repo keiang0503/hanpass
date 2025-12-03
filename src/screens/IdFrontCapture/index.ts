@@ -1,0 +1,1 @@
+export { IdFrontCapture } from "./IdFrontCapture";

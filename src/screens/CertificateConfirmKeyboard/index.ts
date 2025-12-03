@@ -1,0 +1,1 @@
+export { CertificateConfirmKeyboard } from "./CertificateConfirmKeyboard";

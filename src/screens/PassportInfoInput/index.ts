@@ -1,0 +1,1 @@
+export { PassportInfoInput } from "./PassportInfoInput";

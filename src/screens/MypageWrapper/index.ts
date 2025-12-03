@@ -1,0 +1,1 @@
+export { MypageWrapper } from "./MypageWrapper";

@@ -1,0 +1,1 @@
+export { NewAccountPassword } from "./NewAccountPassword";

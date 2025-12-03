@@ -1,0 +1,1 @@
+export { VerificationCodeWechat } from "./VerificationCodeWechat";

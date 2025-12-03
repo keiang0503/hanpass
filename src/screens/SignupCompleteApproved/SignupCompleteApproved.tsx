@@ -1,0 +1,153 @@
+import { ChevronRightIcon } from "lucide-react";
+import React from "react";
+import { Link } from "react-router-dom";
+import { Button } from "../../components/ui/button";
+
+export const SignupCompleteApproved = (): JSX.Element => {
+  return (
+    <div
+      className="flex flex-col min-h-screen items-center bg-white"
+      data-model-id="2674:64345"
+    >
+      <header className="w-full flex flex-col items-start bg-white">
+        <div className="w-full max-w-[360px] flex flex-col items-start bg-white">
+          <div className="flex h-6 items-center justify-between px-2.5 py-1 w-full bg-white">
+            <div className="inline-flex items-center gap-2">
+              <div className="inline-flex items-center gap-1">
+                <div className="inline-flex items-center">
+                  <div className="[font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm tracking-[0] leading-[normal]">
+                    9
+                  </div>
+                  <div className="[font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm tracking-[0] leading-[normal]">
+                    :
+                  </div>
+                  <div className="[font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm tracking-[0] leading-[normal]">
+                    41
+                  </div>
+                </div>
+              </div>
+              <div className="[font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm tracking-[0] leading-[normal]">
+                Sat Jun 11
+              </div>
+            </div>
+
+            <div className="inline-flex items-center gap-1.5">
+              <span className="[font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm tracking-[0] leading-[normal]">
+                100%
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div className="flex items-center gap-2.5 pl-[34px] pr-5 py-4 w-full">
+          <div className="flex-1 h-5 [font-family:'Pretendard-Medium',Helvetica] font-medium text-black text-[17px] tracking-[-0.41px] leading-[22px] whitespace-nowrap">
+            9:41
+          </div>
+
+          <img
+            className="w-[18px] h-3"
+            alt="Icon mobile signal"
+            src="https://c.animaapp.com/NpKP4m4n/img/icon---mobile-signal-7.svg"
+          />
+
+          <img
+            className="w-[17px] h-[11.83px]"
+            alt="Wifi"
+            src="https://c.animaapp.com/NpKP4m4n/img/wifi-7.svg"
+          />
+
+          <img
+            className="w-[27.4px] h-[13px]"
+            alt="Battery"
+            src="https://c.animaapp.com/NpKP4m4n/img/battery-7.svg"
+          />
+        </div>
+      </header>
+
+      <div className="flex flex-col items-start w-full">
+        <div className="flex flex-col items-start gap-2 w-full">
+          <div className="flex h-[54px] items-center justify-center px-5 py-0 w-full bg-white relative">
+            <img
+              className="absolute h-[calc(100%_-_22px)] top-[11px] right-1.5 w-[87px]"
+              alt="Mini"
+              src="https://c.animaapp.com/NpKP4m4n/img/mini-7@2x.png"
+            />
+          </div>
+        </div>
+      </div>
+
+      <main className="flex items-start justify-center gap-2.5 px-6 py-0 flex-1 w-full grow">
+        <div className="flex flex-col items-center gap-3.5 px-0 py-1.5 flex-1 grow">
+          <div className="relative w-60 h-[154px]">
+            <img
+              className="absolute w-[13.99%] h-[15.02%] top-[48.98%] left-[41.96%]"
+              alt="Vector"
+              src="https://c.animaapp.com/NpKP4m4n/img/vector-992.svg"
+            />
+            <img
+              className="absolute w-[51.83%] h-[68.42%] top-[5.61%] left-[19.84%]"
+              alt="Idcard"
+              src="https://c.animaapp.com/NpKP4m4n/img/idcard@2x.png"
+            />
+            <img
+              className="absolute w-[20.83%] h-[32.47%] top-[53.25%] left-[60.83%]"
+              alt="Status"
+              src="https://c.animaapp.com/NpKP4m4n/img/ico50-status.svg"
+            />
+          </div>
+
+          <div className="gap-[30px] w-full flex flex-col items-center">
+            <div className="gap-3 w-full flex flex-col items-center">
+              <h1 className="w-full font-title-24-b font-[number:var(--title-24-b-font-weight)] text-[#0b0c0e] text-[length:var(--title-24-b-font-size)] text-center tracking-[var(--title-24-b-letter-spacing)] leading-[var(--title-24-b-line-height)] [font-style:var(--title-24-b-font-style)]">
+                회원가입이 완료되었습니다.
+              </h1>
+
+              <div className="w-full font-title-18-SB font-[number:var(--title-18-SB-font-weight)] text-[#0d56e4] text-[length:var(--title-18-SB-font-size)] text-center tracking-[var(--title-18-SB-letter-spacing)] leading-[var(--title-18-SB-line-height)] [font-style:var(--title-18-SB-font-style)]">
+                신분증 승인 완료
+              </div>
+
+              <p className="w-full font-body-15-r font-[number:var(--body-15-r-font-weight)] text-[#717682] text-[length:var(--body-15-r-font-size)] text-center tracking-[var(--body-15-r-letter-spacing)] leading-[var(--body-15-r-line-height)] [font-style:var(--body-15-r-font-style)]">
+                한패스의 금융 서비스를 이용하기 위해서는 출금 계좌등록 절차가
+                필요해요. 다음단계를 진행해주세요.
+              </p>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer className="flex flex-col items-center justify-end px-6 py-0 w-full bg-white">
+        <div className="gap-6 w-full z-0 flex flex-col items-center">
+          <div className="flex min-h-[54px] items-center justify-center gap-2 w-full rounded-xl shadow-[0px_-20px_20px_#ffffff]">
+            <div className="flex min-h-[54px] items-start flex-1 grow">
+              <Button
+                className="flex min-h-[54px] items-center justify-center gap-2 px-[26px] py-1.5 flex-1 grow bg-[#0d56e4] rounded-xl h-auto hover:bg-[#0d56e4]/90"
+                asChild
+              >
+                <Link to="/addressdetailinputu95045">
+                  <span className="flex-1 font-title-16-b font-[number:var(--title-16-b-font-weight)] text-white text-[length:var(--title-16-b-font-size)] text-center tracking-[var(--title-16-b-letter-spacing)] leading-[var(--title-16-b-line-height)] [font-style:var(--title-16-b-font-style)]">
+                    다음 단계 진행하기
+                  </span>
+                </Link>
+              </Button>
+            </div>
+          </div>
+
+          <button className="inline-flex items-center gap-0.5 cursor-pointer bg-transparent border-0 p-0">
+            <span className="font-body-15-r font-[number:var(--body-15-r-font-weight)] text-[#717682] text-[length:var(--body-15-r-font-size)] text-center tracking-[var(--body-15-r-letter-spacing)] leading-[var(--body-15-r-line-height)] underline whitespace-nowrap [font-style:var(--body-15-r-font-style)]">
+              나중에 할게요
+            </span>
+            <ChevronRightIcon className="w-[18px] h-[18px] text-[#0d56e4]" />
+          </button>
+        </div>
+
+        <div className="w-full h-4 z-[-1]" />
+
+        <div className="flex flex-col items-center gap-2.5 px-[105px] py-2 w-full z-[-2] bg-white">
+          <div className="w-[134px] gap-2.5 ml-[-8.50px] mr-[-8.50px] flex flex-col items-center">
+            <div className="w-[134px] h-[5px] bg-black rounded-[100px]" />
+          </div>
+        </div>
+      </footer>
+    </div>
+  );
+};

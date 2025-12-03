@@ -1,0 +1,1 @@
+export { ServicecertScreen } from "./ServicecertScreen";

@@ -1,0 +1,1 @@
+export { ServiceTerms } from "./ServiceTerms";

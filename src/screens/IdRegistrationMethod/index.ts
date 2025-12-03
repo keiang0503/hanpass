@@ -1,0 +1,1 @@
+export { IdRegistrationMethod } from "./IdRegistrationMethod";

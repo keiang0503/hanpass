@@ -111,19 +111,933 @@
         "/commonu95010"
       ],
       "dataModelId": "40000001:46028"
+    },
+    {
+      "id": "src/screens/Signup/Signup.tsx",
+      "label": "Signup",
+      "routes": [
+        "/signupu95003"
+      ],
+      "dataModelId": "40000001:45654"
+    },
+    {
+      "id": "src/screens/SignupWrapper/SignupWrapper.tsx",
+      "label": "SignupWrapper",
+      "routes": [
+        "/signupwrapperu95004"
+      ],
+      "dataModelId": "40000001:45704"
+    },
+    {
+      "id": "src/screens/SignupScreen/SignupScreen.tsx",
+      "label": "SignupScreen",
+      "routes": [
+        "/signupscreenu95005"
+      ],
+      "dataModelId": "40000001:45725"
+    },
+    {
+      "id": "src/screens/Nationality/Nationality.tsx",
+      "label": "Nationality",
+      "routes": [
+        "/nationalityu95006"
+      ],
+      "dataModelId": "40000001:45762"
+    },
+    {
+      "id": "src/screens/SignupPhoneEmail/SignupPhoneEmail.tsx",
+      "label": "SignupPhoneEmail",
+      "routes": [
+        "/signupphoneemailu95007"
+      ],
+      "dataModelId": "40000001:45775"
+    },
+    {
+      "id": "src/screens/VerificationCode/VerificationCode.tsx",
+      "label": "VerificationCode",
+      "routes": [
+        "/verificationcodeu95008"
+      ],
+      "dataModelId": "40000001:45837"
+    },
+    {
+      "id": "src/screens/SignupEmailTab/SignupEmailTab.tsx",
+      "label": "SignupEmailTab",
+      "routes": [
+        "/signupemailtabu95009"
+      ],
+      "dataModelId": "40000001:45839"
+    },
+    {
+      "id": "src/screens/SignupEmailInput/SignupEmailInput.tsx",
+      "label": "SignupEmailInput",
+      "routes": [
+        "/signupemailinputu95010"
+      ],
+      "dataModelId": "40000001:45840"
+    },
+    {
+      "id": "src/screens/SignupPhoneInput/SignupPhoneInput.tsx",
+      "label": "SignupPhoneInput",
+      "routes": [
+        "/signupphoneinputu95011"
+      ],
+      "dataModelId": "40000001:45841"
+    },
+    {
+      "id": "src/screens/VerificationCodeWechat/VerificationCodeWechat.tsx",
+      "label": "VerificationCodeWechat",
+      "routes": [
+        "/verificationcodewechatu95012"
+      ],
+      "dataModelId": "40000001:45838"
+    },
+    {
+      "id": "src/screens/VerificationCodeTimeout/VerificationCodeTimeout.tsx",
+      "label": "VerificationCodeTimeout",
+      "routes": [
+        "/verificationcodetimeoutu95013"
+      ],
+      "dataModelId": "40000003:218419"
+    },
+    {
+      "id": "src/screens/NewAccountPhoneInput/NewAccountPhoneInput.tsx",
+      "label": "NewAccountPhoneInput",
+      "routes": [
+        "/newaccountphoneinputu95014"
+      ],
+      "dataModelId": "40000001:45841"
+    },
+    {
+      "id": "src/screens/NewAccountPasswordFilled/NewAccountPasswordFilled.tsx",
+      "label": "NewAccountPasswordFilled",
+      "routes": [
+        "/newaccountpasswordfilledu95015"
+      ],
+      "dataModelId": "40000001:41131"
+    },
+    {
+      "id": "src/screens/NewAccountPassword/NewAccountPassword.tsx",
+      "label": "NewAccountPassword",
+      "routes": [
+        "/newaccountpasswordu95016"
+      ],
+      "dataModelId": "40000001:46381"
+    },
+    {
+      "id": "src/screens/NewAccountReferral/NewAccountReferral.tsx",
+      "label": "NewAccountReferral",
+      "routes": [
+        "/newaccountreferralu95017"
+      ],
+      "dataModelId": "40000001:45911"
+    },
+    {
+      "id": "src/screens/NewAccountPasswordWechat/NewAccountPasswordWechat.tsx",
+      "label": "NewAccountPasswordWechat",
+      "routes": [
+        "/newaccountpasswordwechatu95018"
+      ],
+      "dataModelId": "40000003:240086"
+    },
+    {
+      "id": "src/screens/PhotoConfirmation/PhotoConfirmation.tsx",
+      "label": "PhotoConfirmation",
+      "routes": [
+        "/photoconfirmationu95019"
+      ],
+      "dataModelId": "40000003:240089"
+    },
+    {
+      "id": "src/screens/PasswordReset/PasswordReset.tsx",
+      "label": "PasswordReset",
+      "routes": [
+        "/passwordresetu95020"
+      ],
+      "dataModelId": "40000003:240087"
+    },
+    {
+      "id": "src/screens/SelfieCapture/SelfieCapture.tsx",
+      "label": "SelfieCapture",
+      "routes": [
+        "/selfiecaptureu95021"
+      ],
+      "dataModelId": "40000003:240088"
+    },
+    {
+      "id": "src/screens/SelfieVerification/SelfieVerification.tsx",
+      "label": "SelfieVerification",
+      "routes": [
+        "/selfieverificationu95022"
+      ],
+      "dataModelId": "40000003:240090"
+    },
+    {
+      "id": "src/screens/PasswordInputKeypad/PasswordInputKeypad.tsx",
+      "label": "PasswordInputKeypad",
+      "routes": [
+        "/passwordinputkeypadu95023"
+      ],
+      "dataModelId": "40000003:240091"
+    },
+    {
+      "id": "src/screens/VerificationSteps/VerificationSteps.tsx",
+      "label": "VerificationSteps",
+      "routes": [
+        "/verificationstepsu95024"
+      ],
+      "dataModelId": "2674:63947"
+    },
+    {
+      "id": "src/screens/IdRegistrationMethod/IdRegistrationMethod.tsx",
+      "label": "IdRegistrationMethod",
+      "routes": [
+        "/idregistrationmethodu95025"
+      ],
+      "dataModelId": "40000003:653090"
+    },
+    {
+      "id": "src/screens/CaptureTips/CaptureTips.tsx",
+      "label": "CaptureTips",
+      "routes": [
+        "/capturetipsu95026"
+      ],
+      "dataModelId": "2674:64024"
+    },
+    {
+      "id": "src/screens/SelfieCaptureCountdown/SelfieCaptureCountdown.tsx",
+      "label": "SelfieCaptureCountdown",
+      "routes": [
+        "/selfiecapturecountdownu95027"
+      ],
+      "dataModelId": "40000003:530210"
+    },
+    {
+      "id": "src/screens/PhotoConfirmDialog/PhotoConfirmDialog.tsx",
+      "label": "PhotoConfirmDialog",
+      "routes": [
+        "/photoconfirmdialogu95028"
+      ],
+      "dataModelId": "40000003:533503"
+    },
+    {
+      "id": "src/screens/ReferralCodeInput/ReferralCodeInput.tsx",
+      "label": "ReferralCodeInput",
+      "routes": [
+        "/referralcodeinputu95029"
+      ],
+      "dataModelId": "36893:39789"
+    },
+    {
+      "id": "src/screens/IdFrontCapture/IdFrontCapture.tsx",
+      "label": "IdFrontCapture",
+      "routes": [
+        "/idfrontcaptureu95030"
+      ],
+      "dataModelId": "40000003:687579"
+    },
+    {
+      "id": "src/screens/IdTypeSelection/IdTypeSelection.tsx",
+      "label": "IdTypeSelection",
+      "routes": [
+        "/idtypeselectiou95031"
+      ],
+      "dataModelId": "2674:63885"
+    },
+    {
+      "id": "src/screens/FundSourceSelection/FundSourceSelection.tsx",
+      "label": "FundSourceSelection",
+      "routes": [
+        "/fundsourceselectiou95032"
+      ],
+      "dataModelId": "34919:52540"
+    },
+    {
+      "id": "src/screens/CustomerInfoForm/CustomerInfoForm.tsx",
+      "label": "CustomerInfoForm",
+      "routes": [
+        "/customerinfoformu95033"
+      ],
+      "dataModelId": "2674:64093"
+    },
+    {
+      "id": "src/screens/OccupationSelection/OccupationSelection.tsx",
+      "label": "OccupationSelection",
+      "routes": [
+        "/occupationselectiou95034"
+      ],
+      "dataModelId": "34919:52198"
+    },
+    {
+      "id": "src/screens/CustomerVerification/CustomerVerification.tsx",
+      "label": "CustomerVerification",
+      "routes": [
+        "/customerverificatiou95035"
+      ],
+      "dataModelId": "2674:64063"
+    },
+    {
+      "id": "src/screens/WechatVerification/WechatVerification.tsx",
+      "label": "WechatVerification",
+      "routes": [
+        "/wechatverificatiou95036"
+      ],
+      "dataModelId": "2674:64035"
+    },
+    {
+      "id": "src/screens/AddressInputMethod/AddressInputMethod.tsx",
+      "label": "AddressInputMethod",
+      "routes": [
+        "/addressinputmethodu95037"
+      ],
+      "dataModelId": "40000003:763991"
+    },
+    {
+      "id": "src/screens/AddressDirectInput/AddressDirectInput.tsx",
+      "label": "AddressDirectInput",
+      "routes": [
+        "/addressdirectinputu95038"
+      ],
+      "dataModelId": "34978:32092"
+    },
+    {
+      "id": "src/screens/TransactionPurpose/TransactionPurpose.tsx",
+      "label": "TransactionPurpose",
+      "routes": [
+        "/transactionpurposeu95039"
+      ],
+      "dataModelId": "34919:52431"
+    },
+    {
+      "id": "src/screens/SignupHistoryDialog/SignupHistoryDialog.tsx",
+      "label": "SignupHistoryDialog",
+      "routes": [
+        "/signuphistorydialogu95040"
+      ],
+      "dataModelId": "34958:264282"
+    },
+    {
+      "id": "src/screens/AddressPhotoConfirm/AddressPhotoConfirm.tsx",
+      "label": "AddressPhotoConfirm",
+      "routes": [
+        "/addressphotoconfirmu95041"
+      ],
+      "dataModelId": "2674:64368"
+    },
+    {
+      "id": "src/screens/AddressSearchResult/AddressSearchResult.tsx",
+      "label": "AddressSearchResult",
+      "routes": [
+        "/addresssearchresultu95042"
+      ],
+      "dataModelId": "40000003:1137612"
+    },
+    {
+      "id": "src/screens/SignupCompleteApproved/SignupCompleteApproved.tsx",
+      "label": "SignupCompleteApproved",
+      "routes": [
+        "/signupcompleteu95043"
+      ],
+      "dataModelId": "2674:64345"
+    },
+    {
+      "id": "src/screens/AddressPhotoUpload/AddressPhotoUpload.tsx",
+      "label": "AddressPhotoUpload",
+      "routes": [
+        "/addressphotouploadu95044"
+      ],
+      "dataModelId": "2674:64275"
+    },
+    {
+      "id": "src/screens/AddressDetailInput/AddressDetailInput.tsx",
+      "label": "AddressDetailInput",
+      "routes": [
+        "/addressdetailinputu95045"
+      ],
+      "dataModelId": "40000003:1137250"
+    },
+    {
+      "id": "src/screens/AddressSearchApi/AddressSearchApi.tsx",
+      "label": "AddressSearchApi",
+      "routes": [
+        "/addresssearchapiu95046"
+      ],
+      "dataModelId": "34978:32183"
+    },
+    {
+      "id": "src/screens/SignupCompletePending/SignupCompletePending.tsx",
+      "label": "SignupCompletePending",
+      "routes": [
+        "/signupcompletependingu95047"
+      ],
+      "dataModelId": "2674:64356"
+    },
+    {
+      "id": "src/screens/Account/Account.tsx",
+      "label": "Account",
+      "routes": [
+        "/accountu95048"
+      ],
+      "dataModelId": "34978:31881"
+    },
+    {
+      "id": "src/screens/Screen6/Screen6.tsx",
+      "label": "Screen6",
+      "routes": [
+        "/screen6u95049"
+      ],
+      "dataModelId": "35202:89897"
+    },
+    {
+      "id": "src/screens/AccountScreen/AccountScreen.tsx",
+      "label": "AccountScreen",
+      "routes": [
+        "/accountscreenu95050"
+      ],
+      "dataModelId": "2674:67358"
+    },
+    {
+      "id": "src/screens/DivWrapper/DivWrapper.tsx",
+      "label": "DivWrapper",
+      "routes": [
+        "/divwrapperu95051"
+      ],
+      "dataModelId": "35202:90012"
+    },
+    {
+      "id": "src/screens/SelfCheckAuth/SelfCheckAuth.tsx",
+      "label": "SelfCheckAuth",
+      "routes": [
+        "/selfcheckauthu95052"
+      ],
+      "dataModelId": "40000008:1156008"
+    },
+    {
+      "id": "src/screens/AccountWrapper/AccountWrapper.tsx",
+      "label": "AccountWrapper",
+      "routes": [
+        "/accountwrapperu95053"
+      ],
+      "dataModelId": "34978:52371"
+    },
+    {
+      "id": "src/screens/LoginScreen/LoginScreen.tsx",
+      "label": "LoginScreen",
+      "routes": [
+        "/loginscreenu95054"
+      ],
+      "dataModelId": "40000008:1156158"
+    },
+    {
+      "id": "src/screens/AccountVerify/AccountVerify.tsx",
+      "label": "AccountVerify",
+      "routes": [
+        "/accountverifyu95055"
+      ],
+      "dataModelId": "34892:268556"
+    },
+    {
+      "id": "src/screens/PinEntry/PinEntry.tsx",
+      "label": "PinEntry",
+      "routes": [
+        "/pinentryu95056"
+      ],
+      "dataModelId": "34892:269048"
+    },
+    {
+      "id": "src/screens/PinInput/PinInput.tsx",
+      "label": "PinInput",
+      "routes": [
+        "/pininputu95057"
+      ],
+      "dataModelId": "34892:269046"
+    },
+    {
+      "id": "src/screens/PinConfirm/PinConfirm.tsx",
+      "label": "PinConfirm",
+      "routes": [
+        "/pinconfirmu95058"
+      ],
+      "dataModelId": "34892:269047"
+    },
+    {
+      "id": "src/screens/AccountMain2/AccountMain2.tsx",
+      "label": "AccountMain2",
+      "routes": [
+        "/accountmain2u95059"
+      ],
+      "dataModelId": "2674:67602"
+    },
+    {
+      "id": "src/screens/WithdrawComplete/WithdrawComplete.tsx",
+      "label": "WithdrawComplete",
+      "routes": [
+        "/withdrawcompleteu95060"
+      ],
+      "dataModelId": "2674:67678"
+    },
+    {
+      "id": "src/screens/ForeignIdInput/ForeignIdInput.tsx",
+      "label": "ForeignIdInput",
+      "routes": [
+        "/foreignidinputu95061"
+      ],
+      "dataModelId": "34892:262353"
+    },
+    {
+      "id": "src/screens/WithdrawFailed/WithdrawFailed.tsx",
+      "label": "WithdrawFailed",
+      "routes": [
+        "/withdrawfailedu95062"
+      ],
+      "dataModelId": "40000008:1184839"
+    },
+    {
+      "id": "src/screens/AutoWithdrawConsent/AutoWithdrawConsent.tsx",
+      "label": "AutoWithdrawConsent",
+      "routes": [
+        "/autowithdrawconsentu95063"
+      ],
+      "dataModelId": "2674:67388"
+    },
+    {
+      "id": "src/screens/AuthFailure/AuthFailure.tsx",
+      "label": "AuthFailure",
+      "routes": [
+        "/authfailureu95064"
+      ],
+      "dataModelId": "35139:61479"
+    },
+    {
+      "id": "src/screens/AuthMethodSelect/AuthMethodSelect.tsx",
+      "label": "AuthMethodSelect",
+      "routes": [
+        "/authmethodselectu95065"
+      ],
+      "dataModelId": "35202:90825"
+    },
+    {
+      "id": "src/screens/EmailInput/EmailInput.tsx",
+      "label": "EmailInput",
+      "routes": [
+        "/emailinputu95066"
+      ],
+      "dataModelId": "2674:67408"
+    },
+    {
+      "id": "src/screens/AuthInfoInput/AuthInfoInput.tsx",
+      "label": "AuthInfoInput",
+      "routes": [
+        "/authinfoinputu95067"
+      ],
+      "dataModelId": "35202:90978"
+    },
+    {
+      "id": "src/screens/CertificateSelect/CertificateSelect.tsx",
+      "label": "CertificateSelect",
+      "routes": [
+        "/certificateselectu95068"
+      ],
+      "dataModelId": "35202:92185"
+    },
+    {
+      "id": "src/screens/AuthCodeInput/AuthCodeInput.tsx",
+      "label": "AuthCodeInput",
+      "routes": [
+        "/authcodeinputu95069"
+      ],
+      "dataModelId": "35202:92057"
+    },
+    {
+      "id": "src/screens/ServiceTerms/ServiceTerms.tsx",
+      "label": "ServiceTerms",
+      "routes": [
+        "/servicetermsu95070"
+      ],
+      "dataModelId": "35202:91607"
+    },
+    {
+      "id": "src/screens/CertificateImportGuide/CertificateImportGuide.tsx",
+      "label": "CertificateImportGuide",
+      "routes": [
+        "/certificateimportguideu95071"
+      ],
+      "dataModelId": "35382:74534"
+    },
+    {
+      "id": "src/screens/CertificateSelectEmpty/CertificateSelectEmpty.tsx",
+      "label": "CertificateSelectEmpty",
+      "routes": [
+        "/certificateselectemptyu95072"
+      ],
+      "dataModelId": "35213:25512"
+    },
+    {
+      "id": "src/screens/CertificatePasswordKeyboard/CertificatePasswordKeyboard.tsx",
+      "label": "CertificatePasswordKeyboard",
+      "routes": [
+        "/certificatepasswordkeyboardu95073"
+      ],
+      "dataModelId": "35213:87606"
+    },
+    {
+      "id": "src/screens/CertificateConfirmKeyboard/CertificateConfirmKeyboard.tsx",
+      "label": "CertificateConfirmKeyboard",
+      "routes": [
+        "/certificateconfirmkeyboardu95074"
+      ],
+      "dataModelId": "35213:87606"
+    },
+    {
+      "id": "src/screens/SimpleAuthSelect/SimpleAuthSelect.tsx",
+      "label": "SimpleAuthSelect",
+      "routes": [
+        "/simpleauthselectu95075"
+      ],
+      "dataModelId": "35213:88025"
+    },
+    {
+      "id": "src/screens/CardVerification/CardVerification.tsx",
+      "label": "CardVerification",
+      "routes": [
+        "/cardverificationu95076"
+      ],
+      "dataModelId": "35213:88072"
+    },
+    {
+      "id": "src/screens/CarrierSelect/CarrierSelect.tsx",
+      "label": "CarrierSelect",
+      "routes": [
+        "/carrierselectu95077"
+      ],
+      "dataModelId": "35213:88115"
+    },
+    {
+      "id": "src/screens/AccountManagement/AccountManagement.tsx",
+      "label": "AccountManagement",
+      "routes": [
+        "/accountmanagementu95078"
+      ],
+      "dataModelId": "35213:88642"
+    },
+    {
+      "id": "src/screens/ArsVerification/ArsVerification.tsx",
+      "label": "ArsVerification",
+      "routes": [
+        "/arsverificationu95079"
+      ],
+      "dataModelId": "2674:67457"
+    },
+    {
+      "id": "src/screens/AutoWithdrawFailed/AutoWithdrawFailed.tsx",
+      "label": "AutoWithdrawFailed",
+      "routes": [
+        "/autowithdrawfailedu95080"
+      ],
+      "dataModelId": "35139:61481"
+    },
+    {
+      "id": "src/screens/AutoWithdrawComplete/AutoWithdrawComplete.tsx",
+      "label": "AutoWithdrawComplete",
+      "routes": [
+        "/autowithdrawcompleteu95081"
+      ],
+      "dataModelId": "2674:67486"
+    },
+    {
+      "id": "src/screens/SelfieVerificationProgress/SelfieVerificationProgress.tsx",
+      "label": "SelfieVerificationProgress",
+      "routes": [
+        "/selfieverificationprogressu95082"
+      ],
+      "dataModelId": "34892:269224"
+    },
+    {
+      "id": "src/screens/PassportInfoInput/PassportInfoInput.tsx",
+      "label": "PassportInfoInput",
+      "routes": [
+        "/passportinfoinputu95083"
+      ],
+      "dataModelId": "35213:88245"
+    },
+    {
+      "id": "src/screens/Overseasremit/Overseasremit.tsx",
+      "label": "Overseasremit",
+      "routes": [
+        "/overseasremitu95084"
+      ],
+      "dataModelId": "2674:65617"
+    },
+    {
+      "id": "src/screens/OverseasremitScreen/OverseasremitScreen.tsx",
+      "label": "OverseasremitScreen",
+      "routes": [
+        "/overseasremitscreenu95085"
+      ],
+      "dataModelId": "2674:65882"
+    },
+    {
+      "id": "src/screens/OverseasremitWrapper/OverseasremitWrapper.tsx",
+      "label": "OverseasremitWrapper",
+      "routes": [
+        "/overseasremitwrapperu95086"
+      ],
+      "dataModelId": "2674:66147"
+    },
+    {
+      "id": "src/screens/OverseasRemitCoupon/OverseasRemitCoupon.tsx",
+      "label": "OverseasRemitCoupon",
+      "routes": [
+        "/overseasremitcouponu95087"
+      ],
+      "dataModelId": "2674:64803"
+    },
+    {
+      "id": "src/screens/OverseasRemitNickname/OverseasRemitNickname.tsx",
+      "label": "OverseasRemitNickname",
+      "routes": [
+        "/overseasremitnicknameu95088"
+      ],
+      "dataModelId": "34820:539228"
+    },
+    {
+      "id": "src/screens/OverseasRemitContacts/OverseasRemitContacts.tsx",
+      "label": "OverseasRemitContacts",
+      "routes": [
+        "/overseasremitcontactsu95089"
+      ]
+    },
+    {
+      "id": "src/screens/OverseasRemitRecipient/OverseasRemitRecipient.tsx",
+      "label": "OverseasRemitRecipient",
+      "routes": [
+        "/overseasremitrecipientu95090"
+      ]
+    },
+    {
+      "id": "src/screens/OverseasRemitIdInput/OverseasRemitIdInput.tsx",
+      "label": "OverseasRemitIdInput",
+      "routes": [
+        "/overseasremitidinputu95091"
+      ]
+    },
+    {
+      "id": "src/screens/OverseasRemitConfirm/OverseasRemitConfirm.tsx",
+      "label": "OverseasRemitConfirm",
+      "routes": [
+        "/overseasremitconfirmu95092"
+      ]
+    },
+    {
+      "id": "src/screens/OverseasRemitFail/OverseasRemitFail.tsx",
+      "label": "OverseasRemitFail",
+      "routes": [
+        "/overseasremitfailu95093"
+      ]
+    },
+    {
+      "id": "src/screens/OverseasRemitPaymentConfirm/OverseasRemitPaymentConfirm.tsx",
+      "label": "OverseasRemitPaymentConfirm",
+      "routes": [
+        "/overseasremitpaymentconfirmu95094"
+      ]
+    },
+    {
+      "id": "src/screens/OverseasRemitHistory/OverseasRemitHistory.tsx",
+      "label": "OverseasRemitHistory",
+      "routes": [
+        "/overseasremithistoryu95095"
+      ],
+      "dataModelId": "34822:541724"
+    },
+    {
+      "id": "src/screens/OverseasRemitReceiverInfo/OverseasRemitReceiverInfo.tsx",
+      "label": "OverseasRemitReceiverInfo",
+      "routes": [
+        "/overseasremitreceiverinfou95096"
+      ],
+      "dataModelId": "2674:66278"
+    },
+    {
+      "id": "src/screens/OverseasRemitTransferInfo/OverseasRemitTransferInfo.tsx",
+      "label": "OverseasRemitTransferInfo",
+      "routes": [
+        "/overseasremitu95097"
+      ],
+      "dataModelId": "35154:42942"
+    },
+    {
+      "id": "src/screens/OverseasRemitPin/OverseasRemitPin.tsx",
+      "label": "OverseasRemitPin",
+      "routes": [
+        "/overseasremitpinu95098"
+      ],
+      "dataModelId": "40000008:1187249"
+    },
+    {
+      "id": "src/screens/HistoryMain/HistoryMain.tsx",
+      "label": "HistoryMain",
+      "routes": [
+        "/historymainu95099"
+      ],
+      "dataModelId": "34838:66244"
+    },
+    {
+      "id": "src/screens/HistoryEmpty/HistoryEmpty.tsx",
+      "label": "HistoryEmpty",
+      "routes": [
+        "/historyemptyu95100"
+      ],
+      "dataModelId": "34892:276594"
+    },
+    {
+      "id": "src/screens/HistoryCancel/HistoryCancel.tsx",
+      "label": "HistoryCancel",
+      "routes": [
+        "/historycancelu95101"
+      ],
+      "dataModelId": "35139:58372"
+    },
+    {
+      "id": "src/screens/HistoryComplete/HistoryComplete.tsx",
+      "label": "HistoryComplete",
+      "routes": [
+        "/historycompleteu95102"
+      ],
+      "dataModelId": "35139:50478"
+    },
+    {
+      "id": "src/screens/HistoryProgress/HistoryProgress.tsx",
+      "label": "HistoryProgress",
+      "routes": [
+        "/historyprogressu95103"
+      ],
+      "dataModelId": "35139:46485"
+    },
+    {
+      "id": "src/screens/HistoryPeriodSelect/HistoryPeriodSelect.tsx",
+      "label": "HistoryPeriodSelect",
+      "routes": [
+        "/historyperiodselectu95104"
+      ],
+      "dataModelId": "34892:34049"
+    },
+    {
+      "id": "src/screens/HistoryRefund/HistoryRefund.tsx",
+      "label": "HistoryRefund",
+      "routes": [
+        "/historyrefundu95105"
+      ],
+      "dataModelId": "35139:51292"
+    },
+    {
+      "id": "src/screens/HistoryDetail1/HistoryDetail1.tsx",
+      "label": "HistoryDetail1",
+      "routes": [
+        "/historydetail1u95106"
+      ],
+      "dataModelId": "35176:69324"
+    },
+    {
+      "id": "src/screens/HistoryDetail2/HistoryDetail2.tsx",
+      "label": "HistoryDetail2",
+      "routes": [
+        "/historydetail2u95107"
+      ],
+      "dataModelId": "35176:69519"
+    },
+    {
+      "id": "src/screens/HistoryDetail3/HistoryDetail3.tsx",
+      "label": "HistoryDetail3",
+      "routes": [
+        "/historydetail3u95108"
+      ],
+      "dataModelId": "35176:68739"
+    },
+    {
+      "id": "src/screens/HistoryDetail4/HistoryDetail4.tsx",
+      "label": "HistoryDetail4",
+      "routes": [
+        "/historydetail4u95109"
+      ],
+      "dataModelId": "35176:68934"
+    },
+    {
+      "id": "src/screens/HistoryDetail5/HistoryDetail5.tsx",
+      "label": "HistoryDetail5",
+      "routes": [
+        "/historydetail5u95110"
+      ],
+      "dataModelId": "35176:69129"
+    },
+    {
+      "id": "src/screens/HistoryDetail6/HistoryDetail6.tsx",
+      "label": "HistoryDetail6",
+      "routes": [
+        "/historydetail6u95111"
+      ],
+      "dataModelId": "35087:108482"
+    },
+    {
+      "id": "src/screens/ServiceCertificate/ServiceCertificate.tsx",
+      "label": "ServiceCertificate",
+      "routes": [
+        "/servicecertificateu95112"
+      ],
+      "dataModelId": "40000008:1186774"
+    },
+    {
+      "id": "src/screens/Event/Event.tsx",
+      "label": "Event",
+      "routes": [
+        "/eventu95113"
+      ],
+      "dataModelId": "2674:68303"
+    },
+    {
+      "id": "src/screens/EventEmpty/EventEmpty.tsx",
+      "label": "EventEmpty",
+      "routes": [
+        "/eventemptyu95114"
+      ],
+      "dataModelId": "34877:79297"
+    },
+    {
+      "id": "src/screens/EventScreen/EventScreen.tsx",
+      "label": "EventScreen",
+      "routes": [
+        "/eventscreenu95115"
+      ],
+      "dataModelId": "2674:68333"
+    },
+    {
+      "id": "src/screens/Support/Support.tsx",
+      "label": "Support",
+      "routes": [
+        "/supportu95116"
+      ],
+      "dataModelId": "34958:294668"
+    },
+    {
+      "id": "src/screens/SupportScreen/SupportScreen.tsx",
+      "label": "SupportScreen",
+      "routes": [
+        "/supportscreenu95117"
+      ],
+      "dataModelId": "34958:288553"
     }
   ],
   "edges": [
     {
-      "id": "src/screens/PublishingStatus/PublishingStatus.tsx:180:10-to-src/screens/Components/Components.tsx",
+      "id": "src/screens/PublishingStatus/PublishingStatus.tsx:1016:10-to-src/screens/Components/Components.tsx",
       "source": "src/screens/PublishingStatus/PublishingStatus.tsx",
       "target": "src/screens/Components/Components.tsx",
       "data": {
         "viaRoute": "/components",
         "trigger": {
           "element": "<Link\n            to=\"/components\"\n            className=\"w-full flex items-center gap-3 px-3 py-2.5 rounded-lg text-left transition-colors hover:bg-blue-50 text-blue-600 border border-blue-200 bg-blue-50/50\"\n          >\n            <LayoutGridIcon className=\"w-5 h-5 flex-shrink-0\" />\n            <span className=\"flex-1 font-medium\">공통 컴포넌트</span>\n          </Link>",
-          "line": 180,
-          "endLine": 186,
+          "line": 1016,
+          "endLine": 1022,
           "column": 10,
           "endColumn": 17,
           "sourceFile": "src/screens/PublishingStatus/PublishingStatus.tsx"
@@ -159,6 +1073,790 @@
           "column": 10,
           "endColumn": 17,
           "sourceFile": "src/screens/Transform/sections/FrameSubsection/FrameSubsection.tsx"
+        }
+      }
+    },
+    {
+      "id": "src/screens/SignupWrapper/SignupWrapper.tsx:165:10-to-src/screens/SignupScreen/SignupScreen.tsx",
+      "source": "src/screens/SignupWrapper/SignupWrapper.tsx",
+      "target": "src/screens/SignupScreen/SignupScreen.tsx",
+      "data": {
+        "viaRoute": "/signupscreenu95005",
+        "trigger": {
+          "element": "<Link to=\"/signupscreenu95005\">\n            다음\n          </Link>",
+          "line": 165,
+          "endLine": 167,
+          "column": 10,
+          "endColumn": 17,
+          "sourceFile": "src/screens/SignupWrapper/SignupWrapper.tsx"
+        }
+      }
+    },
+    {
+      "id": "src/screens/SignupScreen/SignupScreen.tsx:130:12-to-src/screens/Nationality/Nationality.tsx",
+      "source": "src/screens/SignupScreen/SignupScreen.tsx",
+      "target": "src/screens/Nationality/Nationality.tsx",
+      "data": {
+        "viaRoute": "/nationalityu95006",
+        "trigger": {
+          "element": "<Link to=\"/nationalityu95006\">\n              <span className=\"font-title-16-b font-[number:var(--title-16-b-font-weight)] text-white text-[length:var(--title-16-b-font-size)] tracking-[var(--title-16-b-letter-spacing)] leading-[var(--title-16-b-line-height)] [font-style:var(--title-16-b-font-style)]\">\n                다음\n              </span>\n            </Link>",
+          "line": 130,
+          "endLine": 134,
+          "column": 12,
+          "endColumn": 19,
+          "sourceFile": "src/screens/SignupScreen/SignupScreen.tsx"
+        }
+      }
+    },
+    {
+      "id": "src/screens/Nationality/Nationality.tsx:56:12-to-src/screens/SignupScreen/SignupScreen.tsx",
+      "source": "src/screens/Nationality/Nationality.tsx",
+      "target": "src/screens/SignupScreen/SignupScreen.tsx",
+      "data": {
+        "viaRoute": "/signupscreenu95005",
+        "trigger": {
+          "element": "<Link to=\"/signupscreenu95005\">\n              <ChevronLeftIcon className=\"w-6 h-6 text-black\" />\n            </Link>",
+          "line": 56,
+          "endLine": 58,
+          "column": 12,
+          "endColumn": 19,
+          "sourceFile": "src/screens/Nationality/Nationality.tsx"
+        }
+      }
+    },
+    {
+      "id": "src/screens/Nationality/Nationality.tsx:117:12-to-src/screens/SignupPhoneEmail/SignupPhoneEmail.tsx",
+      "source": "src/screens/Nationality/Nationality.tsx",
+      "target": "src/screens/SignupPhoneEmail/SignupPhoneEmail.tsx",
+      "data": {
+        "viaRoute": "/signupphoneemailu95007",
+        "trigger": {
+          "element": "<Link to=\"/signupphoneemailu95007\">\n              <span className=\"font-title-16-b font-[number:var(--title-16-b-font-weight)] text-white text-[length:var(--title-16-b-font-size)] tracking-[var(--title-16-b-letter-spacing)] leading-[var(--title-16-b-line-height)] [font-style:var(--title-16-b-font-style)]\">\n                다음\n              </span>\n            </Link>",
+          "line": 117,
+          "endLine": 121,
+          "column": 12,
+          "endColumn": 19,
+          "sourceFile": "src/screens/Nationality/Nationality.tsx"
+        }
+      }
+    },
+    {
+      "id": "src/screens/SignupPhoneEmail/SignupPhoneEmail.tsx:59:12-to-src/screens/Nationality/Nationality.tsx",
+      "source": "src/screens/SignupPhoneEmail/SignupPhoneEmail.tsx",
+      "target": "src/screens/Nationality/Nationality.tsx",
+      "data": {
+        "viaRoute": "/nationalityu95006",
+        "trigger": {
+          "element": "<Link to=\"/nationalityu95006\">\n              <ChevronLeftIcon className=\"w-6 h-6 text-black\" />\n            </Link>",
+          "line": 59,
+          "endLine": 61,
+          "column": 12,
+          "endColumn": 19,
+          "sourceFile": "src/screens/SignupPhoneEmail/SignupPhoneEmail.tsx"
+        }
+      }
+    },
+    {
+      "id": "src/screens/VerificationCode/VerificationCode.tsx:60:12-to-src/screens/SignupPhoneEmail/SignupPhoneEmail.tsx",
+      "source": "src/screens/VerificationCode/VerificationCode.tsx",
+      "target": "src/screens/SignupPhoneEmail/SignupPhoneEmail.tsx",
+      "data": {
+        "viaRoute": "/signupphoneemailu95007",
+        "trigger": {
+          "element": "<Link to=\"/signupphoneemailu95007\">\n              <ChevronLeftIcon className=\"w-6 h-6\" />\n            </Link>",
+          "line": 60,
+          "endLine": 62,
+          "column": 12,
+          "endColumn": 19,
+          "sourceFile": "src/screens/VerificationCode/VerificationCode.tsx"
+        }
+      }
+    },
+    {
+      "id": "src/screens/SignupEmailTab/SignupEmailTab.tsx:49:12-to-src/screens/Nationality/Nationality.tsx",
+      "source": "src/screens/SignupEmailTab/SignupEmailTab.tsx",
+      "target": "src/screens/Nationality/Nationality.tsx",
+      "data": {
+        "viaRoute": "/nationalityu95006",
+        "trigger": {
+          "element": "<Link to=\"/nationalityu95006\">\n              <ChevronLeftIcon className=\"w-6 h-6\" />\n            </Link>",
+          "line": 49,
+          "endLine": 51,
+          "column": 12,
+          "endColumn": 19,
+          "sourceFile": "src/screens/SignupEmailTab/SignupEmailTab.tsx"
+        }
+      }
+    },
+    {
+      "id": "src/screens/SignupEmailInput/SignupEmailInput.tsx:49:12-to-src/screens/SignupEmailTab/SignupEmailTab.tsx",
+      "source": "src/screens/SignupEmailInput/SignupEmailInput.tsx",
+      "target": "src/screens/SignupEmailTab/SignupEmailTab.tsx",
+      "data": {
+        "viaRoute": "/signupemailtabu95009",
+        "trigger": {
+          "element": "<Link to=\"/signupemailtabu95009\">\n              <ChevronLeftIcon className=\"w-6 h-6\" />\n            </Link>",
+          "line": 49,
+          "endLine": 51,
+          "column": 12,
+          "endColumn": 19,
+          "sourceFile": "src/screens/SignupEmailInput/SignupEmailInput.tsx"
+        }
+      }
+    },
+    {
+      "id": "src/screens/SignupEmailInput/SignupEmailInput.tsx:193:14-to-src/screens/VerificationCode/VerificationCode.tsx",
+      "source": "src/screens/SignupEmailInput/SignupEmailInput.tsx",
+      "target": "src/screens/VerificationCode/VerificationCode.tsx",
+      "data": {
+        "viaRoute": "/verificationcodeu95008",
+        "trigger": {
+          "element": "<Link to=\"/verificationcodeu95008\">\n                <span className=\"flex-1 font-title-16-b font-[number:var(--title-16-b-font-weight)] text-white text-[length:var(--title-16-b-font-size)] text-center tracking-[var(--title-16-b-letter-spacing)] leading-[var(--title-16-b-line-height)] [font-style:var(--title-16-b-font-style)]\">\n                  인증번호 요청\n                </span>\n              </Link>",
+          "line": 193,
+          "endLine": 197,
+          "column": 14,
+          "endColumn": 21,
+          "sourceFile": "src/screens/SignupEmailInput/SignupEmailInput.tsx"
+        }
+      }
+    },
+    {
+      "id": "src/screens/SignupPhoneInput/SignupPhoneInput.tsx:49:12-to-src/screens/Nationality/Nationality.tsx",
+      "source": "src/screens/SignupPhoneInput/SignupPhoneInput.tsx",
+      "target": "src/screens/Nationality/Nationality.tsx",
+      "data": {
+        "viaRoute": "/nationalityu95006",
+        "trigger": {
+          "element": "<Link to=\"/nationalityu95006\">\n              <ChevronLeftIcon className=\"w-6 h-6\" />\n            </Link>",
+          "line": 49,
+          "endLine": 51,
+          "column": 12,
+          "endColumn": 19,
+          "sourceFile": "src/screens/SignupPhoneInput/SignupPhoneInput.tsx"
+        }
+      }
+    },
+    {
+      "id": "src/screens/SignupPhoneInput/SignupPhoneInput.tsx:223:14-to-src/screens/VerificationCode/VerificationCode.tsx",
+      "source": "src/screens/SignupPhoneInput/SignupPhoneInput.tsx",
+      "target": "src/screens/VerificationCode/VerificationCode.tsx",
+      "data": {
+        "viaRoute": "/verificationcodeu95008",
+        "trigger": {
+          "element": "<Link to=\"/verificationcodeu95008\">\n                <span className=\"flex-1 font-title-16-b font-[number:var(--title-16-b-font-weight)] text-white text-[length:var(--title-16-b-font-size)] text-center tracking-[var(--title-16-b-letter-spacing)] leading-[var(--title-16-b-line-height)] [font-style:var(--title-16-b-font-style)]\">\n                  인증번호 요청\n                </span>\n              </Link>",
+          "line": 223,
+          "endLine": 227,
+          "column": 14,
+          "endColumn": 21,
+          "sourceFile": "src/screens/SignupPhoneInput/SignupPhoneInput.tsx"
+        }
+      }
+    },
+    {
+      "id": "src/screens/VerificationCodeWechat/VerificationCodeWechat.tsx:60:12-to-src/screens/SignupPhoneEmail/SignupPhoneEmail.tsx",
+      "source": "src/screens/VerificationCodeWechat/VerificationCodeWechat.tsx",
+      "target": "src/screens/SignupPhoneEmail/SignupPhoneEmail.tsx",
+      "data": {
+        "viaRoute": "/signupphoneemailu95007",
+        "trigger": {
+          "element": "<Link to=\"/signupphoneemailu95007\">\n              <ChevronLeftIcon className=\"w-6 h-6\" />\n            </Link>",
+          "line": 60,
+          "endLine": 62,
+          "column": 12,
+          "endColumn": 19,
+          "sourceFile": "src/screens/VerificationCodeWechat/VerificationCodeWechat.tsx"
+        }
+      }
+    },
+    {
+      "id": "src/screens/NewAccountPhoneInput/NewAccountPhoneInput.tsx:48:12-to-src/screens/SignupEmailInput/SignupEmailInput.tsx",
+      "source": "src/screens/NewAccountPhoneInput/NewAccountPhoneInput.tsx",
+      "target": "src/screens/SignupEmailInput/SignupEmailInput.tsx",
+      "data": {
+        "viaRoute": "/signupemailinputu95010",
+        "trigger": {
+          "element": "<Link to=\"/signupemailinputu95010\">\n              <ChevronLeftIcon className=\"w-6 h-6\" />\n            </Link>",
+          "line": 48,
+          "endLine": 50,
+          "column": 12,
+          "endColumn": 19,
+          "sourceFile": "src/screens/NewAccountPhoneInput/NewAccountPhoneInput.tsx"
+        }
+      }
+    },
+    {
+      "id": "src/screens/NewAccountPhoneInput/NewAccountPhoneInput.tsx:152:14-to-src/screens/VerificationCode/VerificationCode.tsx",
+      "source": "src/screens/NewAccountPhoneInput/NewAccountPhoneInput.tsx",
+      "target": "src/screens/VerificationCode/VerificationCode.tsx",
+      "data": {
+        "viaRoute": "/verificationcodeu95008",
+        "trigger": {
+          "element": "<Link to=\"/verificationcodeu95008\">\n                <span className=\"flex-1 font-title-16-b font-[number:var(--title-16-b-font-weight)] text-[#85888e] text-[length:var(--title-16-b-font-size)] text-center tracking-[var(--title-16-b-letter-spacing)] leading-[var(--title-16-b-line-height)] [font-style:var(--title-16-b-font-style)]\">\n                  인증번호 요청\n                </span>\n              </Link>",
+          "line": 152,
+          "endLine": 156,
+          "column": 14,
+          "endColumn": 21,
+          "sourceFile": "src/screens/NewAccountPhoneInput/NewAccountPhoneInput.tsx"
+        }
+      }
+    },
+    {
+      "id": "src/screens/NewAccountPasswordFilled/NewAccountPasswordFilled.tsx:31:14-to-src/screens/NewAccountPassword/NewAccountPassword.tsx",
+      "source": "src/screens/NewAccountPasswordFilled/NewAccountPasswordFilled.tsx",
+      "target": "src/screens/NewAccountPassword/NewAccountPassword.tsx",
+      "data": {
+        "viaRoute": "/newaccountpasswordu95016",
+        "trigger": {
+          "element": "<Link to=\"/newaccountpasswordu95016\">\n                <ChevronLeftIcon className=\"w-6 h-6 text-[#000000e5]\" />\n              </Link>",
+          "line": 31,
+          "endLine": 33,
+          "column": 14,
+          "endColumn": 21,
+          "sourceFile": "src/screens/NewAccountPasswordFilled/NewAccountPasswordFilled.tsx"
+        }
+      }
+    },
+    {
+      "id": "src/screens/NewAccountPasswordFilled/NewAccountPasswordFilled.tsx:156:14-to-src/screens/NewAccountReferral/NewAccountReferral.tsx",
+      "source": "src/screens/NewAccountPasswordFilled/NewAccountPasswordFilled.tsx",
+      "target": "src/screens/NewAccountReferral/NewAccountReferral.tsx",
+      "data": {
+        "viaRoute": "/newaccountreferralu95017",
+        "trigger": {
+          "element": "<Link to=\"/newaccountreferralu95017\">\n                <span className=\"flex-1 font-title-16-b font-[number:var(--title-16-b-font-weight)] text-[#85888e] text-[length:var(--title-16-b-font-size)] text-center tracking-[var(--title-16-b-letter-spacing)] leading-[var(--title-16-b-line-height)] [font-style:var(--title-16-b-font-style)]\">\n                  다음\n                </span>\n              </Link>",
+          "line": 156,
+          "endLine": 160,
+          "column": 14,
+          "endColumn": 21,
+          "sourceFile": "src/screens/NewAccountPasswordFilled/NewAccountPasswordFilled.tsx"
+        }
+      }
+    },
+    {
+      "id": "src/screens/NewAccountPassword/NewAccountPassword.tsx:47:12-to-src/screens/VerificationCode/VerificationCode.tsx",
+      "source": "src/screens/NewAccountPassword/NewAccountPassword.tsx",
+      "target": "src/screens/VerificationCode/VerificationCode.tsx",
+      "data": {
+        "viaRoute": "/verificationcodeu95008",
+        "trigger": {
+          "element": "<Link to=\"/verificationcodeu95008\">\n              <ChevronLeftIcon className=\"w-6 h-6\" />\n            </Link>",
+          "line": 47,
+          "endLine": 49,
+          "column": 12,
+          "endColumn": 19,
+          "sourceFile": "src/screens/NewAccountPassword/NewAccountPassword.tsx"
+        }
+      }
+    },
+    {
+      "id": "src/screens/NewAccountPassword/NewAccountPassword.tsx:172:14-to-src/screens/NewAccountPasswordFilled/NewAccountPasswordFilled.tsx",
+      "source": "src/screens/NewAccountPassword/NewAccountPassword.tsx",
+      "target": "src/screens/NewAccountPasswordFilled/NewAccountPasswordFilled.tsx",
+      "data": {
+        "viaRoute": "/newaccountpasswordfilledu95015",
+        "trigger": {
+          "element": "<Link to=\"/newaccountpasswordfilledu95015\">\n                <span className=\"flex-1 font-title-16-b font-[number:var(--title-16-b-font-weight)] text-[#85888e] text-[length:var(--title-16-b-font-size)] text-center tracking-[var(--title-16-b-letter-spacing)] leading-[var(--title-16-b-line-height)] [font-style:var(--title-16-b-font-style)]\">\n                  다음\n                </span>\n              </Link>",
+          "line": 172,
+          "endLine": 176,
+          "column": 14,
+          "endColumn": 21,
+          "sourceFile": "src/screens/NewAccountPassword/NewAccountPassword.tsx"
+        }
+      }
+    },
+    {
+      "id": "src/screens/NewAccountReferral/NewAccountReferral.tsx:91:10-to-src/screens/NewAccountPasswordWechat/NewAccountPasswordWechat.tsx",
+      "source": "src/screens/NewAccountReferral/NewAccountReferral.tsx",
+      "target": "src/screens/NewAccountPasswordWechat/NewAccountPasswordWechat.tsx",
+      "data": {
+        "viaRoute": "/newaccountpasswordwechatu95018",
+        "trigger": {
+          "element": "<Link to=\"/newaccountpasswordwechatu95018\">\n            다음\n          </Link>",
+          "line": 91,
+          "endLine": 93,
+          "column": 10,
+          "endColumn": 17,
+          "sourceFile": "src/screens/NewAccountReferral/NewAccountReferral.tsx"
+        }
+      }
+    },
+    {
+      "id": "src/screens/NewAccountPasswordWechat/NewAccountPasswordWechat.tsx:35:14-to-src/screens/NewAccountReferral/NewAccountReferral.tsx",
+      "source": "src/screens/NewAccountPasswordWechat/NewAccountPasswordWechat.tsx",
+      "target": "src/screens/NewAccountReferral/NewAccountReferral.tsx",
+      "data": {
+        "viaRoute": "/newaccountreferralu95017",
+        "trigger": {
+          "element": "<Link to=\"/newaccountreferralu95017\">\n                <ChevronLeftIcon className=\"w-6 h-6 text-[#000000e5]\" />\n              </Link>",
+          "line": 35,
+          "endLine": 37,
+          "column": 14,
+          "endColumn": 21,
+          "sourceFile": "src/screens/NewAccountPasswordWechat/NewAccountPasswordWechat.tsx"
+        }
+      }
+    },
+    {
+      "id": "src/screens/PhotoConfirmation/PhotoConfirmation.tsx:34:14-to-src/screens/NewAccountPasswordWechat/NewAccountPasswordWechat.tsx",
+      "source": "src/screens/PhotoConfirmation/PhotoConfirmation.tsx",
+      "target": "src/screens/NewAccountPasswordWechat/NewAccountPasswordWechat.tsx",
+      "data": {
+        "viaRoute": "/newaccountpasswordwechatu95018",
+        "trigger": {
+          "element": "<Link to=\"/newaccountpasswordwechatu95018\">재시도</Link>",
+          "line": 34,
+          "endLine": 34,
+          "column": 14,
+          "endColumn": 67,
+          "sourceFile": "src/screens/PhotoConfirmation/PhotoConfirmation.tsx"
+        }
+      }
+    },
+    {
+      "id": "src/screens/PhotoConfirmation/PhotoConfirmation.tsx:40:14-to-src/screens/PasswordReset/PasswordReset.tsx",
+      "source": "src/screens/PhotoConfirmation/PhotoConfirmation.tsx",
+      "target": "src/screens/PasswordReset/PasswordReset.tsx",
+      "data": {
+        "viaRoute": "/passwordresetu95020",
+        "trigger": {
+          "element": "<Link to=\"/passwordresetu95020\">확인</Link>",
+          "line": 40,
+          "endLine": 40,
+          "column": 14,
+          "endColumn": 55,
+          "sourceFile": "src/screens/PhotoConfirmation/PhotoConfirmation.tsx"
+        }
+      }
+    },
+    {
+      "id": "src/screens/PasswordReset/PasswordReset.tsx:43:12-to-src/screens/PhotoConfirmation/PhotoConfirmation.tsx",
+      "source": "src/screens/PasswordReset/PasswordReset.tsx",
+      "target": "src/screens/PhotoConfirmation/PhotoConfirmation.tsx",
+      "data": {
+        "viaRoute": "/photoconfirmationu95019",
+        "trigger": {
+          "element": "<Link to=\"/photoconfirmationu95019\">\n              <ChevronLeftIcon className=\"w-6 h-6 text-[#0b0c0e]\" />\n            </Link>",
+          "line": 43,
+          "endLine": 45,
+          "column": 12,
+          "endColumn": 19,
+          "sourceFile": "src/screens/PasswordReset/PasswordReset.tsx"
+        }
+      }
+    },
+    {
+      "id": "src/screens/PasswordReset/PasswordReset.tsx:140:16-to-src/screens/SelfieCapture/SelfieCapture.tsx",
+      "source": "src/screens/PasswordReset/PasswordReset.tsx",
+      "target": "src/screens/SelfieCapture/SelfieCapture.tsx",
+      "data": {
+        "viaRoute": "/selfiecaptureu95021",
+        "trigger": {
+          "element": "<Link to=\"/selfiecaptureu95021\">\n                  <span className=\"relative flex-1 font-title-16-b font-[number:var(--title-16-b-font-weight)] text-white text-[length:var(--title-16-b-font-size)] text-center tracking-[var(--title-16-b-letter-spacing)] leading-[var(--title-16-b-line-height)] [font-style:var(--title-16-b-font-style)]\">\n                    다음\n                  </span>\n                </Link>",
+          "line": 140,
+          "endLine": 144,
+          "column": 16,
+          "endColumn": 23,
+          "sourceFile": "src/screens/PasswordReset/PasswordReset.tsx"
+        }
+      }
+    },
+    {
+      "id": "src/screens/SelfieCapture/SelfieCapture.tsx:20:10-to-src/screens/PasswordReset/PasswordReset.tsx",
+      "source": "src/screens/SelfieCapture/SelfieCapture.tsx",
+      "target": "src/screens/PasswordReset/PasswordReset.tsx",
+      "data": {
+        "viaRoute": "/passwordresetu95020",
+        "trigger": {
+          "element": "<Link to=\"/passwordresetu95020\">\n            <XIcon className=\"w-6 h-6\" />\n          </Link>",
+          "line": 20,
+          "endLine": 22,
+          "column": 10,
+          "endColumn": 17,
+          "sourceFile": "src/screens/SelfieCapture/SelfieCapture.tsx"
+        }
+      }
+    },
+    {
+      "id": "src/screens/SelfieVerification/SelfieVerification.tsx:34:12-to-src/screens/SelfieCapture/SelfieCapture.tsx",
+      "source": "src/screens/SelfieVerification/SelfieVerification.tsx",
+      "target": "src/screens/SelfieCapture/SelfieCapture.tsx",
+      "data": {
+        "viaRoute": "/selfiecaptureu95021",
+        "trigger": {
+          "element": "<Link to=\"/selfiecaptureu95021\">\n              <ChevronLeftIcon className=\"w-6 h-6 text-[#0b0c0e]\" />\n            </Link>",
+          "line": 34,
+          "endLine": 36,
+          "column": 12,
+          "endColumn": 19,
+          "sourceFile": "src/screens/SelfieVerification/SelfieVerification.tsx"
+        }
+      }
+    },
+    {
+      "id": "src/screens/SelfieVerification/SelfieVerification.tsx:89:16-to-src/screens/PasswordInputKeypad/PasswordInputKeypad.tsx",
+      "source": "src/screens/SelfieVerification/SelfieVerification.tsx",
+      "target": "src/screens/PasswordInputKeypad/PasswordInputKeypad.tsx",
+      "data": {
+        "viaRoute": "/passwordinputkeypadu95023",
+        "trigger": {
+          "element": "<Link to=\"/passwordinputkeypadu95023\">\n                  <span className=\"relative flex-1 font-title-16-b font-[number:var(--title-16-b-font-weight)] text-white text-[length:var(--title-16-b-font-size)] text-center tracking-[var(--title-16-b-letter-spacing)] leading-[var(--title-16-b-line-height)] [font-style:var(--title-16-b-font-style)]\">\n                    확인\n                  </span>\n                </Link>",
+          "line": 89,
+          "endLine": 93,
+          "column": 16,
+          "endColumn": 23,
+          "sourceFile": "src/screens/SelfieVerification/SelfieVerification.tsx"
+        }
+      }
+    },
+    {
+      "id": "src/screens/PasswordInputKeypad/PasswordInputKeypad.tsx:93:12-to-src/screens/SelfieVerification/SelfieVerification.tsx",
+      "source": "src/screens/PasswordInputKeypad/PasswordInputKeypad.tsx",
+      "target": "src/screens/SelfieVerification/SelfieVerification.tsx",
+      "data": {
+        "viaRoute": "/selfieverificationu95022",
+        "trigger": {
+          "element": "<Link to=\"/selfieverificationu95022\">\n              <ChevronLeftIcon className=\"w-6 h-6 text-[#0b0c0e]\" />\n            </Link>",
+          "line": 93,
+          "endLine": 95,
+          "column": 12,
+          "endColumn": 19,
+          "sourceFile": "src/screens/PasswordInputKeypad/PasswordInputKeypad.tsx"
+        }
+      }
+    },
+    {
+      "id": "src/screens/VerificationSteps/VerificationSteps.tsx:129:10-to-src/screens/CaptureTips/CaptureTips.tsx",
+      "source": "src/screens/VerificationSteps/VerificationSteps.tsx",
+      "target": "src/screens/CaptureTips/CaptureTips.tsx",
+      "data": {
+        "viaRoute": "/capturetipsu95026",
+        "trigger": {
+          "element": "<Link to=\"/capturetipsu95026\">\n            <span className=\"font-title-15-SB font-[number:var(--title-15-SB-font-weight)] text-[length:var(--title-15-SB-font-size)] tracking-[var(--title-15-SB-letter-spacing)] leading-[var(--title-15-SB-line-height)] [font-style:var(--title-15-SB-font-style)]\">\n              촬영 TIP을 확인하세요\n            </span>\n            <ChevronRightIcon className=\"w-5 h-5\" />\n          </Link>",
+          "line": 129,
+          "endLine": 134,
+          "column": 10,
+          "endColumn": 17,
+          "sourceFile": "src/screens/VerificationSteps/VerificationSteps.tsx"
+        }
+      }
+    },
+    {
+      "id": "src/screens/VerificationSteps/VerificationSteps.tsx:143:14-to-src/screens/IdRegistrationMethod/IdRegistrationMethod.tsx",
+      "source": "src/screens/VerificationSteps/VerificationSteps.tsx",
+      "target": "src/screens/IdRegistrationMethod/IdRegistrationMethod.tsx",
+      "data": {
+        "viaRoute": "/idregistrationmethodu95025",
+        "trigger": {
+          "element": "<Link to=\"/idregistrationmethodu95025\">\n                <span className=\"font-title-16-b font-[number:var(--title-16-b-font-weight)] text-white text-[length:var(--title-16-b-font-size)] tracking-[var(--title-16-b-letter-spacing)] leading-[var(--title-16-b-line-height)] [font-style:var(--title-16-b-font-style)]\">\n                  다음\n                </span>\n              </Link>",
+          "line": 143,
+          "endLine": 147,
+          "column": 14,
+          "endColumn": 21,
+          "sourceFile": "src/screens/VerificationSteps/VerificationSteps.tsx"
+        }
+      }
+    },
+    {
+      "id": "src/screens/IdRegistrationMethod/IdRegistrationMethod.tsx:66:16-to-src/screens/VerificationSteps/VerificationSteps.tsx",
+      "source": "src/screens/IdRegistrationMethod/IdRegistrationMethod.tsx",
+      "target": "src/screens/VerificationSteps/VerificationSteps.tsx",
+      "data": {
+        "viaRoute": "/verificationstepsu95024",
+        "trigger": {
+          "element": "<Link to=\"/verificationstepsu95024\">\n                  <XIcon className=\"w-[18px] h-[18px] text-gray-400\" />\n                </Link>",
+          "line": 66,
+          "endLine": 68,
+          "column": 16,
+          "endColumn": 23,
+          "sourceFile": "src/screens/IdRegistrationMethod/IdRegistrationMethod.tsx"
+        }
+      }
+    },
+    {
+      "id": "src/screens/IdRegistrationMethod/IdRegistrationMethod.tsx:92:16-to-src/screens/IdFrontCapture/IdFrontCapture.tsx",
+      "source": "src/screens/IdRegistrationMethod/IdRegistrationMethod.tsx",
+      "target": "src/screens/IdFrontCapture/IdFrontCapture.tsx",
+      "data": {
+        "viaRoute": "/idfrontcaptureu95030",
+        "trigger": {
+          "element": "<Link to=\"/idfrontcaptureu95030\">\n                  <div className=\"flex h-8 items-center w-full\">\n                    <div className=\"flex items-center gap-1.5 flex-1 grow\">\n                      <div className=\"flex w-[30px] items-center justify-center\">\n                        <img\n                          className=\"w-[30px] h-8\"\n                          alt={option.text}\n                          src={option.icon}\n                        />\n                      </div>\n                      <div className=\"flex-1 font-body-16-r font-[number:var(--body-16-r-font-weight)] text-[#1c253f] text-[length:var(--body-16-r-font-size)] tracking-[var(--body-16-r-letter-spacing)] leading-[var(--body-16-r-line-height)] [font-style:var(--body-16-r-font-style)]\">\n                        {option.text}\n                      </div>\n                    </div>\n                    <ChevronRightIcon className=\"w-4 h-4 text-gray-400\" />\n                  </div>\n                </Link>",
+          "line": 92,
+          "endLine": 108,
+          "column": 16,
+          "endColumn": 23,
+          "sourceFile": "src/screens/IdRegistrationMethod/IdRegistrationMethod.tsx"
+        }
+      }
+    },
+    {
+      "id": "src/screens/CaptureTips/CaptureTips.tsx:91:16-to-src/screens/VerificationSteps/VerificationSteps.tsx",
+      "source": "src/screens/CaptureTips/CaptureTips.tsx",
+      "target": "src/screens/VerificationSteps/VerificationSteps.tsx",
+      "data": {
+        "viaRoute": "/verificationstepsu95024",
+        "trigger": {
+          "element": "<Link to=\"/verificationstepsu95024\">\n                  <XIcon className=\"w-[18px] h-[18px]\" />\n                </Link>",
+          "line": 91,
+          "endLine": 93,
+          "column": 16,
+          "endColumn": 23,
+          "sourceFile": "src/screens/CaptureTips/CaptureTips.tsx"
+        }
+      }
+    },
+    {
+      "id": "src/screens/SelfieCaptureCountdown/SelfieCaptureCountdown.tsx:49:14-to-src/screens/VerificationSteps/VerificationSteps.tsx",
+      "source": "src/screens/SelfieCaptureCountdown/SelfieCaptureCountdown.tsx",
+      "target": "src/screens/VerificationSteps/VerificationSteps.tsx",
+      "data": {
+        "viaRoute": "/verificationstepsu95024",
+        "trigger": {
+          "element": "<Link to=\"/verificationstepsu95024\">\n                <XIcon className=\"w-8 h-8 text-white\" />\n              </Link>",
+          "line": 49,
+          "endLine": 51,
+          "column": 14,
+          "endColumn": 21,
+          "sourceFile": "src/screens/SelfieCaptureCountdown/SelfieCaptureCountdown.tsx"
+        }
+      }
+    },
+    {
+      "id": "src/screens/IdFrontCapture/IdFrontCapture.tsx:46:12-to-src/screens/VerificationSteps/VerificationSteps.tsx",
+      "source": "src/screens/IdFrontCapture/IdFrontCapture.tsx",
+      "target": "src/screens/VerificationSteps/VerificationSteps.tsx",
+      "data": {
+        "viaRoute": "/verificationstepsu95024",
+        "trigger": {
+          "element": "<Link to=\"/verificationstepsu95024\">\n              <XIcon className=\"w-6 h-6 text-white\" />\n            </Link>",
+          "line": 46,
+          "endLine": 48,
+          "column": 12,
+          "endColumn": 19,
+          "sourceFile": "src/screens/IdFrontCapture/IdFrontCapture.tsx"
+        }
+      }
+    },
+    {
+      "id": "src/screens/IdTypeSelection/IdTypeSelection.tsx:62:12-to-src/screens/VerificationSteps/VerificationSteps.tsx",
+      "source": "src/screens/IdTypeSelection/IdTypeSelection.tsx",
+      "target": "src/screens/VerificationSteps/VerificationSteps.tsx",
+      "data": {
+        "viaRoute": "/verificationstepsu95024",
+        "trigger": {
+          "element": "<Link\n              to=\"/verificationstepsu95024\"\n              className=\"w-[calc(100%_-_109px)] absolute top-[calc(50.00%_-_16px)] left-1.5 flex items-center\"\n            />",
+          "line": 62,
+          "endLine": 65,
+          "column": 12,
+          "endColumn": 14,
+          "sourceFile": "src/screens/IdTypeSelection/IdTypeSelection.tsx"
+        }
+      }
+    },
+    {
+      "id": "src/screens/AddressPhotoConfirm/AddressPhotoConfirm.tsx:66:12-to-src/screens/AddressDetailInput/AddressDetailInput.tsx",
+      "source": "src/screens/AddressPhotoConfirm/AddressPhotoConfirm.tsx",
+      "target": "src/screens/AddressDetailInput/AddressDetailInput.tsx",
+      "data": {
+        "viaRoute": "/addressdetailinputu95045",
+        "trigger": {
+          "element": "<Link to=\"/addressdetailinputu95045\">\n              <ChevronLeftIcon className=\"h-6 w-6\" />\n            </Link>",
+          "line": 66,
+          "endLine": 68,
+          "column": 12,
+          "endColumn": 19,
+          "sourceFile": "src/screens/AddressPhotoConfirm/AddressPhotoConfirm.tsx"
+        }
+      }
+    },
+    {
+      "id": "src/screens/AddressSearchResult/AddressSearchResult.tsx:90:12-to-src/screens/AddressDetailInput/AddressDetailInput.tsx",
+      "source": "src/screens/AddressSearchResult/AddressSearchResult.tsx",
+      "target": "src/screens/AddressDetailInput/AddressDetailInput.tsx",
+      "data": {
+        "viaRoute": "/addressdetailinputu95045",
+        "trigger": {
+          "element": "<Link to=\"/addressdetailinputu95045\">\n              <ChevronLeftIcon className=\"h-8 w-8\" />\n            </Link>",
+          "line": 90,
+          "endLine": 92,
+          "column": 12,
+          "endColumn": 19,
+          "sourceFile": "src/screens/AddressSearchResult/AddressSearchResult.tsx"
+        }
+      }
+    },
+    {
+      "id": "src/screens/SignupCompleteApproved/SignupCompleteApproved.tsx:126:16-to-src/screens/AddressDetailInput/AddressDetailInput.tsx",
+      "source": "src/screens/SignupCompleteApproved/SignupCompleteApproved.tsx",
+      "target": "src/screens/AddressDetailInput/AddressDetailInput.tsx",
+      "data": {
+        "viaRoute": "/addressdetailinputu95045",
+        "trigger": {
+          "element": "<Link to=\"/addressdetailinputu95045\">\n                  <span className=\"flex-1 font-title-16-b font-[number:var(--title-16-b-font-weight)] text-white text-[length:var(--title-16-b-font-size)] text-center tracking-[var(--title-16-b-letter-spacing)] leading-[var(--title-16-b-line-height)] [font-style:var(--title-16-b-font-style)]\">\n                    다음 단계 진행하기\n                  </span>\n                </Link>",
+          "line": 126,
+          "endLine": 130,
+          "column": 16,
+          "endColumn": 23,
+          "sourceFile": "src/screens/SignupCompleteApproved/SignupCompleteApproved.tsx"
+        }
+      }
+    },
+    {
+      "id": "src/screens/AddressPhotoUpload/AddressPhotoUpload.tsx:86:12-to-src/screens/AddressDetailInput/AddressDetailInput.tsx",
+      "source": "src/screens/AddressPhotoUpload/AddressPhotoUpload.tsx",
+      "target": "src/screens/AddressDetailInput/AddressDetailInput.tsx",
+      "data": {
+        "viaRoute": "/addressdetailinputu95045",
+        "trigger": {
+          "element": "<Link to=\"/addressdetailinputu95045\">\n              <ChevronLeftIcon className=\"h-6 w-6\" />\n            </Link>",
+          "line": 86,
+          "endLine": 88,
+          "column": 12,
+          "endColumn": 19,
+          "sourceFile": "src/screens/AddressPhotoUpload/AddressPhotoUpload.tsx"
+        }
+      }
+    },
+    {
+      "id": "src/screens/AddressDetailInput/AddressDetailInput.tsx:77:12-to-src/screens/AddressSearchApi/AddressSearchApi.tsx",
+      "source": "src/screens/AddressDetailInput/AddressDetailInput.tsx",
+      "target": "src/screens/AddressSearchApi/AddressSearchApi.tsx",
+      "data": {
+        "viaRoute": "/addresssearchapiu95046",
+        "trigger": {
+          "element": "<Link to=\"/addresssearchapiu95046\">\n              <ChevronLeftIcon className=\"h-6 w-6\" />\n            </Link>",
+          "line": 77,
+          "endLine": 79,
+          "column": 12,
+          "endColumn": 19,
+          "sourceFile": "src/screens/AddressDetailInput/AddressDetailInput.tsx"
+        }
+      }
+    },
+    {
+      "id": "src/screens/AddressDetailInput/AddressDetailInput.tsx:233:18-to-src/screens/AddressSearchApi/AddressSearchApi.tsx",
+      "source": "src/screens/AddressDetailInput/AddressDetailInput.tsx",
+      "target": "src/screens/AddressSearchApi/AddressSearchApi.tsx",
+      "data": {
+        "viaRoute": "/addresssearchapiu95046",
+        "trigger": {
+          "element": "<Link to=\"/addresssearchapiu95046\">\n                    <span className=\"font-title-15-SB font-[number:var(--title-15-SB-font-weight)] text-[#0d56e4] text-[length:var(--title-15-SB-font-size)] tracking-[var(--title-15-SB-letter-spacing)] leading-[var(--title-15-SB-line-height)] [font-style:var(--title-15-SB-font-style)]\">\n                      다시 검색하기\n                    </span>\n                  </Link>",
+          "line": 233,
+          "endLine": 237,
+          "column": 18,
+          "endColumn": 25,
+          "sourceFile": "src/screens/AddressDetailInput/AddressDetailInput.tsx"
+        }
+      }
+    },
+    {
+      "id": "src/screens/AddressDetailInput/AddressDetailInput.tsx:252:12-to-src/screens/AddressPhotoUpload/AddressPhotoUpload.tsx",
+      "source": "src/screens/AddressDetailInput/AddressDetailInput.tsx",
+      "target": "src/screens/AddressPhotoUpload/AddressPhotoUpload.tsx",
+      "data": {
+        "viaRoute": "/addressphotouploadu95044",
+        "trigger": {
+          "element": "<Link to=\"/addressphotouploadu95044\">\n              <span className=\"font-title-16-b font-[number:var(--title-16-b-font-weight)] text-white text-[length:var(--title-16-b-font-size)] tracking-[var(--title-16-b-letter-spacing)] leading-[var(--title-16-b-line-height)] [font-style:var(--title-16-b-font-style)]\">\n                확인\n              </span>\n            </Link>",
+          "line": 252,
+          "endLine": 256,
+          "column": 12,
+          "endColumn": 19,
+          "sourceFile": "src/screens/AddressDetailInput/AddressDetailInput.tsx"
+        }
+      }
+    },
+    {
+      "id": "src/screens/AddressSearchApi/AddressSearchApi.tsx:69:14-to-src/screens/AddressDetailInput/AddressDetailInput.tsx",
+      "source": "src/screens/AddressSearchApi/AddressSearchApi.tsx",
+      "target": "src/screens/AddressDetailInput/AddressDetailInput.tsx",
+      "data": {
+        "viaRoute": "/addressdetailinputu95045",
+        "trigger": {
+          "element": "<Link to=\"/addressdetailinputu95045\">\n                <ChevronLeftIcon className=\"h-6 w-6\" />\n              </Link>",
+          "line": 69,
+          "endLine": 71,
+          "column": 14,
+          "endColumn": 21,
+          "sourceFile": "src/screens/AddressSearchApi/AddressSearchApi.tsx"
+        }
+      }
+    },
+    {
+      "id": "src/screens/SignupCompletePending/SignupCompletePending.tsx:74:14-to-src/screens/SignupCompleteApproved/SignupCompleteApproved.tsx",
+      "source": "src/screens/SignupCompletePending/SignupCompletePending.tsx",
+      "target": "src/screens/SignupCompleteApproved/SignupCompleteApproved.tsx",
+      "data": {
+        "viaRoute": "/signupcompleteu95043",
+        "trigger": {
+          "element": "<Link to=\"/signupcompleteu95043\">\n                <ChevronLeftIcon className=\"h-6 w-6\" />\n              </Link>",
+          "line": 74,
+          "endLine": 76,
+          "column": 14,
+          "endColumn": 21,
+          "sourceFile": "src/screens/SignupCompletePending/SignupCompletePending.tsx"
+        }
+      }
+    },
+    {
+      "id": "src/screens/SignupCompletePending/SignupCompletePending.tsx:165:14-to-src/screens/AddressDetailInput/AddressDetailInput.tsx",
+      "source": "src/screens/SignupCompletePending/SignupCompletePending.tsx",
+      "target": "src/screens/AddressDetailInput/AddressDetailInput.tsx",
+      "data": {
+        "viaRoute": "/addressdetailinputu95045",
+        "trigger": {
+          "element": "<Link to=\"/addressdetailinputu95045\">\n                다음 단계 진행하기\n              </Link>",
+          "line": 165,
+          "endLine": 167,
+          "column": 14,
+          "endColumn": 21,
+          "sourceFile": "src/screens/SignupCompletePending/SignupCompletePending.tsx"
+        }
+      }
+    },
+    {
+      "id": "src/screens/Account/Account.tsx:108:14-to-src/screens/Account/Account.tsx",
+      "source": "src/screens/Account/Account.tsx",
+      "target": "src/screens/Account/Account.tsx",
+      "data": {
+        "viaRoute": "/accountu95048",
+        "trigger": {
+          "element": "<Link to=\"/accountu95048\">\n                <img\n                  className=\"w-8 h-8\"\n                  alt=\"Wechat hd\"\n                  src=\"https://c.animaapp.com/ELrb3VWQ/img/wechat-hd-3.svg\"\n                />\n              </Link>",
+          "line": 108,
+          "endLine": 114,
+          "column": 14,
+          "endColumn": 21,
+          "sourceFile": "src/screens/Account/Account.tsx"
+        }
+      }
+    },
+    {
+      "id": "src/screens/AuthMethodSelect/AuthMethodSelect.tsx:136:12-to-src/screens/AutoWithdrawConsent/AutoWithdrawConsent.tsx",
+      "source": "src/screens/AuthMethodSelect/AuthMethodSelect.tsx",
+      "target": "src/screens/AutoWithdrawConsent/AutoWithdrawConsent.tsx",
+      "data": {
+        "viaRoute": "/autowithdrawconsentu95063",
+        "trigger": {
+          "element": "<Link to=\"/autowithdrawconsentu95063\">\n              <ChevronLeftIcon className=\"w-6 h-6 text-black\" />\n            </Link>",
+          "line": 136,
+          "endLine": 138,
+          "column": 12,
+          "endColumn": 19,
+          "sourceFile": "src/screens/AuthMethodSelect/AuthMethodSelect.tsx"
+        }
+      }
+    },
+    {
+      "id": "src/screens/OverseasRemitPin/OverseasRemitPin.tsx:79:12-to-src/screens/OverseasRemitTransferInfo/OverseasRemitTransferInfo.tsx",
+      "source": "src/screens/OverseasRemitPin/OverseasRemitPin.tsx",
+      "target": "src/screens/OverseasRemitTransferInfo/OverseasRemitTransferInfo.tsx",
+      "data": {
+        "viaRoute": "/overseasremitu95097",
+        "trigger": {
+          "element": "<Link to=\"/overseasremitu95097\">\n              <ChevronLeftIcon className=\"w-6 h-6\" />\n            </Link>",
+          "line": 79,
+          "endLine": 81,
+          "column": 12,
+          "endColumn": 19,
+          "sourceFile": "src/screens/OverseasRemitPin/OverseasRemitPin.tsx"
         }
       }
     }

@@ -1,0 +1,1 @@
+export { AddressSearchResult } from "./AddressSearchResult";

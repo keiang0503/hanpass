@@ -1,0 +1,1 @@
+export { AddressPhotoUpload } from "./AddressPhotoUpload";

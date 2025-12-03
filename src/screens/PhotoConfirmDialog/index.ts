@@ -1,0 +1,1 @@
+export { PhotoConfirmDialog } from "./PhotoConfirmDialog";

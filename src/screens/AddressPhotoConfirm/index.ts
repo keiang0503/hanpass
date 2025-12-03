@@ -1,0 +1,1 @@
+export { AddressPhotoConfirm } from "./AddressPhotoConfirm";
