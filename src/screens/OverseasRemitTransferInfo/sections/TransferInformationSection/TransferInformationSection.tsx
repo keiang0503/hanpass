@@ -6,32 +6,6 @@ import { Button } from "../../../../components/ui/button";
 export const TransferInformationSection = (): JSX.Element => {
   return (
     <header className="flex flex-col w-full bg-white">
-      <div className="flex items-center justify-between px-4 py-3 bg-white">
-        <div className="flex items-center gap-1">
-          <span className="[font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm">
-            9:41
-          </span>
-        </div>
-
-        <div className="flex items-center gap-1.5">
-          <img
-            className="w-[18px] h-2.5"
-            alt="Mobile signal"
-            src="https://c.animaapp.com/vuYaFJZH/img/icon---mobile-signal-9.svg"
-          />
-          <img
-            className="w-[17px] h-[11.83px]"
-            alt="Wifi"
-            src="https://c.animaapp.com/vuYaFJZH/img/wifi-9.svg"
-          />
-          <img
-            className="w-[27.4px] h-[13px]"
-            alt="Battery"
-            src="https://c.animaapp.com/vuYaFJZH/img/battery-9.svg"
-          />
-        </div>
-      </div>
-
       <nav className="flex items-center justify-between px-4 py-3 bg-white">
         <Button
           variant="ghost"

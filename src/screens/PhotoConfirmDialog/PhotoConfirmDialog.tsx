@@ -46,32 +46,6 @@ export const PhotoConfirmDialog = (): JSX.Element => {
 
       {/* Header */}
       <header className="flex flex-col w-full items-start absolute top-0 left-0">
-        <div className="w-full flex flex-col items-start gap-2.5 self-stretch">
-          <div className="flex items-center gap-2.5 pl-[34px] pr-5 py-4 self-stretch w-full">
-            <div className="flex-1 h-5 mt-[-1.00px] font-title-16-SB font-[number:var(--title-16-SB-font-weight)] text-white text-[length:var(--title-16-SB-font-size)] tracking-[var(--title-16-SB-letter-spacing)] leading-[var(--title-16-SB-line-height)] whitespace-nowrap [font-style:var(--title-16-SB-font-style)]">
-              9:41
-            </div>
-
-            <img
-              className="w-[18px] h-3"
-              alt="Icon mobile signal"
-              src="https://c.animaapp.com/SXpbAKOQ/img/icon---mobile-signal-8.svg"
-            />
-
-            <img
-              className="w-[17px] h-[11.83px]"
-              alt="Wifi"
-              src="https://c.animaapp.com/SXpbAKOQ/img/wifi-6.svg"
-            />
-
-            <img
-              className="w-[27.4px] h-[13px]"
-              alt="Battery"
-              src="https://c.animaapp.com/SXpbAKOQ/img/battery-6.svg"
-            />
-          </div>
-        </div>
-
         <div className="flex flex-col items-start self-stretch w-full">
           <div className="flex flex-col items-start gap-2 self-stretch w-full">
             <div className="flex h-[54px] items-center justify-around px-5 py-0 self-stretch w-full">

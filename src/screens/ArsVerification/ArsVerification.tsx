@@ -44,21 +44,6 @@ export const ArsVerification = (): JSX.Element => {
       data-model-id="2674:67457"
     >
       <header className="flex flex-col w-full bg-white">
-        <div className="flex items-center justify-between px-5 py-4 w-full">
-          <div className="flex-1 font-[number:var(--title-16-b-font-weight)] text-black text-[17px] tracking-[-0.41px] leading-[22px]">
-            9:41
-          </div>
-
-          {statusBarIcons.map((icon, index) => (
-            <img
-              key={`status-icon-${index}`}
-              className={icon.className}
-              alt={icon.type}
-              src={icon.src}
-            />
-          ))}
-        </div>
-
         <nav className="flex items-center justify-between px-5 py-4 w-full">
           <Link to="/">
             <ChevronLeftIcon className="w-6 h-6" />

@@ -78,27 +78,6 @@ export const WechatVerification = (): JSX.Element => {
       data-model-id="2674:64035"
     >
       <header className="flex flex-col w-full bg-white">
-        <div className="flex items-center gap-2.5 pl-[34px] pr-5 py-4 w-full">
-          <span className="flex-1 h-5 font-title-16-SB font-[number:var(--title-16-SB-font-weight)] text-black text-[length:var(--title-16-SB-font-size)] tracking-[var(--title-16-SB-letter-spacing)] leading-[var(--title-16-SB-line-height)] whitespace-nowrap [font-style:var(--title-16-SB-font-style)]">
-            9:41
-          </span>
-          <img
-            className="w-[18px] h-3"
-            alt="Icon mobile signal"
-            src="https://c.animaapp.com/Kel660N3/img/icon---mobile-signal-7.svg"
-          />
-          <img
-            className="w-[17px] h-[11.83px]"
-            alt="Wifi"
-            src="https://c.animaapp.com/Kel660N3/img/wifi-7.svg"
-          />
-          <img
-            className="w-[27.4px] h-[13px]"
-            alt="Battery"
-            src="https://c.animaapp.com/Kel660N3/img/battery-7.svg"
-          />
-        </div>
-
         <div className="flex h-[54px] items-center justify-between px-5 py-0 w-full bg-white">
           <div className="flex items-center">
             <img

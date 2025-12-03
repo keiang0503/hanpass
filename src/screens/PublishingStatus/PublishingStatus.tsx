@@ -1009,7 +1009,7 @@ const publishingData: PublishingItem[] = [
 ];
 
 export const PublishingStatus = (): JSX.Element => {
-  const [selectedScreen, setSelectedScreen] = useState<string>("favorite");
+  const [selectedScreen, setSelectedScreen] = useState<string>("login");
   const [copied, setCopied] = useState(false);
   const [baseUrl, setBaseUrl] = useState("");
 

@@ -68,26 +68,8 @@ export const PasswordInputKeypad = (): JSX.Element => {
       className="flex flex-col min-h-screen bg-white"
       data-model-id="40000003:240091"
     >
-      {/* Status Bar */}
+      {/* Navigation Header */}
       <header className="flex flex-col w-full items-start">
-        <div className="flex h-[47px] items-start w-full">
-          <div className="flex flex-1 grow flex-col items-start gap-2.5 py-3.5 relative">
-            <div className="flex flex-col items-center gap-2.5 px-8 py-0 w-full relative flex-[0_0_auto]">
-              <div className="inline-flex items-start gap-[5px] relative flex-[0_0_auto]">
-                <div className="relative w-fit mt-[-1.00px] [font-family:'PingFang_SC-Semibold',Helvetica] font-semibold text-[#000000cc] text-base tracking-[0] leading-5 whitespace-nowrap">
-                  9:41
-                </div>
-              </div>
-            </div>
-            <img
-              className="absolute w-[76px] h-[13px] top-4 left-[290px]"
-              alt="Status Icons"
-              src="/img/wechat-hd.svg"
-            />
-          </div>
-        </div>
-
-        {/* Navigation Header */}
         <div className="flex h-12 items-center gap-[158px] px-4 py-2.5 w-full border-b border-[#f5f6f8]">
           <Button variant="ghost" size="icon" className="h-8 w-8 p-0" asChild>
             <Link to="/selfieverificationu95022">

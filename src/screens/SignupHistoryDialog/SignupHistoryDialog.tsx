@@ -40,64 +40,6 @@ export const SignupHistoryDialog = (): JSX.Element => {
         </Card>
 
         <header className="flex flex-col w-full items-start absolute top-0 left-0">
-          <div className="w-full flex flex-col items-start gap-2.5 self-stretch">
-            <div className="w-[360px] bg-white flex flex-col items-start gap-2.5 self-stretch">
-              <div className="flex h-6 items-center justify-between px-2.5 py-1 self-stretch w-full bg-white">
-                <div className="inline-flex items-center gap-2 flex-[0_0_auto] mt-[-0.50px] mb-[-0.50px]">
-                  <div className="inline-flex items-center gap-1 flex-[0_0_auto]">
-                    <div className="inline-flex items-center flex-[0_0_auto]">
-                      <span className="w-fit mt-[-1.00px] [font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm tracking-[0] leading-[normal]">
-                        9
-                      </span>
-
-                      <span className="w-fit mt-[-1.00px] [font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm tracking-[0] leading-[normal]">
-                        :
-                      </span>
-
-                      <span className="w-fit mt-[-1.00px] [font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm tracking-[0] leading-[normal]">
-                        41
-                      </span>
-                    </div>
-                  </div>
-
-                  <span className="w-fit mt-[-1.00px] [font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm tracking-[0] leading-[normal]">
-                    Sat Jun 11
-                  </span>
-                </div>
-
-                <div className="inline-flex items-center gap-1.5 flex-[0_0_auto] mt-[-0.50px] mb-[-0.50px]">
-                  <span className="w-fit mt-[-1.00px] [font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm tracking-[0] leading-[normal]">
-                    100%
-                  </span>
-                </div>
-              </div>
-            </div>
-
-            <div className="flex items-center gap-2.5 pl-[34px] pr-5 py-4 self-stretch w-full">
-              <time className="flex-1 h-5 mt-[-1.00px] font-title-16-SB font-[number:var(--title-16-SB-font-weight)] text-white text-[length:var(--title-16-SB-font-size)] tracking-[var(--title-16-SB-letter-spacing)] leading-[var(--title-16-SB-line-height)] whitespace-nowrap [font-style:var(--title-16-SB-font-style)]">
-                9:41
-              </time>
-
-              <img
-                className="w-[18px] h-3"
-                alt="Icon mobile signal"
-                src="https://c.animaapp.com/NpKP4m4n/img/icon---mobile-signal-3.svg"
-              />
-
-              <img
-                className="w-[17px] h-[11.83px]"
-                alt="Wifi"
-                src="https://c.animaapp.com/NpKP4m4n/img/wifi-3.svg"
-              />
-
-              <img
-                className="w-[27.4px] h-[13px]"
-                alt="Battery"
-                src="https://c.animaapp.com/NpKP4m4n/img/battery-3.svg"
-              />
-            </div>
-          </div>
-
           <div className="flex flex-col items-start self-stretch w-full">
             <div className="flex flex-col items-start gap-2 self-stretch w-full">
               <div className="flex h-[54px] items-center justify-around px-5 py-0 self-stretch w-full">

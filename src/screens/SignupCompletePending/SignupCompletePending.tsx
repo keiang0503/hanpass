@@ -15,58 +15,6 @@ export const SignupCompletePending = (): JSX.Element => {
       className="flex flex-col min-h-screen items-center bg-white"
       data-model-id="2674:64356"
     >
-      <header className="w-full flex flex-col items-start bg-white">
-        <div className="w-full max-w-[360px] flex flex-col items-start bg-white">
-          <div className="flex h-6 items-center justify-between px-2.5 py-1 w-full bg-white">
-            <div className="inline-flex items-center gap-2">
-              <div className="inline-flex items-center gap-1">
-                <div className="inline-flex items-center">
-                  <div className="[font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm tracking-[0] leading-[normal]">
-                    9
-                  </div>
-                  <div className="[font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm tracking-[0] leading-[normal]">
-                    :
-                  </div>
-                  <div className="[font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm tracking-[0] leading-[normal]">
-                    41
-                  </div>
-                </div>
-              </div>
-              <div className="[font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm tracking-[0] leading-[normal]">
-                Sat Jun 11
-              </div>
-            </div>
-
-            <div className="inline-flex items-center gap-1.5">
-              <div className="[font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm tracking-[0] leading-[normal]">
-                100%
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="flex items-center gap-2.5 pl-[34px] pr-5 py-4 w-full">
-          <div className="flex-1 h-5 [font-family:'Pretendard-Medium',Helvetica] font-medium text-black text-[17px] tracking-[-0.41px] leading-[22px] whitespace-nowrap">
-            9:41
-          </div>
-          <img
-            className="w-[18px] h-3"
-            alt="Icon mobile signal"
-            src="https://c.animaapp.com/NpKP4m4n/img/icon---mobile-signal-7.svg"
-          />
-          <img
-            className="w-[17px] h-[11.83px]"
-            alt="Wifi"
-            src="https://c.animaapp.com/NpKP4m4n/img/wifi-7.svg"
-          />
-          <img
-            className="w-[27.4px] h-[13px]"
-            alt="Battery"
-            src="https://c.animaapp.com/NpKP4m4n/img/battery-7.svg"
-          />
-        </div>
-      </header>
-
       <nav className="flex flex-col items-start w-full">
         <div className="flex flex-col items-start gap-2 w-full">
           <div className="flex h-[54px] items-center justify-between px-5 py-0 w-full bg-white relative">

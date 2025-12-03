@@ -1,6 +1,4 @@
-import { ChevronLeftIcon } from "lucide-react";
 import React from "react";
-import { Link } from "react-router-dom";
 import { Button } from "../../../../components/ui/button";
 import { Card, CardContent } from "../../../../components/ui/card";
 import { Separator } from "../../../../components/ui/separator";
@@ -37,53 +35,6 @@ export const ExchangeRateSection = (): JSX.Element => {
   return (
     <section className="flex flex-col items-center w-full">
       <div className="flex flex-col items-start w-full">
-        <Link
-          className="w-full flex flex-col items-start gap-2.5 bg-white"
-          to="/x4u46-u4370u4460u4363u4463u4523u4364u4453u4540u4359u4457-u4358u4469u4363u4458u4523u4361u4453u4540"
-        >
-          <div className="flex items-center gap-2.5 pl-[34px] pr-5 py-4 w-full">
-            <div className="flex-1 h-5 mt-[-1.00px] font-title-16-SB font-[number:var(--title-16-SB-font-weight)] text-black text-[length:var(--title-16-SB-font-size)] tracking-[var(--title-16-SB-letter-spacing)] leading-[var(--title-16-SB-line-height)] whitespace-nowrap [font-style:var(--title-16-SB-font-style)]">
-              9:41
-            </div>
-
-            <img
-              className="w-[18px] h-3"
-              alt="Icon mobile signal"
-              src="https://c.animaapp.com/FyEwllI9/img/icon---mobile-signal-8.svg"
-            />
-
-            <img
-              className="w-[17px] h-[11.83px]"
-              alt="Wifi"
-              src="https://c.animaapp.com/FyEwllI9/img/wifi-7.svg"
-            />
-
-            <img
-              className="w-[27.4px] h-[13px]"
-              alt="Battery"
-              src="https://c.animaapp.com/FyEwllI9/img/battery-8.svg"
-            />
-          </div>
-        </Link>
-
-        <nav className="flex flex-col items-start relative self-stretch w-full flex-none">
-          <div className="flex flex-col items-start gap-2 relative self-stretch w-full flex-none">
-            <div className="nav-header relative self-stretch w-full flex items-center justify-between px-1.5 bg-white">
-              <Link
-                to="/x4u46-u4370u4460u4363u4463u4523u4364u4453u4540u4359u4457-u4358u4469u4363u4458u4523u4361u4453u4540"
-                className="flex items-center justify-center w-8 h-8"
-              >
-                <ChevronLeftIcon className="w-8 h-8 text-variable-collection-grayscale-01-0b0c0e" />
-              </Link>
-              <img
-                className="h-8"
-                alt="Mini"
-                src="https://c.animaapp.com/FyEwllI9/img/mini-8@2x.png"
-              />
-            </div>
-          </div>
-        </nav>
-
         <header className="flex-col items-start flex w-full">
           <div className="flex-col justify-center gap-2 w-full flex items-start">
             <div className="flex h-[54px] items-center justify-around px-5 py-0 w-full">

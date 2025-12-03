@@ -33,66 +33,6 @@ export const Support = (): JSX.Element => {
       data-model-id="34958:294668"
     >
       <header className="flex flex-col bg-white">
-        <div className="flex h-6 items-center justify-between px-2.5 py-1 bg-white">
-          <div className="inline-flex items-center gap-2">
-            <div className="inline-flex items-center gap-1">
-              <div className="inline-flex items-center">
-                <div className="[font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm">
-                  9
-                </div>
-                <div className="[font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm">
-                  :
-                </div>
-                <div className="[font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm">
-                  41
-                </div>
-              </div>
-            </div>
-            <div className="[font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm">
-              Sat Jun 11
-            </div>
-          </div>
-
-          <div className="inline-flex items-center gap-1.5">
-            <img
-              className="w-[18px] h-3"
-              alt="Icon mobile signal"
-              src="https://c.animaapp.com/fz9Fo3ua/img/icon---mobile-signal-1.svg"
-            />
-            <img
-              className="w-[17px] h-[11.83px]"
-              alt="Wifi"
-              src="https://c.animaapp.com/fz9Fo3ua/img/wifi-1.svg"
-            />
-            <img
-              className="w-[27.4px] h-[13px]"
-              alt="Battery"
-              src="https://c.animaapp.com/fz9Fo3ua/img/battery-1.svg"
-            />
-          </div>
-        </div>
-
-        <div className="flex items-center gap-2.5 pl-[34px] pr-5 py-4 bg-white">
-          <div className="flex-1 h-5 [font-family:'Pretendard-Medium',Helvetica] font-medium text-black text-[17px] tracking-[-0.41px] leading-[22px] whitespace-nowrap">
-            9:41
-          </div>
-          <img
-            className="w-[18px] h-3"
-            alt="Icon mobile signal"
-            src="https://c.animaapp.com/fz9Fo3ua/img/icon---mobile-signal-1.svg"
-          />
-          <img
-            className="w-[17px] h-[11.83px]"
-            alt="Wifi"
-            src="https://c.animaapp.com/fz9Fo3ua/img/wifi-1.svg"
-          />
-          <img
-            className="w-[27.4px] h-[13px]"
-            alt="Battery"
-            src="https://c.animaapp.com/fz9Fo3ua/img/battery-1.svg"
-          />
-        </div>
-
         <nav className="flex items-center justify-between px-5 py-3 bg-white">
           <Button variant="ghost" size="icon" className="h-auto p-0">
             <ChevronLeftIcon className="w-6 h-6" />

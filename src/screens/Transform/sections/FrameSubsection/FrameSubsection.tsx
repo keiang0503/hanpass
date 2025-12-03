@@ -9,37 +9,6 @@ export const FrameSubsection = (): JSX.Element => {
     <section className="flex flex-col items-center w-full">
       <div className="flex flex-col items-start pt-0 pb-6 px-0 w-full bg-variable-collection-basic-white rounded-bottom-16 overflow-hidden shadow-card-sm">
         <header className="flex flex-col items-start w-full bg-variable-collection-basic-white">
-          <Link
-            className="flex flex-col items-start gap-2.5 w-full"
-            to="/favoriteu95375"
-          >
-            <div className="w-full h-47 flex items-center justify-between px-6">
-              {/* 왼쪽: 시계 */}
-              <div className="text-body-bold-style text-variable-collection-basic-black whitespace-nowrap">
-                9:41
-              </div>
-
-              {/* 오른쪽: 신호 + WiFi + 배터리 */}
-              <div className="flex items-center gap-1">
-                <img
-                  className="h-3"
-                  alt="Icon mobile signal"
-                  src="https://c.animaapp.com/ppTMEOHB/img/icon---mobile-signal-2.svg"
-                />
-                <img
-                  className="h-3"
-                  alt="Wifi"
-                  src="https://c.animaapp.com/ppTMEOHB/img/wifi-2.svg"
-                />
-                <img
-                  className="h-3"
-                  alt="Battery"
-                  src="https://c.animaapp.com/ppTMEOHB/img/battery-2.svg"
-                />
-              </div>
-            </div>
-          </Link>
-
           <div className="flex flex-col items-start w-full">
             <div className="flex flex-col items-start gap-2 w-full">
               <div className="w-full h-54 relative">

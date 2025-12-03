@@ -46,56 +46,6 @@ export const HistoryProgress = (): JSX.Element => {
     >
       {/* Header */}
       <header className="flex flex-col w-full items-start absolute top-0 left-0">
-        <div className="w-full flex flex-col items-start gap-2.5 relative self-stretch flex-[0_0_auto]">
-          <div className="w-full bg-white flex flex-col items-start gap-2.5 relative self-stretch flex-[0_0_auto]">
-            <div className="flex h-6 items-center justify-between px-2.5 py-1 relative self-stretch w-full bg-white">
-              <div className="inline-flex items-center gap-2 relative flex-[0_0_auto] mt-[-0.50px] mb-[-0.50px]">
-                <span className="relative w-fit mt-[-1.00px] [font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm tracking-[0] leading-[normal]">
-                  9:41
-                </span>
-              </div>
-              <div className="inline-flex items-center gap-1.5 relative flex-[0_0_auto] mt-[-0.50px] mb-[-0.50px]">
-                <img
-                  className="w-[18px] h-3"
-                  alt="Icon mobile signal"
-                  src="https://c.animaapp.com/u8GhiXiH/img/icon---mobile-signal-1.svg"
-                />
-                <img
-                  className="w-[17px] h-[11.83px]"
-                  alt="Wifi"
-                  src="https://c.animaapp.com/u8GhiXiH/img/wifi-1.svg"
-                />
-                <img
-                  className="w-[27.4px] h-[13px]"
-                  alt="Battery"
-                  src="https://c.animaapp.com/u8GhiXiH/img/battery-1.svg"
-                />
-              </div>
-            </div>
-          </div>
-
-          <div className="flex items-center gap-2.5 pl-[34px] pr-5 py-4 relative self-stretch w-full flex-[0_0_auto]">
-            <div className="relative flex-1 h-5 mt-[-1.00px] font-title-16-SB font-[number:var(--title-16-SB-font-weight)] text-white text-[length:var(--title-16-SB-font-size)] tracking-[var(--title-16-SB-letter-spacing)] leading-[var(--title-16-SB-line-height)] whitespace-nowrap [font-style:var(--title-16-SB-font-style)]">
-              9:41
-            </div>
-            <img
-              className="relative w-[18px] h-3"
-              alt="Icon mobile signal"
-              src="https://c.animaapp.com/u8GhiXiH/img/icon---mobile-signal-6.svg"
-            />
-            <img
-              className="relative w-[17px] h-[11.83px]"
-              alt="Wifi"
-              src="https://c.animaapp.com/u8GhiXiH/img/wifi-6.svg"
-            />
-            <img
-              className="relative w-[27.4px] h-[13px]"
-              alt="Battery"
-              src="https://c.animaapp.com/u8GhiXiH/img/battery-6.svg"
-            />
-          </div>
-        </div>
-
         <div className="flex flex-col items-start relative self-stretch w-full flex-[0_0_auto]">
           <div className="flex flex-col items-start gap-2 relative self-stretch w-full flex-[0_0_auto]">
             <div className="h-[54px] justify-around px-5 py-0 flex items-center relative self-stretch w-full">

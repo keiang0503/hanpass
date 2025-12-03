@@ -9,12 +9,6 @@ import { Link } from "react-router-dom";
 import { Button } from "../../components/ui/button";
 import { Checkbox } from "../../components/ui/checkbox";
 
-const statusBarData = {
-  time: "9:41",
-  date: "Sat Jun 11",
-  battery: "100%",
-};
-
 const checkboxItems = [
   {
     id: "detached-house",
@@ -37,54 +31,6 @@ export const AddressSearchResult = (): JSX.Element => {
       data-model-id="40000003:1137612"
     >
       <header className="flex flex-col bg-white">
-        <div className="flex h-6 items-center justify-between px-2.5 py-1 bg-white">
-          <div className="inline-flex items-center gap-2">
-            <div className="inline-flex items-center gap-1">
-              <div className="inline-flex items-center">
-                <span className="[font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm tracking-[0] leading-[normal]">
-                  {statusBarData.time.split(":")[0]}
-                </span>
-                <span className="[font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm tracking-[0] leading-[normal]">
-                  :
-                </span>
-                <span className="[font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm tracking-[0] leading-[normal]">
-                  {statusBarData.time.split(":")[1]}
-                </span>
-              </div>
-            </div>
-            <span className="[font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm tracking-[0] leading-[normal]">
-              {statusBarData.date}
-            </span>
-          </div>
-
-          <div className="inline-flex items-center gap-1.5">
-            <span className="[font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm tracking-[0] leading-[normal]">
-              {statusBarData.battery}
-            </span>
-          </div>
-        </div>
-
-        <div className="flex items-center gap-2.5 pl-[34px] pr-5 py-4">
-          <span className="flex-1 [font-family:'Pretendard-Medium',Helvetica] font-medium text-black text-[17px] tracking-[-0.41px] leading-[22px] whitespace-nowrap">
-            {statusBarData.time}
-          </span>
-          <img
-            className="w-[18px] h-3"
-            alt="Icon mobile signal"
-            src="https://c.animaapp.com/NpKP4m4n/img/icon---mobile-signal-7.svg"
-          />
-          <img
-            className="w-[17px] h-[11.83px]"
-            alt="Wifi"
-            src="https://c.animaapp.com/NpKP4m4n/img/wifi-5.svg"
-          />
-          <img
-            className="w-[27.4px] h-[13px]"
-            alt="Battery"
-            src="https://c.animaapp.com/NpKP4m4n/img/battery-5.svg"
-          />
-        </div>
-
         <nav className="flex h-[54px] items-center justify-between px-5 py-0 bg-white">
           <Button variant="ghost" size="icon" className="h-8 w-8 p-0" asChild>
             <Link to="/addressdetailinputu95045">

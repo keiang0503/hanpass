@@ -25,32 +25,6 @@ export const Nationality = (): JSX.Element => {
       data-model-id="40000001:45762"
     >
       <header className="flex flex-col w-full bg-white">
-        <div className="flex h-11 items-center justify-between px-5 py-2.5">
-          <div className="flex items-center gap-2">
-            <span className="[font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm">
-              9:41
-            </span>
-          </div>
-
-          <div className="flex items-center gap-1.5">
-            <img
-              className="w-[18px] h-2.5"
-              alt="Icon mobile signal"
-              src="https://c.animaapp.com/kFnLzJf2/img/icon---mobile-signal-4.svg"
-            />
-            <img
-              className="w-[17px] h-[11.83px]"
-              alt="Wifi"
-              src="https://c.animaapp.com/kFnLzJf2/img/wifi-4.svg"
-            />
-            <img
-              className="w-[27.4px] h-[13px]"
-              alt="Battery"
-              src="https://c.animaapp.com/kFnLzJf2/img/battery-4.svg"
-            />
-          </div>
-        </div>
-
         <nav className="flex items-center justify-between px-5 py-4 w-full">
           <Button variant="ghost" size="icon" className="h-auto p-0" asChild>
             <Link to="/signupscreenu95005">

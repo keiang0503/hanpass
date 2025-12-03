@@ -12,34 +12,6 @@ export const SettingsFaceidScreen = (): JSX.Element => {
       data-model-id="36848:80005"
     >
       <header className="flex flex-col w-full bg-white">
-        <div className="flex items-center justify-between px-5 py-4 h-11">
-          <div className="flex items-center gap-2">
-            <time className="[font-family:'Pretendard-Medium',Helvetica] font-medium text-black text-[17px] tracking-[-0.41px] leading-[22px]">
-              9:41
-            </time>
-          </div>
-
-          <div className="flex items-center gap-1.5">
-            <img
-              className="w-[18px] h-3"
-              alt="Icon mobile signal"
-              src="https://c.animaapp.com/THCauiAv/img/icon---mobile-signal-2.svg"
-            />
-
-            <img
-              className="w-[17px] h-[11.83px]"
-              alt="Wifi"
-              src="https://c.animaapp.com/THCauiAv/img/wifi-2.svg"
-            />
-
-            <img
-              className="w-[27.4px] h-[13px]"
-              alt="Battery"
-              src="https://c.animaapp.com/THCauiAv/img/battery-1.svg"
-            />
-          </div>
-        </div>
-
         <nav className="flex items-center justify-between px-6 py-4 h-14">
           <Button variant="ghost" size="icon" className="h-8 w-8 p-0">
             <ChevronLeftIcon className="h-6 w-6" />

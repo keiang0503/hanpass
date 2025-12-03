@@ -25,28 +25,6 @@ export const PassportInfoInput = (): JSX.Element => {
       data-model-id="35213:88245"
     >
       <header className="flex flex-col bg-white">
-        <div className="flex items-center justify-between px-5 py-4 w-full">
-          <div className="flex-1 font-[number:var(--title-16-b-font-weight)] text-black text-[17px] tracking-[-0.41px] leading-[22px]">
-            9:41
-          </div>
-
-          <img
-            className="w-[18px] h-3"
-            alt="Icon mobile signal"
-            src="https://c.animaapp.com/dojq12ez/img/icon---mobile-signal-5.svg"
-          />
-          <img
-            className="w-[17px] h-[11.83px] ml-2"
-            alt="Wifi"
-            src="https://c.animaapp.com/dojq12ez/img/wifi-4.svg"
-          />
-          <img
-            className="w-[27.4px] h-[13px] ml-2"
-            alt="Battery"
-            src="https://c.animaapp.com/dojq12ez/img/battery-5.svg"
-          />
-        </div>
-
         <nav className="flex items-center justify-between px-5 py-4 bg-white">
           <Link to="/">
             <ChevronLeftIcon className="w-6 h-6 text-black" />

@@ -1,67 +1,7 @@
-import { ChevronDownIcon, ChevronLeftIcon } from "lucide-react";
+import { ChevronDownIcon } from "lucide-react";
 import React from "react";
-import { Link } from "react-router-dom";
 import { Button } from "../../../../components/ui/button";
 import { Card, CardContent } from "../../../../components/ui/card";
-
-const statusBarData = {
-  time: "9:41",
-  date: "Sat Jun 11",
-  signalBars: [
-    {
-      height: "h-[40.00%]",
-      top: "top-[-120.00%]",
-      left: "left-[-12988.89%]",
-      width: "w-[16.67%]",
-      src: "/img/bar-1-8.png",
-    },
-    {
-      height: "h-[60.00%]",
-      top: "top-[-140.00%]",
-      left: "left-[-12961.11%]",
-      width: "w-[16.67%]",
-      src: "/img/bar-2-9.png",
-    },
-    {
-      height: "h-[80.00%]",
-      top: "top-[-160.00%]",
-      left: "left-[-12933.33%]",
-      width: "w-[16.67%]",
-      src: "/img/bar-3-9.png",
-    },
-    {
-      height: "h-[100.00%]",
-      top: "top-[-180.00%]",
-      left: "left-[-12905.56%]",
-      width: "w-[16.67%]",
-      src: "/img/bar-4-5.png",
-    },
-  ],
-  wifiBars: [
-    {
-      width: "w-[31.30%]",
-      height: "h-[30.17%]",
-      top: "top-[-78.11%]",
-      left: "left-[-14728.18%]",
-      src: "/img/bar-1-9.png",
-    },
-    {
-      width: "w-[62.57%]",
-      height: "h-[34.44%]",
-      top: "top-[-114.22%]",
-      left: "left-[-14743.75%]",
-      src: "/img/bar-2-10.png",
-    },
-    {
-      width: "w-[100.01%]",
-      height: "h-[43.03%]",
-      top: "top-[-147.94%]",
-      left: "left-[-14762.52%]",
-      src: "/img/bar-3-10.png",
-    },
-  ],
-  battery: "100%",
-};
 
 const accountData = {
   bankIcon:
@@ -122,53 +62,6 @@ export const TransactionDetailsSection = (): JSX.Element => {
   return (
     <div className="flex flex-col items-center w-full">
       <div className="flex flex-col items-start w-full">
-        <Link
-          className="w-full flex flex-col items-start gap-2.5 bg-white"
-          to="/homeu95001u8232u4370u4457u4535-u40u4357u4457u4352u4467u4363u4469u4523u412"
-        >
-          <div className="flex items-center gap-2.5 pl-[34px] pr-5 py-4 w-full">
-            <div className="flex-1 h-5 mt-[-1.00px] font-title-16-SB font-[number:var(--title-16-SB-font-weight)] text-black text-[length:var(--title-16-SB-font-size)] tracking-[var(--title-16-SB-letter-spacing)] leading-[var(--title-16-SB-line-height)] whitespace-nowrap [font-style:var(--title-16-SB-font-style)]">
-              9:41
-            </div>
-
-            <img
-              className="w-[18px] h-3"
-              alt="Icon mobile signal"
-              src="https://c.animaapp.com/FyEwllI9/img/icon---mobile-signal-8.svg"
-            />
-
-            <img
-              className="w-[17px] h-[11.83px]"
-              alt="Wifi"
-              src="https://c.animaapp.com/FyEwllI9/img/wifi-7.svg"
-            />
-
-            <img
-              className="w-[27.4px] h-[13px]"
-              alt="Battery"
-              src="https://c.animaapp.com/FyEwllI9/img/battery-8.svg"
-            />
-          </div>
-        </Link>
-
-        <nav className="flex flex-col items-start relative self-stretch w-full flex-none">
-          <div className="flex flex-col items-start gap-2 relative self-stretch w-full flex-none">
-            <div className="nav-header relative self-stretch w-full flex items-center justify-between px-1.5 bg-white">
-              <Link
-                to="/homeu95001u8232u4370u4457u4535-u40u4357u4457u4352u4467u4363u4469u4523u412"
-                className="flex items-center justify-center w-8 h-8"
-              >
-                <ChevronLeftIcon className="w-8 h-8 text-variable-collection-grayscale-01-0b0c0e" />
-              </Link>
-              <img
-                className="h-8"
-                alt="Mini"
-                src="https://c.animaapp.com/FyEwllI9/img/mini-8@2x.png"
-              />
-            </div>
-          </div>
-        </nav>
-
         <div className="flex-col items-start flex w-full">
           <div className="flex-col justify-center gap-2 w-full flex items-start">
             <div className="flex h-[54px] items-center justify-around px-5 py-0 w-full">

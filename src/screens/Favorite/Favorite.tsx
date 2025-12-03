@@ -35,35 +35,6 @@ export const Favorite = (): JSX.Element => {
       data-model-id="3:29689"
     >
       <div className="flex-col items-center justify-center flex-1 grow bg-variable-collection-basic-white flex relative">
-          {/* Status Bar */}
-          <header className="flex flex-col items-start w-full bg-variable-collection-basic-white">
-            <div className="w-full h-47 flex items-center justify-between px-6">
-              {/* 왼쪽: 시계 */}
-              <div className="text-body-bold-style text-variable-collection-basic-black whitespace-nowrap">
-                9:41
-              </div>
-
-              {/* 오른쪽: 신호 + WiFi + 배터리 */}
-              <div className="flex items-center gap-1">
-                <img
-                  className="h-3"
-                  alt="Icon mobile signal"
-                  src="https://c.animaapp.com/ppTMEOHB/img/icon---mobile-signal-2.svg"
-                />
-                <img
-                  className="h-3"
-                  alt="Wifi"
-                  src="https://c.animaapp.com/ppTMEOHB/img/wifi-2.svg"
-                />
-                <img
-                  className="h-3"
-                  alt="Battery"
-                  src="https://c.animaapp.com/ppTMEOHB/img/battery-2.svg"
-                />
-              </div>
-            </div>
-          </header>
-
           {/* Navigation Header */}
           <nav className="flex flex-col items-start relative self-stretch w-full flex-none">
             <div className="flex flex-col items-start gap-2 relative self-stretch w-full flex-none">

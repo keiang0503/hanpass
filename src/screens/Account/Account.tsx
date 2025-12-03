@@ -49,56 +49,6 @@ export const Account = (): JSX.Element => {
       data-model-id="34978:31881"
     >
       <header className="flex flex-col w-full bg-white">
-        <div className="flex h-6 items-center justify-between px-2.5 py-1 w-full bg-white">
-          <div className="inline-flex items-center gap-2">
-            <div className="inline-flex items-center gap-1">
-              <div className="inline-flex items-center">
-                <div className="[font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm tracking-[0] leading-[normal]">
-                  9
-                </div>
-                <div className="[font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm tracking-[0] leading-[normal]">
-                  :
-                </div>
-                <div className="[font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm tracking-[0] leading-[normal]">
-                  41
-                </div>
-              </div>
-            </div>
-            <div className="[font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm tracking-[0] leading-[normal]">
-              Sat Jun 11
-            </div>
-          </div>
-
-          <div className="inline-flex items-center gap-1.5">
-            <div className="[font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm tracking-[0] leading-[normal]">
-              100%
-            </div>
-          </div>
-        </div>
-
-        <div className="flex items-center gap-2.5 pl-[34px] pr-5 py-4 w-full">
-          <div className="flex-1 h-5 [font-family:'Pretendard-Medium',Helvetica] font-medium text-black text-[17px] tracking-[-0.41px] leading-[22px] whitespace-nowrap">
-            9:41
-          </div>
-
-          <img
-            className="w-[18px] h-3"
-            alt="Icon mobile signal"
-            src="https://c.animaapp.com/ELrb3VWQ/img/icon---mobile-signal-6.svg"
-          />
-
-          <img
-            className="w-[17px] h-[11.83px]"
-            alt="Wifi"
-            src="https://c.animaapp.com/ELrb3VWQ/img/wifi-6.svg"
-          />
-
-          <img
-            className="w-[27.4px] h-[13px]"
-            alt="Battery"
-            src="https://c.animaapp.com/ELrb3VWQ/img/battery-6.svg"
-          />
-        </div>
       </header>
 
       <nav className="flex flex-col w-full">

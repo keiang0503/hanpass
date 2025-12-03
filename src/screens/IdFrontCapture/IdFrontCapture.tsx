@@ -11,32 +11,6 @@ export const IdFrontCapture = (): JSX.Element => {
     >
       <div className="flex flex-col w-full h-full">
         <div className="flex items-center justify-between px-5 py-4 relative w-full">
-          <div className="relative flex-1 h-5 mt-[-1.00px] font-title-16-SB font-[number:var(--title-16-SB-font-weight)] text-white text-[length:var(--title-16-SB-font-size)] tracking-[var(--title-16-SB-letter-spacing)] leading-[var(--title-16-SB-line-height)] whitespace-nowrap [font-style:var(--title-16-SB-font-style)]">
-            9:41
-          </div>
-
-          <div className="flex items-center gap-1.5">
-            <img
-              className="relative w-[18px] h-3"
-              alt="Icon mobile signal"
-              src="https://c.animaapp.com/SXpbAKOQ/img/icon---mobile-signal-8.svg"
-            />
-
-            <img
-              className="relative w-[17px] h-[11.83px]"
-              alt="Wifi"
-              src="https://c.animaapp.com/SXpbAKOQ/img/wifi-6.svg"
-            />
-
-            <img
-              className="relative w-[27.4px] h-[13px]"
-              alt="Battery"
-              src="https://c.animaapp.com/SXpbAKOQ/img/battery-6.svg"
-            />
-          </div>
-        </div>
-
-        <div className="flex items-center justify-between px-5 py-4 relative w-full">
           <Button
             variant="ghost"
             size="icon"

@@ -4,7 +4,6 @@ import { DivSubsection } from "./sections/DivSubsection";
 import { DivWrapperSubsection } from "./sections/DivWrapperSubsection";
 import { FrameSubsection } from "./sections/FrameSubsection";
 import { TopSubsection } from "./sections/TopSubsection";
-import { UiStatusBarWrapperSubsection } from "./sections/UiStatusBarWrapperSubsection";
 import { ViewWrapperSubsection } from "./sections/ViewWrapperSubsection";
 
 export const Mypage = (): JSX.Element => {
@@ -13,7 +12,6 @@ export const Mypage = (): JSX.Element => {
       className="flex flex-col min-h-screen items-center bg-white"
       data-model-id="36848:79034"
     >
-      <UiStatusBarWrapperSubsection />
 
       <header className="flex flex-col items-start w-full">
         <div className="flex flex-col items-start gap-2 w-full">

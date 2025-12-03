@@ -8,11 +8,6 @@ import {
 import React from "react";
 import { Button } from "../../components/ui/button";
 
-const statusBarData = {
-  time: "9:41",
-  date: "Sat Jun 11",
-};
-
 const pinIndicators = [
   { filled: true },
   { filled: true },
@@ -36,59 +31,6 @@ export const PinInput = (): JSX.Element => {
     >
       <div className="flex w-[375px] h-[800px] relative flex-col items-start bg-white">
         <header className="flex flex-col items-start relative self-stretch w-full bg-white">
-          <div className="flex flex-col h-6 items-start px-2.5 py-1 relative self-stretch w-full bg-white">
-            <div className="flex items-center justify-between w-full">
-              <div className="inline-flex items-center gap-2">
-                <div className="inline-flex items-center gap-1">
-                  <div className="inline-flex items-center">
-                    <span className="[font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm tracking-[0] leading-[normal]">
-                      {statusBarData.time.split(":")[0]}
-                    </span>
-                    <span className="[font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm tracking-[0] leading-[normal]">
-                      :
-                    </span>
-                    <span className="[font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm tracking-[0] leading-[normal]">
-                      {statusBarData.time.split(":")[1]}
-                    </span>
-                  </div>
-                </div>
-                <span className="[font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm tracking-[0] leading-[normal]">
-                  {statusBarData.date}
-                </span>
-              </div>
-
-              <div className="inline-flex items-center gap-1.5">
-                <div className="relative w-fit mt-[-1.00px] [font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm tracking-[0] leading-[normal]">
-                  100%
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="flex items-center gap-2.5 pl-[34px] pr-5 py-4 relative self-stretch w-full">
-            <span className="relative flex-1 h-5 mt-[-1.00px] [font-family:'Pretendard-Medium',Helvetica] font-medium text-black text-[17px] tracking-[-0.41px] leading-[22px] whitespace-nowrap">
-              {statusBarData.time}
-            </span>
-
-            <img
-              className="relative w-[18px] h-3"
-              alt="Icon mobile signal"
-              src="https://c.animaapp.com/X2DaSZUE/img/icon---mobile-signal-7.svg"
-            />
-
-            <img
-              className="relative w-[17px] h-[11.83px]"
-              alt="Wifi"
-              src="https://c.animaapp.com/X2DaSZUE/img/wifi-6.svg"
-            />
-
-            <img
-              className="relative w-[27.4px] h-[13px]"
-              alt="Battery"
-              src="https://c.animaapp.com/X2DaSZUE/img/battery-7.svg"
-            />
-          </div>
-
           <nav className="flex items-center justify-between px-5 py-4 relative self-stretch w-full">
             <Button variant="ghost" size="icon" className="h-auto p-0">
               <ChevronLeftIcon className="w-6 h-6 text-black" />

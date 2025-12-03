@@ -8,34 +8,6 @@ export const HistoryDetail3 = (): JSX.Element => {
       className="flex flex-col items-start bg-white"
       data-model-id="35176:68739"
     >
-      {/* Status Bar */}
-      <div className="flex flex-col w-full items-start gap-2.5 bg-white">
-        <div className="flex h-6 items-center justify-between px-2.5 py-1 w-full bg-white">
-          <div className="inline-flex items-center gap-2">
-            <span className="[font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm">
-              9:41
-            </span>
-          </div>
-          <div className="inline-flex items-center gap-1.5">
-            <img
-              className="w-[18px] h-3"
-              alt="Icon mobile signal"
-              src="https://c.animaapp.com/u8GhiXiH/img/icon---mobile-signal-1.svg"
-            />
-            <img
-              className="w-[17px] h-[11.83px]"
-              alt="Wifi"
-              src="https://c.animaapp.com/u8GhiXiH/img/wifi-1.svg"
-            />
-            <img
-              className="w-[27.4px] h-[13px]"
-              alt="Battery"
-              src="https://c.animaapp.com/u8GhiXiH/img/battery-1.svg"
-            />
-          </div>
-        </div>
-      </div>
-
       {/* Header */}
       <header className="flex flex-col items-start w-full bg-white">
         <div className="flex h-14 items-center justify-between px-4 w-full">

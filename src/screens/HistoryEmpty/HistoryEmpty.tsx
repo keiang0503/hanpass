@@ -12,33 +12,6 @@ export const HistoryEmpty = (): JSX.Element => {
       className="flex flex-col min-h-screen bg-[#f7f7f8]"
       data-model-id="34892:276594"
     >
-      {/* Header */}
-      <header className="w-full bg-white">
-        <div className="flex items-center gap-2.5 pl-[34px] pr-5 py-4">
-          <span className="flex-1 [font-family:'Pretendard-Medium',Helvetica] font-medium text-black text-[17px] tracking-[-0.41px] leading-[22px]">
-            9:41
-          </span>
-
-          <img
-            className="w-[18px] h-3"
-            alt="Icon mobile signal"
-            src="https://c.animaapp.com/u8GhiXiH/img/icon---mobile-signal-1.svg"
-          />
-
-          <img
-            className="w-[17px] h-[11.83px]"
-            alt="Wifi"
-            src="https://c.animaapp.com/u8GhiXiH/img/wifi-1.svg"
-          />
-
-          <img
-            className="w-[27.4px] h-[13px]"
-            alt="Battery"
-            src="https://c.animaapp.com/u8GhiXiH/img/battery-1.svg"
-          />
-        </div>
-      </header>
-
       {/* Logo Bar */}
       <div className="flex flex-col bg-white">
         <div className="flex items-center justify-between h-[54px] px-5 bg-white">

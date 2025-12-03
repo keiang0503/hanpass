@@ -8,12 +8,6 @@ import {
   TabsTrigger,
 } from "../../components/ui/tabs";
 
-const statusBarData = {
-  time: "9:41",
-  date: "Sat Jun 11",
-  battery: "100%",
-};
-
 const tabsData = [
   { value: "ongoing", label: "진행 중인 이벤트" },
   { value: "past", label: "지난 이벤트" },
@@ -26,44 +20,6 @@ export const EventEmpty = (): JSX.Element => {
       data-model-id="34877:79297"
     >
       <header className="flex flex-col w-full bg-white">
-        <div className="flex h-6 items-center justify-between px-2.5 py-1 w-full bg-white">
-          <div className="inline-flex items-center gap-2">
-            <div className="inline-flex items-center gap-1">
-              <div className="inline-flex items-center">
-                <span className="[font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm tracking-[0] leading-[normal]">
-                  {statusBarData.time.split(":")[0]}
-                </span>
-                <span className="[font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm tracking-[0] leading-[normal]">
-                  :
-                </span>
-                <span className="[font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm tracking-[0] leading-[normal]">
-                  {statusBarData.time.split(":")[1]}
-                </span>
-              </div>
-            </div>
-            <span className="[font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm tracking-[0] leading-[normal]">
-              {statusBarData.date}
-            </span>
-          </div>
-
-          <div className="inline-flex items-center gap-1.5">
-            <img
-              className="w-[18px] h-3"
-              alt="Icon mobile signal"
-              src="https://c.animaapp.com/dhMJne4N/img/icon---mobile-signal-2.svg"
-            />
-            <img
-              className="w-[17px] h-[11.83px]"
-              alt="Wifi"
-              src="https://c.animaapp.com/dhMJne4N/img/wifi-2.svg"
-            />
-            <img
-              className="w-[27.4px] h-[13px]"
-              alt="Battery"
-              src="https://c.animaapp.com/dhMJne4N/img/battery-2.svg"
-            />
-          </div>
-        </div>
       </header>
 
       <nav className="flex flex-col items-start w-full bg-white">

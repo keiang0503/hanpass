@@ -9,59 +9,6 @@ export const LoginScreen = (): JSX.Element => {
       data-model-id="40000008:1156158"
     >
       <header className="absolute top-0 left-0 w-full flex flex-col">
-        <div className="w-full bg-white flex flex-col">
-          <div className="flex h-6 items-center justify-between px-2.5 py-1 bg-white">
-            <div className="inline-flex items-center gap-2">
-              <div className="inline-flex items-center gap-1">
-                <div className="inline-flex items-center">
-                  <div className="[font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm">
-                    9
-                  </div>
-                  <div className="[font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm">
-                    :
-                  </div>
-                  <div className="[font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm">
-                    41
-                  </div>
-                </div>
-              </div>
-              <div className="[font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm">
-                Sat Jun 11
-              </div>
-            </div>
-
-            <div className="inline-flex items-center gap-1.5">
-              <div className="[font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm">
-                100%
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="flex items-center gap-2.5 pl-[34px] pr-5 py-4 w-full">
-          <div className="flex-1 h-5 font-title-16-SB font-[number:var(--title-16-SB-font-weight)] text-white text-[length:var(--title-16-SB-font-size)] tracking-[var(--title-16-SB-letter-spacing)] leading-[var(--title-16-SB-line-height)] whitespace-nowrap [font-style:var(--title-16-SB-font-style)]">
-            9:41
-          </div>
-
-          <img
-            className="w-[18px] h-3"
-            alt="Icon mobile signal"
-            src="https://c.animaapp.com/ELrb3VWQ/img/icon---mobile-signal-7.svg"
-          />
-
-          <img
-            className="w-[17px] h-[11.83px]"
-            alt="Wifi"
-            src="https://c.animaapp.com/ELrb3VWQ/img/wifi-5.svg"
-          />
-
-          <img
-            className="w-[27.4px] h-[13px]"
-            alt="Battery"
-            src="https://c.animaapp.com/ELrb3VWQ/img/battery-5.svg"
-          />
-        </div>
-
         <div className="flex flex-col items-start w-full">
           <div className="flex flex-col items-start gap-2 w-full">
             <div className="flex h-[54px] items-center justify-around px-5 py-0 w-full relative">

@@ -38,29 +38,6 @@ export const CardVerification = (): JSX.Element => {
       data-model-id="35213:88072"
     >
       <header className="flex flex-col w-full bg-white">
-        <div className="flex items-center justify-between px-5 py-4 w-full">
-          <div className="flex-1 [font-family:'Pretendard-Medium',Helvetica] font-medium text-black text-[17px] tracking-[-0.41px] leading-[22px]">
-            9:41
-          </div>
-          <div className="flex items-center gap-1.5">
-            <img
-              className="w-[18px] h-3"
-              alt="Icon mobile signal"
-              src="https://c.animaapp.com/UrLjfz9Z/img/icon---mobile-signal-6.svg"
-            />
-            <img
-              className="w-[17px] h-[11.83px]"
-              alt="Wifi"
-              src="https://c.animaapp.com/UrLjfz9Z/img/wifi-6.svg"
-            />
-            <img
-              className="w-[27.4px] h-[13px]"
-              alt="Battery"
-              src="https://c.animaapp.com/UrLjfz9Z/img/battery-6.svg"
-            />
-          </div>
-        </div>
-
         <nav className="flex items-center justify-between px-5 py-4 w-full">
           <Button variant="ghost" size="icon" className="h-8 w-8 p-0">
             <ChevronLeftIcon className="h-6 w-6" />

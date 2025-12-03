@@ -13,26 +13,6 @@ export const ReferralCodeInput = (): JSX.Element => {
       data-model-id="36893:39789"
     >
       <header className="w-full flex flex-col bg-white">
-        <div className="flex items-center gap-2.5 pl-[34px] pr-5 py-4">
-          <time className="font-title-16-SB font-[number:var(--title-16-SB-font-weight)] text-black text-[length:var(--title-16-SB-font-size)] tracking-[var(--title-16-SB-letter-spacing)] leading-[var(--title-16-SB-line-height)] flex-1 whitespace-nowrap [font-style:var(--title-16-SB-font-style)]">
-            9:41
-          </time>
-          <img
-            className="w-[18px] h-3"
-            alt="Icon mobile signal"
-            src="https://c.animaapp.com/SXpbAKOQ/img/icon---mobile-signal-9.svg"
-          />
-          <img
-            className="w-[17px] h-[11.83px]"
-            alt="Wifi"
-            src="https://c.animaapp.com/SXpbAKOQ/img/wifi.svg"
-          />
-          <img
-            className="w-[27.4px] h-[13px]"
-            alt="Battery"
-            src="https://c.animaapp.com/SXpbAKOQ/img/battery-9.svg"
-          />
-        </div>
       </header>
 
       <nav className="flex flex-col bg-white">

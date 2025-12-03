@@ -10,59 +10,6 @@ export const AccountVerify = (): JSX.Element => {
       data-model-id="34892:268556"
     >
       <header className="w-full flex flex-col items-start gap-2.5 relative self-stretch flex-[0_0_auto]">
-        <div className="w-full bg-white flex flex-col items-start gap-2.5 relative self-stretch flex-[0_0_auto]">
-          <div className="flex h-6 items-center justify-between px-2.5 py-1 relative self-stretch w-full bg-white">
-            <div className="inline-flex items-center gap-2 relative flex-[0_0_auto] mt-[-0.50px] mb-[-0.50px]">
-              <div className="inline-flex items-center gap-1 relative flex-[0_0_auto]">
-                <div className="inline-flex items-center relative flex-[0_0_auto]">
-                  <div className="relative w-fit mt-[-1.00px] [font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm tracking-[0] leading-[normal]">
-                    9
-                  </div>
-                  <div className="relative w-fit mt-[-1.00px] [font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm tracking-[0] leading-[normal]">
-                    :
-                  </div>
-                  <div className="relative w-fit mt-[-1.00px] [font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm tracking-[0] leading-[normal]">
-                    41
-                  </div>
-                </div>
-              </div>
-
-              <div className="relative w-fit mt-[-1.00px] [font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm tracking-[0] leading-[normal]">
-                Sat Jun 11
-              </div>
-            </div>
-
-            <div className="inline-flex items-center gap-1.5 relative flex-[0_0_auto] mt-[-0.50px] mb-[-0.50px]">
-              <div className="relative w-fit mt-[-1.00px] [font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm tracking-[0] leading-[normal]">
-                100%
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="flex items-center gap-2.5 pl-[34px] pr-5 py-4 relative self-stretch w-full flex-[0_0_auto]">
-          <div className="relative flex-1 h-5 mt-[-1.00px] [font-family:'Pretendard-Medium',Helvetica] font-medium text-black text-[17px] tracking-[-0.41px] leading-[22px] whitespace-nowrap">
-            9:41
-          </div>
-
-          <img
-            className="relative w-[18px] h-3"
-            alt="Icon mobile signal"
-            src="https://c.animaapp.com/X2DaSZUE/img/icon---mobile-signal-7.svg"
-          />
-
-          <img
-            className="relative w-[17px] h-[11.83px]"
-            alt="Wifi"
-            src="https://c.animaapp.com/X2DaSZUE/img/wifi-6.svg"
-          />
-
-          <img
-            className="relative w-[27.4px] h-[13px]"
-            alt="Battery"
-            src="https://c.animaapp.com/X2DaSZUE/img/battery-7.svg"
-          />
-        </div>
       </header>
 
       <main className="flex flex-col items-center gap-9 px-6 py-0 relative flex-1 self-stretch w-full">

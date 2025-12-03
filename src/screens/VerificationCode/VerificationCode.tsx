@@ -20,39 +20,6 @@ const keypadData = [
 export const VerificationCode = (): JSX.Element => {
   return (
     <div className="flex flex-col bg-white" data-model-id="40000001:45837">
-      {/* Status Bar Section */}
-      <header className="w-full bg-white">
-        <div className="flex items-center justify-between px-5 py-3">
-          <time className="[font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm tracking-[0] leading-normal">
-            9:41
-          </time>
-
-          <div className="flex items-center gap-1.5">
-            <div className="relative w-[18px] h-2.5">
-              <div className="absolute h-[40%] w-[16.67%] top-0 left-0 bg-black rounded-sm" />
-              <div className="absolute h-[60%] w-[16.67%] top-[40%] left-[5px] bg-black rounded-sm" />
-              <div className="absolute h-[80%] w-[16.67%] top-[20%] left-[10px] bg-black rounded-sm" />
-              <div className="absolute h-full w-[16.67%] top-0 left-[15px] bg-black rounded-sm" />
-            </div>
-
-            <div className="w-4 h-3 flex items-center justify-center">
-              <svg width="16" height="12" viewBox="0 0 16 12" fill="none">
-                <path d="M8 2.5C10.5 2.5 12.7 3.6 14.2 5.4L15.6 4C13.8 1.9 11.1 0.5 8 0.5C4.9 0.5 2.2 1.9 0.4 4L1.8 5.4C3.3 3.6 5.5 2.5 8 2.5ZM8 5.5C9.5 5.5 10.9 6.1 11.9 7.1L13.3 5.7C11.9 4.3 10 3.5 8 3.5C6 3.5 4.1 4.3 2.7 5.7L4.1 7.1C5.1 6.1 6.5 5.5 8 5.5ZM8 8.5C7.2 8.5 6.5 8.8 5.9 9.4L8 11.5L10.1 9.4C9.5 8.8 8.8 8.5 8 8.5Z" fill="black"/>
-              </svg>
-            </div>
-
-            <span className="[font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm tracking-[0] leading-normal">
-              100%
-            </span>
-
-            <div className="relative w-6 h-3 overflow-hidden">
-              <div className="w-[22px] h-3 border border-black rounded-sm" />
-              <div className="absolute w-[17px] h-[8px] top-[2px] left-[2px] bg-black rounded-[1px]" />
-            </div>
-          </div>
-        </div>
-      </header>
-
       {/* Navigation Header */}
       <header className="flex flex-col w-full bg-white">
         <div className="flex items-center justify-between h-[54px] px-5 relative w-full">

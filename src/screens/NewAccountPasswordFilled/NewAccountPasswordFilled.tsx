@@ -9,23 +9,6 @@ export const NewAccountPasswordFilled = (): JSX.Element => {
       {/* WeChat Header Section */}
       <header className="flex flex-col w-full items-start">
         <div className="flex flex-col w-full items-start bg-[#ededed]">
-          <div className="flex h-[47px] items-start w-full">
-            <div className="flex flex-1 grow flex-col items-start gap-2.5 py-3.5 relative">
-              <div className="flex flex-col items-center gap-2.5 px-8 py-0 w-full relative flex-[0_0_auto]">
-                <div className="inline-flex items-start gap-[5px] relative flex-[0_0_auto]">
-                  <div className="relative w-fit mt-[-1.00px] [font-family:'PingFang_SC-Semibold',Helvetica] font-semibold text-[#000000cc] text-base tracking-[0] leading-5 whitespace-nowrap">
-                    9:41
-                  </div>
-                </div>
-              </div>
-              <img
-                className="absolute w-[76px] h-[13px] top-4 left-[290px]"
-                alt="WeChat Header Icons"
-                src="/img/wechat-hd.svg"
-              />
-            </div>
-          </div>
-
           <div className="flex h-12 items-center gap-[158px] px-4 py-2.5 w-full">
             <Button variant="ghost" size="icon" className="h-8 w-8 p-0" asChild>
               <Link to="/newaccountpasswordu95016">

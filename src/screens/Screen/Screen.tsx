@@ -23,32 +23,6 @@ export const Screen = (): JSX.Element => {
         </div>
       </header>
 
-      <div className="flex items-center justify-between w-full px-5 py-4 bg-white">
-        <div className="relative flex-1 h-5 mt-[-1.00px] [font-family:'Pretendard-Medium',Helvetica] font-medium text-black text-[17px] tracking-[-0.41px] leading-[22px] whitespace-nowrap">
-          9:41
-        </div>
-
-        <div className="flex items-center gap-1.5">
-          <img
-            className="relative w-[18px] h-3"
-            alt="Icon mobile signal"
-            src="https://c.animaapp.com/MgOgZxnr/img/icon---mobile-signal-7.svg"
-          />
-
-          <img
-            className="relative w-[17px] h-[11.83px]"
-            alt="Wifi"
-            src="https://c.animaapp.com/MgOgZxnr/img/wifi-7.svg"
-          />
-
-          <img
-            className="relative w-[27.4px] h-[13px]"
-            alt="Battery"
-            src="https://c.animaapp.com/MgOgZxnr/img/battery-7.svg"
-          />
-        </div>
-      </div>
-
       <main className="flex flex-col w-full flex-1 bg-white">
         <div className="flex flex-col items-start pt-[22px] pb-0 px-6 w-full">
           <h1 className="font-title-24-b font-[number:var(--title-24-b-font-weight)] text-[#0b0c0e] text-[length:var(--title-24-b-font-size)] tracking-[var(--title-24-b-letter-spacing)] leading-[var(--title-24-b-line-height)] [font-style:var(--title-24-b-font-style)]">

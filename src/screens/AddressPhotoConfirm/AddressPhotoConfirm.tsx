@@ -13,54 +13,6 @@ export const AddressPhotoConfirm = (): JSX.Element => {
       data-model-id="2674:64368"
     >
       <header className="flex flex-col w-full bg-white">
-        <div className="flex h-6 items-center justify-between px-2.5 py-1 w-full bg-white">
-          <div className="inline-flex items-center gap-2">
-            <div className="inline-flex items-center gap-1">
-              <div className="inline-flex items-center">
-                <span className="[font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm">
-                  9
-                </span>
-                <span className="[font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm">
-                  :
-                </span>
-                <span className="[font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm">
-                  41
-                </span>
-              </div>
-            </div>
-            <span className="[font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm">
-              Sat Jun 11
-            </span>
-          </div>
-
-          <div className="inline-flex items-center gap-1.5">
-            <span className="[font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm">
-              100%
-            </span>
-          </div>
-        </div>
-
-        <div className="flex items-center gap-2.5 pl-[34px] pr-5 py-4 w-full">
-          <span className="flex-1 h-5 [font-family:'Pretendard-Medium',Helvetica] font-medium text-black text-[17px] tracking-[-0.41px] leading-[22px] whitespace-nowrap">
-            9:41
-          </span>
-          <img
-            className="w-[18px] h-3"
-            alt="Icon mobile signal"
-            src="https://c.animaapp.com/NpKP4m4n/img/icon---mobile-signal-7.svg"
-          />
-          <img
-            className="w-[17px] h-[11.83px]"
-            alt="Wifi"
-            src="https://c.animaapp.com/NpKP4m4n/img/wifi-7.svg"
-          />
-          <img
-            className="w-[27.4px] h-[13px]"
-            alt="Battery"
-            src="https://c.animaapp.com/NpKP4m4n/img/battery-7.svg"
-          />
-        </div>
-
         <nav className="flex h-[54px] items-center justify-between px-5 py-0 w-full bg-white relative">
           <Button variant="ghost" size="icon" className="h-8 w-8 p-0" asChild>
             <Link to="/addressdetailinputu95045">

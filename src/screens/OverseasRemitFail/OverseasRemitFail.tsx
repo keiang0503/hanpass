@@ -4,31 +4,7 @@ import { Button } from "../../components/ui/button";
 export const OverseasRemitFail = (): JSX.Element => {
   return (
     <div className="w-full min-h-screen flex flex-col bg-white">
-      {/* Status Bar */}
       <header className="flex flex-col items-start w-full bg-white">
-        <div className="flex items-center justify-between px-5 py-4 w-full">
-          <span className="[font-family:'Pretendard-Medium',Helvetica] font-medium text-black text-[17px] tracking-[-0.41px] leading-[22px]">
-            9:41
-          </span>
-          <div className="flex items-center gap-1.5">
-            <img
-              className="w-[18px] h-3"
-              alt="Icon mobile signal"
-              src="https://c.animaapp.com/vuYaFJZH/img/icon---mobile-signal-9.svg"
-            />
-            <img
-              className="w-[17px] h-[11.83px]"
-              alt="Wifi"
-              src="https://c.animaapp.com/vuYaFJZH/img/wifi-5.svg"
-            />
-            <img
-              className="w-[27.4px] h-[13px]"
-              alt="Battery"
-              src="https://c.animaapp.com/vuYaFJZH/img/battery-9.svg"
-            />
-          </div>
-        </div>
-
         {/* Navigation */}
         <nav className="flex items-center justify-center px-5 py-0 h-[54px] w-full relative">
           <img

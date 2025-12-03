@@ -47,27 +47,6 @@ export const CaptureTips = (): JSX.Element => {
     >
       {/* Header */}
       <header className="flex flex-col w-full items-start absolute top-0 left-0 z-10">
-        <div className="flex items-center gap-2.5 pl-[34px] pr-5 py-4 w-full">
-          <div className="flex-1 h-5 mt-[-1.00px] font-title-16-SB font-[number:var(--title-16-SB-font-weight)] text-white text-[length:var(--title-16-SB-font-size)] tracking-[var(--title-16-SB-letter-spacing)] leading-[var(--title-16-SB-line-height)] whitespace-nowrap [font-style:var(--title-16-SB-font-style)]">
-            9:41
-          </div>
-          <img
-            className="w-[18px] h-3"
-            alt="Icon mobile signal"
-            src="https://c.animaapp.com/SXpbAKOQ/img/icon---mobile-signal-8.svg"
-          />
-          <img
-            className="w-[17px] h-[11.83px]"
-            alt="Wifi"
-            src="https://c.animaapp.com/SXpbAKOQ/img/wifi-8.svg"
-          />
-          <img
-            className="w-[27.4px] h-[13px]"
-            alt="Battery"
-            src="https://c.animaapp.com/SXpbAKOQ/img/battery-8.svg"
-          />
-        </div>
-
         <nav className="flex flex-col items-start w-full">
           <div className="flex flex-col items-start gap-2 w-full">
             <div className="h-[54px] justify-around px-5 py-0 flex items-center w-full relative">

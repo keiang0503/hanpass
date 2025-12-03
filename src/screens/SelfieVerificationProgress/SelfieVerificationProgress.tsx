@@ -9,28 +9,6 @@ export const SelfieVerificationProgress = (): JSX.Element => {
       data-model-id="34892:269224"
     >
       <header className="flex flex-col w-full bg-white">
-        <div className="flex items-center justify-between px-5 py-4 w-full">
-          <div className="flex-1 font-title-16-SB font-[number:var(--title-16-SB-font-weight)] text-black text-[length:var(--title-16-SB-font-size)] tracking-[var(--title-16-SB-letter-spacing)] leading-[var(--title-16-SB-line-height)] whitespace-nowrap [font-style:var(--title-16-SB-font-style)]">
-            9:41
-          </div>
-
-          <img
-            className="w-[18px] h-3"
-            alt="Icon mobile signal"
-            src="https://c.animaapp.com/dojq12ez/img/icon---mobile-signal-5.svg"
-          />
-          <img
-            className="w-[17px] h-[11.83px] ml-2"
-            alt="Wifi"
-            src="https://c.animaapp.com/dojq12ez/img/wifi-4.svg"
-          />
-          <img
-            className="w-[27.4px] h-[13px] ml-2"
-            alt="Battery"
-            src="https://c.animaapp.com/dojq12ez/img/battery-5.svg"
-          />
-        </div>
-
         <nav className="flex flex-col items-start w-full">
           <div className="flex flex-col items-start gap-2 w-full">
             <div className="flex h-[54px] items-center justify-around px-5 py-0 w-full bg-white relative">
