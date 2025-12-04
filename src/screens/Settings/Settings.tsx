@@ -21,7 +21,7 @@ export const Settings = (): JSX.Element => {
 
   return (
     <div
-      className="flex flex-col items-start relative bg-white min-h-screen"
+      className="flex flex-col w-full items-start relative bg-white min-h-screen"
       data-model-id="35166:94619"
     >
       <BackSubHeader backTo="/" />

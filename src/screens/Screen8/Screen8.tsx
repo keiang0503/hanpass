@@ -6,7 +6,7 @@ import { TransactionDetailsSection } from "./sections/TransactionDetailsSection"
 export const Screen8 = (): JSX.Element => {
   return (
     <div
-      className="flex flex-col items-center w-full bg-white pb-20"
+      className="flex flex-col items-center w-full min-h-screen bg-white pb-20"
       data-model-id="40000001:46294"
     >
       <BackSubHeader backTo="/" />

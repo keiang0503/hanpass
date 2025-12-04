@@ -8,7 +8,7 @@ import { Keypad } from "../../components/common/Keypad";
 
 export const VerificationCodeWechat = (): JSX.Element => {
   return (
-    <div className="flex flex-col bg-white" data-model-id="40000001:45838">
+    <div className="flex flex-col w-full min-h-screen bg-white" data-model-id="40000001:45838">
       {/* Navigation Header with WeChat Logo */}
       <BackSubHeader backTo="/" />
 

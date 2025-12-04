@@ -2,6 +2,7 @@ import { XIcon } from "lucide-react";
 import React from "react";
 import { Link } from "react-router-dom";
 import { Button } from "../../components/ui/button";
+import { PopupHeader } from "../../components/PopupHeader";
 
 const countries = [
   {
@@ -19,7 +20,7 @@ const countries = [
 export const Screen5 = (): JSX.Element => {
   return (
     <div
-      className="w-full min-w-[375px] min-h-[800px] relative flex flex-col"
+      className="w-full min-h-screen relative flex flex-col"
       data-model-id="36848:80333"
     >
       <div className="flex-1 flex items-end bg-[linear-gradient(0deg,rgba(0,0,0,0.75)_0%,rgba(0,0,0,0.75)_100%),linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(255,255,255,1)_100%)]">
@@ -83,19 +84,7 @@ export const Screen5 = (): JSX.Element => {
         </div>
       </div>
 
-      <div className="flex flex-col w-full items-start absolute top-0 left-0">
-        <div className="flex flex-col items-start w-full">
-          <div className="gap-2 flex flex-col items-start w-full">
-            <div className="h-[54px] justify-around px-5 py-0 flex items-center w-full">
-              <img
-                className="absolute h-[calc(100%_-_22px)] top-[11px] right-1.5 w-[87px]"
-                alt="Mini"
-                src="https://c.animaapp.com/MgOgZxnr/img/mini-7@2x.png"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
+      <PopupHeader />
     </div>
   );
 };

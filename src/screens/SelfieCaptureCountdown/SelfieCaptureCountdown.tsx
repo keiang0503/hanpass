@@ -1,41 +1,13 @@
-import { XIcon } from "lucide-react";
 import React from "react";
-import { Link } from "react-router-dom";
-import { Button } from "../../components/ui/button";
+import { PopupHeader } from "../../components/PopupHeader";
 
 export const SelfieCaptureCountdown = (): JSX.Element => {
   return (
     <div
-      className="flex flex-col min-h-screen items-center bg-[linear-gradient(0deg,rgba(0,0,0,0.75)_0%,rgba(0,0,0,0.75)_100%),linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(255,255,255,1)_100%)]"
+      className="flex flex-col w-full h-screen items-center bg-[linear-gradient(0deg,rgba(0,0,0,0.75)_0%,rgba(0,0,0,0.75)_100%),linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(255,255,255,1)_100%)]"
       data-model-id="40000003:530210"
     >
-      {/* Header */}
-      <header className="w-full flex flex-col items-start flex-shrink-0">
-      </header>
-
-      {/* Navigation */}
-      <nav className="flex flex-col items-start w-full flex-shrink-0">
-        <div className="flex flex-col items-start gap-2 w-full">
-          <div className="flex h-[54px] items-center justify-between px-5 py-0 w-full relative">
-            <Button
-              variant="ghost"
-              size="icon"
-              className="h-auto w-8 p-0 absolute left-1.5 top-1/2 -translate-y-1/2"
-              asChild
-            >
-              <Link to="/verificationstepsu95024">
-                <XIcon className="w-8 h-8 text-white" />
-              </Link>
-            </Button>
-
-            <img
-              className="absolute h-[calc(100%_-_22px)] top-[11px] right-1.5 w-[87px]"
-              alt="Mini"
-              src="https://c.animaapp.com/SXpbAKOQ/img/mini-9@2x.png"
-            />
-          </div>
-        </div>
-      </nav>
+      <PopupHeader />
 
       {/* Main Content */}
       <main className="flex flex-col items-center gap-[41px] pt-3.5 pb-0 px-0 w-full flex-shrink-0">

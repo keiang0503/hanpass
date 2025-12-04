@@ -1,13 +1,15 @@
 import React from "react";
 import { Button } from "../../components/ui/button";
 import { Card, CardContent } from "../../components/ui/card";
+import { PopupHeader } from "../../components/PopupHeader";
 
 export const VerificationCodeTimeout = (): JSX.Element => {
   return (
     <div
-      className="flex min-h-screen items-center justify-center gap-2.5 px-6 py-[206px] relative bg-[linear-gradient(0deg,rgba(0,0,0,0.75)_0%,rgba(0,0,0,0.75)_100%),linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(255,255,255,1)_100%)] w-full"
+      className="flex h-screen items-center justify-center gap-2.5 px-6 py-[206px] relative bg-[linear-gradient(0deg,rgba(0,0,0,0.75)_0%,rgba(0,0,0,0.75)_100%),linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(255,255,255,1)_100%)] w-full"
       data-model-id="40000003:218419"
     >
+      <PopupHeader />
       <Card className="flex flex-col w-full max-w-[432px] bg-white rounded-[22px] shadow-[0px_10px_14px_#5a5a5a29] border-0">
         <CardContent className="flex flex-col items-center gap-2.5 pt-8 pb-9 px-[22px]">
           <p className="self-stretch mt-[-1.00px] font-body-16-r font-[number:var(--body-16-r-font-weight)] text-[#1c253f] text-[length:var(--body-16-r-font-size)] tracking-[var(--body-16-r-letter-spacing)] leading-[var(--body-16-r-line-height)] [font-style:var(--body-16-r-font-style)]">

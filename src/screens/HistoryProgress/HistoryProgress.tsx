@@ -2,6 +2,7 @@ import { XIcon } from "lucide-react";
 import React from "react";
 import { Button } from "../../components/ui/button";
 import { Card, CardContent } from "../../components/ui/card";
+import { PopupHeader } from "../../components/PopupHeader";
 
 const progressSteps = [
   {
@@ -41,23 +42,11 @@ const progressSteps = [
 export const HistoryProgress = (): JSX.Element => {
   return (
     <div
-      className="flex flex-col min-h-screen items-center justify-end relative bg-[linear-gradient(0deg,rgba(0,0,0,0.75)_0%,rgba(0,0,0,0.75)_100%),linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(255,255,255,1)_100%)]"
+      className="flex flex-col w-full h-screen items-center justify-end relative bg-[linear-gradient(0deg,rgba(0,0,0,0.75)_0%,rgba(0,0,0,0.75)_100%),linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(255,255,255,1)_100%)]"
       data-model-id="35139:46485"
     >
       {/* Header */}
-      <header className="flex flex-col w-full items-start absolute top-0 left-0">
-        <div className="flex flex-col items-start relative self-stretch w-full flex-[0_0_auto]">
-          <div className="flex flex-col items-start gap-2 relative self-stretch w-full flex-[0_0_auto]">
-            <div className="h-[54px] justify-around px-5 py-0 flex items-center relative self-stretch w-full">
-              <img
-                className="absolute h-[calc(100%_-_22px)] top-[11px] right-1.5 w-[87px]"
-                alt="Mini"
-                src="https://c.animaapp.com/u8GhiXiH/img/mini-6@2x.png"
-              />
-            </div>
-          </div>
-        </div>
-      </header>
+      <PopupHeader />
 
       {/* Main Content Card */}
       <Card className="flex flex-col items-center gap-1.5 pt-0 pb-3.5 px-6 relative w-full bg-white rounded-[30px_30px_0px_0px] border-0">

@@ -7,7 +7,7 @@ import { Card, CardContent } from "../../components/ui/card";
 export const CertificateSelectEmpty = (): JSX.Element => {
   return (
     <div
-      className="flex flex-col min-h-screen items-center bg-white"
+      className="flex flex-col w-full min-h-screen items-center bg-white"
       data-model-id="35213:25512"
     >
       <div className="flex flex-col items-start w-full flex-1">

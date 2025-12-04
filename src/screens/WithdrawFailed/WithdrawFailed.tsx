@@ -6,7 +6,7 @@ import { Button } from "../../components/ui/button";
 export const WithdrawFailed = (): JSX.Element => {
   return (
     <div
-      className="flex flex-col min-h-screen items-start relative bg-white"
+      className="flex flex-col w-full min-h-screen items-start relative bg-white"
       data-model-id="40000008:1184839"
     >
       <BackSubHeader backTo="/foreignidinputu95061" />

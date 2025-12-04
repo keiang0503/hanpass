@@ -1,35 +1,13 @@
-import { XIcon } from "lucide-react";
 import React from "react";
-import { Button } from "../../components/ui/button";
+import { PopupHeader } from "../../components/PopupHeader";
 
 export const SelfCheckAuth = (): JSX.Element => {
   return (
     <div
-      className="flex flex-col min-h-screen items-center relative bg-[linear-gradient(0deg,rgba(0,0,0,0.75)_0%,rgba(0,0,0,0.75)_100%),linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(255,255,255,1)_100%)]"
+      className="flex flex-col w-full h-screen items-center relative bg-[linear-gradient(0deg,rgba(0,0,0,0.75)_0%,rgba(0,0,0,0.75)_100%),linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(255,255,255,1)_100%)]"
       data-model-id="40000008:1156008"
     >
-      <header className="w-full flex flex-col items-start gap-2.5 relative self-stretch flex-[0_0_auto]">
-      </header>
-
-      <nav className="flex flex-col items-start relative self-stretch w-full flex-[0_0_auto]">
-        <div className="flex flex-col items-start gap-2 relative self-stretch w-full flex-[0_0_auto]">
-          <div className="flex h-[54px] items-center justify-between px-5 py-0 relative self-stretch w-full">
-            <Button
-              variant="ghost"
-              size="icon"
-              className="h-auto w-8 p-0"
-            >
-              <XIcon className="w-8 h-8 text-white" />
-            </Button>
-
-            <img
-              className="w-[87px] h-8"
-              alt="Mini"
-              src="https://c.animaapp.com/ELrb3VWQ/img/mini-7@2x.png"
-            />
-          </div>
-        </div>
-      </nav>
+      <PopupHeader />
 
       <main className="flex flex-col items-center gap-[41px] pt-3.5 pb-0 px-0 self-stretch w-full flex-1">
         <section className="flex flex-col items-start gap-[7px] px-6 py-0 self-stretch w-full flex-[0_0_auto]">

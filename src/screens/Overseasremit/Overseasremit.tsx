@@ -4,6 +4,7 @@ import { Badge } from "../../components/ui/badge";
 import { Button } from "../../components/ui/button";
 import { Card, CardContent } from "../../components/ui/card";
 import { ScrollArea } from "../../components/ui/scroll-area";
+import { PopupHeader } from "../../components/PopupHeader";
 
 const paymentMethods = [
   {
@@ -44,7 +45,7 @@ const paymentMethods = [
 export const Overseasremit = (): JSX.Element => {
   return (
     <div
-      className="flex flex-col min-h-screen items-center justify-end relative bg-[linear-gradient(0deg,rgba(0,0,0,0.75)_0%,rgba(0,0,0,0.75)_100%),linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(255,255,255,1)_100%)]"
+      className="flex flex-col h-screen items-center justify-end relative bg-[linear-gradient(0deg,rgba(0,0,0,0.75)_0%,rgba(0,0,0,0.75)_100%),linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(255,255,255,1)_100%)]"
       data-model-id="2674:65617"
     >
       <div className="flex-col items-start self-stretch w-full flex-[0_0_auto] flex relative">
@@ -140,25 +141,12 @@ export const Overseasremit = (): JSX.Element => {
           </ScrollArea>
         </div>
 
-        <div className="flex flex-col items-center px-6 py-0 relative self-stretch w-full flex-[0_0_auto] bg-white">
-          <div className="flex flex-col w-full items-center gap-2.5 px-[105px] py-2 relative flex-[0_0_auto] bg-white">
-          </div>
-        </div>
+        <footer className="flex flex-col items-center gap-2.5 px-[105px] py-2 relative self-stretch w-full flex-[0_0_auto] bg-white">
+        </footer>
       </div>
 
-      <header className="flex flex-col w-full items-start absolute top-0 left-0">
-        <nav className="flex flex-col items-start relative self-stretch w-full flex-[0_0_auto]">
-          <div className="flex-col gap-2 self-stretch w-full flex-[0_0_auto] flex items-start relative">
-            <div className="h-[54px] justify-around px-5 py-0 flex items-center relative self-stretch w-full">
-              <img
-                className="absolute h-[calc(100%_-_22px)] top-[11px] right-1.5 w-[87px]"
-                alt="Mini"
-                src="https://c.animaapp.com/Fk3yL3l2/img/mini-7@2x.png"
-              />
-            </div>
-          </div>
-        </nav>
-      </header>
+      {/* Header */}
+      <PopupHeader />
     </div>
   );
 };

@@ -12,7 +12,7 @@ export const ServicecertScreen = (): JSX.Element => {
 
   return (
     <div
-      className="flex flex-col min-h-screen items-center justify-between relative bg-white"
+      className="flex flex-col w-full min-h-screen items-center justify-between relative bg-white"
       data-model-id="36848:89352"
     >
       <BackSubHeader backTo="/" />

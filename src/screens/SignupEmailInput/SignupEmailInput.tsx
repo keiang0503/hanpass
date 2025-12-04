@@ -9,7 +9,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "../../components/ui/ta
 
 export const SignupEmailInput = (): JSX.Element => {
   return (
-    <div className="flex flex-col bg-white" data-model-id="40000001:45840">
+    <div className="flex flex-col w-full min-h-screen bg-white" data-model-id="40000001:45840">
       <BackSubHeader backTo="/signupemailtabu95009" />
 
       {/* Title Section */}

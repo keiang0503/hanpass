@@ -7,7 +7,7 @@ import { Button } from "../../components/ui/button";
 export const AutoWithdrawFailed = (): JSX.Element => {
   return (
     <div
-      className="flex flex-col min-h-screen bg-white"
+      className="flex flex-col w-full min-h-screen bg-white"
       data-model-id="35139:61481"
     >
       <BackSubHeader backTo="/arsverificationu95079" />

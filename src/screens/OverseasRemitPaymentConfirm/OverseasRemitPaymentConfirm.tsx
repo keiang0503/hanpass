@@ -6,7 +6,7 @@ import { TransactionDetailsSection } from "./sections/TransactionDetailsSection"
 
 export const OverseasRemitPaymentConfirm = (): JSX.Element => {
   return (
-    <div className="flex flex-col min-h-screen bg-white">
+    <div className="flex flex-col w-full min-h-screen bg-white">
       <div className="flex flex-col flex-1">
         <BackSubHeader backTo="/overseasremitfailu95093" />
         <TransactionDetailsSection />

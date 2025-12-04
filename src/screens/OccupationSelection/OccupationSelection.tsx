@@ -2,6 +2,7 @@ import { XIcon } from "lucide-react";
 import React from "react";
 import { Button } from "../../components/ui/button";
 import { ScrollArea } from "../../components/ui/scroll-area";
+import { PopupHeader } from "../../components/PopupHeader";
 
 const occupations = [
   "농림축산/수산/광업 종사자",
@@ -20,22 +21,11 @@ const occupations = [
 export const OccupationSelection = (): JSX.Element => {
   return (
     <div
-      className="flex flex-col min-h-screen items-center justify-end relative bg-[linear-gradient(0deg,rgba(0,0,0,0.75)_0%,rgba(0,0,0,0.75)_100%),linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(255,255,255,1)_100%)]"
+      className="flex flex-col w-full h-screen items-center justify-end relative bg-[linear-gradient(0deg,rgba(0,0,0,0.75)_0%,rgba(0,0,0,0.75)_100%),linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(255,255,255,1)_100%)]"
       data-model-id="34919:52198"
     >
-      <header className="items-start absolute top-0 left-0 flex flex-col w-full z-10">
-        <nav className="flex flex-col items-start relative self-stretch w-full">
-          <div className="flex flex-col items-start relative self-stretch w-full">
-            <div className="h-[54px] justify-around px-5 py-0 flex items-center relative self-stretch w-full">
-              <img
-                className="absolute h-[calc(100%_-_22px)] top-[11px] right-1.5 w-[87px]"
-                alt="Mini"
-                src="https://c.animaapp.com/Kel660N3/img/mini-7@2x.png"
-              />
-            </div>
-          </div>
-        </nav>
-      </header>
+      {/* Header */}
+      <PopupHeader />
 
       <main className="flex-col items-start self-stretch w-full flex relative">
         <div className="items-center gap-1.5 pt-0 pb-3.5 px-6 relative self-stretch bg-white rounded-[30px_30px_0px_0px] flex flex-col w-full">

@@ -5,7 +5,7 @@ import { ContactListSection } from "./sections/ContactListSection";
 
 export const OverseasRemitContacts = (): JSX.Element => {
   return (
-    <div className="flex flex-col min-h-screen relative bg-white">
+    <div className="flex flex-col w-full min-h-screen relative bg-white">
       <BackSubHeader backTo="/overseasremitamountentryu95088" />
       <ActionButtonsSection />
 

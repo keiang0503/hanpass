@@ -75,7 +75,7 @@ export const WechatVerification = (): JSX.Element => {
 
   return (
     <div
-      className="flex flex-col items-end relative bg-white min-h-screen"
+      className="flex flex-col w-full items-end relative bg-white min-h-screen"
       data-model-id="2674:64035"
     >
       <BackSubHeader backTo="/customerverificatiou95035" />

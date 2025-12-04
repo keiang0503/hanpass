@@ -8,7 +8,7 @@ import { MainContentSection } from "./sections/MainContentSection";
 export const OverseasRemitNickname = (): JSX.Element => {
   return (
     <div
-      className="flex flex-col min-h-screen items-start relative bg-white"
+      className="flex flex-col w-full min-h-screen items-start relative bg-white"
       data-model-id="34820:539228"
     >
       <BackSubHeader backTo="/" />

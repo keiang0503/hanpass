@@ -18,10 +18,10 @@ const accountData = {
 export const AccountManagement = (): JSX.Element => {
   return (
     <div
-      className="flex flex-col min-h-screen items-center bg-white"
+      className="flex flex-col w-full min-h-screen bg-white"
       data-model-id="35213:88642"
     >
-      <div className="flex flex-col items-start w-full max-w-md flex-1">
+      <div className="flex flex-col items-start w-full flex-1">
         <BackSubHeader backTo="/" />
 
         <main className="flex flex-col items-start gap-4 px-6 py-0 w-full flex-1">
@@ -92,7 +92,7 @@ export const AccountManagement = (): JSX.Element => {
         </main>
       </div>
 
-      <footer className="flex flex-col items-center w-full max-w-md">
+      <footer className="flex flex-col items-center w-full">
       </footer>
     </div>
   );

@@ -7,7 +7,7 @@ import { Card, CardContent } from "../../components/ui/card";
 export const AddressDirectInput = (): JSX.Element => {
   return (
     <div
-      className="flex flex-col min-h-screen bg-white"
+      className="flex flex-col w-full min-h-screen bg-white"
       data-model-id="34978:32092"
     >
       <BackSubHeader backTo="/" />

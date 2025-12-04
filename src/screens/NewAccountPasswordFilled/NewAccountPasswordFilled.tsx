@@ -6,7 +6,7 @@ import { Button } from "../../components/ui/button";
 
 export const NewAccountPasswordFilled = (): JSX.Element => {
   return (
-    <div className="flex flex-col w-full bg-white" data-model-id="40000001:41131">
+    <div className="flex flex-col w-full min-h-screen bg-white" data-model-id="40000001:41131">
       <BackSubHeader backTo="/newaccountpasswordu95016" />
 
       {/* Title Section */}

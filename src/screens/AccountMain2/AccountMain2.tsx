@@ -24,7 +24,7 @@ const bankOptions = [
 export const AccountMain2 = (): JSX.Element => {
   return (
     <main
-      className="flex flex-col min-h-screen items-start relative bg-white"
+      className="flex flex-col w-full min-h-screen items-start relative bg-white"
       data-model-id="2674:67602"
     >
       {/* FrameSubsection */}

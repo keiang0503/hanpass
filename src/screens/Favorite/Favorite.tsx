@@ -30,7 +30,7 @@ const transferHistoryData = [
 export const Favorite = (): JSX.Element => {
   return (
     <div
-      className="favorite-screen w-full flex items-start gap-2.5 relative"
+      className="favorite-screen w-full min-h-screen flex items-start gap-2.5 relative"
       data-model-id="3:29689"
     >
       <div className="flex-col items-center justify-center flex-1 grow bg-variable-collection-basic-white flex relative">

@@ -2,13 +2,15 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Button } from "../../components/ui/button";
 import { Card, CardContent } from "../../components/ui/card";
+import { PopupHeader } from "../../components/PopupHeader";
 
 export const PhotoConfirmation = (): JSX.Element => {
   return (
     <div
-      className="flex flex-col min-h-screen bg-[#00000099] items-center justify-center"
+      className="flex flex-col w-full h-screen bg-[#00000099] items-center justify-center relative"
       data-model-id="40000003:240089"
     >
+      <PopupHeader />
       {/* Photo Confirmation Modal */}
       <Card className="w-[343px] rounded-2xl overflow-hidden">
         <CardContent className="p-0">

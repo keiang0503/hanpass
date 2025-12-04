@@ -6,10 +6,9 @@ import { Button } from "../../components/ui/button";
 export const AuthFailure = (): JSX.Element => {
   return (
     <div
-      className="w-full min-w-[375px] min-h-[800px] flex"
+      className="flex flex-col w-full min-h-screen bg-white"
       data-model-id="35139:61479"
     >
-      <div className="w-[375px] h-[800px] items-start bg-white flex relative flex-col">
         <BackSubHeader backTo="/autowithdrawconsentu95063" />
 
         <main className="flex flex-col items-start gap-2.5 px-6 py-0 relative flex-1 self-stretch w-full grow">
@@ -57,7 +56,6 @@ export const AuthFailure = (): JSX.Element => {
           </div>
           <div className="relative self-stretch w-full h-4 z-[-1]" />
         </footer>
-      </div>
     </div>
   );
 };

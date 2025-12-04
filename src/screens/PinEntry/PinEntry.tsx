@@ -1,5 +1,5 @@
 import { BackSubHeader } from "../../components/BackSubHeader";
-import { ChevronRightIcon, CircleIcon, DeleteIcon, MoreHorizontalIcon, RotateCcwIcon } from "lucide-react";
+import { RotateCcwIcon, XIcon } from "lucide-react";
 import React from "react";
 import { Button } from "../../components/ui/button";
 
@@ -12,27 +12,19 @@ const pinDots = [
   { filled: false },
 ];
 
-const keypadNumbers = [
-  { number: "7", position: "top-[33px] left-14" },
-  { number: "5", position: "top-[33px] left-[180px]" },
-  { number: "2", position: "top-[33px] left-[306px]" },
-  { number: "1", position: "top-[99px] left-[57px]" },
-  { number: "4", position: "top-[99px] left-[180px]" },
-  { number: "6", position: "top-[99px] left-[305px]" },
-  { number: "8", position: "top-[165px] left-[55px]" },
-  { number: "0", position: "top-[165px] left-[180px]" },
-  { number: "3", position: "top-[165px] left-[305px]" },
-  { number: "9", position: "top-[231px] left-[180px]" },
+const keypadButtons = [
+  { row: 0, keys: ["7", "5", "2"] },
+  { row: 1, keys: ["1", "4", "6"] },
+  { row: 2, keys: ["8", "0", "3"] },
 ];
 
 export const PinEntry = (): JSX.Element => {
   return (
     <div
-      className="w-full min-w-[375px] min-h-[800px] flex"
+      className="flex flex-col w-full min-h-screen bg-white"
       data-model-id="34892:269048"
     >
-      <div className="flex w-[375px] h-[800px] relative flex-col items-start bg-white">
-        <BackSubHeader backTo="/" />
+      <BackSubHeader backTo="/" />
 
         <footer className="flex flex-col items-start gap-6 relative self-stretch w-full flex-[0_0_auto]">
           <div className="flex items-center justify-center gap-2.5 px-6 py-0 relative self-stretch w-full flex-[0_0_auto]">
@@ -43,37 +35,51 @@ export const PinEntry = (): JSX.Element => {
             </p>
           </div>
 
-          <div className="relative self-stretch w-full h-[292px] mr-[-20.00px]">
-            <div className="absolute top-0 left-0 w-[375px] h-[292px] bg-[#0d56e4]" />
+          <div className="relative self-stretch w-full h-[292px] bg-[#0d56e4]">
+            <div className="grid grid-cols-3 gap-0 w-full h-full p-8">
+              {keypadButtons.map((row, rowIndex) => (
+                <React.Fragment key={rowIndex}>
+                  {row.keys.map((key, keyIndex) => (
+                    <Button
+                      key={`${rowIndex}-${keyIndex}`}
+                      variant="ghost"
+                      className="h-auto flex items-center justify-center p-4 hover:bg-white/10"
+                    >
+                      <span className="font-title-22-b font-[number:var(--title-22-b-font-weight)] text-white text-[length:var(--title-22-b-font-size)] text-center tracking-[var(--title-22-b-letter-spacing)] leading-[var(--title-22-b-line-height)] [font-style:var(--title-22-b-font-style)]">
+                        {key}
+                      </span>
+                    </Button>
+                  ))}
+                </React.Fragment>
+              ))}
 
-            {keypadNumbers.map((item, index) => (
               <Button
-                key={`keypad-${index}`}
                 variant="ghost"
-                className={`${item.position} w-auto h-auto p-2 absolute font-title-22-b font-[number:var(--title-22-b-font-weight)] text-white text-[length:var(--title-22-b-font-size)] text-center tracking-[var(--title-22-b-letter-spacing)] leading-[var(--title-22-b-line-height)] [font-style:var(--title-22-b-font-style)] hover:bg-white/10`}
+                className="h-auto flex items-center justify-center p-4 hover:bg-white/10"
               >
-                {item.number}
+                <RotateCcwIcon className="w-8 h-8 text-white" />
               </Button>
-            ))}
 
-            <Button
-              variant="ghost"
-              className="absolute top-[calc(50.00%_+_81px)] left-[calc(50.00%_-_151px)] w-[31px] h-[30px] p-0 hover:bg-white/10"
-            >
-              <RotateCcwIcon className="w-6 h-6 text-white" />
-            </Button>
+              <Button
+                variant="ghost"
+                className="h-auto flex items-center justify-center p-4 hover:bg-white/10"
+              >
+                <span className="font-title-22-b font-[number:var(--title-22-b-font-weight)] text-white text-[length:var(--title-22-b-font-size)] text-center tracking-[var(--title-22-b-letter-spacing)] leading-[var(--title-22-b-line-height)] [font-style:var(--title-22-b-font-style)]">
+                  9
+                </span>
+              </Button>
 
-            <Button
-              variant="ghost"
-              className="absolute top-[calc(50.00%_+_81px)] left-[calc(50.00%_+_99px)] w-[31px] h-[30px] p-0 hover:bg-white/10"
-            >
-              <DeleteIcon className="w-6 h-6 text-white" />
-            </Button>
+              <Button
+                variant="ghost"
+                className="h-auto flex items-center justify-center p-4 hover:bg-white/10"
+              >
+                <XIcon className="w-8 h-8 text-white" />
+              </Button>
+            </div>
           </div>
         </footer>
 
-        <div className="flex flex-col items-center gap-2.5 px-[105px] py-2 relative self-stretch w-full flex-[0_0_auto] bg-[#0d56e4]">
-        </div>
+      <div className="flex flex-col items-center gap-2.5 px-[105px] py-2 relative self-stretch w-full flex-[0_0_auto] bg-[#0d56e4]">
       </div>
     </div>
   );

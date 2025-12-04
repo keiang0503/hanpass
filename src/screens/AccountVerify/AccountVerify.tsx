@@ -7,7 +7,7 @@ import { Input } from "../../components/ui/input";
 export const AccountVerify = (): JSX.Element => {
   return (
     <div
-      className="flex flex-col min-h-screen items-center relative bg-white"
+      className="flex flex-col w-full min-h-screen items-center relative bg-white"
       data-model-id="34892:268556"
     >
       <BackSubHeader backTo="/loginscreenu95054" />

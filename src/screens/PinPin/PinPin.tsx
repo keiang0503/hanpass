@@ -29,7 +29,7 @@ const keypadButtons = [
 export const PinPin = (): JSX.Element => {
   return (
     <div
-      className="flex flex-col min-h-screen items-start bg-white"
+      className="flex flex-col w-full min-h-screen items-start bg-white"
       data-model-id="40000016:2694299"
     >
       <BackSubHeader backTo="/" />

@@ -1,6 +1,7 @@
 import { XIcon } from "lucide-react";
 import React from "react";
 import { Button } from "../../components/ui/button";
+import { PopupHeader } from "../../components/PopupHeader";
 
 const passwordDots = Array(10).fill(null);
 
@@ -42,21 +43,11 @@ const bottomRowKeys = [
 export const CertificatePasswordKeyboard = (): JSX.Element => {
   return (
     <div
-      className="flex flex-col min-h-screen items-center justify-end bg-[linear-gradient(0deg,rgba(0,0,0,0.75)_0%,rgba(0,0,0,0.75)_100%),linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(255,255,255,1)_100%)]"
+      className="flex flex-col w-full h-screen items-center justify-end bg-[linear-gradient(0deg,rgba(0,0,0,0.75)_0%,rgba(0,0,0,0.75)_100%),linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(255,255,255,1)_100%)]"
       data-model-id="35213:87606"
     >
       {/* Header */}
-      <header className="flex flex-col w-full items-start">
-        <div className="flex flex-col items-start w-full">
-          <div className="h-[54px] items-center justify-around px-5 py-0 flex w-full relative">
-            <img
-              className="absolute h-8 top-[11px] right-1.5 w-[87px]"
-              alt="Mini"
-              src="https://c.animaapp.com/UrLjfz9Z/img/mini-6@2x.png"
-            />
-          </div>
-        </div>
-      </header>
+      <PopupHeader />
 
       {/* Password Input Section */}
       <section className="flex flex-col items-start w-full">

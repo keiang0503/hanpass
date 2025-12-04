@@ -10,7 +10,7 @@ import { Card, CardContent } from "../../components/ui/card";
 export const SignupCompletePending = (): JSX.Element => {
   return (
     <div
-      className="flex flex-col min-h-screen items-center bg-white"
+      className="flex flex-col w-full min-h-screen items-center bg-white"
       data-model-id="2674:64356"
     >
       <BackSubHeader backTo="/signupcompleteu95043" />

@@ -5,7 +5,7 @@ import { TransferInformationSection } from "./sections/TransferInformationSectio
 
 export const OverseasRemitTransferInfo = (): JSX.Element => {
   return (
-    <div className="flex flex-col w-full bg-white" data-model-id="35154:42942">
+    <div className="flex flex-col w-full min-h-screen bg-white" data-model-id="35154:42942">
       <TransferInformationSection />
       <CurrencySelectionSection />
       <AccountDetailsSection />

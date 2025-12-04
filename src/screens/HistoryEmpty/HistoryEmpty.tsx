@@ -10,7 +10,7 @@ import { Button } from "../../components/ui/button";
 export const HistoryEmpty = (): JSX.Element => {
   return (
     <div
-      className="flex flex-col min-h-screen bg-[#f7f7f8]"
+      className="flex flex-col w-full min-h-screen bg-[#f7f7f8]"
       data-model-id="34892:276594"
     >
       <BackSubHeader backTo="/historymainu95099" />

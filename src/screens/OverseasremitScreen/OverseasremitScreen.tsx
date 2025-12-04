@@ -14,7 +14,7 @@ import {
 export const OverseasremitScreen = (): JSX.Element => {
   return (
     <div
-      className="flex flex-col min-h-screen items-center bg-white"
+      className="flex flex-col w-full h-screen items-center bg-white"
       data-model-id="2674:65882"
     >
       <BackSubHeader backTo="/" />

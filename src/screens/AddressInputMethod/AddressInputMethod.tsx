@@ -22,7 +22,7 @@ const addressOptions = [
 
 export const AddressInputMethod = (): JSX.Element => {
   return (
-    <div className="flex flex-col min-h-screen bg-white" data-model-id="40000003:763991">
+    <div className="flex flex-col w-full min-h-screen bg-white" data-model-id="40000003:763991">
       <BackSubHeader backTo="/" />
       <main className="flex flex-col flex-1 w-full bg-white">
         <div className="flex flex-col items-start gap-2 pt-[22px] pb-0 px-6 w-full">

@@ -46,7 +46,7 @@ const accountsData = [
 export const Account = (): JSX.Element => {
   return (
     <div
-      className="flex flex-col min-h-screen bg-white"
+      className="flex flex-col w-full min-h-screen bg-white"
       data-model-id="34978:31881"
     >
       <BackSubHeader backTo="/signupcompletependingu95047" />

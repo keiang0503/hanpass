@@ -9,7 +9,7 @@ export const MypageScreen = (): JSX.Element => {
 
   return (
     <div
-      className="flex flex-col min-h-screen bg-white"
+      className="flex flex-col w-full min-h-screen bg-white"
       data-model-id="36848:72208"
     >
       <BackSubHeader backTo="/" />

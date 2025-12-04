@@ -7,7 +7,7 @@ import { Input } from "../../components/ui/input";
 
 export const NewAccountPassword = (): JSX.Element => {
   return (
-    <div className="flex flex-col w-full bg-white" data-model-id="40000001:46381">
+    <div className="flex flex-col w-full min-h-screen bg-white" data-model-id="40000001:46381">
       <BackSubHeader backTo="/verificationcodeu95008" />
 
       {/* Title Section */}

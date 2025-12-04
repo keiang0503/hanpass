@@ -6,7 +6,7 @@ import { FrameWrapperSubsection } from "./sections/FrameWrapperSubsection";
 export const Screen7 = (): JSX.Element => {
   return (
     <div
-      className="flex flex-col min-h-screen items-start relative bg-white"
+      className="flex flex-col w-full min-h-screen items-start relative bg-white"
       data-model-id="36848:80320"
     >
       <FrameSubsection />

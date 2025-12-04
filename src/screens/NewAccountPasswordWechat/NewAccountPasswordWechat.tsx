@@ -7,7 +7,7 @@ import { Keypad } from "../../components/common/Keypad";
 export const NewAccountPasswordWechat = (): JSX.Element => {
   return (
     <div
-      className="flex flex-col min-h-screen bg-white"
+      className="flex flex-col w-full min-h-screen bg-white"
       data-model-id="40000003:240086"
     >
       <BackSubHeader backTo="/newaccountreferralu95017" />

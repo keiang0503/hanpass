@@ -8,7 +8,7 @@ import { Label } from "../../components/ui/label";
 export const NewAccountReferral = (): JSX.Element => {
   return (
     <div
-      className="flex flex-col min-h-screen bg-white"
+      className="flex flex-col w-full min-h-screen bg-white"
       data-model-id="40000001:45911"
     >
       <BackSubHeader backTo="/newaccountpasswordu95016" />

@@ -8,7 +8,7 @@ export const Servicecert = (): JSX.Element => {
 
   return (
     <div
-      className="flex flex-col min-h-screen items-center relative bg-white"
+      className="flex flex-col w-full min-h-screen items-center relative bg-white"
       data-model-id="36848:89362"
     >
       <BackSubHeader backTo="/" />

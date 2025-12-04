@@ -29,11 +29,10 @@ const keypadButtons = [
 export const PinConfirm = (): JSX.Element => {
   return (
     <div
-      className="w-full min-w-[375px] min-h-[800px] flex"
+      className="flex flex-col w-full min-h-screen bg-white"
       data-model-id="34892:269047"
     >
-      <div className="flex w-[375px] h-[800px] flex-col items-start bg-white">
-        <BackSubHeader backTo="/" />
+      <BackSubHeader backTo="/" />
 
         <main className="flex flex-col items-center gap-[50px] px-6 py-0 w-full flex-1">
           <section className="flex flex-col items-center gap-[26px] w-full">
@@ -108,7 +107,6 @@ export const PinConfirm = (): JSX.Element => {
             </div>
           </div>
         </footer>
-      </div>
     </div>
   );
 };

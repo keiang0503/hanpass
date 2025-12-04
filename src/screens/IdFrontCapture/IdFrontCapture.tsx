@@ -6,7 +6,7 @@ import { Button } from "../../components/ui/button";
 export const IdFrontCapture = (): JSX.Element => {
   return (
     <div
-      className="bg-gradient-to-b from-[#2a2a2a] to-[#1a1a1a] w-full min-w-[375px] min-h-screen relative flex flex-col"
+      className="bg-gradient-to-b from-[#2a2a2a] to-[#1a1a1a] w-full h-screen relative flex flex-col"
       data-model-id="40000003:687579"
     >
       <div className="flex flex-col w-full h-full">

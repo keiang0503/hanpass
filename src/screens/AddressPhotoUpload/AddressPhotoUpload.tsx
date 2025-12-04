@@ -22,7 +22,7 @@ const exampleImages = [
 export const AddressPhotoUpload = (): JSX.Element => {
   return (
     <div
-      className="flex flex-col min-h-screen bg-white"
+      className="flex flex-col w-full min-h-screen bg-white"
       data-model-id="2674:64275"
     >
       <BackSubHeader backTo="/" />

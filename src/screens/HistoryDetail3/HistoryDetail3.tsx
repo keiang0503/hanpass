@@ -6,7 +6,7 @@ import { Button } from "../../components/ui/button";
 export const HistoryDetail3 = (): JSX.Element => {
   return (
     <div
-      className="flex flex-col items-start bg-white"
+      className="flex flex-col w-full min-h-screen items-start bg-white"
       data-model-id="35176:68739"
     >
       {/* Header */}

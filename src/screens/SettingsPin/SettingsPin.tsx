@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { Alert, AlertDescription } from "../../components/ui/alert";
 import { Button } from "../../components/ui/button";
 import { Card, CardContent } from "../../components/ui/card";
+import { PopupHeader } from "../../components/PopupHeader";
 
 const verificationSteps = [
   {
@@ -21,22 +22,10 @@ const verificationSteps = [
 export const SettingsPin = (): JSX.Element => {
   return (
     <div
-      className="overflow-hidden bg-[linear-gradient(0deg,rgba(0,0,0,0.75)_0%,rgba(0,0,0,0.75)_100%),linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(255,255,255,1)_100%)] w-full min-w-[375px] min-h-[800px] flex flex-col justify-between"
+      className="overflow-hidden bg-[linear-gradient(0deg,rgba(0,0,0,0.75)_0%,rgba(0,0,0,0.75)_100%),linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(255,255,255,1)_100%)] w-full min-h-screen flex flex-col justify-between"
       data-model-id="36848:79114"
     >
-      <header className="flex flex-col w-full">
-        <div className="flex flex-col items-start w-full">
-          <div className="flex flex-col items-start gap-2 w-full">
-            <div className="flex h-[54px] items-center justify-around px-5 py-0 w-full">
-              <img
-                className="absolute h-[calc(100%_-_22px)] top-[11px] right-1.5 w-[87px]"
-                alt="Mini"
-                src="https://c.animaapp.com/kp7cm7rf/img/mini-6@2x.png"
-              />
-            </div>
-          </div>
-        </div>
-      </header>
+      <PopupHeader />
 
       <main className="flex flex-col w-full">
         <Card className="gap-1.5 pt-0 pb-3.5 px-6 rounded-[30px_30px_0px_0px] flex flex-col items-center w-full bg-white border-0">

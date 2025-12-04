@@ -70,7 +70,7 @@ const transactionData = [
 export const HistoryMain = (): JSX.Element => {
   return (
     <div
-      className="flex flex-col min-h-screen items-center bg-[#f7f7f8]"
+      className="flex flex-col w-full min-h-screen items-center bg-[#f7f7f8]"
       data-model-id="34838:66244"
     >
       <BackSubHeader backTo="/overseasremitpinu95098" />

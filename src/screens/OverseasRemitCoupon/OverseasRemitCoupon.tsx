@@ -5,7 +5,7 @@ import { CouponListSection } from "./sections/CouponListSection";
 export const OverseasRemitCoupon = (): JSX.Element => {
   return (
     <div
-      className="flex flex-col items-center relative bg-white overflow-hidden"
+      className="flex flex-col w-full min-h-screen items-center relative bg-white overflow-hidden"
       data-model-id="2674:64803"
     >
       <CouponListSection />

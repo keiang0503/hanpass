@@ -8,7 +8,7 @@ import { Label } from "../../components/ui/label";
 
 export const NewAccountPhoneInput = (): JSX.Element => {
   return (
-    <div className="flex flex-col bg-white" data-model-id="40000001:45841">
+    <div className="flex flex-col w-full min-h-screen bg-white" data-model-id="40000001:45841">
       {/* Navigation Header */}
       <BackSubHeader backTo="/" />
 

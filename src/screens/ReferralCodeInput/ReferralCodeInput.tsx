@@ -3,34 +3,17 @@ import { Button } from "../../components/ui/button";
 import { Dialog, DialogContent } from "../../components/ui/dialog";
 import { Input } from "../../components/ui/input";
 import { Label } from "../../components/ui/label";
+import { PopupHeader } from "../../components/PopupHeader";
 
 export const ReferralCodeInput = (): JSX.Element => {
   const [isDialogOpen, setIsDialogOpen] = React.useState(true);
 
   return (
     <div
-      className="flex flex-col min-h-screen bg-white relative"
+      className="flex flex-col w-full h-screen bg-white relative"
       data-model-id="36893:39789"
     >
-      <header className="w-full flex flex-col bg-white">
-      </header>
-
-      <nav className="flex flex-col bg-white">
-        <div className="flex h-[54px] items-center justify-around px-5 py-0 bg-white">
-          <div className="flex w-[calc(100%_-_109px)] items-center absolute top-[calc(50.00%_-_16px)] left-1.5">
-            <img
-              className="w-8 h-8"
-              alt="Wechat hd"
-              src="https://c.animaapp.com/SXpbAKOQ/img/wechat-hd-3.svg"
-            />
-          </div>
-          <img
-            className="absolute h-[calc(100%_-_22px)] top-[11px] right-1.5 w-[87px]"
-            alt="Mini"
-            src="https://c.animaapp.com/SXpbAKOQ/img/mini-9@2x.png"
-          />
-        </div>
-      </nav>
+      <PopupHeader />
 
       <main className="flex flex-col bg-white">
         <section className="flex flex-col gap-2 pt-[22px] pb-0 px-6">

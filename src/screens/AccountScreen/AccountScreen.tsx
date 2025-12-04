@@ -1,26 +1,16 @@
 import { XIcon } from "lucide-react";
 import React from "react";
 import { Button } from "../../components/ui/button";
+import { PopupHeader } from "../../components/PopupHeader";
 
 export const AccountScreen = (): JSX.Element => {
   return (
     <div
-      className="flex flex-col min-h-screen items-center justify-end gap-2.5 relative bg-[linear-gradient(0deg,rgba(0,0,0,0.75)_0%,rgba(0,0,0,0.75)_100%),linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(255,255,255,1)_100%)]"
+      className="flex flex-col w-full h-screen items-center justify-end gap-2.5 relative bg-[linear-gradient(0deg,rgba(0,0,0,0.75)_0%,rgba(0,0,0,0.75)_100%),linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(255,255,255,1)_100%)]"
       data-model-id="2674:67358"
     >
-      <div className="flex flex-col w-full items-start absolute top-0 left-0">
-        <div className="flex flex-col items-start relative self-stretch w-full flex-[0_0_auto]">
-          <div className="flex-col gap-2 flex items-start relative self-stretch w-full flex-[0_0_auto]">
-            <div className="h-[54px] justify-around px-5 py-0 flex items-center relative self-stretch w-full">
-              <img
-                className="absolute h-[calc(100%_-_22px)] top-[11px] right-1.5 w-[87px]"
-                alt="Mini"
-                src="https://c.animaapp.com/ELrb3VWQ/img/mini-7@2x.png"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
+      {/* Header */}
+      <PopupHeader />
 
       <div className="flex-col items-start self-stretch w-full flex-[0_0_auto] flex relative">
         <div className="flex flex-col items-center gap-1.5 px-6 py-0 relative self-stretch w-full flex-[0_0_auto] bg-white rounded-[30px_30px_0px_0px]">

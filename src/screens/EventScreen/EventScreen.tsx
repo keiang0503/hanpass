@@ -34,7 +34,7 @@ const eventData = [
 export const EventScreen = (): JSX.Element => {
   return (
     <div
-      className="flex flex-col min-h-screen items-start bg-white"
+      className="flex flex-col w-full min-h-screen items-start bg-white"
       data-model-id="2674:68333"
     >
       <BackSubHeader backTo="/" />

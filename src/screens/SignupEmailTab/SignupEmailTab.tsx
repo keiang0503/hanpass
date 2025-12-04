@@ -8,7 +8,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "../../components/ui/ta
 
 export const SignupEmailTab = (): JSX.Element => {
   return (
-    <div className="flex flex-col bg-white" data-model-id="40000001:45839">
+    <div className="flex flex-col w-full min-h-screen bg-white" data-model-id="40000001:45839">
       <BackSubHeader backTo="/nationalityu95006" />
 
       {/* Title Section */}

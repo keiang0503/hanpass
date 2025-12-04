@@ -6,7 +6,7 @@ import { Card, CardContent } from "../../components/ui/card";
 export const WithdrawComplete = (): JSX.Element => {
   return (
     <div
-      className="flex flex-col min-h-screen items-center relative bg-white"
+      className="flex flex-col w-full min-h-screen items-center relative bg-white"
       data-model-id="2674:67678"
     >
       <BackSubHeader backTo="/accountmain2u95059" />

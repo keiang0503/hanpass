@@ -1,6 +1,7 @@
 import { XIcon } from "lucide-react";
 import React from "react";
 import { Button } from "../../components/ui/button";
+import { PopupHeader } from "../../components/PopupHeader";
 
 const fundSourceOptions = [
   { id: 1, label: "근로소득" },
@@ -16,22 +17,11 @@ const fundSourceOptions = [
 export const FundSourceSelection = (): JSX.Element => {
   return (
     <div
-      className="flex flex-col min-h-screen items-center justify-end relative bg-[linear-gradient(0deg,rgba(0,0,0,0.75)_0%,rgba(0,0,0,0.75)_100%),linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(255,255,255,1)_100%)]"
+      className="flex flex-col w-full h-screen items-center justify-end relative bg-[linear-gradient(0deg,rgba(0,0,0,0.75)_0%,rgba(0,0,0,0.75)_100%),linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(255,255,255,1)_100%)]"
       data-model-id="34919:52540"
     >
-      <header className="absolute top-0 left-0 w-full flex flex-col items-start">
-        <nav className="flex flex-col items-start relative self-stretch w-full flex-[0_0_auto]">
-          <div className="gap-2 flex flex-col items-start relative self-stretch w-full flex-[0_0_auto]">
-            <div className="h-[54px] justify-around px-5 py-0 flex items-center relative self-stretch w-full">
-              <img
-                className="absolute h-[calc(100%_-_22px)] top-[11px] right-1.5 w-[87px]"
-                alt="Mini"
-                src="https://c.animaapp.com/Kel660N3/img/mini-7@2x.png"
-              />
-            </div>
-          </div>
-        </nav>
-      </header>
+      {/* Header */}
+      <PopupHeader />
 
       <section className="flex-col items-start self-stretch w-full flex-[0_0_auto] flex relative">
         <div className="items-center gap-1.5 pt-0 pb-3.5 px-6 relative self-stretch flex-[0_0_auto] bg-white rounded-[30px_30px_0px_0px] flex flex-col w-full">

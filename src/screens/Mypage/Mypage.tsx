@@ -9,7 +9,7 @@ import { ViewWrapperSubsection } from "./sections/ViewWrapperSubsection";
 export const Mypage = (): JSX.Element => {
   return (
     <div
-      className="flex flex-col min-h-screen items-center bg-white"
+      className="flex flex-col w-full min-h-screen items-center bg-white"
       data-model-id="36848:79034"
     >
 

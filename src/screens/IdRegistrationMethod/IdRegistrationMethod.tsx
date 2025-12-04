@@ -2,6 +2,7 @@ import { ChevronRightIcon, XIcon } from "lucide-react";
 import React from "react";
 import { Link } from "react-router-dom";
 import { Button } from "../../components/ui/button";
+import { PopupHeader } from "../../components/PopupHeader";
 
 const menuOptions = [
   {
@@ -17,23 +18,11 @@ const menuOptions = [
 export const IdRegistrationMethod = (): JSX.Element => {
   return (
     <div
-      className="flex flex-col min-h-screen items-center justify-end gap-2.5 relative bg-[linear-gradient(0deg,rgba(0,0,0,0.75)_0%,rgba(0,0,0,0.75)_100%),linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(255,255,255,1)_100%)]"
+      className="flex flex-col w-full h-screen items-center justify-end gap-2.5 relative bg-[linear-gradient(0deg,rgba(0,0,0,0.75)_0%,rgba(0,0,0,0.75)_100%),linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(255,255,255,1)_100%)]"
       data-model-id="40000003:653090"
     >
       {/* Header */}
-      <header className="flex flex-col w-full items-start absolute top-0 left-0 z-10">
-        <nav className="flex flex-col items-start w-full">
-          <div className="gap-2 flex flex-col items-start w-full">
-            <div className="h-[54px] justify-around px-5 py-0 flex items-center w-full">
-              <img
-                className="absolute h-[calc(100%_-_22px)] top-[11px] right-1.5 w-[87px]"
-                alt="Mini"
-                src="https://c.animaapp.com/SXpbAKOQ/img/mini-9@2x.png"
-              />
-            </div>
-          </div>
-        </nav>
-      </header>
+      <PopupHeader />
 
       {/* Bottom Sheet */}
       <section className="flex-col items-center justify-end w-full flex relative">

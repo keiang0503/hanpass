@@ -6,7 +6,7 @@ import { Button } from "../../components/ui/button";
 export const SelfieCapture = (): JSX.Element => {
   return (
     <div
-      className="flex flex-col min-h-screen bg-[#1e1e1e] relative"
+      className="flex flex-col w-full min-h-screen bg-[#1e1e1e] relative"
       data-model-id="40000003:240088"
     >
       {/* Close Button */}

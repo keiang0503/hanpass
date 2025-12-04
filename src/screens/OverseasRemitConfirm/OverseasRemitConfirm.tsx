@@ -6,7 +6,7 @@ import { UserInformationSection } from "./sections/UserInformationSection";
 
 export const OverseasRemitConfirm = (): JSX.Element => {
   return (
-    <div className="flex flex-col relative bg-white min-h-screen">
+    <div className="flex flex-col w-full relative bg-white min-h-screen">
       <BackSubHeader backTo="/overseasremitidinputu95091" />
 
       <UserInformationSection />

@@ -6,7 +6,7 @@ import { Input } from "../../components/ui/input";
 export const Login = (): JSX.Element => {
   return (
     <div
-      className="flex flex-col w-full bg-white"
+      className="flex flex-col w-full min-h-screen bg-white"
       data-model-id="40000001:45998"
     >
         <BackSubHeader backTo="/" />
