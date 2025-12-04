@@ -135,6 +135,39 @@ import { MypageScreen } from "./screens/MypageScreen";
 import { MypageWrapper } from "./screens/MypageWrapper";
 import { Screen5 } from "./screens/Screen5";
 import { Screen7 } from "./screens/Screen7";
+import { Mypage017 } from "./screens/Mypage017";
+import { Mypage as MyPage2_Mypage } from "./screens/MyPage2_Mypage";
+import { Servicecert as MyPage2_Servicecert } from "./screens/MyPage2_Servicecert";
+import { Overseasremit as MyPage2_Overseasremit } from "./screens/MyPage2_Overseasremit";
+import { ServicecertScreen as MyPage2_ServicecertScreen } from "./screens/MyPage2_ServicecertScreen";
+import { ServicecertWrapper as MyPage2_ServicecertWrapper } from "./screens/MyPage2_ServicecertWrapper";
+import { DivWrapper as MyPage2_DivWrapper } from "./screens/MyPage2_DivWrapper";
+import { Screen6 as MyPage2_Screen6 } from "./screens/MyPage2_Screen6";
+import { Screen7 as MyPage2_Screen7 } from "./screens/MyPage2_Screen7";
+import { MypageScreen as MyPage2_MypageScreen } from "./screens/MyPage2_MypageScreen";
+import { Mypage as MyPage3_Mypage } from "./screens/MyPage3_Mypage";
+import { MypageScreen as MyPage3_MypageScreen } from "./screens/MyPage3_MypageScreen";
+import { MypageWrapper as MyPage3_MypageWrapper } from "./screens/MyPage3_MypageWrapper";
+import { Overseasremit as MyPage3_Overseasremit } from "./screens/MyPage3_Overseasremit";
+import { Screen4 as MyPage3_Screen4 } from "./screens/MyPage3_Screen4";
+import { Screen5 as MyPage3_Screen5 } from "./screens/MyPage3_Screen5";
+import { Screen6 as MyPage3_Screen6 } from "./screens/MyPage3_Screen6";
+import { Screen7 as MyPage3_Screen7 } from "./screens/MyPage3_Screen7";
+import { DivWrapper as MyPage4_DivWrapper } from "./screens/MyPage4_DivWrapper";
+import { Mypage as MyPage4_Mypage } from "./screens/MyPage4_Mypage";
+import { MypageScreen as MyPage4_MypageScreen } from "./screens/MyPage4_MypageScreen";
+import { MypageWrapper as MyPage4_MypageWrapper } from "./screens/MyPage4_MypageWrapper";
+import { Screen4 as MyPage4_Screen4 } from "./screens/MyPage4_Screen4";
+import { Screen5 as MyPage4_Screen5 } from "./screens/MyPage4_Screen5";
+import { Screen6 as MyPage4_Screen6 } from "./screens/MyPage4_Screen6";
+import { DivWrapper as MyPage5_DivWrapper } from "./screens/MyPage5_DivWrapper";
+import { Mypage as MyPage5_Mypage } from "./screens/MyPage5_Mypage";
+import { MypageBs as MyPage5_MypageBs } from "./screens/MyPage5_MypageBs";
+import { MypageScreen as MyPage5_MypageScreen } from "./screens/MyPage5_MypageScreen";
+import { MypageWrapper as MyPage5_MypageWrapper } from "./screens/MyPage5_MypageWrapper";
+import { Screen5 as MyPage5_Screen5 } from "./screens/MyPage5_Screen5";
+import { Screen6 as MyPage5_Screen6 } from "./screens/MyPage5_Screen6";
+import { Screen7 as MyPage5_Screen7 } from "./screens/MyPage5_Screen7";
 const router = createBrowserRouter([
   {
     path: "/*",
@@ -679,6 +712,138 @@ const router = createBrowserRouter([
   {
     path: "/screen7u95123",
     element: <Screen7 />,
+  },
+  {
+    path: "/mypage017u95124",
+    element: <Mypage017 />,
+  },
+  {
+    path: "/mypage2_mypageu95125",
+    element: <MyPage2_Mypage />,
+  },
+  {
+    path: "/mypage2_servicecertu95126",
+    element: <MyPage2_Servicecert />,
+  },
+  {
+    path: "/mypage2_overseasremitu95127",
+    element: <MyPage2_Overseasremit />,
+  },
+  {
+    path: "/mypage2_servicecertscreenu95128",
+    element: <MyPage2_ServicecertScreen />,
+  },
+  {
+    path: "/mypage2_servicecertwrapperu95129",
+    element: <MyPage2_ServicecertWrapper />,
+  },
+  {
+    path: "/mypage2_divwrapperu95130",
+    element: <MyPage2_DivWrapper />,
+  },
+  {
+    path: "/mypage2_screen6u95131",
+    element: <MyPage2_Screen6 />,
+  },
+  {
+    path: "/mypage2_screen7u95132",
+    element: <MyPage2_Screen7 />,
+  },
+  {
+    path: "/mypage2_mypagescreenu95133",
+    element: <MyPage2_MypageScreen />,
+  },
+  {
+    path: "/mypage3_mypageu95134",
+    element: <MyPage3_Mypage />,
+  },
+  {
+    path: "/mypage3_mypagescreenu95135",
+    element: <MyPage3_MypageScreen />,
+  },
+  {
+    path: "/mypage3_mypagewrapperu95136",
+    element: <MyPage3_MypageWrapper />,
+  },
+  {
+    path: "/mypage3_overseasremitu95137",
+    element: <MyPage3_Overseasremit />,
+  },
+  {
+    path: "/mypage3_screen4u95138",
+    element: <MyPage3_Screen4 />,
+  },
+  {
+    path: "/mypage3_screen5u95139",
+    element: <MyPage3_Screen5 />,
+  },
+  {
+    path: "/mypage3_screen6u95140",
+    element: <MyPage3_Screen6 />,
+  },
+  {
+    path: "/mypage3_screen7u95141",
+    element: <MyPage3_Screen7 />,
+  },
+  {
+    path: "/mypage4_divwrapperu95142",
+    element: <MyPage4_DivWrapper />,
+  },
+  {
+    path: "/mypage4_mypageu95143",
+    element: <MyPage4_Mypage />,
+  },
+  {
+    path: "/mypage4_mypagescreenu95144",
+    element: <MyPage4_MypageScreen />,
+  },
+  {
+    path: "/mypage4_mypagewrapperu95145",
+    element: <MyPage4_MypageWrapper />,
+  },
+  {
+    path: "/mypage4_screen4u95146",
+    element: <MyPage4_Screen4 />,
+  },
+  {
+    path: "/mypage4_screen5u95147",
+    element: <MyPage4_Screen5 />,
+  },
+  {
+    path: "/mypage4_screen6u95148",
+    element: <MyPage4_Screen6 />,
+  },
+  {
+    path: "/mypage5_divwrapperu95149",
+    element: <MyPage5_DivWrapper />,
+  },
+  {
+    path: "/mypage5_mypageu95150",
+    element: <MyPage5_Mypage />,
+  },
+  {
+    path: "/mypage5_mypagebsu95151",
+    element: <MyPage5_MypageBs />,
+  },
+  {
+    path: "/mypage5_mypagescreenu95152",
+    element: <MyPage5_MypageScreen />,
+  },
+  {
+    path: "/mypage5_mypagewrapperu95153",
+    element: <MyPage5_MypageWrapper />,
+  },
+  {
+    path: "/mypage5_screen5u95154",
+    element: <MyPage5_Screen5 />,
+  },
+  {
+    path: "/mypage5_screen6u95155",
+    element: <MyPage5_Screen6 />,
+  },
+  {
+    path: "/mypage5_screen7u95156",
+    element: <MyPage5_Screen7 />,
   },
 ]);
 

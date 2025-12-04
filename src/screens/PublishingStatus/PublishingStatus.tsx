@@ -41,31 +41,45 @@ const publishingData: PublishingItem[] = [
   },
   {
     id: "login",
-    name: "로그인",
+    name: "Login_001 로그인 / 회원가입 화면",
     path: "/loginu95001",
     status: "completed",
     description: "로그인 화면 - 이메일/휴대폰 및 비밀번호 입력",
   },
   {
-    id: "element",
-    name: "신규 쿠폰 알림 (MD)",
-    path: "/elementu95002",
+    id: "common",
+    name: "Common_013 비밀번호 입력 화면",
+    path: "/commonu95010",
     status: "completed",
-    description: "신규 쿠폰 알림 팝업",
+    description: "비밀번호 입력 화면",
   },
   {
-    id: "elementscreen",
-    name: "메인 랜딩 팝업 (MD)",
-    path: "/elementscreenu95003",
+    id: "home",
+    name: "Home_001 홈 (로그인)(1)",
+    path: "/homeu95006",
     status: "completed",
-    description: "메인 랜딩 페이지 팝업",
+    description: "홈 화면 - 송금 방식 선택",
   },
   {
-    id: "elementwrapper",
-    name: "보이스피싱 주의 (MD)",
-    path: "/elementwrapperu95004",
+    id: "homescreen",
+    name: "Home_001 홈 (로그인)(2)",
+    path: "/homescreenu95007",
     status: "completed",
-    description: "보이스피싱 주의 안내 팝업",
+    description: "홈 화면 - 금액 입력",
+  },
+  {
+    id: "homewrapper",
+    name: "Home_001 홈 (로그인)(3)",
+    path: "/homewrapperu95008",
+    status: "completed",
+    description: "홈 화면 - 은행 정보",
+  },
+  {
+    id: "screen8",
+    name: "Home_001 홈 (로그인)(4)",
+    path: "/screen8u95009",
+    status: "completed",
+    description: "홈 화면 - 거래 내역",
   },
   {
     id: "screen4",
@@ -75,39 +89,25 @@ const publishingData: PublishingItem[] = [
     description: "개인정보 업데이트 요청 팝업",
   },
   {
-    id: "home",
-    name: "홈 (로그인 전) 1",
-    path: "/homeu95006",
+    id: "elementwrapper",
+    name: "보이스피싱 주의 (MD)",
+    path: "/elementwrapperu95004",
     status: "completed",
-    description: "홈 화면 - 송금 방식 선택",
+    description: "보이스피싱 주의 안내 팝업",
   },
   {
-    id: "homescreen",
-    name: "홈 (로그인 전) 2",
-    path: "/homescreenu95007",
+    id: "elementscreen",
+    name: "메인 랜딩 팝업 (MD)",
+    path: "/elementscreenu95003",
     status: "completed",
-    description: "홈 화면 - 금액 입력",
+    description: "메인 랜딩 페이지 팝업",
   },
   {
-    id: "homewrapper",
-    name: "홈 (로그인 전) 3",
-    path: "/homewrapperu95008",
+    id: "element",
+    name: "신규 쿠폰 알림 (MD)",
+    path: "/elementu95002",
     status: "completed",
-    description: "홈 화면 - 은행 정보",
-  },
-  {
-    id: "screen8",
-    name: "홈 (로그인 전) 4",
-    path: "/screen8u95009",
-    status: "completed",
-    description: "홈 화면 - 거래 내역",
-  },
-  {
-    id: "common",
-    name: "비밀번호 입력",
-    path: "/commonu95010",
-    status: "completed",
-    description: "비밀번호 입력 화면",
+    description: "신규 쿠폰 알림 팝업",
   },
   {
     id: "section-signup",
@@ -954,57 +954,281 @@ const publishingData: PublishingItem[] = [
   },
   {
     id: "mypage",
-    name: "마이페이지",
+    name: "MyPage_096_내 정보 메인(비로그인)",
     path: "/mypageu95118",
     status: "completed",
   },
   {
+    id: "screen6mypage",
+    name: "MyPage_001_내 정보 메인(1)",
+    path: "/screen6u95049",
+    status: "completed",
+  },
+  {
+    id: "screen4mypage",
+    name: "MyPage_001_내 정보 메인(2)",
+    path: "/screen4u95005",
+    status: "completed",
+  },
+  {
+    id: "screen5mypage",
+    name: "MyPage_001_내 정보 메인(3)",
+    path: "/screen5u95122",
+    status: "completed",
+  },
+  {
+    id: "mypagewrapper",
+    name: "MyPage_104_송금 한도 안내(BT)",
+    path: "/mypagewrapperu95121",
+    status: "completed",
+  },
+  {
+    id: "screen7mypage",
+    name: "MyPage_099_쿠폰 내역 없음",
+    path: "/screen7u95123",
+    status: "completed",
+  },
+  {
     id: "mypagepopup",
-    name: "쿠폰번호 오류 (MD)",
+    name: "MyPage_018_내 쿠폰_popup(MD)",
     path: "/mypagepopupu95119",
     status: "completed",
   },
   {
     id: "mypagescreen",
-    name: "신분증 관리",
+    name: "MyPage_018_내 쿠폰_조회설정(BT)",
     path: "/mypagescreenu95120",
     status: "completed",
   },
   {
-    id: "mypagewrapper",
-    name: "신분증 번호입력",
-    path: "/mypagewrapperu95121",
+    id: "mypage017",
+    name: "MyPage_017_내 쿠폰",
+    path: "/mypage017u95124",
     status: "completed",
   },
   {
-    id: "screen4-mypage",
-    name: "개인정보 업데이트 (MD)",
-    path: "/screen4u95005",
+    id: "mypage2_mypage",
+    name: "MyPage_002_내 정보 관리",
+    path: "/mypage2_mypageu95125",
     status: "completed",
+    description: "내 정보 관리 화면",
   },
   {
-    id: "screen5",
-    name: "국가번호 선택 (BT)",
-    path: "/screen5u95122",
+    id: "mypage2_mypagescreen",
+    name: "MyPage_003_수정하기",
+    path: "/mypage2_mypagescreenu95133",
     status: "completed",
+    description: "내 정보 수정하기 화면",
   },
   {
-    id: "screen6-mypage",
-    name: "주계좌 선택 (BT)",
-    path: "/screen6u95049",
+    id: "mypage2_overseasremit",
+    name: "OverseasRemit_016 해외송금 공지 안내(BT)",
+    path: "/mypage2_overseasremitu95127",
     status: "completed",
+    description: "해외송금 공지 안내 화면",
   },
   {
-    id: "screen7",
-    name: "휴대전화번호 변경",
-    path: "/screen7u95123",
+    id: "mypage2_servicecertscreen",
+    name: "ServiceCert_003_확인증 발급 방법 선택",
+    path: "/mypage2_servicecertscreenu95128",
     status: "completed",
+    description: "확인증 발급 방법 선택 화면",
   },
   {
-    id: "screen8-mypage",
-    name: "해외송금 보내기",
-    path: "/screen8u95009",
+    id: "mypage2_servicecert",
+    name: "ServiceCert_003_확인증 발급 방법 선택",
+    path: "/mypage2_servicecertu95126",
     status: "completed",
+    description: "확인증 발급 방법 선택 화면",
+  },
+  {
+    id: "mypage2_servicecertwrapper",
+    name: "ServiceCert_003_확인증 발급 방법 선택",
+    path: "/mypage2_servicecertwrapperu95129",
+    status: "completed",
+    description: "확인증 발급 방법 선택 화면",
+  },
+  {
+    id: "mypage2_screen6",
+    name: "ServiceCert_004_위챗용_서비스 이용 확인증 발급",
+    path: "/mypage2_screen6u95131",
+    status: "completed",
+    description: "위챗용 서비스 이용 확인증 발급 화면",
+  },
+  {
+    id: "mypage2_screen7",
+    name: "ServiceCert_004_위챗용_서비스 이용 확인증 발급",
+    path: "/mypage2_screen7u95132",
+    status: "completed",
+    description: "위챗용 서비스 이용 확인증 발급 화면",
+  },
+  {
+    id: "mypage2_divwrapper",
+    name: "ServiceCert_004_위챗용_서비스 이용 확인증 발급",
+    path: "/mypage2_divwrapperu95130",
+    status: "completed",
+    description: "위챗용 서비스 이용 확인증 발급 화면",
+  },
+  {
+    id: "mypage3_mypage",
+    name: "MyPage_021_친구초대",
+    path: "/mypage3_mypageu95134",
+    status: "completed",
+    description: "친구초대 화면",
+  },
+  {
+    id: "mypage3_screen6",
+    name: "MyPage_021_친구초대",
+    path: "/mypage3_screen6u95140",
+    status: "completed",
+    description: "친구초대 화면",
+  },
+  {
+    id: "mypage3_screen7",
+    name: "MyPage_021_친구초대",
+    path: "/mypage3_screen7u95141",
+    status: "completed",
+    description: "친구초대 화면",
+  },
+  {
+    id: "mypage3_screen5",
+    name: "MyPage_022_친구초대 내역 (누적리워드 보기)",
+    path: "/mypage3_screen5u95139",
+    status: "completed",
+    description: "친구초대 내역 (누적리워드 보기) 화면",
+  },
+  {
+    id: "mypage3_overseasremit",
+    name: "OverseasRemit_022 송금결과_가상계좌 입금 안내",
+    path: "/mypage3_overseasremitu95137",
+    status: "completed",
+    description: "송금결과 가상계좌 입금 안내 화면",
+  },
+  {
+    id: "mypage3_screen4",
+    name: "MyPage_025_친구초대하기_바텀시트(BT)",
+    path: "/mypage3_screen4u95138",
+    status: "completed",
+    description: "친구초대하기 바텀시트 화면",
+  },
+  {
+    id: "mypage3_mypagewrapper",
+    name: "MyPage_025_친구초대하기_바텀시트(BT)",
+    path: "/mypage3_mypagewrapperu95136",
+    status: "completed",
+    description: "친구초대하기 바텀시트 화면",
+  },
+  {
+    id: "mypage3_mypagescreen",
+    name: "MyPage_025_친구초대하기_바텀시트(BT)",
+    path: "/mypage3_mypagescreenu95135",
+    status: "completed",
+    description: "친구초대하기 바텀시트 화면",
+  },
+  {
+    id: "mypage4_mypage",
+    name: "MyPage_063 여권 등록방법 선택",
+    path: "/mypage4_mypageu95143",
+    status: "completed",
+    description: "여권 등록방법 선택 화면",
+  },
+  {
+    id: "mypage4_divwrapper",
+    name: "MyPage_064 여권 촬영화면",
+    path: "/mypage4_divwrapperu95142",
+    status: "completed",
+    description: "여권 촬영화면",
+  },
+  {
+    id: "mypage4_screen5",
+    name: "MyPage_066 여권정보 확인 - 외국인",
+    path: "/mypage4_screen5u95147",
+    status: "completed",
+    description: "여권정보 확인 - 외국인 화면",
+  },
+  {
+    id: "mypage4_screen6",
+    name: "MyPage_066 여권정보 확인 - 내국인",
+    path: "/mypage4_screen6u95148",
+    status: "completed",
+    description: "여권정보 확인 - 내국인 화면",
+  },
+  {
+    id: "mypage4_mypagewrapper",
+    name: "MyPage_067 여권등록 완료",
+    path: "/mypage4_mypagewrapperu95145",
+    status: "completed",
+    description: "여권등록 완료 화면",
+  },
+  {
+    id: "mypage4_screen4",
+    name: "MyPage_066 여권정보 확인 - 외국인",
+    path: "/mypage4_screen4u95146",
+    status: "completed",
+    description: "여권정보 확인 - 외국인 화면",
+  },
+  {
+    id: "mypage4_mypagescreen",
+    name: "MyPage_066 여권정보 확인 - 외국인",
+    path: "/mypage4_mypagescreenu95144",
+    status: "completed",
+    description: "여권정보 확인 - 외국인 화면",
+  },
+  {
+    id: "mypage5_divwrapper",
+    name: "MyPage5_001_DivWrapper",
+    path: "/mypage5_divwrapperu95149",
+    status: "completed",
+    description: "MyPage5 DivWrapper 화면",
+  },
+  {
+    id: "mypage5_mypage",
+    name: "MyPage5_002_Mypage",
+    path: "/mypage5_mypageu95150",
+    status: "completed",
+    description: "MyPage5 Mypage 화면",
+  },
+  {
+    id: "mypage5_mypagebs",
+    name: "MyPage5_003_MypageBs",
+    path: "/mypage5_mypagebsu95151",
+    status: "completed",
+    description: "MyPage5 MypageBs 화면",
+  },
+  {
+    id: "mypage5_mypagescreen",
+    name: "MyPage5_004_MypageScreen",
+    path: "/mypage5_mypagescreenu95152",
+    status: "completed",
+    description: "MyPage5 MypageScreen 화면",
+  },
+  {
+    id: "mypage5_mypagewrapper",
+    name: "MyPage5_005_MypageWrapper",
+    path: "/mypage5_mypagewrapperu95153",
+    status: "completed",
+    description: "MyPage5 MypageWrapper 화면",
+  },
+  {
+    id: "mypage5_screen5",
+    name: "MyPage5_006_Screen5",
+    path: "/mypage5_screen5u95154",
+    status: "completed",
+    description: "MyPage5 Screen5 화면",
+  },
+  {
+    id: "mypage5_screen6",
+    name: "MyPage5_007_Screen6",
+    path: "/mypage5_screen6u95155",
+    status: "completed",
+    description: "MyPage5 Screen6 화면",
+  },
+  {
+    id: "mypage5_screen7",
+    name: "MyPage5_008_Screen7",
+    path: "/mypage5_screen7u95156",
+    status: "completed",
+    description: "MyPage5 Screen7 화면",
   },
 ];
 
@@ -1033,7 +1257,7 @@ export const PublishingStatus = (): JSX.Element => {
   return (
     <div className="flex h-screen bg-gray-50">
       {/* LNB (Left Navigation Bar) */}
-      <aside className="w-64 bg-white border-r border-gray-200 flex flex-col flex-shrink-0">
+      <aside className="w-[307px] bg-white border-r border-gray-200 flex flex-col flex-shrink-0">
         {/* LNB Header */}
         <div className="p-4 border-b border-gray-200">
           <h1 className="text-lg font-bold text-gray-900">퍼블리싱 현황</h1>
@@ -1060,8 +1284,8 @@ export const PublishingStatus = (): JSX.Element => {
                         : "hover:bg-gray-100 text-gray-700"
                     }`}
                   >
-                    <FolderIcon className="w-5 h-5 flex-shrink-0" />
-                    <span className="flex-1 font-medium">{item.name}</span>
+                    <FolderIcon className="w-4 h-4 flex-shrink-0" />
+                    <span className="flex-1 font-medium text-xs">{item.name}</span>
                     {"status" in item && item.status === "completed" ? (
                       <CheckCircleIcon className="w-4 h-4 text-green-500" />
                     ) : (
@@ -1073,17 +1297,6 @@ export const PublishingStatus = (): JSX.Element => {
             ))}
           </ul>
         </nav>
-
-        {/* 공통 컴포넌트 링크 */}
-        <div className="p-2 border-t border-gray-200">
-          <Link
-            to="/components"
-            className="w-full flex items-center gap-3 px-3 py-2.5 rounded-lg text-left transition-colors hover:bg-blue-50 text-blue-600 border border-blue-200 bg-blue-50/50"
-          >
-            <LayoutGridIcon className="w-5 h-5 flex-shrink-0" />
-            <span className="flex-1 font-medium">공통 컴포넌트</span>
-          </Link>
-        </div>
 
         {/* LNB Footer - Summary */}
         <div className="p-4 border-t border-gray-200 bg-gray-50">
