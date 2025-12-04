@@ -1,5 +1,5 @@
-import { ChevronLeftIcon, MoreHorizontalIcon } from "lucide-react";
 import React from "react";
+import { BackSubHeader } from "../../components/BackSubHeader";
 import { Button } from "../../components/ui/button";
 import {
   Tabs,
@@ -19,31 +19,7 @@ export const EventEmpty = (): JSX.Element => {
       className="flex flex-col min-h-screen bg-white"
       data-model-id="34877:79297"
     >
-      <header className="flex flex-col w-full bg-white">
-      </header>
-
-      <nav className="flex flex-col items-start w-full bg-white">
-        <div className="flex flex-col items-start gap-2 w-full">
-          <div className="flex h-[54px] items-center justify-between px-5 py-0 w-full bg-white">
-            <Button variant="ghost" size="icon" className="h-8 w-8 p-0">
-              <ChevronLeftIcon className="h-8 w-8" />
-            </Button>
-
-            <div className="flex items-center gap-2">
-              <Button variant="ghost" size="icon" className="h-8 w-8 p-0">
-                <MoreHorizontalIcon className="h-6 w-6" />
-              </Button>
-              <Button
-                variant="ghost"
-                size="icon"
-                className="h-8 w-8 p-0 rounded-full border-2 border-black"
-              >
-                <div className="h-4 w-4 rounded-full bg-black" />
-              </Button>
-            </div>
-          </div>
-        </div>
-      </nav>
+      <BackSubHeader backTo="/" />
 
       <main className="flex flex-col flex-1 w-full bg-white">
         <div className="flex flex-col items-start pt-[22px] pb-0 px-6 w-full">
@@ -121,11 +97,6 @@ export const EventEmpty = (): JSX.Element => {
 
       <footer className="flex flex-col items-center justify-end px-6 py-0 w-full">
         <div className="w-[360px] h-4 ml-[-16.50px] mr-[-16.50px]" />
-        <div className="flex flex-col items-center gap-2.5 px-[105px] py-2 w-full bg-white">
-          <div className="flex flex-col w-[134px] items-center gap-2.5 ml-[-8.50px] mr-[-8.50px]">
-            <div className="w-[134px] h-[5px] bg-black rounded-[100px]" />
-          </div>
-        </div>
       </footer>
     </div>
   );

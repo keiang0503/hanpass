@@ -1,10 +1,5 @@
-import {
-  CameraIcon,
-  CheckCircle2Icon,
-  ChevronLeftIcon,
-  CircleIcon,
-  MoreHorizontalIcon,
-} from "lucide-react";
+import { BackSubHeader } from "../../components/BackSubHeader";
+import { CameraIcon, CheckCircle2Icon, CircleIcon, MoreHorizontalIcon } from "lucide-react";
 import React from "react";
 import { Button } from "../../components/ui/button";
 import { Card, CardContent } from "../../components/ui/card";
@@ -17,22 +12,7 @@ export const MypageScreen = (): JSX.Element => {
       className="flex flex-col min-h-screen bg-white"
       data-model-id="36848:72208"
     >
-      <header className="flex flex-col w-full bg-white">
-        <nav className="flex items-center justify-between px-5 py-4 w-full">
-          <Button variant="ghost" size="icon" className="h-auto p-0">
-            <ChevronLeftIcon className="w-6 h-6 text-black" />
-          </Button>
-
-          <div className="flex items-center gap-4">
-            <Button variant="ghost" size="icon" className="h-auto p-0">
-              <MoreHorizontalIcon className="w-6 h-6 text-black" />
-            </Button>
-            <Button variant="ghost" size="icon" className="h-auto p-0">
-              <CircleIcon className="w-6 h-6 text-black" />
-            </Button>
-          </div>
-        </nav>
-      </header>
+      <BackSubHeader backTo="/" />
 
       <main className="flex flex-col flex-1 w-full">
         <section className="flex flex-col px-6 pt-[22px] pb-0 w-full bg-white">
@@ -94,9 +74,7 @@ export const MypageScreen = (): JSX.Element => {
 
         <div className="w-full h-4" />
 
-        <div className="flex justify-center py-2 w-full">
-          <div className="w-[134px] h-[5px] bg-black rounded-[100px]" />
-        </div>
+        <div className="flex justify-center py-2 w-full"></div>
       </footer>
     </div>
   );

@@ -1,8 +1,5 @@
-import {
-  ChevronLeftIcon,
-  ChevronRightIcon,
-  MoreHorizontalIcon,
-} from "lucide-react";
+import { BackSubHeader } from "../../components/BackSubHeader";
+import { ChevronRightIcon, MoreHorizontalIcon } from "lucide-react";
 import React from "react";
 import { Button } from "../../components/ui/button";
 
@@ -32,26 +29,7 @@ export const Support = (): JSX.Element => {
       className="flex flex-col min-h-screen bg-white"
       data-model-id="34958:294668"
     >
-      <header className="flex flex-col bg-white">
-        <nav className="flex items-center justify-between px-5 py-3 bg-white">
-          <Button variant="ghost" size="icon" className="h-auto p-0">
-            <ChevronLeftIcon className="w-6 h-6" />
-          </Button>
-
-          <div className="flex items-center gap-4">
-            <Button variant="ghost" size="icon" className="h-auto p-0">
-              <MoreHorizontalIcon className="w-6 h-6" />
-            </Button>
-            <Button
-              variant="ghost"
-              size="icon"
-              className="h-auto p-0 rounded-full border-2 border-black"
-            >
-              <div className="w-6 h-6" />
-            </Button>
-          </div>
-        </nav>
-      </header>
+      <BackSubHeader backTo="/" />
 
       <main className="flex flex-col flex-1 bg-white">
         <section className="pt-[22px] pb-0 px-6">
@@ -133,9 +111,6 @@ export const Support = (): JSX.Element => {
 
       <footer className="flex flex-col justify-end px-6 py-0 bg-white">
         <div className="w-full h-4" />
-        <div className="flex flex-col items-center gap-2.5 px-[105px] py-2 bg-white">
-          <div className="w-[134px] h-[5px] bg-black rounded-[100px]" />
-        </div>
       </footer>
     </div>
   );

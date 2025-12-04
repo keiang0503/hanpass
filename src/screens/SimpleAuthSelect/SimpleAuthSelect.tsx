@@ -1,5 +1,5 @@
-import { ChevronLeftIcon, CircleIcon, MoreHorizontalIcon } from "lucide-react";
 import React from "react";
+import { BackSubHeader } from "../../components/BackSubHeader";
 import { Button } from "../../components/ui/button";
 
 const authServices = [
@@ -83,22 +83,7 @@ export const SimpleAuthSelect = (): JSX.Element => {
       className="flex flex-col min-h-screen bg-white"
       data-model-id="35213:88025"
     >
-      <nav className="flex flex-col items-start w-full bg-white">
-        <div className="flex h-[54px] items-center justify-between px-5 py-0 w-full bg-white relative">
-          <Button variant="ghost" size="icon" className="h-8 w-8 p-0">
-            <ChevronLeftIcon className="h-6 w-6" />
-          </Button>
-
-          <div className="flex items-center gap-2">
-            <Button variant="ghost" size="icon" className="h-8 w-8 p-0">
-              <MoreHorizontalIcon className="h-6 w-6" />
-            </Button>
-            <Button variant="ghost" size="icon" className="h-8 w-8 p-0">
-              <CircleIcon className="h-6 w-6" />
-            </Button>
-          </div>
-        </div>
-      </nav>
+      <BackSubHeader backTo="/" />
 
       <main className="flex-1 flex flex-col w-full bg-white px-5 pt-4">
         <div className="flex items-center justify-between mb-6">

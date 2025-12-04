@@ -1,8 +1,5 @@
-import {
-  ChevronLeftIcon,
-  HelpCircleIcon,
-  MoreVerticalIcon,
-} from "lucide-react";
+import { BackSubHeader } from "../../components/BackSubHeader";
+import { HelpCircleIcon, MoreVerticalIcon } from "lucide-react";
 import React from "react";
 import { Link } from "react-router-dom";
 import { Button } from "../../components/ui/button";
@@ -59,28 +56,7 @@ export const OverseasRemitReceiverInfo = (): JSX.Element => {
       data-model-id="2674:66278"
     >
 
-      <header className="flex flex-col items-start w-full">
-        <div className="flex flex-col items-start gap-2 w-full">
-          <div className="flex h-[54px] items-center justify-between px-5 py-0 w-full bg-white">
-            <Button variant="ghost" size="icon" className="h-8 w-8 p-0">
-              <ChevronLeftIcon className="h-6 w-6" />
-            </Button>
-            <img
-              className="h-8 w-[87px]"
-              alt="Mini"
-              src="https://c.animaapp.com/vuYaFJZH/img/mini-9@2x.png"
-            />
-            <div className="flex items-center gap-2">
-              <Button variant="ghost" size="icon" className="h-8 w-8 p-0">
-                <MoreVerticalIcon className="h-5 w-5" />
-              </Button>
-              <Button variant="ghost" size="icon" className="h-8 w-8 p-0">
-                <HelpCircleIcon className="h-5 w-5" />
-              </Button>
-            </div>
-          </div>
-        </div>
-      </header>
+      <BackSubHeader backTo="/" />
 
       <section className="flex flex-col items-start w-full bg-white">
         <div className="flex flex-col gap-2 pt-[22px] pb-0 px-6 w-full">
@@ -282,12 +258,6 @@ export const OverseasRemitReceiverInfo = (): JSX.Element => {
         </div>
 
         <div className="w-full h-4" />
-
-        <div className="flex flex-col items-center gap-2.5 px-[105px] py-2 w-full bg-white">
-          <div className="flex flex-col w-[134px] items-center gap-2.5">
-            <div className="w-[134px] h-[5px] bg-black rounded-[100px]" />
-          </div>
-        </div>
       </footer>
     </div>
   );

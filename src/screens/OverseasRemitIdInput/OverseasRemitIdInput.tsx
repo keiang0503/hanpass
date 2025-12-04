@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { ChevronLeftIcon } from "lucide-react";
+import { BackSubHeader } from "../../components/BackSubHeader";
 import { Button } from "../../components/ui/button";
 import { Input } from "../../components/ui/input";
 import { Label } from "../../components/ui/label";
@@ -19,12 +19,7 @@ export const OverseasRemitIdInput = (): JSX.Element => {
 
   return (
     <div className="flex flex-col w-full min-h-screen bg-white">
-      {/* Navigation Header */}
-      <nav className="flex h-[54px] items-center justify-between px-5 py-0 w-full bg-white">
-        <Button variant="ghost" size="icon" className="h-8 w-8 p-0">
-          <ChevronLeftIcon className="h-8 w-8" />
-        </Button>
-      </nav>
+      <BackSubHeader backTo="/overseasremitrecipientu95090" />
 
       {/* Main Content */}
       <main className="flex flex-col flex-1 w-full bg-white">

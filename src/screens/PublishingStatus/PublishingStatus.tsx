@@ -1,7 +1,7 @@
 import { FolderIcon, CheckCircleIcon, ClockIcon, ExternalLinkIcon, CopyIcon, LockIcon, CheckIcon, LayoutGridIcon } from "lucide-react";
 import { Link } from "react-router-dom";
 import React, { useState, useEffect } from "react";
-import { DownloadButton, DownloadAllButton } from "../../components/DownloadButton";
+import { DownloadAllButton } from "../../components/DownloadButton";
 
 // 퍼블리싱 화면 데이터
 type PublishingItem = {
@@ -1144,10 +1144,6 @@ export const PublishingStatus = (): JSX.Element => {
                 </div>
                 {selectedData.status === "completed" && (
                   <>
-                    <DownloadButton
-                      screenId={selectedData.id}
-                      screenName={selectedData.name}
-                    />
                     <DownloadAllButton />
                     <a
                       href={selectedData.path}

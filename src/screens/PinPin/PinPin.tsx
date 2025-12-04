@@ -1,11 +1,5 @@
-import {
-  ChevronLeftIcon,
-  ChevronRightIcon,
-  CircleIcon,
-  DeleteIcon,
-  MoreHorizontalIcon,
-  RotateCcwIcon,
-} from "lucide-react";
+import { BackSubHeader } from "../../components/BackSubHeader";
+import { ChevronRightIcon, CircleIcon, DeleteIcon, MoreHorizontalIcon, RotateCcwIcon } from "lucide-react";
 import React from "react";
 import { Link } from "react-router-dom";
 import { Button } from "../../components/ui/button";
@@ -38,82 +32,7 @@ export const PinPin = (): JSX.Element => {
       className="flex flex-col min-h-screen items-start bg-white"
       data-model-id="40000016:2694299"
     >
-      <header className="flex flex-col items-start gap-[22px] w-full">
-        <div className="flex flex-col h-[92px] items-start w-full bg-white">
-          <Link
-            className="w-full flex flex-col items-start gap-2.5 bg-white"
-            to="/settingsu95039u95u4366u4460u4366u4457u95faceidu38u4364u4469u4358u4462u4523-u4363u4469u4523u4364u4467u4540u4352u4458u4523u4357u44692"
-          >
-
-          <nav className="flex flex-col items-start w-full mb-[-14.00px]">
-            <div className="flex flex-col items-start gap-2 w-full">
-              <div className="flex h-[54px] items-center justify-between px-5 py-0 w-full bg-white relative">
-                <Button variant="ghost" size="icon" className="h-auto w-8 p-0">
-                  <ChevronLeftIcon className="w-8 h-8" />
-                </Button>
-
-                <div className="flex items-center gap-2">
-                  <Button
-                    variant="ghost"
-                    size="icon"
-                    className="h-auto w-6 p-0"
-                  >
-                    <MoreHorizontalIcon className="w-6 h-6" />
-                  </Button>
-                  <Button
-                    variant="ghost"
-                    size="icon"
-                    className="h-auto w-6 p-0"
-                  >
-                    <CircleIcon className="w-6 h-6" />
-                  </Button>
-                </div>
-              </div>
-            </div>
-          </nav>
-        </div>
-
-        <main className="flex flex-col items-center gap-[50px] px-6 py-0 w-full">
-          <div className="flex flex-col items-center gap-[26px] w-full">
-            <div className="flex flex-col items-center gap-[50px] w-full">
-              <div className="flex flex-col items-center gap-[26px] w-full">
-                <div className="flex items-start justify-center w-full">
-                  <h1 className="flex-1 font-title-20-b font-[number:var(--title-20-b-font-weight)] text-[#0b0c0e] text-[length:var(--title-20-b-font-size)] text-center tracking-[var(--title-20-b-letter-spacing)] leading-[var(--title-20-b-line-height)] [font-style:var(--title-20-b-font-style)]">
-                    6자리 비밀번호를
-                    <br />
-                    입력해 주세요
-                  </h1>
-                </div>
-
-                <div className="flex items-center justify-center gap-3 w-full">
-                  {pinDots.map((dot, index) => (
-                    <div
-                      key={`pin-dot-${index}`}
-                      className={`w-[18px] h-[18px] rounded-full ${
-                        dot.filled ? "bg-[#0d56e4]" : "bg-[#e5e7eb]"
-                      }`}
-                    />
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <Button
-            variant="ghost"
-            className="h-auto inline-flex items-center gap-0 p-0"
-          >
-            <div className="inline-flex items-center justify-center px-0 py-1.5">
-              <div className="inline-flex items-center justify-center gap-2.5">
-                <span className="font-body-14-m font-[number:var(--body-14-m-font-weight)] text-[#85888e] text-[length:var(--body-14-m-font-size)] text-center tracking-[var(--body-14-m-letter-spacing)] leading-[var(--body-14-m-line-height)] whitespace-nowrap [font-style:var(--body-14-m-font-style)]">
-                  6자리 비밀번호(PIN) 변경
-                </span>
-              </div>
-              <ChevronRightIcon className="w-4 h-4 text-[#85888e]" />
-            </div>
-          </Button>
-        </main>
-      </header>
+      <BackSubHeader backTo="/" />
 
       <div className="flex flex-col items-start gap-6 w-full mt-auto">
         <div className="flex items-center justify-center gap-2.5 px-6 py-0 w-full">
@@ -232,9 +151,6 @@ export const PinPin = (): JSX.Element => {
       </div>
 
       <footer className="flex flex-col items-center gap-2.5 px-[105px] py-2 w-full bg-[#0d56e4]">
-        <div className="flex flex-col w-[134px] items-center gap-2.5">
-          <div className="w-[134px] h-[5px] bg-black rounded-[100px]" />
-        </div>
       </footer>
     </div>
   );

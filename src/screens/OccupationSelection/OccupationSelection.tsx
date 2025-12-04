@@ -85,9 +85,6 @@ export const OccupationSelection = (): JSX.Element => {
         </div>
 
         <footer className="flex flex-col items-center gap-2.5 px-[105px] py-2 relative self-stretch w-full bg-white">
-          <div className="flex-col w-[134px] items-center gap-2.5 flex relative">
-            <div className="relative w-[134px] h-[5px] bg-black rounded-[100px]" />
-          </div>
         </footer>
       </main>
     </div>

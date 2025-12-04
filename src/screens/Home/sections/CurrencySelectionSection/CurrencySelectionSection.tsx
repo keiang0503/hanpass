@@ -1,6 +1,6 @@
-import { ChevronLeftIcon } from "lucide-react";
 import React from "react";
 import { Link } from "react-router-dom";
+import { BackSubHeader } from "../../../../components/BackSubHeader";
 import { Button } from "../../../../components/ui/button";
 import { Card, CardContent } from "../../../../components/ui/card";
 import { Separator } from "../../../../components/ui/separator";
@@ -24,23 +24,7 @@ export const CurrencySelectionSection = (): JSX.Element => {
   return (
     <section className="flex flex-col items-center w-full">
       <div className="flex flex-col items-start w-full">
-        <nav className="flex flex-col items-start relative self-stretch w-full flex-none">
-          <div className="flex flex-col items-start gap-2 relative self-stretch w-full flex-none">
-            <div className="nav-header relative self-stretch w-full flex items-center justify-between px-1.5 bg-white">
-              <Link
-                to="/homeu95001u8232u4370u4457u4535-u40u4357u4457u4352u4467u4363u4469u4523u414"
-                className="flex items-center justify-center w-8 h-8"
-              >
-                <ChevronLeftIcon className="w-8 h-8 text-variable-collection-grayscale-01-0b0c0e" />
-              </Link>
-              <img
-                className="h-8"
-                alt="Mini"
-                src="https://c.animaapp.com/FyEwllI9/img/mini-8@2x.png"
-              />
-            </div>
-          </div>
-        </nav>
+        <BackSubHeader backTo="/homeu95001u8232u4370u4457u4535-u40u4357u4457u4352u4467u4363u4469u4523u414" />
 
         <div className="flex flex-col items-start w-full">
           <div className="flex flex-col items-start justify-center gap-2 w-full">

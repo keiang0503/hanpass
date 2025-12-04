@@ -5,7 +5,6 @@ import { Alert, AlertDescription } from "../../components/ui/alert";
 import { Button } from "../../components/ui/button";
 import { Card, CardContent } from "../../components/ui/card";
 
-
 const verificationSteps = [
   {
     number: "1",
@@ -126,9 +125,6 @@ export const SettingsPin = (): JSX.Element => {
           <div className="w-[360px] h-4 ml-[-16.50px] mr-[-16.50px]" />
 
           <div className="flex flex-col w-[375px] items-center gap-2.5 px-[105px] py-2 ml-[-24.00px] mr-[-24.00px] bg-white">
-            <div className="flex flex-col w-[134px] items-center gap-2.5">
-              <div className="w-[134px] h-[5px] bg-black rounded-[100px]" />
-            </div>
           </div>
         </footer>
       </main>

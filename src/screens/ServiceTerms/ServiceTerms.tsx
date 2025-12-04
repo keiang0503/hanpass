@@ -1,4 +1,5 @@
-import { ChevronLeftIcon, CircleIcon, MoreHorizontalIcon } from "lucide-react";
+import { BackSubHeader } from "../../components/BackSubHeader";
+import { CircleIcon, MoreHorizontalIcon } from "lucide-react";
 import React from "react";
 import { Button } from "../../components/ui/button";
 import { ScrollArea } from "../../components/ui/scroll-area";
@@ -29,24 +30,7 @@ export const ServiceTerms = (): JSX.Element => {
       className="flex flex-col min-h-screen bg-white"
       data-model-id="35202:91607"
     >
-      <header className="flex flex-col w-full bg-white">
-        <nav className="flex items-center justify-between px-4 py-4 bg-white">
-          <div className="flex items-center">
-            <ChevronLeftIcon className="w-6 h-6 text-black" />
-          </div>
-
-          <div className="flex items-center gap-4">
-            <MoreHorizontalIcon className="w-6 h-6 text-black" />
-            <CircleIcon className="w-6 h-6 text-black" />
-          </div>
-        </nav>
-
-        <div className="flex flex-col px-6 pt-[22px] pb-0 bg-white">
-          <h1 className="font-title-24-b font-[number:var(--title-24-b-font-weight)] text-[#0b0c0e] text-[length:var(--title-24-b-font-size)] tracking-[var(--title-24-b-letter-spacing)] leading-[var(--title-24-b-line-height)] [font-style:var(--title-24-b-font-style)]">
-            서비스 이용약관
-          </h1>
-        </div>
-      </header>
+      <BackSubHeader backTo="/" />
 
       <ScrollArea className="flex-1 w-full">
         <main className="flex flex-col gap-5 px-6 pt-[22px] pb-6">
@@ -83,9 +67,7 @@ export const ServiceTerms = (): JSX.Element => {
           </Button>
         </div>
 
-        <div className="flex justify-center py-2 bg-white">
-          <div className="w-[134px] h-[5px] bg-black rounded-[100px]" />
-        </div>
+        <div className="flex justify-center py-2 bg-white"></div>
       </footer>
     </div>
   );

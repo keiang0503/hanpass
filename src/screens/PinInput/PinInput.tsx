@@ -1,10 +1,5 @@
-import {
-  ChevronLeftIcon,
-  CircleIcon,
-  MoreHorizontalIcon,
-  RotateCcwIcon,
-  XIcon,
-} from "lucide-react";
+import { BackSubHeader } from "../../components/BackSubHeader";
+import { CircleIcon, MoreHorizontalIcon, RotateCcwIcon, XIcon } from "lucide-react";
 import React from "react";
 import { Button } from "../../components/ui/button";
 
@@ -30,22 +25,7 @@ export const PinInput = (): JSX.Element => {
       data-model-id="34892:269046"
     >
       <div className="flex w-[375px] h-[800px] relative flex-col items-start bg-white">
-        <header className="flex flex-col items-start relative self-stretch w-full bg-white">
-          <nav className="flex items-center justify-between px-5 py-4 relative self-stretch w-full">
-            <Button variant="ghost" size="icon" className="h-auto p-0">
-              <ChevronLeftIcon className="w-6 h-6 text-black" />
-            </Button>
-
-            <div className="flex items-center gap-4">
-              <Button variant="ghost" size="icon" className="h-auto p-0">
-                <MoreHorizontalIcon className="w-6 h-6 text-black" />
-              </Button>
-              <Button variant="ghost" size="icon" className="h-auto p-0">
-                <CircleIcon className="w-6 h-6 text-black" />
-              </Button>
-            </div>
-          </nav>
-        </header>
+        <BackSubHeader backTo="/" />
 
         <main className="flex flex-col items-center gap-[50px] px-6 py-0 relative self-stretch w-full flex-1">
           <div className="flex flex-col items-center gap-[26px] relative self-stretch w-full">
@@ -131,12 +111,6 @@ export const PinInput = (): JSX.Element => {
               >
                 <XIcon className="w-8 h-8 text-white" />
               </Button>
-            </div>
-          </div>
-
-          <div className="flex flex-col items-center gap-2.5 px-[105px] py-2 relative self-stretch w-full bg-[#0d56e4]">
-            <div className="flex flex-col w-[134px] items-center gap-2.5">
-              <div className="w-[134px] h-[5px] bg-black rounded-[100px]" />
             </div>
           </div>
         </footer>

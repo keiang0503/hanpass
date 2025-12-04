@@ -1,19 +1,11 @@
 import React from "react";
+import { BackSubHeader } from "../../components/BackSubHeader";
 import { Button } from "../../components/ui/button";
 
 export const OverseasRemitFail = (): JSX.Element => {
   return (
     <div className="w-full min-h-screen flex flex-col bg-white">
-      <header className="flex flex-col items-start w-full bg-white">
-        {/* Navigation */}
-        <nav className="flex items-center justify-center px-5 py-0 h-[54px] w-full relative">
-          <img
-            className="absolute right-1.5 h-8 w-[87px]"
-            alt="Mini"
-            src="https://c.animaapp.com/vuYaFJZH/img/mini-9@2x.png"
-          />
-        </nav>
-      </header>
+      <BackSubHeader backTo="/overseasremitconfirmu95092" />
 
       {/* Main Content */}
       <main className="flex flex-col flex-1 items-center justify-center px-6 py-0 gap-2.5">
@@ -67,12 +59,6 @@ export const OverseasRemitFail = (): JSX.Element => {
         </div>
 
         <div className="w-full h-4" />
-
-        <div className="flex flex-col items-center gap-2.5 px-[105px] py-2 w-full bg-white">
-          <div className="w-[134px] flex flex-col items-center gap-2.5">
-            <div className="w-[134px] h-[5px] bg-black rounded-[100px]" />
-          </div>
-        </div>
       </footer>
     </div>
   );

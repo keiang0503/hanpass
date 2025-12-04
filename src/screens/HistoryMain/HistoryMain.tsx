@@ -4,6 +4,7 @@ import {
   ChevronRightIcon,
 } from "lucide-react";
 import React from "react";
+import { BackSubHeader } from "../../components/BackSubHeader";
 import { Badge } from "../../components/ui/badge";
 import { Button } from "../../components/ui/button";
 import { Card, CardContent } from "../../components/ui/card";
@@ -72,26 +73,7 @@ export const HistoryMain = (): JSX.Element => {
       className="flex flex-col min-h-screen items-center bg-[#f7f7f8]"
       data-model-id="34838:66244"
     >
-      {/* Header */}
-      <header className="flex flex-col items-start w-full bg-white">
-        <div className="flex flex-col items-start gap-2 w-full">
-          <div className="flex h-[54px] items-center justify-between px-5 py-0 w-full bg-white relative">
-            <div className="flex items-center gap-2">
-              <img
-                className="w-8 h-8"
-                alt="Wechat hd"
-                src="https://c.animaapp.com/u8GhiXiH/img/wechat-hd-1.svg"
-              />
-            </div>
-
-            <img
-              className="h-8"
-              alt="Mini"
-              src="https://c.animaapp.com/u8GhiXiH/img/mini-6@2x.png"
-            />
-          </div>
-        </div>
-      </header>
+      <BackSubHeader backTo="/overseasremitpinu95098" />
 
       {/* Title and Navigation Section */}
       <section className="flex flex-col items-start gap-[22px] w-full bg-white">
@@ -234,12 +216,6 @@ export const HistoryMain = (): JSX.Element => {
       {/* Footer */}
       <footer className="flex flex-col px-6 py-0 w-full items-center justify-end mt-auto">
         <div className="w-full h-4" />
-
-        <div className="flex flex-col items-center gap-2.5 px-[105px] py-2 w-full">
-          <div className="flex flex-col w-[134px] items-center gap-2.5">
-            <div className="w-[134px] h-[5px] bg-black rounded-[100px]" />
-          </div>
-        </div>
       </footer>
     </div>
   );

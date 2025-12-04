@@ -95,7 +95,7 @@ export const CertificateConfirmKeyboard = (): JSX.Element => {
                       <Input
                         type="password"
                         placeholder="인증서 비밀번호를 입력해 주세요"
-                        className="flex-1 [font-family:'Pretendard',Helvetica] font-normal text-xl tracking-[-0.4px] leading-[130%] border-0 border-b-0 rounded-none px-0 focus-visible:ring-0 focus-visible:ring-offset-0 placeholder:text-[#acb2c1] h-auto"
+                        className="flex-1 [font-family:'Pretendard',Helvetica] font-normal text-xl tracking-[-0.4px] leading-[130%] border-0 border-b-0 rounded-none px-0 shadow-none focus-visible:ring-0 focus-visible:ring-offset-0 placeholder:text-[#acb2c1] h-auto"
                       />
                     </div>
                   </div>
@@ -229,11 +229,6 @@ export const CertificateConfirmKeyboard = (): JSX.Element => {
                 return
               </span>
             </button>
-          </div>
-
-          {/* Home Indicator */}
-          <div className="w-full h-[34px] flex items-end justify-center mt-[11px]">
-            <div className="mb-2 w-[134px] h-[5px] bg-black rounded-[100px]" />
           </div>
         </div>
       </section>

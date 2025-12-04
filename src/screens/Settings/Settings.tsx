@@ -1,4 +1,5 @@
-import { ChevronLeftIcon, CircleIcon, MoreVerticalIcon } from "lucide-react";
+import { BackSubHeader } from "../../components/BackSubHeader";
+import { CircleIcon, MoreVerticalIcon } from "lucide-react";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "../../components/ui/button";
@@ -15,7 +16,6 @@ const withdrawalReasons = [
   { id: 9, label: "기타", selected: false },
 ];
 
-
 export const Settings = (): JSX.Element => {
   const [selectedReason, setSelectedReason] = useState(1);
 
@@ -24,16 +24,7 @@ export const Settings = (): JSX.Element => {
       className="flex flex-col items-start relative bg-white min-h-screen"
       data-model-id="35166:94619"
     >
-      <header className="flex items-center justify-between px-4 py-3 relative self-stretch w-full bg-white">
-        <Link to="/settingsu95060u95u4368u4449u4527u4368u4460-u4363u4469u4363u4466-u4361u4453u4523u4368u4450u4520u95u4352u4469u4368u4449">
-          <ChevronLeftIcon className="w-6 h-6 text-black" />
-        </Link>
-        <div className="flex items-center gap-2">
-          <MoreVerticalIcon className="w-6 h-6 text-black" />
-          <CircleIcon className="w-6 h-6 text-black" />
-        </div>
-      </header>
-
+      <BackSubHeader backTo="/" />
 
       <main className="flex flex-col items-start gap-6 px-6 pt-6 pb-0 relative self-stretch w-full flex-1">
         <div className="flex flex-col items-start gap-2 relative self-stretch w-full">
@@ -79,10 +70,6 @@ export const Settings = (): JSX.Element => {
             탈퇴하기
           </span>
         </Button>
-
-        <div className="flex flex-col items-center gap-2.5 px-[105px] py-2 relative self-stretch w-full">
-          <div className="w-[134px] h-[5px] bg-black rounded-[100px]" />
-        </div>
       </footer>
     </div>
   );

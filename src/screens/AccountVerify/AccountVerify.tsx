@@ -1,4 +1,5 @@
 import React from "react";
+import { BackSubHeader } from "../../components/BackSubHeader";
 import { Button } from "../../components/ui/button";
 import { Card, CardContent } from "../../components/ui/card";
 import { Input } from "../../components/ui/input";
@@ -9,8 +10,7 @@ export const AccountVerify = (): JSX.Element => {
       className="flex flex-col min-h-screen items-center relative bg-white"
       data-model-id="34892:268556"
     >
-      <header className="w-full flex flex-col items-start gap-2.5 relative self-stretch flex-[0_0_auto]">
-      </header>
+      <BackSubHeader backTo="/loginscreenu95054" />
 
       <main className="flex flex-col items-center gap-9 px-6 py-0 relative flex-1 self-stretch w-full">
         <section className="flex flex-col items-start gap-9 relative self-stretch w-full flex-[0_0_auto]">
@@ -75,9 +75,6 @@ export const AccountVerify = (): JSX.Element => {
       </footer>
 
       <div className="flex flex-col items-center gap-2.5 px-[105px] py-2 relative self-stretch w-full flex-[0_0_auto] bg-white">
-        <div className="flex flex-col w-[134px] items-center gap-2.5 relative flex-[0_0_auto]">
-          <div className="relative w-[134px] h-[5px] bg-black rounded-[100px]" />
-        </div>
       </div>
     </div>
   );

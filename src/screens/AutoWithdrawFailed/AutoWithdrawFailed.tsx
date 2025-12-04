@@ -1,6 +1,7 @@
 import { ChevronRightIcon } from "lucide-react";
 import React from "react";
 import { Link } from "react-router-dom";
+import { BackSubHeader } from "../../components/BackSubHeader";
 import { Button } from "../../components/ui/button";
 
 export const AutoWithdrawFailed = (): JSX.Element => {
@@ -9,20 +10,7 @@ export const AutoWithdrawFailed = (): JSX.Element => {
       className="flex flex-col min-h-screen bg-white"
       data-model-id="35139:61481"
     >
-      <header className="flex flex-col w-full bg-white">
-        <nav className="flex flex-col items-start w-full">
-          <div className="flex flex-col items-start gap-2 w-full">
-            <div className="flex h-[54px] items-center justify-around px-5 py-0 w-full bg-white relative">
-              <div className="flex w-[calc(100%_-_109px)] items-center absolute top-[calc(50.00%_-_16px)] left-1.5" />
-              <img
-                className="absolute h-[calc(100%_-_22px)] top-[11px] right-1.5 w-[87px]"
-                alt="Mini"
-                src="https://c.animaapp.com/dojq12ez/img/mini-5@2x.png"
-              />
-            </div>
-          </div>
-        </nav>
-      </header>
+      <BackSubHeader backTo="/arsverificationu95079" />
 
       <main className="flex flex-col items-center gap-2.5 px-6 py-0 flex-1 w-full">
         <div className="flex flex-col items-center gap-3.5 px-0 py-1.5 w-full">
@@ -71,10 +59,6 @@ export const AutoWithdrawFailed = (): JSX.Element => {
         </div>
 
         <div className="w-full h-4" />
-
-        <div className="flex flex-col items-center gap-2.5 px-[105px] py-2 w-full bg-white">
-          <div className="w-[134px] h-[5px] bg-black rounded-[100px]" />
-        </div>
       </footer>
     </div>
   );

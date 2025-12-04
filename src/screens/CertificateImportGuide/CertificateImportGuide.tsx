@@ -1,4 +1,5 @@
-import { ChevronLeftIcon, MoreVerticalIcon } from "lucide-react";
+import { BackSubHeader } from "../../components/BackSubHeader";
+import { MoreVerticalIcon } from "lucide-react";
 import React from "react";
 import { Button } from "../../components/ui/button";
 import { Input } from "../../components/ui/input";
@@ -37,26 +38,7 @@ export const CertificateImportGuide = (): JSX.Element => {
       className="flex flex-col min-h-screen bg-white"
       data-model-id="35382:74534"
     >
-      <header className="flex flex-col w-full">
-        <nav className="flex items-center justify-between h-[54px] px-5 bg-white">
-          <Button variant="ghost" size="icon" className="h-8 w-8 p-0">
-            <ChevronLeftIcon className="h-6 w-6" />
-          </Button>
-
-          <div className="flex items-center gap-2">
-            <Button variant="ghost" size="icon" className="h-8 w-8 p-0">
-              <MoreVerticalIcon className="h-6 w-6" />
-            </Button>
-            <Button
-              variant="ghost"
-              size="icon"
-              className="h-8 w-8 p-0 rounded-full border-2 border-black"
-            >
-              <div className="w-4 h-4" />
-            </Button>
-          </div>
-        </nav>
-      </header>
+      <BackSubHeader backTo="/" />
 
       <main className="flex flex-col flex-1 w-full">
         <section className="flex flex-col px-6 pt-[22px] pb-0 bg-white">
@@ -157,12 +139,6 @@ export const CertificateImportGuide = (): JSX.Element => {
         </div>
 
         <div className="w-full h-4" />
-
-        <div className="flex flex-col items-center gap-2.5 px-[105px] py-2 w-full bg-white">
-          <div className="flex flex-col w-[134px] items-center gap-2.5">
-            <div className="w-[134px] h-[5px] bg-black rounded-[100px]" />
-          </div>
-        </div>
       </footer>
     </div>
   );

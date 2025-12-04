@@ -1,8 +1,5 @@
-import {
-  ChevronLeftIcon,
-  CircleIcon,
-  MoreHorizontalIcon,
-} from "lucide-react";
+import { BackSubHeader } from "../../components/BackSubHeader";
+import { CircleIcon, MoreHorizontalIcon } from "lucide-react";
 import React from "react";
 import { Link } from "react-router-dom";
 import { Button } from "../../components/ui/button";
@@ -24,18 +21,7 @@ export const PassportInfoInput = (): JSX.Element => {
       className="flex flex-col min-h-screen bg-white"
       data-model-id="35213:88245"
     >
-      <header className="flex flex-col bg-white">
-        <nav className="flex items-center justify-between px-5 py-4 bg-white">
-          <Link to="/">
-            <ChevronLeftIcon className="w-6 h-6 text-black" />
-          </Link>
-
-          <div className="flex items-center gap-4">
-            <MoreHorizontalIcon className="w-6 h-6 text-black" />
-            <CircleIcon className="w-6 h-6 text-black" />
-          </div>
-        </nav>
-      </header>
+      <BackSubHeader backTo="/" />
 
       <main className="flex flex-col flex-1 bg-white">
         <div className="flex flex-col px-6 pt-[22px]">
@@ -84,9 +70,7 @@ export const PassportInfoInput = (): JSX.Element => {
 
         <div className="h-4" />
 
-        <div className="flex justify-center py-2">
-          <div className="w-[134px] h-[5px] bg-black rounded-[100px]" />
-        </div>
+        <div className="flex justify-center py-2"></div>
       </footer>
     </div>
   );

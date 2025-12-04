@@ -1,9 +1,5 @@
-import {
-  ChevronLeftIcon,
-  CircleIcon,
-  MoreVerticalIcon,
-  SearchIcon,
-} from "lucide-react";
+import { BackSubHeader } from "../../components/BackSubHeader";
+import { CircleIcon, MoreVerticalIcon, SearchIcon } from "lucide-react";
 import React from "react";
 import { Link } from "react-router-dom";
 import { Button } from "../../components/ui/button";
@@ -30,30 +26,7 @@ export const AddressSearchResult = (): JSX.Element => {
       className="flex flex-col min-h-screen bg-white"
       data-model-id="40000003:1137612"
     >
-      <header className="flex flex-col bg-white">
-        <nav className="flex h-[54px] items-center justify-between px-5 py-0 bg-white">
-          <Button variant="ghost" size="icon" className="h-8 w-8 p-0" asChild>
-            <Link to="/addressdetailinputu95045">
-              <ChevronLeftIcon className="h-8 w-8" />
-            </Link>
-          </Button>
-
-          <img
-            className="h-[21px] w-[87px]"
-            alt="Mini"
-            src="https://c.animaapp.com/NpKP4m4n/img/mini-7@2x.png"
-          />
-
-          <div className="flex items-center gap-2">
-            <Button variant="ghost" size="icon" className="h-8 w-8 p-0">
-              <MoreVerticalIcon className="h-6 w-6" />
-            </Button>
-            <Button variant="ghost" size="icon" className="h-8 w-8 p-0">
-              <CircleIcon className="h-8 w-8" />
-            </Button>
-          </div>
-        </nav>
-      </header>
+      <BackSubHeader backTo="/" />
 
       <main className="flex flex-col flex-1 bg-white">
         <section className="flex flex-col items-start pt-[22px] pb-0 px-6">
@@ -163,12 +136,6 @@ export const AddressSearchResult = (): JSX.Element => {
         </Button>
 
         <div className="w-full h-4" />
-
-        <div className="flex flex-col items-center gap-2.5 px-[105px] py-2 w-full bg-white">
-          <div className="flex flex-col w-[134px] items-center gap-2.5">
-            <div className="w-[134px] h-[5px] bg-black rounded-[100px]" />
-          </div>
-        </div>
       </footer>
     </div>
   );

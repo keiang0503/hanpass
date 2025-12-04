@@ -1,10 +1,5 @@
-import {
-  ChevronLeftIcon,
-  CircleIcon,
-  MoreHorizontalIcon,
-  RotateCcwIcon,
-  XIcon,
-} from "lucide-react";
+import { BackSubHeader } from "../../components/BackSubHeader";
+import { ChevronLeftIcon, CircleIcon, MoreHorizontalIcon, RotateCcwIcon, XIcon } from "lucide-react";
 import React from "react";
 import { Button } from "../../components/ui/button";
 
@@ -38,29 +33,7 @@ export const PinConfirm = (): JSX.Element => {
       data-model-id="34892:269047"
     >
       <div className="flex w-[375px] h-[800px] flex-col items-start bg-white">
-        <header className="flex flex-col items-start w-full bg-white">
-          <nav className="flex flex-col items-start w-full">
-            <div className="flex flex-col items-start gap-2 w-full">
-              <div className="flex h-[54px] items-center justify-between px-5 py-0 w-full bg-white">
-                <Button
-                  variant="ghost"
-                  size="icon"
-                  className="h-8 w-8 p-0"
-                >
-                  <ChevronLeftIcon className="h-6 w-6" />
-                </Button>
-                <div className="flex items-center gap-2">
-                  <Button variant="ghost" size="icon" className="h-8 w-8 p-0">
-                    <MoreHorizontalIcon className="h-6 w-6" />
-                  </Button>
-                  <Button variant="ghost" size="icon" className="h-8 w-8 p-0">
-                    <CircleIcon className="h-6 w-6" />
-                  </Button>
-                </div>
-              </div>
-            </div>
-          </nav>
-        </header>
+        <BackSubHeader backTo="/" />
 
         <main className="flex flex-col items-center gap-[50px] px-6 py-0 w-full flex-1">
           <section className="flex flex-col items-center gap-[26px] w-full">
@@ -132,12 +105,6 @@ export const PinConfirm = (): JSX.Element => {
                   ))}
                 </React.Fragment>
               ))}
-            </div>
-          </div>
-
-          <div className="flex flex-col items-center gap-2.5 px-[105px] py-2 w-full bg-[#0d56e4]">
-            <div className="flex flex-col w-[134px] items-center gap-2.5">
-              <div className="w-[134px] h-[5px] bg-black rounded-[100px]" />
             </div>
           </div>
         </footer>

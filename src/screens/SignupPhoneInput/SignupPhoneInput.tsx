@@ -1,6 +1,7 @@
-import { ChevronLeftIcon, ChevronDownIcon, CircleIcon, MoreHorizontalIcon, XIcon } from "lucide-react";
+import { ChevronDownIcon, XIcon } from "lucide-react";
 import React from "react";
 import { Link } from "react-router-dom";
+import { BackSubHeader } from "../../components/BackSubHeader";
 import { Button } from "../../components/ui/button";
 import { Input } from "../../components/ui/input";
 import { Label } from "../../components/ui/label";
@@ -9,25 +10,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "../../components/ui/ta
 export const SignupPhoneInput = (): JSX.Element => {
   return (
     <div className="flex flex-col bg-white" data-model-id="40000001:45841">
-      {/* Navigation Header */}
-      <header className="flex flex-col w-full bg-white">
-        <div className="flex items-center justify-between h-[54px] px-5 relative w-full">
-          <Button variant="ghost" size="icon" className="h-10 w-10" asChild>
-            <Link to="/nationalityu95006">
-              <ChevronLeftIcon className="w-6 h-6" />
-            </Link>
-          </Button>
-
-          <div className="flex items-center gap-4">
-            <Button variant="ghost" size="icon" className="h-10 w-10">
-              <MoreHorizontalIcon className="w-6 h-6" />
-            </Button>
-            <Button variant="ghost" size="icon" className="h-10 w-10">
-              <CircleIcon className="w-6 h-6" />
-            </Button>
-          </div>
-        </div>
-      </header>
+      <BackSubHeader backTo="/nationalityu95006" />
 
       {/* Title Section */}
       <section className="flex flex-col w-full bg-white pt-[22px] px-6">
@@ -101,7 +84,7 @@ export const SignupPhoneInput = (): JSX.Element => {
                             <div className="flex items-center gap-2 flex-1">
                               <Input
                                 defaultValue="010-4567-9782"
-                                className="border-0 border-b-0 rounded-none p-0 h-auto font-body-20-r font-[number:var(--body-20-r-font-weight)] text-[#0b0c0e] text-[length:var(--body-20-r-font-size)] tracking-[var(--body-20-r-letter-spacing)] leading-[var(--body-20-r-line-height)] [font-style:var(--body-20-r-font-style)] focus-visible:ring-0 focus-visible:ring-offset-0"
+                                className="border-0 border-b-0 rounded-none p-0 h-auto shadow-none font-body-20-r font-[number:var(--body-20-r-font-weight)] text-[#0b0c0e] text-[length:var(--body-20-r-font-size)] tracking-[var(--body-20-r-letter-spacing)] leading-[var(--body-20-r-line-height)] [font-style:var(--body-20-r-font-style)] focus-visible:ring-0 focus-visible:ring-offset-0"
                               />
                             </div>
                           </div>
@@ -151,7 +134,7 @@ export const SignupPhoneInput = (): JSX.Element => {
                           <div className="flex items-center gap-2 flex-1">
                             <Input
                               placeholder="이메일을 입력하세요"
-                              className="border-0 border-b-0 rounded-none p-0 h-auto font-body-20-r font-[number:var(--body-20-r-font-weight)] text-[length:var(--body-20-r-font-size)] tracking-[var(--body-20-r-letter-spacing)] leading-[var(--body-20-r-line-height)] [font-style:var(--body-20-r-font-style)] placeholder:text-[#acb2c1] focus-visible:ring-0 focus-visible:ring-offset-0"
+                              className="border-0 border-b-0 rounded-none p-0 h-auto shadow-none font-body-20-r font-[number:var(--body-20-r-font-weight)] text-[length:var(--body-20-r-font-size)] tracking-[var(--body-20-r-letter-spacing)] leading-[var(--body-20-r-line-height)] [font-style:var(--body-20-r-font-style)] placeholder:text-[#acb2c1] focus-visible:ring-0 focus-visible:ring-offset-0"
                             />
                           </div>
                         </div>
@@ -194,11 +177,6 @@ export const SignupPhoneInput = (): JSX.Element => {
               </Link>
             </Button>
           </div>
-        </div>
-
-        {/* Home Indicator */}
-        <div className="relative w-full h-[34px] bg-white">
-          <div className="absolute left-[calc(50.00%_-_66px)] bottom-2 w-[134px] h-[5px] bg-black rounded-[100px]" />
         </div>
       </section>
     </div>

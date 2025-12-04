@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { BackSubHeader } from "../../components/BackSubHeader";
 import { Button } from "../../components/ui/button";
 
 export const AuthFailure = (): JSX.Element => {
@@ -9,21 +10,7 @@ export const AuthFailure = (): JSX.Element => {
       data-model-id="35139:61479"
     >
       <div className="w-[375px] h-[800px] items-start bg-white flex relative flex-col">
-        <header className="w-full flex flex-col items-start gap-2.5 relative self-stretch flex-[0_0_auto] bg-white">
-        </header>
-
-        <nav className="flex flex-col items-start relative self-stretch w-full flex-[0_0_auto]">
-          <div className="flex flex-col items-start gap-2 relative self-stretch w-full flex-[0_0_auto]">
-            <div className="flex h-[54px] items-center justify-around px-5 py-0 relative self-stretch w-full bg-white">
-              <div className="flex w-[calc(100%_-_109px)] items-center absolute top-[calc(50.00%_-_16px)] left-1.5" />
-              <img
-                className="absolute h-[calc(100%_-_22px)] top-[11px] right-1.5 w-[87px]"
-                alt="Mini"
-                src="https://c.animaapp.com/sCCrT5uL/img/mini-7@2x.png"
-              />
-            </div>
-          </div>
-        </nav>
+        <BackSubHeader backTo="/autowithdrawconsentu95063" />
 
         <main className="flex flex-col items-start gap-2.5 px-6 py-0 relative flex-1 self-stretch w-full grow">
           <div className="flex flex-col items-center gap-3.5 px-0 py-1.5 relative self-stretch w-full flex-[0_0_auto]">
@@ -69,11 +56,6 @@ export const AuthFailure = (): JSX.Element => {
             </div>
           </div>
           <div className="relative self-stretch w-full h-4 z-[-1]" />
-          <div className="flex flex-col items-center gap-2.5 px-[105px] py-2 relative self-stretch w-full flex-[0_0_auto] z-[-2] bg-white">
-            <div className="w-[134px] items-center gap-2.5 flex-[0_0_auto] ml-[-8.50px] mr-[-8.50px] flex relative flex-col">
-              <div className="relative w-[134px] h-[5px] bg-black rounded-[100px]" />
-            </div>
-          </div>
         </footer>
       </div>
     </div>

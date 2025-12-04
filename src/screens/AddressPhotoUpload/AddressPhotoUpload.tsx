@@ -1,9 +1,5 @@
-import {
-  CameraIcon,
-  ChevronLeftIcon,
-  ImageIcon,
-  MoreHorizontalIcon,
-} from "lucide-react";
+import { BackSubHeader } from "../../components/BackSubHeader";
+import { CameraIcon, ImageIcon, MoreHorizontalIcon } from "lucide-react";
 import React from "react";
 import { Link } from "react-router-dom";
 import { Button } from "../../components/ui/button";
@@ -29,32 +25,7 @@ export const AddressPhotoUpload = (): JSX.Element => {
       className="flex flex-col min-h-screen bg-white"
       data-model-id="2674:64275"
     >
-      <header className="flex flex-col w-full bg-white">
-        <nav className="flex h-[54px] items-center justify-between px-5 py-0 w-full bg-white">
-          <Button variant="ghost" size="icon" className="h-8 w-8 p-0" asChild>
-            <Link to="/addressdetailinputu95045">
-              <ChevronLeftIcon className="h-6 w-6" />
-            </Link>
-          </Button>
-
-          <img
-            className="h-[21px] w-[87px]"
-            alt="Mini"
-            src="https://c.animaapp.com/NpKP4m4n/img/mini-7@2x.png"
-          />
-
-          <div className="flex items-center gap-2">
-            <Button variant="ghost" size="icon" className="h-8 w-8 p-0">
-              <MoreHorizontalIcon className="h-6 w-6" />
-            </Button>
-            <Button variant="ghost" size="icon" className="h-8 w-8 p-0">
-              <div className="h-6 w-6 rounded-full border-2 border-black flex items-center justify-center">
-                <div className="h-3 w-3 rounded-full bg-black" />
-              </div>
-            </Button>
-          </div>
-        </nav>
-      </header>
+      <BackSubHeader backTo="/" />
 
       <main className="flex flex-col flex-1 w-full bg-white">
         <section className="flex flex-col items-start pt-[22px] px-6 w-full">
@@ -127,9 +98,6 @@ export const AddressPhotoUpload = (): JSX.Element => {
 
       <footer className="flex flex-col justify-end items-center px-6 py-0 w-full">
         <div className="w-full h-4" />
-        <div className="flex flex-col items-center gap-2.5 px-[105px] py-2 w-full bg-white">
-          <div className="w-[134px] h-[5px] bg-black rounded-[100px]" />
-        </div>
       </footer>
     </div>
   );

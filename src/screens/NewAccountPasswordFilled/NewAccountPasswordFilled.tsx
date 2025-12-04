@@ -1,29 +1,13 @@
-import { ChevronLeftIcon, CheckIcon, XIcon } from "lucide-react";
+import { CheckIcon, XIcon } from "lucide-react";
 import React from "react";
 import { Link } from "react-router-dom";
+import { BackSubHeader } from "../../components/BackSubHeader";
 import { Button } from "../../components/ui/button";
 
 export const NewAccountPasswordFilled = (): JSX.Element => {
   return (
     <div className="flex flex-col w-full bg-white" data-model-id="40000001:41131">
-      {/* WeChat Header Section */}
-      <header className="flex flex-col w-full items-start">
-        <div className="flex flex-col w-full items-start bg-[#ededed]">
-          <div className="flex h-12 items-center gap-[158px] px-4 py-2.5 w-full">
-            <Button variant="ghost" size="icon" className="h-8 w-8 p-0" asChild>
-              <Link to="/newaccountpasswordu95016">
-                <ChevronLeftIcon className="w-6 h-6 text-[#000000e5]" />
-              </Link>
-            </Button>
-
-            <div className="flex flex-col w-[71px] items-center justify-center gap-2.5 relative">
-              <div className="relative w-fit mt-[-1.00px] [font-family:'PingFang_SC-Medium',Helvetica] font-medium text-[#000000e5] text-lg text-center tracking-[0] leading-6 whitespace-nowrap">
-                비밀번호
-              </div>
-            </div>
-          </div>
-        </div>
-      </header>
+      <BackSubHeader backTo="/newaccountpasswordu95016" />
 
       {/* Title Section */}
       <section className="flex flex-col w-full items-start gap-3 pt-[22px] pb-0 px-6 bg-white">
@@ -143,11 +127,6 @@ export const NewAccountPasswordFilled = (): JSX.Element => {
               </Link>
             </Button>
           </div>
-        </div>
-
-        {/* Home Indicator */}
-        <div className="relative w-full h-[34px] bg-white">
-          <div className="absolute left-[calc(50.00%_-_66px)] bottom-2 w-[134px] h-[5px] bg-black rounded-[100px]" />
         </div>
       </section>
     </div>

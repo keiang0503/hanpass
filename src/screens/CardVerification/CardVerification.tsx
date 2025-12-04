@@ -1,4 +1,5 @@
-import { ChevronLeftIcon, CircleIcon, MoreVerticalIcon } from "lucide-react";
+import { BackSubHeader } from "../../components/BackSubHeader";
+import { CircleIcon, MoreVerticalIcon } from "lucide-react";
 import React from "react";
 import { Button } from "../../components/ui/button";
 
@@ -37,30 +38,7 @@ export const CardVerification = (): JSX.Element => {
       className="flex flex-col min-h-screen bg-white"
       data-model-id="35213:88072"
     >
-      <header className="flex flex-col w-full bg-white">
-        <nav className="flex items-center justify-between px-5 py-4 w-full">
-          <Button variant="ghost" size="icon" className="h-8 w-8 p-0">
-            <ChevronLeftIcon className="h-6 w-6" />
-          </Button>
-          <div className="flex items-center gap-4">
-            <Button variant="ghost" size="icon" className="h-8 w-8 p-0">
-              <MoreVerticalIcon className="h-6 w-6" />
-            </Button>
-            <Button variant="ghost" size="icon" className="h-8 w-8 p-0">
-              <CircleIcon className="h-6 w-6" />
-            </Button>
-          </div>
-        </nav>
-
-        <div className="flex items-center justify-between px-5 py-4 w-full">
-          <h1 className="[font-family:'Pretendard',Helvetica] font-semibold text-black text-lg tracking-[-0.36px] leading-normal">
-            카드본인확인서비스
-          </h1>
-          <div className="[font-family:'Pretendard',Helvetica] font-bold text-[#0066CC] text-sm tracking-[-0.28px] leading-normal">
-            KG 이니시스
-          </div>
-        </div>
-      </header>
+      <BackSubHeader backTo="/" />
 
       <main className="flex flex-col flex-1 px-5 py-6 w-full">
         <div className="grid grid-cols-2 gap-4 mb-6">

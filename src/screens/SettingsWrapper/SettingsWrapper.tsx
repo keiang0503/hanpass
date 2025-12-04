@@ -1,4 +1,5 @@
-import { ChevronLeftIcon, CircleIcon, MoreHorizontalIcon } from "lucide-react";
+import { BackSubHeader } from "../../components/BackSubHeader";
+import { CircleIcon, MoreHorizontalIcon } from "lucide-react";
 import React from "react";
 import { Button } from "../../components/ui/button";
 
@@ -31,44 +32,7 @@ export const SettingsWrapper = (): JSX.Element => {
       data-model-id="35382:74770"
     >
       <div className="flex flex-col items-start gap-[22px] pt-0 pb-[30px] px-0 relative flex-1 self-stretch w-full grow">
-        <header className="flex flex-col items-start relative self-stretch w-full flex-[0_0_auto]">
-          <nav className="flex flex-col items-start relative self-stretch w-full flex-[0_0_auto]">
-            <div className="flex flex-col items-start gap-2 relative self-stretch w-full flex-[0_0_auto]">
-              <div className="flex h-[54px] items-center justify-between px-5 py-0 relative self-stretch w-full bg-white">
-                <Button variant="ghost" size="icon" className="h-8 w-8 p-0">
-                  <ChevronLeftIcon className="h-6 w-6" />
-                </Button>
-
-                <div className="flex items-center gap-2">
-                  <Button variant="ghost" size="icon" className="h-8 w-8 p-0">
-                    <MoreHorizontalIcon className="h-6 w-6" />
-                  </Button>
-                  <Button variant="ghost" size="icon" className="h-8 w-8 p-0">
-                    <CircleIcon className="h-6 w-6" />
-                  </Button>
-                </div>
-              </div>
-            </div>
-          </nav>
-
-          <div className="flex-col items-start bg-white flex relative self-stretch w-full flex-[0_0_auto]">
-            <div className="flex-col gap-2 pt-[22px] pb-0 px-6 self-stretch w-full flex-[0_0_auto] flex items-start relative">
-              <div className="flex-col flex items-start relative self-stretch w-full flex-[0_0_auto]">
-                <h1 className="relative self-stretch mt-[-1.00px] font-title-24-b font-[number:var(--title-24-b-font-weight)] text-[#0b0c0e] text-[length:var(--title-24-b-font-size)] tracking-[var(--title-24-b-letter-spacing)] leading-[var(--title-24-b-line-height)] [font-style:var(--title-24-b-font-style)]">
-                  회원 탈퇴
-                </h1>
-              </div>
-
-              <div className="gap-2 flex items-start relative self-stretch w-full flex-[0_0_auto]">
-                <div className="flex flex-col items-center justify-center relative flex-1 grow">
-                  <p className="mt-[-1.00px] text-[length:var(--body-16-r-font-size)] tracking-[var(--body-16-r-letter-spacing)] leading-[var(--body-16-r-line-height)] relative self-stretch font-body-16-r font-[number:var(--body-16-r-font-weight)] text-[#717682] [font-style:var(--body-16-r-font-style)]">
-                    회원 탈퇴 전 반드시 주의사항을 확인해주세요.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </header>
+        <BackSubHeader backTo="/" />
 
         <main className="flex flex-col items-center gap-2.5 px-6 py-0 relative flex-1 self-stretch w-full grow">
           <div className="flex flex-col items-start relative self-stretch w-full flex-[0_0_auto]">
@@ -132,9 +96,6 @@ export const SettingsWrapper = (): JSX.Element => {
         <div className="relative w-[360px] h-4 ml-[-16.50px] mr-[-16.50px]" />
 
         <div className="flex flex-col items-center gap-2.5 px-[105px] py-2 relative self-stretch w-full flex-[0_0_auto] bg-white">
-          <div className="flex flex-col w-[134px] items-center gap-2.5 relative flex-[0_0_auto] ml-[-8.50px] mr-[-8.50px]">
-            <div className="relative w-[134px] h-[5px] bg-black rounded-[100px]" />
-          </div>
         </div>
       </footer>
     </div>

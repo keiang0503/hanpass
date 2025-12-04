@@ -1,9 +1,5 @@
-import {
-  ChevronLeftIcon,
-  MoreVerticalIcon,
-  SearchIcon,
-  TargetIcon,
-} from "lucide-react";
+import { BackSubHeader } from "../../components/BackSubHeader";
+import { MoreVerticalIcon, SearchIcon, TargetIcon } from "lucide-react";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "../../components/ui/button";
@@ -20,24 +16,7 @@ export const AddressDetailInput = (): JSX.Element => {
       className="flex flex-col min-h-screen bg-white"
       data-model-id="40000003:1137250"
     >
-      <header className="flex flex-col w-full bg-white">
-        <nav className="flex h-[54px] items-center justify-between px-5 py-0 w-full bg-white">
-          <Button variant="ghost" size="icon" className="h-8 w-8 p-0" asChild>
-            <Link to="/addresssearchapiu95046">
-              <ChevronLeftIcon className="h-6 w-6" />
-            </Link>
-          </Button>
-
-          <div className="flex items-center gap-2">
-            <Button variant="ghost" size="icon" className="h-8 w-8 p-0">
-              <MoreVerticalIcon className="h-6 w-6" />
-            </Button>
-            <Button variant="ghost" size="icon" className="h-8 w-8 p-0">
-              <TargetIcon className="h-6 w-6" />
-            </Button>
-          </div>
-        </nav>
-      </header>
+      <BackSubHeader backTo="/" />
 
       <main className="flex flex-col flex-1 w-full bg-white">
         <section className="flex flex-col items-start pt-[22px] pb-0 px-6 w-full">
@@ -207,12 +186,6 @@ export const AddressDetailInput = (): JSX.Element => {
         </div>
 
         <div className="w-full h-4" />
-
-        <div className="flex flex-col items-center gap-2.5 px-[105px] py-2 w-full bg-white">
-          <div className="flex flex-col w-[134px] items-center gap-2.5">
-            <div className="w-[134px] h-[5px] bg-black rounded-[100px]" />
-          </div>
-        </div>
       </footer>
     </div>
   );

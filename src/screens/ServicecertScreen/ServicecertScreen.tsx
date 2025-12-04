@@ -1,11 +1,6 @@
-import {
-  ChevronLeftIcon,
-  CircleIcon,
-  InfoIcon,
-  MoreHorizontalIcon,
-} from "lucide-react";
+import { InfoIcon } from "lucide-react";
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { BackSubHeader } from "../../components/BackSubHeader";
 import { Button } from "../../components/ui/button";
 import { Input } from "../../components/ui/input";
 import { Label } from "../../components/ui/label";
@@ -20,26 +15,7 @@ export const ServicecertScreen = (): JSX.Element => {
       className="flex flex-col min-h-screen items-center justify-between relative bg-white"
       data-model-id="36848:89352"
     >
-      <nav className="flex flex-col items-start relative self-stretch w-full flex-[0_0_auto]">
-        <div className="flex flex-col items-start gap-2 relative self-stretch w-full flex-[0_0_auto]">
-          <div className="flex h-[54px] items-center justify-between px-5 py-0 relative self-stretch w-full bg-white">
-            <Button variant="ghost" size="icon" className="h-8 w-8 p-0" asChild>
-              <Link to="/servicecertu95003u95u4370u4458u4520u4363u4469u4523u4364u4467u4540-u4359u4449u4527u4352u4467u4536-u4359u4449u4540u4359u4453u4536-u4361u4453u4523u4368u4450u4520">
-                <ChevronLeftIcon className="h-8 w-8" />
-              </Link>
-            </Button>
-
-            <div className="flex items-center gap-2">
-              <Button variant="ghost" size="icon" className="h-8 w-8 p-0">
-                <MoreHorizontalIcon className="h-6 w-6" />
-              </Button>
-              <Button variant="ghost" size="icon" className="h-8 w-8 p-0">
-                <CircleIcon className="h-8 w-8" />
-              </Button>
-            </div>
-          </div>
-        </div>
-      </nav>
+      <BackSubHeader backTo="/" />
 
       <main className="flex-col items-start bg-white flex relative self-stretch w-full flex-[0_0_auto]">
         <div className="flex-col gap-2 pt-[22px] pb-0 px-6 self-stretch w-full flex-[0_0_auto] flex items-start relative">
@@ -212,9 +188,6 @@ export const ServicecertScreen = (): JSX.Element => {
         <div className="relative self-stretch w-full h-4 z-0" />
 
         <div className="flex flex-col items-center gap-2.5 px-[105px] py-2 relative self-stretch w-full flex-[0_0_auto] z-[-1] bg-white">
-          <div className="flex flex-col w-[134px] items-center gap-2.5 relative flex-[0_0_auto] ml-[-8.50px] mr-[-8.50px]">
-            <div className="relative w-[134px] h-[5px] bg-black rounded-[100px]" />
-          </div>
         </div>
       </footer>
     </div>

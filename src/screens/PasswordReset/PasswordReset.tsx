@@ -1,6 +1,7 @@
-import { ChevronLeftIcon, CircleIcon } from "lucide-react";
+import { CircleIcon } from "lucide-react";
 import React from "react";
 import { Link } from "react-router-dom";
+import { BackSubHeader } from "../../components/BackSubHeader";
 import { Button } from "../../components/ui/button";
 import { Input } from "../../components/ui/input";
 import { Label } from "../../components/ui/label";
@@ -18,16 +19,7 @@ export const PasswordReset = (): JSX.Element => {
       className="flex flex-col min-h-screen bg-white"
       data-model-id="40000003:240087"
     >
-      {/* Navigation Header */}
-      <header className="flex flex-col w-full items-start">
-        <div className="flex h-12 items-center gap-[158px] px-4 py-2.5 w-full border-b border-[#f5f6f8]">
-          <Button variant="ghost" size="icon" className="h-8 w-8 p-0" asChild>
-            <Link to="/photoconfirmationu95019">
-              <ChevronLeftIcon className="w-6 h-6 text-[#0b0c0e]" />
-            </Link>
-          </Button>
-        </div>
-      </header>
+      <BackSubHeader backTo="/photoconfirmationu95019" />
 
       {/* Title Section */}
       <section className="flex flex-col items-start bg-white relative w-full">

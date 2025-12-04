@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { BackSubHeader } from "../../components/BackSubHeader";
 import { Button } from "../../components/ui/button";
 import { Input } from "../../components/ui/input";
 import { Label } from "../../components/ui/label";
@@ -10,14 +11,7 @@ export const NewAccountReferral = (): JSX.Element => {
       className="flex flex-col min-h-screen bg-white"
       data-model-id="40000001:45911"
     >
-      {/* Navigation Header */}
-      <header className="flex items-center justify-end h-[54px] px-5 bg-white relative">
-        <img
-          className="h-8 w-[87px]"
-          alt="Mini"
-          src="/img/mini.png"
-        />
-      </header>
+      <BackSubHeader backTo="/newaccountpasswordu95016" />
 
       {/* Title Section */}
       <section className="px-6 pt-[22px] bg-white">
@@ -61,11 +55,6 @@ export const NewAccountReferral = (): JSX.Element => {
         </Button>
 
         <div className="w-full h-4" />
-
-        {/* Home Indicator */}
-        <div className="w-full flex justify-center py-2 bg-white">
-          <div className="w-[134px] h-[5px] bg-black rounded-[100px]" />
-        </div>
       </footer>
     </div>
   );

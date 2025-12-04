@@ -1,9 +1,5 @@
-import {
-  ChevronDownIcon,
-  ChevronLeftIcon,
-  CircleIcon,
-  MoreHorizontalIcon,
-} from "lucide-react";
+import { BackSubHeader } from "../../components/BackSubHeader";
+import { ChevronDownIcon, CircleIcon, MoreHorizontalIcon } from "lucide-react";
 import React from "react";
 import { Link } from "react-router-dom";
 import { Button } from "../../components/ui/button";
@@ -43,18 +39,7 @@ export const ArsVerification = (): JSX.Element => {
       className="flex flex-col min-h-screen bg-white"
       data-model-id="2674:67457"
     >
-      <header className="flex flex-col w-full bg-white">
-        <nav className="flex items-center justify-between px-5 py-4 w-full">
-          <Link to="/">
-            <ChevronLeftIcon className="w-6 h-6" />
-          </Link>
-
-          <div className="flex items-center gap-4">
-            <MoreHorizontalIcon className="w-6 h-6" />
-            <CircleIcon className="w-6 h-6" />
-          </div>
-        </nav>
-      </header>
+      <BackSubHeader backTo="/" />
 
       <main className="flex flex-col flex-1 w-full">
         <section className="flex flex-col px-6 pt-[22px] pb-0 bg-white">
@@ -157,9 +142,7 @@ export const ArsVerification = (): JSX.Element => {
 
         <div className="h-4" />
 
-        <div className="flex justify-center py-2">
-          <div className="w-[134px] h-[5px] bg-black rounded-[100px]" />
-        </div>
+        <div className="flex justify-center py-2"></div>
       </footer>
     </div>
   );

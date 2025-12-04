@@ -1,11 +1,6 @@
-import {
-  ChevronLeftIcon,
-  CircleIcon,
-  MoreVerticalIcon,
-  PlusIcon,
-  Trash2Icon,
-} from "lucide-react";
+import { PlusIcon, Trash2Icon } from "lucide-react";
 import React from "react";
+import { BackSubHeader } from "../../components/BackSubHeader";
 import { Button } from "../../components/ui/button";
 import { Card, CardContent } from "../../components/ui/card";
 
@@ -34,26 +29,7 @@ export const CertificateSelect = (): JSX.Element => {
       className="flex flex-col min-h-screen items-center bg-white"
       data-model-id="35202:92185"
     >
-      <header className="w-full flex flex-col items-start bg-white">
-      </header>
-
-      <nav className="flex flex-col items-start w-full">
-        <div className="flex flex-col items-start gap-2 w-full">
-          <div className="flex h-[54px] items-center justify-between px-5 py-0 w-full bg-white">
-            <Button variant="ghost" size="icon" className="h-auto p-0">
-              <ChevronLeftIcon className="w-8 h-8" />
-            </Button>
-            <div className="flex items-center gap-2">
-              <Button variant="ghost" size="icon" className="h-auto p-0">
-                <MoreVerticalIcon className="w-6 h-6" />
-              </Button>
-              <Button variant="ghost" size="icon" className="h-auto p-0">
-                <CircleIcon className="w-8 h-8" />
-              </Button>
-            </div>
-          </div>
-        </div>
-      </nav>
+      <BackSubHeader backTo="/" />
 
       <section className="flex flex-col items-start w-full bg-white">
         <div className="flex flex-col items-start gap-2 pt-[22px] pb-0 px-6 w-full">
@@ -146,11 +122,6 @@ export const CertificateSelect = (): JSX.Element => {
 
       <footer className="flex flex-col items-center justify-end px-6 py-0 w-full bg-white">
         <div className="w-full h-4" />
-        <div className="flex flex-col items-center gap-2.5 px-[105px] py-2 w-full bg-white">
-          <div className="flex flex-col w-[134px] items-center gap-2.5">
-            <div className="w-[134px] h-[5px] bg-black rounded-[100px]" />
-          </div>
-        </div>
       </footer>
     </div>
   );

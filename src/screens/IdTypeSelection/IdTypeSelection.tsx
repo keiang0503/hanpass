@@ -1,6 +1,6 @@
 import { CheckIcon } from "lucide-react";
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { BackSubHeader } from "../../components/BackSubHeader";
 import { Button } from "../../components/ui/button";
 import { Card, CardContent } from "../../components/ui/card";
 
@@ -30,24 +30,7 @@ export const IdTypeSelection = (): JSX.Element => {
       className="flex flex-col min-h-screen bg-white"
       data-model-id="2674:63885"
     >
-      <header className="flex flex-col w-full bg-white">
-      </header>
-
-      <nav className="flex flex-col w-full">
-        <div className="flex flex-col gap-2 w-full">
-          <div className="flex h-[54px] items-center justify-around px-5 py-0 w-full bg-white relative">
-            <Link
-              to="/verificationstepsu95024"
-              className="w-[calc(100%_-_109px)] absolute top-[calc(50.00%_-_16px)] left-1.5 flex items-center"
-            />
-            <img
-              className="absolute h-[calc(100%_-_22px)] top-[11px] right-1.5 w-[87px]"
-              alt="Mini"
-              src="https://c.animaapp.com/SXpbAKOQ/img/mini-9@2x.png"
-            />
-          </div>
-        </div>
-      </nav>
+      <BackSubHeader backTo="/verificationstepsu95024" />
 
       <section className="flex flex-col bg-white w-full">
         <div className="flex flex-col gap-2 pt-[22px] pb-0 px-6 w-full">
@@ -128,12 +111,6 @@ export const IdTypeSelection = (): JSX.Element => {
         </div>
 
         <div className="relative w-full h-4" />
-
-        <div className="flex flex-col items-center gap-2.5 px-[105px] py-2 w-full bg-white">
-          <div className="w-[134px] flex flex-col items-center">
-            <div className="w-[134px] h-[5px] bg-black rounded-[100px]" />
-          </div>
-        </div>
       </footer>
     </div>
   );

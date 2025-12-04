@@ -230,11 +230,6 @@ export const CertificatePasswordKeyboard = (): JSX.Element => {
               </span>
             </button>
           </div>
-
-          {/* Home Indicator */}
-          <div className="w-full h-[34px] flex items-end justify-center mt-[11px]">
-            <div className="mb-2 w-[134px] h-[5px] bg-black rounded-[100px]" />
-          </div>
         </div>
       </section>
     </div>

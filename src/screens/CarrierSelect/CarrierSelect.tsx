@@ -1,9 +1,5 @@
-import {
-  ChevronLeftIcon,
-  CircleIcon,
-  InfoIcon,
-  MoreHorizontalIcon,
-} from "lucide-react";
+import { BackSubHeader } from "../../components/BackSubHeader";
+import { CircleIcon, InfoIcon, MoreHorizontalIcon } from "lucide-react";
 import React from "react";
 import { Button } from "../../components/ui/button";
 import { Card, CardContent } from "../../components/ui/card";
@@ -23,22 +19,7 @@ export const CarrierSelect = (): JSX.Element => {
       className="flex flex-col min-h-screen bg-white"
       data-model-id="35213:88115"
     >
-      <header className="flex flex-col w-full bg-white">
-        <nav className="flex items-center justify-between px-5 py-4 w-full bg-white">
-          <Button variant="ghost" size="icon" className="h-8 w-8 p-0">
-            <ChevronLeftIcon className="h-6 w-6" />
-          </Button>
-
-          <div className="flex items-center gap-4">
-            <Button variant="ghost" size="icon" className="h-8 w-8 p-0">
-              <MoreHorizontalIcon className="h-6 w-6" />
-            </Button>
-            <Button variant="ghost" size="icon" className="h-8 w-8 p-0">
-              <CircleIcon className="h-6 w-6" />
-            </Button>
-          </div>
-        </nav>
-      </header>
+      <BackSubHeader backTo="/" />
 
       <main className="flex flex-col flex-1 px-5 pt-8 pb-6 w-full">
         <div className="flex items-center justify-between mb-8">

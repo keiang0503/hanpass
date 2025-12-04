@@ -1,5 +1,6 @@
 import { InfoIcon, MoreVerticalIcon, PlusIcon, TargetIcon } from "lucide-react";
 import React from "react";
+import { BackSubHeader } from "../../components/BackSubHeader";
 import { Button } from "../../components/ui/button";
 import { Card, CardContent } from "../../components/ui/card";
 
@@ -9,29 +10,7 @@ export const AccountWrapper = (): JSX.Element => {
       className="flex flex-col min-h-screen bg-white"
       data-model-id="34978:52371"
     >
-      <header className="flex flex-col w-full bg-white">
-      </header>
-
-      <nav className="flex flex-col items-start w-full bg-white">
-        <div className="flex h-[54px] items-center justify-between px-5 py-0 w-full bg-white">
-          <Button variant="ghost" size="icon" className="h-8 w-8 p-0">
-            <img
-              className="w-8 h-8"
-              alt="Wechat hd"
-              src="https://c.animaapp.com/ELrb3VWQ/img/wechat-hd-3.svg"
-            />
-          </Button>
-
-          <div className="flex items-center gap-2">
-            <Button variant="ghost" size="icon" className="h-8 w-8 p-0">
-              <MoreVerticalIcon className="w-5 h-5" />
-            </Button>
-            <Button variant="ghost" size="icon" className="h-8 w-8 p-0">
-              <TargetIcon className="w-5 h-5" />
-            </Button>
-          </div>
-        </div>
-      </nav>
+      <BackSubHeader backTo="/selfcheckauthu95052" />
 
       <section className="flex flex-col items-start w-full">
         <div className="flex h-[54px] items-center justify-between px-5 py-0 w-full bg-white">
@@ -78,9 +57,6 @@ export const AccountWrapper = (): JSX.Element => {
 
       <footer className="flex flex-col px-6 py-0 w-full items-center justify-end">
         <div className="w-full h-4" />
-        <div className="flex flex-col items-center gap-2.5 px-[105px] py-2 w-full bg-white">
-          <div className="w-[134px] h-[5px] bg-black rounded-[100px]" />
-        </div>
       </footer>
     </div>
   );

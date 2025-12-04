@@ -59,9 +59,6 @@ export const MypageBs = (): JSX.Element => {
             <div className="w-full h-4" />
 
             <div className="flex flex-col w-full items-center gap-2.5 px-[105px] py-2 bg-white">
-              <div className="w-[134px] items-center gap-2.5 flex flex-col">
-                <div className="w-[134px] h-[5px] bg-black rounded-[100px]" />
-              </div>
             </div>
           </div>
         </section>

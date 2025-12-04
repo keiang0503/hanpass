@@ -1,11 +1,5 @@
-import {
-  ChevronLeftIcon,
-  ChevronRightIcon,
-  CircleIcon,
-  DeleteIcon,
-  MoreVerticalIcon,
-  RotateCcwIcon,
-} from "lucide-react";
+import { BackSubHeader } from "../../components/BackSubHeader";
+import { ChevronRightIcon, CircleIcon, DeleteIcon, MoreVerticalIcon, RotateCcwIcon } from "lucide-react";
 import React from "react";
 import { Link } from "react-router-dom";
 import { Button } from "../../components/ui/button";
@@ -40,37 +34,7 @@ export const OverseasRemitPin = (): JSX.Element => {
       className="flex flex-col min-h-screen items-start bg-white"
       data-model-id="40000008:1187249"
     >
-      <header className="flex flex-col items-start w-full bg-white">
-        <nav className="flex items-center justify-between px-5 py-4 w-full">
-          <Button variant="ghost" size="icon" className="h-auto p-0" asChild>
-            <Link to="/overseasremitu95097">
-              <ChevronLeftIcon className="w-6 h-6" />
-            </Link>
-          </Button>
-
-          <div className="flex items-center gap-4">
-            <Button variant="ghost" size="icon" className="h-auto p-0">
-              <MoreVerticalIcon className="w-6 h-6" />
-            </Button>
-            <Button variant="ghost" size="icon" className="h-auto p-0">
-              <CircleIcon className="w-6 h-6" />
-            </Button>
-          </div>
-        </nav>
-
-        <div className="flex items-center px-5 py-2 w-full">
-          <img
-            className="w-8 h-8"
-            alt="Wechat hd"
-            src="https://c.animaapp.com/vuYaFJZH/img/wechat-hd-6.svg"
-          />
-          <img
-            className="ml-auto w-[87px] h-[21px]"
-            alt="Mini"
-            src="https://c.animaapp.com/vuYaFJZH/img/mini-9@2x.png"
-          />
-        </div>
-      </header>
+      <BackSubHeader backTo="/" />
 
       <main className="flex flex-col flex-1 w-full">
         <div className="flex flex-col items-center gap-[50px] px-6 py-8">
@@ -136,9 +100,7 @@ export const OverseasRemitPin = (): JSX.Element => {
           ))}
         </div>
 
-        <div className="flex justify-center px-[105px] py-2">
-          <div className="w-[134px] h-[5px] bg-black rounded-[100px]" />
-        </div>
+        <div className="flex justify-center px-[105px] py-2"></div>
       </div>
     </div>
   );

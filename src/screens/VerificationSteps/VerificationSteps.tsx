@@ -1,8 +1,5 @@
-import {
-  ChevronLeftIcon,
-  ChevronRightIcon,
-  MoreVerticalIcon,
-} from "lucide-react";
+import { BackSubHeader } from "../../components/BackSubHeader";
+import { ChevronRightIcon, MoreVerticalIcon } from "lucide-react";
 import React from "react";
 import { Link } from "react-router-dom";
 import { Button } from "../../components/ui/button";
@@ -28,26 +25,7 @@ export const VerificationSteps = (): JSX.Element => {
       data-model-id="2674:63947"
     >
       {/* Navigation Header */}
-      <header className="flex flex-col w-full items-start">
-        <div className="flex h-12 items-center justify-between px-4 py-2.5 w-full border-b border-[#f5f6f8]">
-          <Button variant="ghost" size="icon" className="h-8 w-8 p-0" asChild>
-            <Link to="/idtypeselectu95031">
-              <ChevronLeftIcon className="w-6 h-6 text-[#0b0c0e]" />
-            </Link>
-          </Button>
-
-          <div className="flex items-center gap-4">
-            <Button variant="ghost" size="icon" className="h-auto p-0">
-              <MoreVerticalIcon className="w-6 h-6" />
-            </Button>
-            <Button variant="ghost" size="icon" className="h-auto p-0">
-              <div className="w-6 h-6 rounded-full border-2 border-black flex items-center justify-center">
-                <div className="w-3 h-3 rounded-full bg-black" />
-              </div>
-            </Button>
-          </div>
-        </div>
-      </header>
+      <BackSubHeader backTo="/" />
 
       <main className="flex flex-col flex-1 w-full bg-white">
         <section className="flex flex-col gap-2 pt-[22px] px-6 w-full">
@@ -132,10 +110,6 @@ export const VerificationSteps = (): JSX.Element => {
         </div>
 
         <div className="w-full h-4" />
-
-        <div className="flex flex-col items-center gap-2.5 px-[105px] py-2 w-full bg-white">
-          <div className="w-[134px] h-[5px] bg-black rounded-[100px]" />
-        </div>
       </footer>
     </div>
   );

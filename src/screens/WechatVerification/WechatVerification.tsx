@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { BackSubHeader } from "../../components/BackSubHeader";
 import { Button } from "../../components/ui/button";
 import { Input } from "../../components/ui/input";
 import { Label } from "../../components/ui/label";
@@ -77,23 +78,7 @@ export const WechatVerification = (): JSX.Element => {
       className="flex flex-col items-end relative bg-white min-h-screen"
       data-model-id="2674:64035"
     >
-      <header className="flex flex-col w-full bg-white">
-        <div className="flex h-[54px] items-center justify-between px-5 py-0 w-full bg-white">
-          <div className="flex items-center">
-            <img
-              className="w-8 h-8"
-              alt="Wechat hd"
-              src="https://c.animaapp.com/Kel660N3/img/wechat-hd-4.svg"
-            />
-          </div>
-
-          <img
-            className="h-4 w-[87px]"
-            alt="Mini"
-            src="https://c.animaapp.com/Kel660N3/img/mini-7@2x.png"
-          />
-        </div>
-      </header>
+      <BackSubHeader backTo="/customerverificatiou95035" />
 
       <main className="flex flex-col w-full flex-1">
         <section className="flex flex-col items-start bg-white w-full">
@@ -161,7 +146,7 @@ export const WechatVerification = (): JSX.Element => {
                                 defaultValue={field.value}
                                 placeholder={field.placeholder}
                                 disabled={field.disabled}
-                                className={`border-0 border-b-0 rounded-none h-auto p-0 w-full mt-[-1.00px] font-body-20-r font-[number:var(--body-20-r-font-weight)] text-[length:var(--body-20-r-font-size)] tracking-[var(--body-20-r-letter-spacing)] leading-[var(--body-20-r-line-height)] [font-style:var(--body-20-r-font-style)] focus-visible:ring-0 focus-visible:ring-offset-0 ${
+                                className={`border-0 border-b-0 rounded-none h-auto p-0 shadow-none w-full mt-[-1.00px] font-body-20-r font-[number:var(--body-20-r-font-weight)] text-[length:var(--body-20-r-font-size)] tracking-[var(--body-20-r-letter-spacing)] leading-[var(--body-20-r-line-height)] [font-style:var(--body-20-r-font-style)] focus-visible:ring-0 focus-visible:ring-offset-0 ${
                                   field.value
                                     ? "text-[#0b0c0e]"
                                     : "text-[#acb2c1] placeholder:text-[#acb2c1]"
@@ -292,7 +277,7 @@ export const WechatVerification = (): JSX.Element => {
                                 defaultValue={field.value}
                                 placeholder={field.placeholder}
                                 disabled={field.disabled}
-                                className={`border-0 border-b-0 rounded-none h-auto p-0 w-fit mt-[-1.00px] font-body-20-r font-[number:var(--body-20-r-font-weight)] text-[length:var(--body-20-r-font-size)] tracking-[var(--body-20-r-letter-spacing)] leading-[var(--body-20-r-line-height)] whitespace-nowrap [font-style:var(--body-20-r-font-style)] focus-visible:ring-0 focus-visible:ring-offset-0 ${
+                                className={`border-0 border-b-0 rounded-none h-auto p-0 shadow-none w-fit mt-[-1.00px] font-body-20-r font-[number:var(--body-20-r-font-weight)] text-[length:var(--body-20-r-font-size)] tracking-[var(--body-20-r-letter-spacing)] leading-[var(--body-20-r-line-height)] whitespace-nowrap [font-style:var(--body-20-r-font-style)] focus-visible:ring-0 focus-visible:ring-offset-0 ${
                                   field.disabled
                                     ? "text-[#5e616b] bg-transparent"
                                     : "text-[#0b0c0e]"
@@ -325,12 +310,6 @@ export const WechatVerification = (): JSX.Element => {
         </div>
 
         <div className="w-full h-4" />
-
-        <div className="flex flex-col items-center gap-2.5 px-[105px] py-2 w-full bg-white">
-          <div className="flex flex-col w-[134px] items-center gap-2.5">
-            <div className="w-[134px] h-[5px] bg-black rounded-[100px]" />
-          </div>
-        </div>
       </footer>
     </div>
   );

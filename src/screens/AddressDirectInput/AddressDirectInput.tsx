@@ -1,10 +1,6 @@
-import {
-  ChevronLeftIcon,
-  ChevronRightIcon,
-  CircleIcon,
-  MoreHorizontalIcon,
-} from "lucide-react";
+import { ChevronRightIcon } from "lucide-react";
 import React from "react";
+import { BackSubHeader } from "../../components/BackSubHeader";
 import { Button } from "../../components/ui/button";
 import { Card, CardContent } from "../../components/ui/card";
 
@@ -14,22 +10,7 @@ export const AddressDirectInput = (): JSX.Element => {
       className="flex flex-col min-h-screen bg-white"
       data-model-id="34978:32092"
     >
-      <header className="flex flex-col w-full bg-white">
-      </header>
-
-      <nav className="flex items-center justify-between px-5 py-4 w-full bg-white">
-        <Button variant="ghost" size="icon" className="h-8 w-8">
-          <ChevronLeftIcon className="h-6 w-6" />
-        </Button>
-        <div className="flex items-center gap-4">
-          <Button variant="ghost" size="icon" className="h-8 w-8">
-            <MoreHorizontalIcon className="h-6 w-6" />
-          </Button>
-          <Button variant="ghost" size="icon" className="h-8 w-8">
-            <CircleIcon className="h-6 w-6" />
-          </Button>
-        </div>
-      </nav>
+      <BackSubHeader backTo="/" />
 
       <main className="flex flex-col flex-1 w-full bg-white">
         <div className="flex flex-col items-start gap-2 pt-[22px] pb-0 px-6 w-full">
@@ -61,9 +42,6 @@ export const AddressDirectInput = (): JSX.Element => {
 
       <footer className="flex flex-col items-center justify-end w-full bg-white">
         <div className="w-full h-4" />
-        <div className="flex flex-col items-center gap-2.5 px-[105px] py-2 w-full bg-white">
-          <div className="w-[134px] h-[5px] bg-black rounded-[100px]" />
-        </div>
       </footer>
     </div>
   );

@@ -1,6 +1,7 @@
+import { BackSubHeader } from "../../components/BackSubHeader";
 import React from "react";
 import { Link } from "react-router-dom";
-import { ChevronLeftIcon, MoreHorizontalIcon, CircleIcon, ChevronRightIcon } from "lucide-react";
+import { MoreHorizontalIcon, CircleIcon, ChevronRightIcon } from "lucide-react";
 import { Button } from "../../components/ui/button";
 import { Card, CardContent } from "../../components/ui/card";
 
@@ -22,23 +23,7 @@ const addressOptions = [
 export const AddressInputMethod = (): JSX.Element => {
   return (
     <div className="flex flex-col min-h-screen bg-white" data-model-id="40000003:763991">
-      <header className="flex flex-col w-full bg-white">
-        <nav className="flex items-center justify-between px-5 py-4 w-full">
-          <Button variant="ghost" size="icon" className="h-auto p-0" asChild>
-            <Link to="/">
-              <ChevronLeftIcon className="w-6 h-6" />
-            </Link>
-          </Button>
-          <div className="flex items-center gap-4">
-            <Button variant="ghost" size="icon" className="h-auto p-0">
-              <MoreHorizontalIcon className="w-6 h-6" />
-            </Button>
-            <Button variant="ghost" size="icon" className="h-auto p-0">
-              <CircleIcon className="w-6 h-6" />
-            </Button>
-          </div>
-        </nav>
-      </header>
+      <BackSubHeader backTo="/" />
       <main className="flex flex-col flex-1 w-full bg-white">
         <div className="flex flex-col items-start gap-2 pt-[22px] pb-0 px-6 w-full">
           <h1 className="font-title-24-b font-[number:var(--title-24-b-font-weight)] text-[#0b0c0e] text-[length:var(--title-24-b-font-size)] tracking-[var(--title-24-b-letter-spacing)] leading-[var(--title-24-b-line-height)] [font-style:var(--title-24-b-font-style)]">
@@ -70,11 +55,6 @@ export const AddressInputMethod = (): JSX.Element => {
       </main>
       <footer className="flex flex-col items-center justify-end px-6 py-0 w-full">
         <div className="w-full h-4" />
-        <div className="flex flex-col items-center gap-2.5 px-[105px] py-2 w-full bg-white">
-          <div className="flex flex-col w-[134px] items-center gap-2.5">
-            <div className="w-[134px] h-[5px] bg-black rounded-[100px]" />
-          </div>
-        </div>
       </footer>
     </div>
   );

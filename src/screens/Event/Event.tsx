@@ -1,4 +1,5 @@
-import { ChevronLeftIcon, MoreVerticalIcon, SearchIcon } from "lucide-react";
+import { BackSubHeader } from "../../components/BackSubHeader";
+import { MoreVerticalIcon, SearchIcon } from "lucide-react";
 import React from "react";
 import { Button } from "../../components/ui/button";
 import { Card, CardContent } from "../../components/ui/card";
@@ -36,27 +37,7 @@ export const Event = (): JSX.Element => {
       className="flex flex-col min-h-screen bg-white"
       data-model-id="2674:68303"
     >
-      <header className="flex flex-col bg-white">
-        <div className="flex h-11 items-center justify-between px-4 py-2">
-          <Button variant="ghost" size="icon" className="h-8 w-8">
-            <ChevronLeftIcon className="h-6 w-6" />
-          </Button>
-          <div className="flex items-center gap-2">
-            <Button variant="ghost" size="icon" className="h-8 w-8">
-              <MoreVerticalIcon className="h-6 w-6" />
-            </Button>
-            <Button variant="ghost" size="icon" className="h-8 w-8">
-              <SearchIcon className="h-6 w-6" />
-            </Button>
-          </div>
-        </div>
-
-        <div className="flex items-center justify-between px-6 py-4">
-          <h1 className="font-title-24-b font-[number:var(--title-24-b-font-weight)] text-[#0b0c0e] text-[length:var(--title-24-b-font-size)] tracking-[var(--title-24-b-letter-spacing)] leading-[var(--title-24-b-line-height)] [font-style:var(--title-24-b-font-style)]">
-            이벤트
-          </h1>
-        </div>
-      </header>
+      <BackSubHeader backTo="/" />
 
       <Tabs defaultValue="ongoing" className="flex flex-col flex-1">
         <TabsList className="w-full h-auto rounded-none bg-transparent border-b border-[#dfe3ec] p-0">
@@ -136,9 +117,7 @@ export const Event = (): JSX.Element => {
       </Tabs>
 
       <footer className="flex flex-col items-center px-6 bg-white">
-        <div className="flex justify-center py-2 w-full">
-          <div className="w-[134px] h-[5px] bg-black rounded-[100px]" />
-        </div>
+        <div className="flex justify-center py-2 w-full"></div>
       </footer>
     </div>
   );

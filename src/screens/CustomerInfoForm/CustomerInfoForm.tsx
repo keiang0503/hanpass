@@ -1,4 +1,5 @@
-import { ChevronLeftIcon, CircleIcon, MoreHorizontalIcon } from "lucide-react";
+import { BackSubHeader } from "../../components/BackSubHeader";
+import { CircleIcon, MoreHorizontalIcon } from "lucide-react";
 import React from "react";
 import { Button } from "../../components/ui/button";
 import {
@@ -33,28 +34,7 @@ export const CustomerInfoForm = (): JSX.Element => {
       className="flex flex-col min-h-screen bg-white"
       data-model-id="2674:64093"
     >
-      <header className="flex flex-col w-full bg-white">
-        <div className="flex items-center justify-between h-[54px] px-5 py-0 w-full bg-white">
-          <Button variant="ghost" size="icon" className="h-8 w-8 p-0">
-            <ChevronLeftIcon className="h-6 w-6" />
-          </Button>
-
-          <img
-            className="h-8 w-[87px]"
-            alt="Mini"
-            src="https://c.animaapp.com/Kel660N3/img/mini-7@2x.png"
-          />
-
-          <div className="flex items-center gap-2">
-            <Button variant="ghost" size="icon" className="h-8 w-8 p-0">
-              <MoreHorizontalIcon className="h-6 w-6" />
-            </Button>
-            <Button variant="ghost" size="icon" className="h-8 w-8 p-0">
-              <CircleIcon className="h-6 w-6" />
-            </Button>
-          </div>
-        </div>
-      </header>
+      <BackSubHeader backTo="/" />
 
       <main className="flex flex-col flex-1 w-full bg-white">
         <div className="flex flex-col pt-[22px] px-6 pb-0 w-full">
@@ -105,10 +85,6 @@ export const CustomerInfoForm = (): JSX.Element => {
         </div>
 
         <div className="w-full h-4" />
-
-        <div className="flex flex-col items-center gap-2.5 px-[105px] py-2 w-full bg-white">
-          <div className="w-[134px] h-[5px] bg-black rounded-[100px]" />
-        </div>
       </footer>
     </div>
   );

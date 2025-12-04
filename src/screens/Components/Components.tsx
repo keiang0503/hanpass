@@ -9,7 +9,7 @@ import {
   CardTitle,
 } from "../../components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "../../components/ui/tabs";
-import { DownloadButton, DownloadAllButton } from "../../components/DownloadButton";
+import { DownloadAllButton } from "../../components/DownloadButton";
 import { ChevronLeftIcon, HomeIcon, LayoutGridIcon, BoxIcon, PanelLeftIcon, DownloadIcon, TabletSmartphoneIcon } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -540,10 +540,6 @@ const DownloadShowcase = () => {
               <DownloadAllButton />
               <span className="text-xs text-gray-500">DownloadAllButton</span>
             </div>
-            <div className="flex flex-col items-center gap-2">
-              <DownloadButton screenId="favorite" screenName="Favorite" />
-              <span className="text-xs text-gray-500">DownloadButton</span>
-            </div>
           </div>
         </CardContent>
       </Card>
@@ -551,57 +547,14 @@ const DownloadShowcase = () => {
       {/* 컴포넌트 설명 */}
       <Card>
         <CardHeader>
-          <CardTitle>컴포넌트 종류</CardTitle>
+          <CardTitle>컴포넌트 설명</CardTitle>
         </CardHeader>
         <CardContent>
-          <ul className="space-y-4">
-            <li>
-              <div className="flex items-start gap-3">
-                <code className="bg-green-100 text-green-700 px-2 py-1 rounded text-sm font-mono">DownloadAllButton</code>
-                <span className="text-gray-700">전체 소스 다운로드 버튼</span>
-              </div>
-              <p className="text-sm text-gray-500 mt-1 ml-140">모든 화면과 공통 파일을 ZIP으로 다운로드</p>
-            </li>
-            <li>
-              <div className="flex items-start gap-3">
-                <code className="bg-blue-100 text-blue-700 px-2 py-1 rounded text-sm font-mono">DownloadButton</code>
-                <span className="text-gray-700">개별 화면 소스 다운로드 버튼</span>
-              </div>
-              <p className="text-sm text-gray-500 mt-1 ml-140">특정 화면의 소스와 관련 파일을 ZIP으로 다운로드</p>
-            </li>
-          </ul>
-        </CardContent>
-      </Card>
-
-      {/* Props */}
-      <Card>
-        <CardHeader>
-          <CardTitle>Props (DownloadButton)</CardTitle>
-        </CardHeader>
-        <CardContent>
-          <div className="overflow-x-auto">
-            <table className="w-full text-sm">
-              <thead>
-                <tr className="border-b">
-                  <th className="text-left py-2 px-3">Prop</th>
-                  <th className="text-left py-2 px-3">타입</th>
-                  <th className="text-left py-2 px-3">설명</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr className="border-b">
-                  <td className="py-2 px-3 font-mono text-blue-600">screenId</td>
-                  <td className="py-2 px-3 text-gray-600">string</td>
-                  <td className="py-2 px-3 text-gray-700">화면 ID (예: "favorite", "transform")</td>
-                </tr>
-                <tr>
-                  <td className="py-2 px-3 font-mono text-blue-600">screenName</td>
-                  <td className="py-2 px-3 text-gray-600">string</td>
-                  <td className="py-2 px-3 text-gray-700">다운로드 파일명에 사용될 화면 이름</td>
-                </tr>
-              </tbody>
-            </table>
+          <div className="flex items-start gap-3">
+            <code className="bg-green-100 text-green-700 px-2 py-1 rounded text-sm font-mono">DownloadAllButton</code>
+            <span className="text-gray-700">전체 소스 다운로드 버튼</span>
           </div>
+          <p className="text-sm text-gray-500 mt-2">모든 화면과 공통 파일을 ZIP으로 다운로드합니다. Props 없이 사용 가능합니다.</p>
         </CardContent>
       </Card>
 
@@ -612,19 +565,10 @@ const DownloadShowcase = () => {
         </CardHeader>
         <CardContent>
           <pre className="bg-gray-900 text-gray-100 p-4 rounded-lg overflow-x-auto text-sm">
-{`import {
-  DownloadButton,
-  DownloadAllButton
-} from "@/components/DownloadButton"
+{`import { DownloadAllButton } from "@/components/DownloadButton"
 
-// 전체 다운로드
-<DownloadAllButton />
-
-// 개별 화면 다운로드
-<DownloadButton
-  screenId="favorite"
-  screenName="Favorite"
-/>`}
+// 전체 소스 다운로드
+<DownloadAllButton />`}
           </pre>
         </CardContent>
       </Card>

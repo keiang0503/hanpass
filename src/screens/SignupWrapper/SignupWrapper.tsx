@@ -1,14 +1,55 @@
 import {
+  Check,
   ChevronDownIcon,
-  ChevronLeftIcon,
   ChevronRightIcon,
-  MoreHorizontalIcon,
 } from "lucide-react";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { BackSubHeader } from "../../components/BackSubHeader";
 import { Button } from "../../components/ui/button";
 import { Card, CardContent } from "../../components/ui/card";
-import { Checkbox } from "../../components/ui/checkbox";
+
+// Custom checkbox component matching Figma design
+interface AgreementCheckboxProps {
+  checked: boolean;
+  onChange?: (checked: boolean) => void;
+  size?: "lg" | "md" | "sm";
+}
+
+const AgreementCheckbox = ({ checked, onChange, size = "md" }: AgreementCheckboxProps) => {
+  const sizeClasses = {
+    lg: "w-6 h-6",
+    md: "w-5 h-5",
+    sm: "w-4 h-4",
+  };
+
+  const iconSizeClasses = {
+    lg: "w-5 h-5",
+    md: "w-4 h-4",
+    sm: "w-3.5 h-3.5",
+  };
+
+  return (
+    <button
+      type="button"
+      onClick={() => onChange?.(!checked)}
+      className={`flex items-center justify-center ${sizeClasses[size]} rounded-full transition-colors ${
+        checked
+          ? "bg-[#0D56E4]"
+          : "bg-transparent"
+      }`}
+    >
+      <Check
+        className={`${iconSizeClasses[size]} ${
+          checked
+            ? "text-white"
+            : "text-[#C4C4C4]"
+        }`}
+        strokeWidth={checked ? 3 : 2}
+      />
+    </button>
+  );
+};
 
 const termsData = [
   {
@@ -75,26 +116,7 @@ export const SignupWrapper = (): JSX.Element => {
       className="flex flex-col min-h-screen bg-white"
       data-model-id="40000001:45704"
     >
-      <header className="flex items-center justify-between px-4 py-3 bg-white">
-        <Button variant="ghost" size="icon" className="h-10 w-10" asChild>
-          <Link to="/">
-            <ChevronLeftIcon className="h-6 w-6" />
-          </Link>
-        </Button>
-
-        <div className="flex items-center gap-2">
-          <Button variant="ghost" size="icon" className="h-10 w-10">
-            <MoreHorizontalIcon className="h-6 w-6" />
-          </Button>
-          <Button
-            variant="ghost"
-            size="icon"
-            className="h-10 w-10 rounded-full border-2 border-black"
-          >
-            <div className="w-2 h-2 bg-black rounded-full" />
-          </Button>
-        </div>
-      </header>
+      <BackSubHeader backTo="/" />
 
       <main className="flex flex-col flex-1 px-6 pt-6 pb-6 bg-white">
         <div className="mb-8">
@@ -108,11 +130,10 @@ export const SignupWrapper = (): JSX.Element => {
         <Card className="border border-[#dfe3ec] rounded-lg overflow-hidden">
           <CardContent className="p-0">
             <div className="flex items-center gap-2 px-4 py-3 border-b border-[#dfe3ec]">
-              <Checkbox
-                id="all-terms"
+              <AgreementCheckbox
                 checked={allChecked}
-                onCheckedChange={handleAllCheck}
-                className="h-[26px] w-[26px] rounded border-2 data-[state=checked]:bg-[#0d56e4] data-[state=checked]:border-[#0d56e4]"
+                onChange={handleAllCheck}
+                size="lg"
               />
               <label
                 htmlFor="all-terms"
@@ -125,13 +146,10 @@ export const SignupWrapper = (): JSX.Element => {
             <div className="flex flex-col gap-[22px] px-2.5 py-[30px]">
               {termsData.map((term) => (
                 <div key={term.id} className="flex items-center gap-1.5">
-                  <Checkbox
-                    id={term.id}
+                  <AgreementCheckbox
                     checked={checkedTerms[term.id] || false}
-                    onCheckedChange={(checked) =>
-                      handleTermCheck(term.id, checked as boolean)
-                    }
-                    className="h-5 w-5 rounded border-2 data-[state=checked]:bg-[#0d56e4] data-[state=checked]:border-[#0d56e4]"
+                    onChange={(checked) => handleTermCheck(term.id, checked)}
+                    size="md"
                   />
                   <label
                     htmlFor={term.id}
@@ -167,9 +185,7 @@ export const SignupWrapper = (): JSX.Element => {
           </Link>
         </Button>
 
-        <div className="flex justify-center pt-4">
-          <div className="w-[134px] h-[5px] bg-black rounded-[100px]" />
-        </div>
+        <div className="flex justify-center pt-4"></div>
       </footer>
     </div>
   );

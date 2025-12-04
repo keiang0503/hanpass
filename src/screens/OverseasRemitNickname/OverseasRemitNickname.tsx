@@ -1,4 +1,5 @@
-import { ChevronLeftIcon } from "lucide-react";
+
+import { BackSubHeader } from "../../components/BackSubHeader";
 import React from "react";
 import { Button } from "../../components/ui/button";
 import { DisplaySection } from "./sections/DisplaySection";
@@ -10,17 +11,7 @@ export const OverseasRemitNickname = (): JSX.Element => {
       className="flex flex-col min-h-screen items-start relative bg-white"
       data-model-id="34820:539228"
     >
-      <header className="flex flex-col items-start w-full">
-        <nav className="flex flex-col items-start w-full">
-          <div className="flex flex-col items-start gap-2 w-full">
-            <div className="flex h-[54px] items-center justify-between px-5 py-0 w-full bg-white">
-              <Button variant="ghost" size="icon" className="h-8 w-8 p-0">
-                <ChevronLeftIcon className="h-6 w-6" />
-              </Button>
-            </div>
-          </div>
-        </nav>
-      </header>
+      <BackSubHeader backTo="/" />
 
       {/* Title Section */}
       <section className="flex flex-col items-start bg-white relative self-stretch w-full">

@@ -54,7 +54,7 @@ export const PaymentMethodSection = (): JSX.Element => {
                               id={field.id}
                               type={field.type}
                               placeholder={field.placeholder}
-                              className="[display:-webkit-box] flex-1 text-[#acb2c1] text-[length:var(--body-20-r-font-size)] tracking-[var(--body-20-r-letter-spacing)] leading-[var(--body-20-r-line-height)] overflow-hidden text-ellipsis [-webkit-line-clamp:1] [-webkit-box-orient:vertical] items-center justify-center mt-[-1.00px] font-body-20-r font-[number:var(--body-20-r-font-weight)] [font-style:var(--body-20-r-font-style)] border-0 border-b border-[#dfe3ec] rounded-none px-0 focus-visible:ring-0 focus-visible:ring-offset-0 h-auto pb-0"
+                              className="[display:-webkit-box] flex-1 text-[#acb2c1] text-[length:var(--body-20-r-font-size)] tracking-[var(--body-20-r-letter-spacing)] leading-[var(--body-20-r-line-height)] overflow-hidden text-ellipsis [-webkit-line-clamp:1] [-webkit-box-orient:vertical] items-center justify-center mt-[-1.00px] font-body-20-r font-[number:var(--body-20-r-font-weight)] [font-style:var(--body-20-r-font-style)] border-0 border-b border-[#dfe3ec] rounded-none px-0 shadow-none focus-visible:ring-0 focus-visible:ring-offset-0 h-auto pb-0"
                             />
                           </div>
                         </div>
@@ -107,7 +107,7 @@ export const PaymentMethodSection = (): JSX.Element => {
                             id="phoneNumber"
                             type="tel"
                             placeholder="전화번호는 8 ~ 11 자리만 가능합니다."
-                            className="[display:-webkit-box] flex-1 text-[#acb2c1] text-[length:var(--body-20-r-font-size)] tracking-[var(--body-20-r-letter-spacing)] leading-[var(--body-20-r-line-height)] overflow-hidden text-ellipsis [-webkit-line-clamp:1] [-webkit-box-orient:vertical] items-center justify-center mt-[-1.00px] font-body-20-r font-[number:var(--body-20-r-font-weight)] [font-style:var(--body-20-r-font-style)] border-0 border-b border-[#dfe3ec] rounded-none px-0 focus-visible:ring-0 focus-visible:ring-offset-0 h-auto pb-0"
+                            className="[display:-webkit-box] flex-1 text-[#acb2c1] text-[length:var(--body-20-r-font-size)] tracking-[var(--body-20-r-letter-spacing)] leading-[var(--body-20-r-line-height)] overflow-hidden text-ellipsis [-webkit-line-clamp:1] [-webkit-box-orient:vertical] items-center justify-center mt-[-1.00px] font-body-20-r font-[number:var(--body-20-r-font-weight)] [font-style:var(--body-20-r-font-style)] border-0 border-b border-[#dfe3ec] rounded-none px-0 shadow-none focus-visible:ring-0 focus-visible:ring-offset-0 h-auto pb-0"
                           />
                         </div>
                       </div>

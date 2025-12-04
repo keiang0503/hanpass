@@ -1,5 +1,6 @@
-import { ChevronDownIcon, ChevronLeftIcon, CircleIcon, MoreHorizontalIcon } from "lucide-react";
+import { ChevronDownIcon } from "lucide-react";
 import React, { useState } from "react";
+import { BackSubHeader } from "../../components/BackSubHeader";
 import { Button } from "../../components/ui/button";
 import { ScrollArea, ScrollBar } from "../../components/ui/scroll-area";
 
@@ -49,33 +50,7 @@ export const SupportScreen = (): JSX.Element => {
       className="flex flex-col min-h-screen items-start relative bg-white"
       data-model-id="34958:288553"
     >
-      <header className="w-full flex flex-col items-start gap-2.5 relative self-stretch flex-[0_0_auto] bg-white">
-      </header>
-
-      <div className="flex-col flex items-start relative self-stretch w-full flex-[0_0_auto]">
-        <div className="flex-col items-start self-stretch w-full flex-[0_0_auto] flex gap-2 relative">
-          <div className="h-[54px] items-center justify-between px-5 py-0 bg-white flex relative self-stretch w-full">
-            <Button variant="ghost" size="icon" className="h-auto w-8 p-0">
-              <ChevronLeftIcon className="w-8 h-8" />
-            </Button>
-
-            <img
-              className="h-8 w-[87px]"
-              alt="Mini"
-              src="https://c.animaapp.com/fz9Fo3ua/img/mini-1@2x.png"
-            />
-
-            <div className="flex items-center gap-2">
-              <Button variant="ghost" size="icon" className="h-auto w-8 p-0">
-                <MoreHorizontalIcon className="w-6 h-6" />
-              </Button>
-              <Button variant="ghost" size="icon" className="h-auto w-8 p-0">
-                <CircleIcon className="w-6 h-6" />
-              </Button>
-            </div>
-          </div>
-        </div>
-      </div>
+      <BackSubHeader backTo="/" />
 
       <section className="flex-col items-start gap-[22px] self-stretch w-full flex relative flex-[0_0_auto]">
         <div className="flex-col bg-white flex items-start relative self-stretch w-full flex-[0_0_auto]">
@@ -161,9 +136,6 @@ export const SupportScreen = (): JSX.Element => {
         <div className="relative w-full h-4" />
 
         <div className="flex flex-col items-center gap-2.5 px-[105px] py-2 relative self-stretch w-full flex-[0_0_auto] bg-white">
-          <div className="flex-col w-[134px] items-center gap-2.5 flex relative flex-[0_0_auto]">
-            <div className="relative w-[134px] h-[5px] bg-black rounded-[100px]" />
-          </div>
         </div>
       </footer>
     </div>

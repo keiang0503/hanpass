@@ -86,9 +86,6 @@ export const HistoryPeriodSelect = (): JSX.Element => {
 
         {/* Footer */}
         <footer className="flex flex-col h-[21px] items-center gap-2.5 px-[105px] py-2 relative self-stretch w-full bg-white">
-          <div className="flex-col w-[134px] items-center gap-2.5 flex-[0_0_auto] flex relative">
-            <div className="relative w-[134px] h-[5px] bg-black rounded-[100px]" />
-          </div>
         </footer>
       </section>
     </div>

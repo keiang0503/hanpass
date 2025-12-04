@@ -4,6 +4,7 @@ import {
   ChevronRightIcon,
 } from "lucide-react";
 import React from "react";
+import { BackSubHeader } from "../../components/BackSubHeader";
 import { Button } from "../../components/ui/button";
 
 export const HistoryEmpty = (): JSX.Element => {
@@ -12,22 +13,7 @@ export const HistoryEmpty = (): JSX.Element => {
       className="flex flex-col min-h-screen bg-[#f7f7f8]"
       data-model-id="34892:276594"
     >
-      {/* Logo Bar */}
-      <div className="flex flex-col bg-white">
-        <div className="flex items-center justify-between h-[54px] px-5 bg-white">
-          <img
-            className="w-8 h-8"
-            alt="Wechat hd"
-            src="https://c.animaapp.com/u8GhiXiH/img/wechat-hd-1.svg"
-          />
-
-          <img
-            className="w-[87px] h-8"
-            alt="Mini"
-            src="https://c.animaapp.com/u8GhiXiH/img/mini-6@2x.png"
-          />
-        </div>
-      </div>
+      <BackSubHeader backTo="/historymainu95099" />
 
       {/* Title and Navigation */}
       <div className="flex flex-col bg-white">
@@ -82,9 +68,6 @@ export const HistoryEmpty = (): JSX.Element => {
 
       {/* Footer */}
       <footer className="flex flex-col items-center px-6">
-        <div className="flex items-center justify-center py-2 w-full">
-          <div className="w-[134px] h-[5px] bg-black rounded-[100px]" />
-        </div>
       </footer>
     </div>
   );

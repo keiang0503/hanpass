@@ -1,6 +1,7 @@
 import { ChevronRightIcon } from "lucide-react";
 import React from "react";
 import { Link } from "react-router-dom";
+import { BackSubHeader } from "../../components/BackSubHeader";
 import { Button } from "../../components/ui/button";
 
 export const SignupCompleteApproved = (): JSX.Element => {
@@ -9,17 +10,7 @@ export const SignupCompleteApproved = (): JSX.Element => {
       className="flex flex-col min-h-screen items-center bg-white"
       data-model-id="2674:64345"
     >
-      <div className="flex flex-col items-start w-full">
-        <div className="flex flex-col items-start gap-2 w-full">
-          <div className="flex h-[54px] items-center justify-center px-5 py-0 w-full bg-white relative">
-            <img
-              className="absolute h-[calc(100%_-_22px)] top-[11px] right-1.5 w-[87px]"
-              alt="Mini"
-              src="https://c.animaapp.com/NpKP4m4n/img/mini-7@2x.png"
-            />
-          </div>
-        </div>
-      </div>
+      <BackSubHeader backTo="/addresssearchresultu95042" />
 
       <main className="flex items-start justify-center gap-2.5 px-6 py-0 flex-1 w-full grow">
         <div className="flex flex-col items-center gap-3.5 px-0 py-1.5 flex-1 grow">
@@ -86,12 +77,6 @@ export const SignupCompleteApproved = (): JSX.Element => {
         </div>
 
         <div className="w-full h-4 z-[-1]" />
-
-        <div className="flex flex-col items-center gap-2.5 px-[105px] py-2 w-full z-[-2] bg-white">
-          <div className="w-[134px] gap-2.5 ml-[-8.50px] mr-[-8.50px] flex flex-col items-center">
-            <div className="w-[134px] h-[5px] bg-black rounded-[100px]" />
-          </div>
-        </div>
       </footer>
     </div>
   );

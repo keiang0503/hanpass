@@ -1,4 +1,5 @@
-import { ChevronLeftIcon } from "lucide-react";
+
+import { BackSubHeader } from "../../components/BackSubHeader";
 import React from "react";
 import { Link } from "react-router-dom";
 import { Button } from "../../components/ui/button";
@@ -10,15 +11,7 @@ export const SelfieVerification = (): JSX.Element => {
       data-model-id="40000003:240090"
     >
       {/* Navigation Header */}
-      <header className="flex flex-col w-full items-start">
-        <div className="flex h-12 items-center gap-[158px] px-4 py-2.5 w-full border-b border-[#f5f6f8]">
-          <Button variant="ghost" size="icon" className="h-8 w-8 p-0" asChild>
-            <Link to="/selfiecaptureu95021">
-              <ChevronLeftIcon className="w-6 h-6 text-[#0b0c0e]" />
-            </Link>
-          </Button>
-        </div>
-      </header>
+      <BackSubHeader backTo="/" />
 
       {/* Title Section */}
       <section className="flex flex-col items-start bg-white relative w-full">

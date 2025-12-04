@@ -1,11 +1,8 @@
 import {
   ChevronDownIcon,
-  ChevronLeftIcon,
-  CircleIcon,
-  MoreHorizontalIcon,
 } from "lucide-react";
 import React from "react";
-import { Link } from "react-router-dom";
+import { BackSubHeader } from "../../components/BackSubHeader";
 import { Button } from "../../components/ui/button";
 import { Input } from "../../components/ui/input";
 import { Label } from "../../components/ui/label";
@@ -27,24 +24,7 @@ export const SignupPhoneEmail = (): JSX.Element => {
       className="flex flex-col min-h-screen bg-white"
       data-model-id="40000001:45775"
     >
-      <header className="flex flex-col w-full bg-white">
-        <nav className="flex items-center justify-between px-5 py-4 w-full">
-          <Button variant="ghost" size="icon" className="h-auto p-0" asChild>
-            <Link to="/nationalityu95006">
-              <ChevronLeftIcon className="w-6 h-6 text-black" />
-            </Link>
-          </Button>
-
-          <div className="flex items-center gap-4">
-            <Button variant="ghost" size="icon" className="h-auto p-0">
-              <MoreHorizontalIcon className="w-6 h-6 text-black" />
-            </Button>
-            <Button variant="ghost" size="icon" className="h-auto p-0">
-              <CircleIcon className="w-6 h-6 text-black" />
-            </Button>
-          </div>
-        </nav>
-      </header>
+      <BackSubHeader backTo="/nationalityu95006" />
 
       <main className="flex flex-col flex-1">
         <section className="bg-white pt-[22px] px-6">
@@ -114,7 +94,7 @@ export const SignupPhoneEmail = (): JSX.Element => {
                       <Input
                         type="tel"
                         placeholder="숫자만 입력하세요"
-                        className="flex-1 h-auto border-0 bg-transparent p-0 font-body-20-r font-[number:var(--body-20-r-font-weight)] text-[#acb2c1] text-[length:var(--body-20-r-font-size)] tracking-[var(--body-20-r-letter-spacing)] leading-[var(--body-20-r-line-height)] [font-style:var(--body-20-r-font-style)] placeholder:text-[#acb2c1] focus-visible:ring-0 focus-visible:ring-offset-0"
+                        className="flex-1 h-auto border-0 bg-transparent p-0 shadow-none font-body-20-r font-[number:var(--body-20-r-font-weight)] text-[#acb2c1] text-[length:var(--body-20-r-font-size)] tracking-[var(--body-20-r-letter-spacing)] leading-[var(--body-20-r-line-height)] [font-style:var(--body-20-r-font-style)] placeholder:text-[#acb2c1] focus-visible:ring-0 focus-visible:ring-offset-0"
                       />
                     </div>
                   </div>
@@ -140,7 +120,7 @@ export const SignupPhoneEmail = (): JSX.Element => {
                       <Input
                         type="email"
                         placeholder="이메일을 입력하세요"
-                        className="flex-1 h-auto border-0 bg-transparent p-0 font-body-20-r font-[number:var(--body-20-r-font-weight)] text-[#acb2c1] text-[length:var(--body-20-r-font-size)] tracking-[var(--body-20-r-letter-spacing)] leading-[var(--body-20-r-line-height)] [font-style:var(--body-20-r-font-style)] placeholder:text-[#acb2c1] focus-visible:ring-0 focus-visible:ring-offset-0"
+                        className="flex-1 h-auto border-0 bg-transparent p-0 shadow-none font-body-20-r font-[number:var(--body-20-r-font-weight)] text-[#acb2c1] text-[length:var(--body-20-r-font-size)] tracking-[var(--body-20-r-letter-spacing)] leading-[var(--body-20-r-line-height)] [font-style:var(--body-20-r-font-style)] placeholder:text-[#acb2c1] focus-visible:ring-0 focus-visible:ring-offset-0"
                       />
                     </div>
                   </div>
@@ -166,10 +146,6 @@ export const SignupPhoneEmail = (): JSX.Element => {
         </div>
 
         <div className="h-4 w-full" />
-
-        <div className="flex flex-col items-center px-[105px] py-2 bg-white">
-          <div className="w-[134px] h-[5px] bg-black rounded-[100px]" />
-        </div>
       </footer>
     </div>
   );

@@ -1,4 +1,5 @@
-import { ChevronLeftIcon, CircleIcon, MoreVerticalIcon } from "lucide-react";
+import { BackSubHeader } from "../../components/BackSubHeader";
+import { CircleIcon, MoreVerticalIcon } from "lucide-react";
 import React from "react";
 import { Button } from "../../components/ui/button";
 import { Card, CardContent } from "../../components/ui/card";
@@ -9,19 +10,7 @@ export const Screen = (): JSX.Element => {
       className="flex flex-col min-h-screen items-start relative bg-white"
       data-model-id="36848:80951"
     >
-      <header className="flex items-center justify-between w-full px-4 py-3 bg-white">
-        <Button variant="ghost" size="icon" className="h-10 w-10">
-          <ChevronLeftIcon className="h-6 w-6" />
-        </Button>
-        <div className="flex items-center gap-2">
-          <Button variant="ghost" size="icon" className="h-10 w-10">
-            <MoreVerticalIcon className="h-6 w-6" />
-          </Button>
-          <Button variant="ghost" size="icon" className="h-10 w-10">
-            <CircleIcon className="h-6 w-6" />
-          </Button>
-        </div>
-      </header>
+      <BackSubHeader backTo="/" />
 
       <main className="flex flex-col w-full flex-1 bg-white">
         <div className="flex flex-col items-start pt-[22px] pb-0 px-6 w-full">
@@ -63,12 +52,6 @@ export const Screen = (): JSX.Element => {
             업데이트 하기
           </span>
         </Button>
-
-        <div className="flex flex-col items-center gap-2.5 px-[105px] py-2 w-full bg-white">
-          <div className="flex flex-col w-[134px] items-center gap-2.5">
-            <div className="w-[134px] h-[5px] bg-black rounded-[100px]" />
-          </div>
-        </div>
       </footer>
     </div>
   );

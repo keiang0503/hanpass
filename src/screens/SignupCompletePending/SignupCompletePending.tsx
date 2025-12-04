@@ -1,11 +1,9 @@
 import {
-  ChevronLeftIcon,
   ChevronRightIcon,
-  CircleIcon,
-  MoreHorizontalIcon,
 } from "lucide-react";
 import React from "react";
 import { Link } from "react-router-dom";
+import { BackSubHeader } from "../../components/BackSubHeader";
 import { Button } from "../../components/ui/button";
 import { Card, CardContent } from "../../components/ui/card";
 
@@ -15,32 +13,7 @@ export const SignupCompletePending = (): JSX.Element => {
       className="flex flex-col min-h-screen items-center bg-white"
       data-model-id="2674:64356"
     >
-      <nav className="flex flex-col items-start w-full">
-        <div className="flex flex-col items-start gap-2 w-full">
-          <div className="flex h-[54px] items-center justify-between px-5 py-0 w-full bg-white relative">
-            <Button variant="ghost" size="icon" className="h-8 w-8 p-0" asChild>
-              <Link to="/signupcompleteu95043">
-                <ChevronLeftIcon className="h-6 w-6" />
-              </Link>
-            </Button>
-
-            <img
-              className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-8"
-              alt="Wechat hd"
-              src="https://c.animaapp.com/NpKP4m4n/img/wechat-hd-5.svg"
-            />
-
-            <div className="flex items-center gap-2">
-              <Button variant="ghost" size="icon" className="h-8 w-8 p-0">
-                <MoreHorizontalIcon className="h-6 w-6" />
-              </Button>
-              <Button variant="ghost" size="icon" className="h-8 w-8 p-0">
-                <CircleIcon className="h-6 w-6" />
-              </Button>
-            </div>
-          </div>
-        </div>
-      </nav>
+      <BackSubHeader backTo="/signupcompleteu95043" />
 
       <main className="flex flex-col items-center pt-0 pb-5 px-6 flex-1 w-full">
         <div className="flex flex-col items-center gap-3.5 px-0 py-1.5 flex-1 w-full">
@@ -125,12 +98,6 @@ export const SignupCompletePending = (): JSX.Element => {
         </div>
 
         <div className="w-full h-4 z-0" />
-
-        <div className="flex flex-col items-center gap-2.5 px-[105px] py-2 w-full z-[-1] bg-white">
-          <div className="w-[134px] flex flex-col items-center">
-            <div className="w-[134px] h-[5px] bg-black rounded-[100px]" />
-          </div>
-        </div>
       </footer>
     </div>
   );

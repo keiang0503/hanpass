@@ -1,4 +1,5 @@
-import { ChevronLeftIcon, CircleIcon, MoreVerticalIcon } from "lucide-react";
+import { BackSubHeader } from "../../components/BackSubHeader";
+import { CircleIcon, MoreVerticalIcon } from "lucide-react";
 import React from "react";
 import { Button } from "../../components/ui/button";
 import { Input } from "../../components/ui/input";
@@ -92,28 +93,7 @@ export const CustomerVerification = (): JSX.Element => {
       className="flex flex-col items-end relative bg-white min-h-screen"
       data-model-id="2674:64063"
     >
-      <header className="flex flex-col w-full bg-white">
-        <div className="flex h-[54px] items-center justify-between px-5 py-0 w-full bg-white">
-          <Button variant="ghost" size="icon" className="h-8 w-8 p-0">
-            <ChevronLeftIcon className="h-6 w-6" />
-          </Button>
-
-          <img
-            className="w-8 h-8"
-            alt="Wechat hd"
-            src="https://c.animaapp.com/Kel660N3/img/wechat-hd-4.svg"
-          />
-
-          <div className="flex items-center gap-2">
-            <Button variant="ghost" size="icon" className="h-8 w-8 p-0">
-              <MoreVerticalIcon className="h-5 w-5" />
-            </Button>
-            <Button variant="ghost" size="icon" className="h-8 w-8 p-0">
-              <CircleIcon className="h-5 w-5" />
-            </Button>
-          </div>
-        </div>
-      </header>
+      <BackSubHeader backTo="/" />
 
       <main className="flex flex-col w-full flex-1">
         <section className="flex flex-col items-start bg-white w-full">
@@ -181,7 +161,7 @@ export const CustomerVerification = (): JSX.Element => {
                                 id={field.id}
                                 defaultValue={field.value}
                                 placeholder={field.placeholder}
-                                className={`border-0 border-b-0 rounded-none h-auto p-0 focus-visible:ring-0 focus-visible:ring-offset-0 flex-1 mt-[-1.00px] font-body-20-r font-[number:var(--body-20-r-font-weight)] text-[length:var(--body-20-r-font-size)] tracking-[var(--body-20-r-letter-spacing)] leading-[var(--body-20-r-line-height)] [font-style:var(--body-20-r-font-style)] ${
+                                className={`border-0 border-b-0 rounded-none h-auto p-0 shadow-none focus-visible:ring-0 focus-visible:ring-offset-0 flex-1 mt-[-1.00px] font-body-20-r font-[number:var(--body-20-r-font-weight)] text-[length:var(--body-20-r-font-size)] tracking-[var(--body-20-r-letter-spacing)] leading-[var(--body-20-r-line-height)] [font-style:var(--body-20-r-font-style)] ${
                                   field.hasValue
                                     ? "text-[#0b0c0e]"
                                     : "text-[#acb2c1] placeholder:text-[#acb2c1]"
@@ -296,7 +276,7 @@ export const CustomerVerification = (): JSX.Element => {
                                 defaultValue={field.value}
                                 placeholder={field.placeholder}
                                 disabled={field.disabled}
-                                className={`border-0 border-b-0 rounded-none h-auto p-0 focus-visible:ring-0 focus-visible:ring-offset-0 flex-1 mt-[-1.00px] font-body-20-r font-[number:var(--body-20-r-font-weight)] text-[length:var(--body-20-r-font-size)] tracking-[var(--body-20-r-letter-spacing)] leading-[var(--body-20-r-line-height)] [font-style:var(--body-20-r-font-style)] ${
+                                className={`border-0 border-b-0 rounded-none h-auto p-0 shadow-none focus-visible:ring-0 focus-visible:ring-offset-0 flex-1 mt-[-1.00px] font-body-20-r font-[number:var(--body-20-r-font-weight)] text-[length:var(--body-20-r-font-size)] tracking-[var(--body-20-r-letter-spacing)] leading-[var(--body-20-r-line-height)] [font-style:var(--body-20-r-font-style)] ${
                                   field.hasValue
                                     ? "text-[#5e616b]"
                                     : "text-[#acb2c1] placeholder:text-[#acb2c1]"
@@ -330,12 +310,6 @@ export const CustomerVerification = (): JSX.Element => {
         </div>
 
         <div className="w-full h-4" />
-
-        <div className="flex flex-col items-center gap-2.5 px-[105px] py-2 w-full bg-white">
-          <div className="flex flex-col w-[134px] items-center gap-2.5">
-            <div className="w-[134px] h-[5px] bg-black rounded-[100px]" />
-          </div>
-        </div>
       </footer>
     </div>
   );

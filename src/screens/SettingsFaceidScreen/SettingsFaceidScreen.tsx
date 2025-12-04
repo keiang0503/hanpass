@@ -1,4 +1,5 @@
-import { ChevronLeftIcon, CircleIcon, MoreHorizontalIcon } from "lucide-react";
+import { BackSubHeader } from "../../components/BackSubHeader";
+import { CircleIcon, MoreHorizontalIcon } from "lucide-react";
 import React from "react";
 import { Button } from "../../components/ui/button";
 import { Switch } from "../../components/ui/switch";
@@ -11,22 +12,7 @@ export const SettingsFaceidScreen = (): JSX.Element => {
       className="flex flex-col min-h-screen bg-white"
       data-model-id="36848:80005"
     >
-      <header className="flex flex-col w-full bg-white">
-        <nav className="flex items-center justify-between px-6 py-4 h-14">
-          <Button variant="ghost" size="icon" className="h-8 w-8 p-0">
-            <ChevronLeftIcon className="h-6 w-6" />
-          </Button>
-
-          <div className="flex items-center gap-4">
-            <Button variant="ghost" size="icon" className="h-8 w-8 p-0">
-              <MoreHorizontalIcon className="h-6 w-6" />
-            </Button>
-            <Button variant="ghost" size="icon" className="h-8 w-8 p-0">
-              <CircleIcon className="h-6 w-6" />
-            </Button>
-          </div>
-        </nav>
-      </header>
+      <BackSubHeader backTo="/" />
 
       <main className="flex flex-col flex-1 w-full">
         <div className="flex flex-col px-6 pt-[22px] pb-0">
@@ -51,9 +37,7 @@ export const SettingsFaceidScreen = (): JSX.Element => {
       </main>
 
       <footer className="flex flex-col items-center w-full">
-        <div className="flex justify-center py-2 w-full bg-white">
-          <div className="w-[134px] h-[5px] bg-black rounded-[100px]" />
-        </div>
+        <div className="flex justify-center py-2 w-full bg-white"></div>
       </footer>
     </div>
   );

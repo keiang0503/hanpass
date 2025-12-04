@@ -1,9 +1,5 @@
-import {
-  ChevronLeftIcon,
-  ChevronRightIcon,
-  CircleIcon,
-  MoreHorizontalIcon,
-} from "lucide-react";
+import { BackSubHeader } from "../../components/BackSubHeader";
+import { ChevronRightIcon, CircleIcon, MoreHorizontalIcon } from "lucide-react";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "../../components/ui/button";
@@ -117,27 +113,7 @@ export const AutoWithdrawConsent = (): JSX.Element => {
       className="flex flex-col min-h-screen items-start relative bg-white"
       data-model-id="2674:67388"
     >
-      <header className="flex-col items-start self-stretch w-full bg-white flex relative">
-        <nav className="flex flex-col items-start relative flex-1 self-stretch w-full grow">
-          <div className="flex-col gap-2 self-stretch w-full flex-[0_0_auto] mb-[-14.00px] flex items-start relative">
-            <div className="h-[54px] items-center justify-around px-5 py-0 w-full bg-white flex relative self-stretch">
-              <div className="flex w-[calc(100%_-_109px)] items-center absolute top-[calc(50.00%_-_16px)] left-1.5">
-                <Button variant="ghost" size="icon" className="h-8 w-8 p-0">
-                  <ChevronLeftIcon className="h-8 w-8" />
-                </Button>
-              </div>
-              <div className="absolute top-[11px] right-1.5 flex items-center gap-2">
-                <Button variant="ghost" size="icon" className="h-8 w-8 p-0">
-                  <MoreHorizontalIcon className="h-6 w-6" />
-                </Button>
-                <Button variant="ghost" size="icon" className="h-8 w-8 p-0">
-                  <CircleIcon className="h-8 w-8" />
-                </Button>
-              </div>
-            </div>
-          </div>
-        </nav>
-      </header>
+      <BackSubHeader backTo="/" />
       <section className="flex-col items-start bg-white flex relative self-stretch w-full flex-[0_0_auto]">
         <div className="flex-col gap-2 pt-[22px] pb-0 px-6 self-stretch w-full flex-[0_0_auto] flex items-start relative">
           <div className="flex-col items-start w-full flex-[0_0_auto] flex relative self-stretch">
@@ -216,9 +192,6 @@ export const AutoWithdrawConsent = (): JSX.Element => {
         </div>
         <div className="relative w-[360px] h-4 ml-[-16.50px] mr-[-16.50px]" />
         <div className="flex flex-col items-center gap-2.5 px-[105px] py-2 relative self-stretch w-full flex-[0_0_auto] bg-white">
-          <div className="flex-col w-[134px] items-center gap-2.5 flex-[0_0_auto] ml-[-8.50px] mr-[-8.50px] flex relative">
-            <div className="relative w-[134px] h-[5px] bg-black rounded-[100px]" />
-          </div>
         </div>
       </footer>
     </div>

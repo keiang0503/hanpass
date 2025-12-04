@@ -1,14 +1,53 @@
 import {
+  Check,
   ChevronDownIcon,
-  ChevronLeftIcon,
   ChevronRightIcon,
-  CircleIcon,
-  MoreVerticalIcon,
 } from "lucide-react";
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { BackSubHeader } from "../../components/BackSubHeader";
 import { Button } from "../../components/ui/button";
-import { Checkbox } from "../../components/ui/checkbox";
+
+// Custom checkbox component matching Figma design
+interface AgreementCheckboxProps {
+  checked: boolean;
+  onChange?: () => void;
+  size?: "lg" | "md" | "sm";
+}
+
+const AgreementCheckbox = ({ checked, onChange, size = "md" }: AgreementCheckboxProps) => {
+  const sizeClasses = {
+    lg: "w-6 h-6",
+    md: "w-5 h-5",
+    sm: "w-4 h-4",
+  };
+
+  const iconSizeClasses = {
+    lg: "w-5 h-5",
+    md: "w-4 h-4",
+    sm: "w-3.5 h-3.5",
+  };
+
+  return (
+    <button
+      type="button"
+      onClick={onChange}
+      className={`flex items-center justify-center ${sizeClasses[size]} rounded-full transition-colors ${
+        checked
+          ? "bg-[#0D56E4]"
+          : "bg-transparent"
+      }`}
+    >
+      <Check
+        className={`${iconSizeClasses[size]} ${
+          checked
+            ? "text-white"
+            : "text-[#C4C4C4]"
+        }`}
+        strokeWidth={checked ? 3 : 2}
+      />
+    </button>
+  );
+};
 
 const termsData = [
   {
@@ -88,21 +127,7 @@ export const Signup = (): JSX.Element => {
       className="flex flex-col min-h-screen bg-white"
       data-model-id="40000001:45654"
     >
-      <header className="flex items-center justify-between px-4 py-4 bg-white">
-        <Button variant="ghost" size="icon" className="h-10 w-10" asChild>
-          <Link to="/">
-            <ChevronLeftIcon className="h-6 w-6" />
-          </Link>
-        </Button>
-        <div className="flex items-center gap-2">
-          <Button variant="ghost" size="icon" className="h-10 w-10">
-            <MoreVerticalIcon className="h-6 w-6" />
-          </Button>
-          <Button variant="ghost" size="icon" className="h-10 w-10">
-            <CircleIcon className="h-6 w-6" />
-          </Button>
-        </div>
-      </header>
+      <BackSubHeader backTo="/" />
 
       <main className="flex flex-col flex-1 px-6">
         <section className="pt-6 pb-8">
@@ -116,9 +141,9 @@ export const Signup = (): JSX.Element => {
         <section className="flex-1 pb-6">
           <div className="bg-white rounded-lg border border-[#dfe3ec]">
             <div className="flex items-center gap-2 px-4 py-3 border-b border-[#dfe3ec]">
-              <Checkbox
-                id="agree-all"
-                className="h-[26px] w-[26px] rounded-md border-2"
+              <AgreementCheckbox
+                checked={false}
+                size="lg"
               />
               <label
                 htmlFor="agree-all"
@@ -133,10 +158,9 @@ export const Signup = (): JSX.Element => {
                 <div key={term.id} className="flex flex-col gap-[18px]">
                   <div className="flex items-start">
                     <div className="flex items-start gap-1.5 flex-1">
-                      <Checkbox
-                        id={term.id}
+                      <AgreementCheckbox
                         checked={term.checked}
-                        className="h-5 w-5 mt-0.5"
+                        size="md"
                       />
                       <label
                         htmlFor={term.id}
@@ -170,10 +194,9 @@ export const Signup = (): JSX.Element => {
                         {term.subItems.map((subItem) => (
                           <div key={subItem.id} className="flex items-start">
                             <div className="flex items-start gap-1.5 flex-1">
-                              <Checkbox
-                                id={subItem.id}
+                              <AgreementCheckbox
                                 checked={subItem.checked}
-                                className="h-4 w-4 mt-1"
+                                size="sm"
                               />
                               <label
                                 htmlFor={subItem.id}
@@ -205,9 +228,7 @@ export const Signup = (): JSX.Element => {
           다음
         </Button>
         <div className="h-4" />
-        <div className="flex justify-center py-2">
-          <div className="w-[134px] h-[5px] bg-black rounded-[100px]" />
-        </div>
+        <div className="flex justify-center py-2"></div>
       </footer>
     </div>
   );

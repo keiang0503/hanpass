@@ -1,4 +1,5 @@
-import { ChevronLeftIcon, CircleIcon, MoreVerticalIcon } from "lucide-react";
+import { BackSubHeader } from "../../components/BackSubHeader";
+import { CircleIcon, MoreVerticalIcon } from "lucide-react";
 import React from "react";
 import { Button } from "../../components/ui/button";
 import { Card, CardContent } from "../../components/ui/card";
@@ -10,21 +11,7 @@ export const CertificateSelectEmpty = (): JSX.Element => {
       data-model-id="35213:25512"
     >
       <div className="flex flex-col items-start w-full flex-1">
-        <header className="w-full bg-white">
-          <nav className="flex items-center justify-between px-5 py-4 w-full bg-white">
-            <Button variant="ghost" size="icon" className="h-auto p-0">
-              <ChevronLeftIcon className="w-6 h-6 text-black" />
-            </Button>
-            <div className="flex items-center gap-4">
-              <Button variant="ghost" size="icon" className="h-auto p-0">
-                <MoreVerticalIcon className="w-6 h-6 text-black" />
-              </Button>
-              <Button variant="ghost" size="icon" className="h-auto p-0">
-                <CircleIcon className="w-6 h-6 text-black" />
-              </Button>
-            </div>
-          </nav>
-        </header>
+        <BackSubHeader backTo="/" />
 
         <main className="flex flex-col w-full flex-1 bg-white">
           <section className="px-6 pt-[22px] pb-0 w-full">
@@ -80,11 +67,6 @@ export const CertificateSelectEmpty = (): JSX.Element => {
 
       <footer className="flex flex-col items-center justify-end px-6 py-0 w-full bg-white">
         <div className="w-full h-4" />
-        <div className="flex flex-col items-center gap-2.5 px-[105px] py-2 w-full bg-white">
-          <div className="flex flex-col w-[134px] items-center gap-2.5">
-            <div className="w-[134px] h-[5px] bg-black rounded-[100px]" />
-          </div>
-        </div>
       </footer>
     </div>
   );

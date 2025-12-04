@@ -1,14 +1,14 @@
 import React from "react";
+import { BackSubHeader } from "../../components/BackSubHeader";
 import { Button } from "../../components/ui/button";
 import { PaymentInformationSection } from "./sections/PaymentInformationSection";
-import { StatusBarSection } from "./sections/StatusBarSection";
 import { TransactionDetailsSection } from "./sections/TransactionDetailsSection";
 
 export const OverseasRemitPaymentConfirm = (): JSX.Element => {
   return (
     <div className="flex flex-col min-h-screen bg-white">
       <div className="flex flex-col flex-1">
-        <StatusBarSection />
+        <BackSubHeader backTo="/overseasremitfailu95093" />
         <TransactionDetailsSection />
         <PaymentInformationSection />
       </div>
@@ -22,9 +22,7 @@ export const OverseasRemitPaymentConfirm = (): JSX.Element => {
           </Button>
         </div>
 
-        <div className="flex justify-center py-2 bg-white">
-          <div className="w-[134px] h-[5px] bg-black rounded-[100px]" />
-        </div>
+        <div className="flex justify-center py-2 bg-white"></div>
       </footer>
     </div>
   );

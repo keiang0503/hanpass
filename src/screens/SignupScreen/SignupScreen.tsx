@@ -1,6 +1,6 @@
-import { ChevronLeftIcon, CircleIcon, MoreVerticalIcon } from "lucide-react";
 import React from "react";
 import { Link } from "react-router-dom";
+import { BackSubHeader } from "../../components/BackSubHeader";
 import { Button } from "../../components/ui/button";
 import { ScrollArea } from "../../components/ui/scroll-area";
 
@@ -30,24 +30,7 @@ export const SignupScreen = (): JSX.Element => {
       className="flex flex-col min-h-screen bg-white"
       data-model-id="40000001:45725"
     >
-      <header className="flex flex-col w-full bg-white">
-        <nav className="flex items-center justify-between px-5 py-4 w-full">
-          <Button variant="ghost" size="icon" className="h-auto p-0" asChild>
-            <Link to="/">
-              <ChevronLeftIcon className="w-6 h-6 text-black" />
-            </Link>
-          </Button>
-
-          <div className="flex items-center gap-4">
-            <Button variant="ghost" size="icon" className="h-auto p-0">
-              <MoreVerticalIcon className="w-6 h-6 text-black" />
-            </Button>
-            <Button variant="ghost" size="icon" className="h-auto p-0">
-              <CircleIcon className="w-6 h-6 text-black" />
-            </Button>
-          </div>
-        </nav>
-      </header>
+      <BackSubHeader backTo="/" />
 
       <main className="flex flex-col flex-1 w-full bg-white">
         <div className="flex flex-col px-6 pt-[22px] pb-0">
@@ -110,10 +93,6 @@ export const SignupScreen = (): JSX.Element => {
         </div>
 
         <div className="h-4 w-full" />
-
-        <div className="flex flex-col items-center px-[105px] py-2 bg-white">
-          <div className="w-[134px] h-[5px] bg-black rounded-[100px]" />
-        </div>
       </footer>
     </div>
   );

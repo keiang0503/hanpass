@@ -1,4 +1,5 @@
-import { ChevronLeftIcon, CircleIcon, MoreVerticalIcon } from "lucide-react";
+import { BackSubHeader } from "../../components/BackSubHeader";
+import { CircleIcon, MoreVerticalIcon } from "lucide-react";
 import React from "react";
 import { Button } from "../../components/ui/button";
 import { Label } from "../../components/ui/label";
@@ -15,19 +16,7 @@ export const MypageWrapper = (): JSX.Element => {
     >
       <UiStatusBarSubsection />
 
-      <header className="flex items-center justify-between px-4 py-3 relative w-full bg-white">
-        <Button variant="ghost" size="icon" className="h-10 w-10">
-          <ChevronLeftIcon className="h-6 w-6" />
-        </Button>
-        <div className="flex items-center gap-2">
-          <Button variant="ghost" size="icon" className="h-10 w-10">
-            <MoreVerticalIcon className="h-6 w-6" />
-          </Button>
-          <Button variant="ghost" size="icon" className="h-10 w-10">
-            <CircleIcon className="h-6 w-6" />
-          </Button>
-        </div>
-      </header>
+      <BackSubHeader backTo="/" />
 
       <div className="flex flex-col items-start gap-2 pt-[22px] pb-0 px-6 relative w-full">
         <h1 className="relative w-full font-title-24-b font-[number:var(--title-24-b-font-weight)] text-[#0b0c0e] text-[length:var(--title-24-b-font-size)] tracking-[var(--title-24-b-letter-spacing)] leading-[var(--title-24-b-line-height)] [font-style:var(--title-24-b-font-style)]">
