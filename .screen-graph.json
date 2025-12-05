@@ -33,44 +33,44 @@
       ]
     },
     {
-      "id": "src/screens/Login/Login.tsx",
+      "id": "src/screens/newaccount4_Login/Login.tsx",
       "label": "Login",
       "routes": [
         "/loginu95001"
       ],
-      "dataModelId": "40000001:45998"
+      "dataModelId": "40000001:46471"
     },
     {
-      "id": "src/screens/Element/Element.tsx",
+      "id": "src/screens/account4_Element/Element.tsx",
       "label": "Element",
       "routes": [
         "/elementu95002"
       ],
-      "dataModelId": "40000001:46464"
+      "dataModelId": "35213:25512"
     },
     {
-      "id": "src/screens/ElementScreen/ElementScreen.tsx",
+      "id": "src/screens/account4_ElementScreen/ElementScreen.tsx",
       "label": "ElementScreen",
       "routes": [
         "/elementscreenu95003"
       ],
-      "dataModelId": "40000001:46437"
+      "dataModelId": "35213:87606"
     },
     {
-      "id": "src/screens/ElementWrapper/ElementWrapper.tsx",
+      "id": "src/screens/account4_ElementWrapper/ElementWrapper.tsx",
       "label": "ElementWrapper",
       "routes": [
         "/elementwrapperu95004"
       ],
-      "dataModelId": "40000001:46422"
+      "dataModelId": "35213:87599"
     },
     {
-      "id": "src/screens/Screen4/Screen4.tsx",
+      "id": "src/screens/overseasremit2_Screen4/Screen4.tsx",
       "label": "Screen4",
       "routes": [
         "/screen4u95005"
       ],
-      "dataModelId": "40000001:46420"
+      "dataModelId": "2674:65950"
     },
     {
       "id": "src/screens/Home/Home.tsx",
@@ -97,12 +97,12 @@
       "dataModelId": "40000001:46032"
     },
     {
-      "id": "src/screens/Screen8/Screen8.tsx",
+      "id": "src/screens/overseasremit2_Screen8/Screen8.tsx",
       "label": "Screen8",
       "routes": [
         "/screen8u95009"
       ],
-      "dataModelId": "40000001:46294"
+      "dataModelId": "2674:66278"
     },
     {
       "id": "src/screens/Common/Common.tsx",
@@ -113,28 +113,28 @@
       "dataModelId": "40000001:46028"
     },
     {
-      "id": "src/screens/Signup/Signup.tsx",
+      "id": "src/screens/newaccount4_Signup/Signup.tsx",
       "label": "Signup",
       "routes": [
         "/signupu95003"
       ],
-      "dataModelId": "40000001:45654"
+      "dataModelId": "40000001:46500"
     },
     {
-      "id": "src/screens/SignupWrapper/SignupWrapper.tsx",
+      "id": "src/screens/account4_SignupWrapper/SignupWrapper.tsx",
       "label": "SignupWrapper",
       "routes": [
         "/signupwrapperu95004"
       ],
-      "dataModelId": "40000001:45704"
+      "dataModelId": "35213:88115"
     },
     {
-      "id": "src/screens/SignupScreen/SignupScreen.tsx",
+      "id": "src/screens/account4_SignupScreen/SignupScreen.tsx",
       "label": "SignupScreen",
       "routes": [
         "/signupscreenu95005"
       ],
-      "dataModelId": "40000001:45725"
+      "dataModelId": "35213:88072"
     },
     {
       "id": "src/screens/Nationality/Nationality.tsx",
@@ -473,36 +473,36 @@
       "dataModelId": "2674:64356"
     },
     {
-      "id": "src/screens/Account/Account.tsx",
+      "id": "src/screens/account2_Account/Account/Account.tsx",
       "label": "Account",
       "routes": [
         "/accountu95048"
       ],
-      "dataModelId": "34978:31881"
+      "dataModelId": "2674:67602"
     },
     {
-      "id": "src/screens/Screen6/Screen6.tsx",
+      "id": "src/screens/overseasremit2_Screen6/Screen6.tsx",
       "label": "Screen6",
       "routes": [
         "/screen6u95049"
       ],
-      "dataModelId": "35202:89897"
+      "dataModelId": "34821:46663"
     },
     {
-      "id": "src/screens/AccountScreen/AccountScreen.tsx",
+      "id": "src/screens/account5_AccountScreen/AccountScreen.tsx",
       "label": "AccountScreen",
       "routes": [
         "/accountscreenu95050"
       ],
-      "dataModelId": "2674:67358"
+      "dataModelId": "35139:61481"
     },
     {
-      "id": "src/screens/DivWrapper/DivWrapper.tsx",
+      "id": "src/screens/newaccount4_DivWrapper/DivWrapper/DivWrapper.tsx",
       "label": "DivWrapper",
       "routes": [
         "/divwrapperu95051"
       ],
-      "dataModelId": "35202:90012"
+      "dataModelId": "40000003:466993"
     },
     {
       "id": "src/screens/SelfCheckAuth/SelfCheckAuth.tsx",
@@ -513,20 +513,20 @@
       "dataModelId": "40000008:1156008"
     },
     {
-      "id": "src/screens/AccountWrapper/AccountWrapper.tsx",
+      "id": "src/screens/account5_AccountWrapper/AccountWrapper.tsx",
       "label": "AccountWrapper",
       "routes": [
         "/accountwrapperu95053"
       ],
-      "dataModelId": "34978:52371"
+      "dataModelId": "2674:67486"
     },
     {
-      "id": "src/screens/LoginScreen/LoginScreen.tsx",
+      "id": "src/screens/newaccount4_LoginScreen/LoginScreen.tsx",
       "label": "LoginScreen",
       "routes": [
         "/loginscreenu95054"
       ],
-      "dataModelId": "40000008:1156158"
+      "dataModelId": "40000003:465827"
     },
     {
       "id": "src/screens/AccountVerify/AccountVerify.tsx",
@@ -761,28 +761,28 @@
       "dataModelId": "35213:88245"
     },
     {
-      "id": "src/screens/Overseasremit/Overseasremit.tsx",
+      "id": "src/screens/overseasremit2_Overseasremit/Overseasremit.tsx",
       "label": "Overseasremit",
       "routes": [
         "/overseasremitu95084"
       ],
-      "dataModelId": "2674:65617"
+      "dataModelId": "2674:65905"
     },
     {
-      "id": "src/screens/OverseasremitScreen/OverseasremitScreen.tsx",
+      "id": "src/screens/overseasremit2_OverseasremitScreen/OverseasremitScreen.tsx",
       "label": "OverseasremitScreen",
       "routes": [
         "/overseasremitscreenu95085"
       ],
-      "dataModelId": "2674:65882"
+      "dataModelId": "2674:66327"
     },
     {
-      "id": "src/screens/OverseasremitWrapper/OverseasremitWrapper.tsx",
+      "id": "src/screens/overseasremit2_OverseasremitWrapper/OverseasremitWrapper.tsx",
       "label": "OverseasremitWrapper",
       "routes": [
         "/overseasremitwrapperu95086"
       ],
-      "dataModelId": "2674:66147"
+      "dataModelId": "2674:66167"
     },
     {
       "id": "src/screens/OverseasRemitCoupon/OverseasRemitCoupon.tsx",
@@ -1027,7 +1027,7 @@
       "dataModelId": "34958:288553"
     },
     {
-      "id": "src/screens/Mypage/Mypage.tsx",
+      "id": "src/screens/Settings2_Mypage/Mypage.tsx",
       "label": "Mypage",
       "routes": [
         "/mypageu95118"
@@ -1048,7 +1048,7 @@
       "routes": [
         "/mypagescreenu95120"
       ],
-      "dataModelId": "36848:72208"
+      "dataModelId": "36848:90425"
     },
     {
       "id": "src/screens/MypageWrapper/MypageWrapper.tsx",
@@ -1056,42 +1056,34 @@
       "routes": [
         "/mypagewrapperu95121"
       ],
-      "dataModelId": "34894:24910"
+      "dataModelId": "36848:75801"
     },
     {
-      "id": "src/screens/Screen5/Screen5.tsx",
+      "id": "src/screens/overseasremit2_Screen5/Screen5.tsx",
       "label": "Screen5",
       "routes": [
         "/screen5u95122"
       ],
-      "dataModelId": "36848:80333"
+      "dataModelId": "35087:128392"
     },
     {
-      "id": "src/screens/Screen7/Screen7.tsx",
+      "id": "src/screens/overseasremit2_Screen7/Screen7.tsx",
       "label": "Screen7",
       "routes": [
         "/screen7u95123"
       ],
-      "dataModelId": "36848:80320"
+      "dataModelId": "34822:541724"
+    },
+    {
+      "id": "src/screens/Mypage017/Mypage017.tsx",
+      "label": "Mypage017",
+      "routes": [
+        "/mypage017u95124"
+      ],
+      "dataModelId": "40000008:1188578"
     }
   ],
   "edges": [
-    {
-      "id": "src/screens/PublishingStatus/PublishingStatus.tsx:1079:10-to-src/screens/Components/Components.tsx",
-      "source": "src/screens/PublishingStatus/PublishingStatus.tsx",
-      "target": "src/screens/Components/Components.tsx",
-      "data": {
-        "viaRoute": "/components",
-        "trigger": {
-          "element": "<Link\n            to=\"/components\"\n            className=\"w-full flex items-center gap-3 px-3 py-2.5 rounded-lg text-left transition-colors hover:bg-blue-50 text-blue-600 border border-blue-200 bg-blue-50/50\"\n          >\n            <LayoutGridIcon className=\"w-5 h-5 flex-shrink-0\" />\n            <span className=\"flex-1 font-medium\">공통 컴포넌트</span>\n          </Link>",
-          "line": 1079,
-          "endLine": 1085,
-          "column": 10,
-          "endColumn": 17,
-          "sourceFile": "src/screens/PublishingStatus/PublishingStatus.tsx"
-        }
-      }
-    },
     {
       "id": "src/screens/Favorite/Favorite.tsx:37:10-to-src/screens/Transform/Transform.tsx",
       "source": "src/screens/Favorite/Favorite.tsx",
@@ -1105,38 +1097,6 @@
           "column": 10,
           "endColumn": 53,
           "sourceFile": "src/screens/Favorite/Favorite.tsx"
-        }
-      }
-    },
-    {
-      "id": "src/screens/SignupWrapper/SignupWrapper.tsx:183:10-to-src/screens/SignupScreen/SignupScreen.tsx",
-      "source": "src/screens/SignupWrapper/SignupWrapper.tsx",
-      "target": "src/screens/SignupScreen/SignupScreen.tsx",
-      "data": {
-        "viaRoute": "/signupscreenu95005",
-        "trigger": {
-          "element": "<Link to=\"/signupscreenu95005\">\n            다음\n          </Link>",
-          "line": 183,
-          "endLine": 185,
-          "column": 10,
-          "endColumn": 17,
-          "sourceFile": "src/screens/SignupWrapper/SignupWrapper.tsx"
-        }
-      }
-    },
-    {
-      "id": "src/screens/SignupScreen/SignupScreen.tsx:87:12-to-src/screens/Nationality/Nationality.tsx",
-      "source": "src/screens/SignupScreen/SignupScreen.tsx",
-      "target": "src/screens/Nationality/Nationality.tsx",
-      "data": {
-        "viaRoute": "/nationalityu95006",
-        "trigger": {
-          "element": "<Link to=\"/nationalityu95006\">\n              <span className=\"font-title-16-b font-[number:var(--title-16-b-font-weight)] text-white text-[length:var(--title-16-b-font-size)] tracking-[var(--title-16-b-letter-spacing)] leading-[var(--title-16-b-line-height)] [font-style:var(--title-16-b-font-style)]\">\n                다음\n              </span>\n            </Link>",
-          "line": 87,
-          "endLine": 91,
-          "column": 12,
-          "endColumn": 19,
-          "sourceFile": "src/screens/SignupScreen/SignupScreen.tsx"
         }
       }
     },
@@ -1237,15 +1197,15 @@
       }
     },
     {
-      "id": "src/screens/SignupPhoneInput/SignupPhoneInput.tsx:173:14-to-src/screens/VerificationCode/VerificationCode.tsx",
+      "id": "src/screens/SignupPhoneInput/SignupPhoneInput.tsx:191:14-to-src/screens/VerificationCode/VerificationCode.tsx",
       "source": "src/screens/SignupPhoneInput/SignupPhoneInput.tsx",
       "target": "src/screens/VerificationCode/VerificationCode.tsx",
       "data": {
         "viaRoute": "/verificationcodeu95008",
         "trigger": {
           "element": "<Link to=\"/verificationcodeu95008\">\n                <span className=\"flex-1 font-title-16-b font-[number:var(--title-16-b-font-weight)] text-white text-[length:var(--title-16-b-font-size)] text-center tracking-[var(--title-16-b-letter-spacing)] leading-[var(--title-16-b-line-height)] [font-style:var(--title-16-b-font-style)]\">\n                  인증번호 요청\n                </span>\n              </Link>",
-          "line": 173,
-          "endLine": 177,
+          "line": 191,
+          "endLine": 195,
           "column": 14,
           "endColumn": 21,
           "sourceFile": "src/screens/SignupPhoneInput/SignupPhoneInput.tsx"
@@ -1269,15 +1229,15 @@
       }
     },
     {
-      "id": "src/screens/NewAccountPasswordFilled/NewAccountPasswordFilled.tsx:10:6-to-src/screens/NewAccountPassword/NewAccountPassword.tsx",
+      "id": "src/screens/NewAccountPasswordFilled/NewAccountPasswordFilled.tsx:11:6-to-src/screens/NewAccountPassword/NewAccountPassword.tsx",
       "source": "src/screens/NewAccountPasswordFilled/NewAccountPasswordFilled.tsx",
       "target": "src/screens/NewAccountPassword/NewAccountPassword.tsx",
       "data": {
         "viaRoute": "/newaccountpasswordu95016",
         "trigger": {
           "element": "<BackSubHeader backTo=\"/newaccountpasswordu95016\" />",
-          "line": 10,
-          "endLine": 10,
+          "line": 11,
+          "endLine": 11,
           "column": 6,
           "endColumn": 58,
           "sourceFile": "src/screens/NewAccountPasswordFilled/NewAccountPasswordFilled.tsx"
@@ -1285,15 +1245,15 @@
       }
     },
     {
-      "id": "src/screens/NewAccountPasswordFilled/NewAccountPasswordFilled.tsx:123:14-to-src/screens/NewAccountReferral/NewAccountReferral.tsx",
+      "id": "src/screens/NewAccountPasswordFilled/NewAccountPasswordFilled.tsx:163:14-to-src/screens/NewAccountReferral/NewAccountReferral.tsx",
       "source": "src/screens/NewAccountPasswordFilled/NewAccountPasswordFilled.tsx",
       "target": "src/screens/NewAccountReferral/NewAccountReferral.tsx",
       "data": {
         "viaRoute": "/newaccountreferralu95017",
         "trigger": {
           "element": "<Link to=\"/newaccountreferralu95017\">\n                <span className=\"flex-1 font-title-16-b font-[number:var(--title-16-b-font-weight)] text-[#85888e] text-[length:var(--title-16-b-font-size)] text-center tracking-[var(--title-16-b-letter-spacing)] leading-[var(--title-16-b-line-height)] [font-style:var(--title-16-b-font-style)]\">\n                  다음\n                </span>\n              </Link>",
-          "line": 123,
-          "endLine": 127,
+          "line": 163,
+          "endLine": 167,
           "column": 14,
           "endColumn": 21,
           "sourceFile": "src/screens/NewAccountPasswordFilled/NewAccountPasswordFilled.tsx"
@@ -1317,15 +1277,15 @@
       }
     },
     {
-      "id": "src/screens/NewAccountPassword/NewAccountPassword.tsx:122:14-to-src/screens/NewAccountPasswordFilled/NewAccountPasswordFilled.tsx",
+      "id": "src/screens/NewAccountPassword/NewAccountPassword.tsx:146:14-to-src/screens/NewAccountPasswordFilled/NewAccountPasswordFilled.tsx",
       "source": "src/screens/NewAccountPassword/NewAccountPassword.tsx",
       "target": "src/screens/NewAccountPasswordFilled/NewAccountPasswordFilled.tsx",
       "data": {
         "viaRoute": "/newaccountpasswordfilledu95015",
         "trigger": {
           "element": "<Link to=\"/newaccountpasswordfilledu95015\">\n                <span className=\"flex-1 font-title-16-b font-[number:var(--title-16-b-font-weight)] text-[#85888e] text-[length:var(--title-16-b-font-size)] text-center tracking-[var(--title-16-b-letter-spacing)] leading-[var(--title-16-b-line-height)] [font-style:var(--title-16-b-font-style)]\">\n                  다음\n                </span>\n              </Link>",
-          "line": 122,
-          "endLine": 126,
+          "line": 146,
+          "endLine": 150,
           "column": 14,
           "endColumn": 21,
           "sourceFile": "src/screens/NewAccountPassword/NewAccountPassword.tsx"
@@ -1573,22 +1533,6 @@
       }
     },
     {
-      "id": "src/screens/IdFrontCapture/IdFrontCapture.tsx:20:12-to-src/screens/VerificationSteps/VerificationSteps.tsx",
-      "source": "src/screens/IdFrontCapture/IdFrontCapture.tsx",
-      "target": "src/screens/VerificationSteps/VerificationSteps.tsx",
-      "data": {
-        "viaRoute": "/verificationstepsu95024",
-        "trigger": {
-          "element": "<Link to=\"/verificationstepsu95024\">\n              <XIcon className=\"w-6 h-6 text-white\" />\n            </Link>",
-          "line": 20,
-          "endLine": 22,
-          "column": 12,
-          "endColumn": 19,
-          "sourceFile": "src/screens/IdFrontCapture/IdFrontCapture.tsx"
-        }
-      }
-    },
-    {
       "id": "src/screens/IdTypeSelection/IdTypeSelection.tsx:33:6-to-src/screens/VerificationSteps/VerificationSteps.tsx",
       "source": "src/screens/IdTypeSelection/IdTypeSelection.tsx",
       "target": "src/screens/VerificationSteps/VerificationSteps.tsx",
@@ -1717,41 +1661,9 @@
       }
     },
     {
-      "id": "src/screens/Account/Account.tsx:52:6-to-src/screens/SignupCompletePending/SignupCompletePending.tsx",
-      "source": "src/screens/Account/Account.tsx",
-      "target": "src/screens/SignupCompletePending/SignupCompletePending.tsx",
-      "data": {
-        "viaRoute": "/signupcompletependingu95047",
-        "trigger": {
-          "element": "<BackSubHeader backTo=\"/signupcompletependingu95047\" />",
-          "line": 52,
-          "endLine": 52,
-          "column": 6,
-          "endColumn": 61,
-          "sourceFile": "src/screens/Account/Account.tsx"
-        }
-      }
-    },
-    {
-      "id": "src/screens/AccountWrapper/AccountWrapper.tsx:13:6-to-src/screens/SelfCheckAuth/SelfCheckAuth.tsx",
-      "source": "src/screens/AccountWrapper/AccountWrapper.tsx",
-      "target": "src/screens/SelfCheckAuth/SelfCheckAuth.tsx",
-      "data": {
-        "viaRoute": "/selfcheckauthu95052",
-        "trigger": {
-          "element": "<BackSubHeader backTo=\"/selfcheckauthu95052\" />",
-          "line": 13,
-          "endLine": 13,
-          "column": 6,
-          "endColumn": 53,
-          "sourceFile": "src/screens/AccountWrapper/AccountWrapper.tsx"
-        }
-      }
-    },
-    {
-      "id": "src/screens/AccountVerify/AccountVerify.tsx:13:6-to-src/screens/LoginScreen/LoginScreen.tsx",
+      "id": "src/screens/AccountVerify/AccountVerify.tsx:13:6-to-src/screens/newaccount4_LoginScreen/LoginScreen.tsx",
       "source": "src/screens/AccountVerify/AccountVerify.tsx",
-      "target": "src/screens/LoginScreen/LoginScreen.tsx",
+      "target": "src/screens/newaccount4_LoginScreen/LoginScreen.tsx",
       "data": {
         "viaRoute": "/loginscreenu95054",
         "trigger": {

@@ -1,11 +1,7 @@
-import {
-  CheckIcon,
-  ChevronLeftIcon,
-  CircleIcon,
-  MoreVerticalIcon,
-} from "lucide-react";
+import { CheckIcon } from "lucide-react";
 import React from "react";
 import { Link } from "react-router-dom";
+import { BackSubHeader } from "../../components/BackSubHeader";
 import { Button } from "../../components/ui/button";
 
 const passwordDots = Array(10).fill(null);
@@ -23,46 +19,7 @@ export const SettingsScreen = (): JSX.Element => {
       className="flex flex-col min-h-screen items-start bg-white"
       data-model-id="36848:77717"
     >
-      <header className="flex flex-col w-full bg-white">
-        <div className="flex h-11 items-center justify-between px-4 py-2">
-          <div className="flex items-center gap-2">
-            <span className="[font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm">
-              9:41
-            </span>
-          </div>
-          <div className="flex items-center gap-1.5">
-            <img
-              className="w-[18px] h-2.5"
-              alt="Signal"
-              src="https://c.animaapp.com/w2kCT5wM/img/icon---mobile-signal-7.svg"
-            />
-            <img
-              className="w-[17px] h-[11.83px]"
-              alt="Wifi"
-              src="https://c.animaapp.com/w2kCT5wM/img/wifi-7.svg"
-            />
-            <img
-              className="w-[27.4px] h-[13px]"
-              alt="Battery"
-              src="https://c.animaapp.com/w2kCT5wM/img/battery-7.svg"
-            />
-          </div>
-        </div>
-
-        <nav className="flex items-center justify-between px-4 py-4">
-          <Button variant="ghost" size="icon" className="h-8 w-8 p-0">
-            <ChevronLeftIcon className="h-6 w-6" />
-          </Button>
-          <div className="flex items-center gap-2">
-            <Button variant="ghost" size="icon" className="h-8 w-8 p-0">
-              <MoreVerticalIcon className="h-6 w-6" />
-            </Button>
-            <Button variant="ghost" size="icon" className="h-8 w-8 p-0">
-              <CircleIcon className="h-6 w-6" />
-            </Button>
-          </div>
-        </nav>
-      </header>
+      <BackSubHeader />
 
       <main className="flex flex-col flex-1 w-full px-6 pt-6 pb-0">
         <h1 className="font-title-24-b font-[number:var(--title-24-b-font-weight)] text-[#0b0c0e] text-[length:var(--title-24-b-font-size)] tracking-[var(--title-24-b-letter-spacing)] leading-[var(--title-24-b-line-height)] [font-style:var(--title-24-b-font-style)] mb-[42px]">
@@ -156,9 +113,6 @@ export const SettingsScreen = (): JSX.Element => {
           </Button>
         </div>
         <div className="h-4" />
-        <div className="flex justify-center py-2">
-          <div className="w-[134px] h-[5px] bg-black rounded-[100px]" />
-        </div>
       </footer>
     </div>
   );

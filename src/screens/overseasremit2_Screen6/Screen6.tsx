@@ -1,7 +1,7 @@
 import React from "react";
+import { BackSubHeader } from "../../components/BackSubHeader";
 import { Button } from "../../components/ui/button";
 import { PaymentInformationSection } from "./sections/PaymentInformationSection";
-import { StatusBarSection } from "./sections/StatusBarSection";
 import { TransactionDetailsSection } from "./sections/TransactionDetailsSection";
 
 export const Screen6 = (): JSX.Element => {
@@ -11,7 +11,7 @@ export const Screen6 = (): JSX.Element => {
       data-model-id="34821:46663"
     >
       <div className="flex flex-col flex-1">
-        <StatusBarSection />
+        <BackSubHeader />
         <TransactionDetailsSection />
         <PaymentInformationSection />
       </div>
@@ -25,9 +25,6 @@ export const Screen6 = (): JSX.Element => {
           </Button>
         </div>
 
-        <div className="flex justify-center py-2 bg-white">
-          <div className="w-[134px] h-[5px] bg-black rounded-[100px]" />
-        </div>
       </footer>
     </div>
   );

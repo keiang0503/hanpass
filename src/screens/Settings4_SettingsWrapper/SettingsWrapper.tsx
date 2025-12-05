@@ -1,12 +1,7 @@
-import {
-  ChevronLeftIcon,
-  ChevronRightIcon,
-  CircleIcon,
-  MoreHorizontalIcon,
-} from "lucide-react";
+import { ChevronRightIcon } from "lucide-react";
 import React from "react";
 import { Link } from "react-router-dom";
-import { Button } from "../../components/ui/button";
+import { BackSubHeader } from "../../components/BackSubHeader";
 
 const termsItems = [
   {
@@ -52,22 +47,7 @@ export const SettingsWrapper = (): JSX.Element => {
       className="flex flex-col min-h-screen items-start bg-white"
       data-model-id="36848:80728"
     >
-      <header className="w-full flex flex-col items-start bg-white">
-        <div className="w-full flex items-center justify-between px-4 py-3 bg-white">
-          <Button variant="ghost" size="icon" className="h-auto p-0">
-            <ChevronLeftIcon className="w-6 h-6 text-black" />
-          </Button>
-
-          <div className="flex items-center gap-4">
-            <Button variant="ghost" size="icon" className="h-auto p-0">
-              <MoreHorizontalIcon className="w-6 h-6 text-black" />
-            </Button>
-            <Button variant="ghost" size="icon" className="h-auto p-0">
-              <CircleIcon className="w-6 h-6 text-black" />
-            </Button>
-          </div>
-        </div>
-      </header>
+      <BackSubHeader />
 
       <main className="flex flex-col w-full flex-1">
         <div className="pt-[22px] pb-0 px-6 flex flex-col items-start w-full">
@@ -92,13 +72,6 @@ export const SettingsWrapper = (): JSX.Element => {
         </nav>
       </main>
 
-      <footer className="flex flex-col justify-end px-6 py-0 w-full items-center">
-        <div className="flex flex-col items-center gap-2.5 px-[105px] py-2 w-full bg-white">
-          <div className="flex flex-col w-[134px] items-center gap-2.5">
-            <div className="w-[134px] h-[5px] bg-black rounded-[100px]" />
-          </div>
-        </div>
-      </footer>
     </div>
   );
 };

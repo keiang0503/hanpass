@@ -38,7 +38,7 @@ export const ContentsSubsection = (): JSX.Element => {
         {transactionData.map((transaction, index) => (
           <Card
             key={index}
-            className="border-0 border-b border-solid border-[#dfe3ec] rounded-none shadow-none"
+            className="w-full border-0 border-b border-solid border-[#dfe3ec] rounded-none shadow-none"
           >
             <CardContent className="justify-center gap-1.5 px-0 py-[22px] flex flex-col items-start">
               <div className="flex items-center gap-1 self-stretch w-full">

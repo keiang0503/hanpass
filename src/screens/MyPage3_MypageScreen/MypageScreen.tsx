@@ -8,6 +8,7 @@ import {
   TabsList,
   TabsTrigger,
 } from "../../components/ui/tabs";
+import { PopupHeader } from "../../components/PopupHeader";
 
 const tabItems = [
   { value: "invite-link", label: "초대 링크 보내기" },
@@ -18,14 +19,10 @@ const tabItems = [
 export const MypageScreen = (): JSX.Element => {
   return (
     <div
-      className="flex flex-col min-h-screen items-center justify-end relative bg-[linear-gradient(0deg,rgba(0,0,0,0.75)_0%,rgba(0,0,0,0.75)_100%),linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(255,255,255,1)_100%)]"
+      className="flex flex-col h-screen items-center justify-end relative bg-overlay-dark"
       data-model-id="36848:76927"
     >
-      <img
-        className="absolute w-full top-0 left-0 h-[106px] object-cover"
-        alt="Image"
-        src="https://c.animaapp.com/pWVLYNoL/img/--.svg"
-      />
+      <PopupHeader />
 
       <section className="flex flex-col items-center justify-end gap-1.5 px-6 py-0 relative w-full bg-white rounded-[30px_30px_0px_0px]">
         <header className="flex-col items-start w-full flex relative">
@@ -112,12 +109,6 @@ export const MypageScreen = (): JSX.Element => {
               QR 이미지 저장하기
             </span>
           </Button>
-
-          <div className="flex flex-col items-center gap-2.5 px-[105px] py-2 relative w-full bg-white">
-            <div className="w-[134px] items-center gap-2.5 ml-[-8.50px] mr-[-8.50px] flex flex-col relative">
-              <div className="relative w-[134px] h-[5px] bg-black rounded-[100px]" />
-            </div>
-          </div>
         </div>
       </section>
     </div>

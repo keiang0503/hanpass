@@ -8,11 +8,10 @@ export const ReferralCodeInput = (): JSX.Element => {
 
   return (
     <div
-      className="flex flex-col w-full h-screen bg-white relative"
+      className="w-full h-screen flex flex-col items-center justify-center bg-overlay-dark"
       data-model-id="36893:39789"
     >
       <PopupHeader />
-
       <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
         <DialogContent className="flex flex-col max-w-[312px] items-start justify-center bg-white rounded-[22px] shadow-[0px_10px_14px_#5a5a5a29] border-0">
           <div className="flex flex-col items-center gap-2.5 pt-8 pb-9 px-[22px] w-full">

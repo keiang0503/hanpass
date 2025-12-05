@@ -1,12 +1,6 @@
-import {
-  ChevronLeftIcon,
-  MoreVerticalIcon,
-  PlusIcon,
-  TargetIcon,
-  Trash2Icon,
-} from "lucide-react";
+import { PlusIcon, TargetIcon, Trash2Icon } from "lucide-react";
 import React from "react";
-import { Link } from "react-router-dom";
+import { BackSubHeader } from "../../components/BackSubHeader";
 import { Badge } from "../../components/ui/badge";
 import { Button } from "../../components/ui/button";
 import { Card, CardContent } from "../../components/ui/card";
@@ -23,41 +17,24 @@ const accountData = {
 export const Account = (): JSX.Element => {
   return (
     <div
-      className="flex flex-col min-h-screen items-center bg-white"
+      className="flex flex-col w-full min-h-screen bg-white"
       data-model-id="35213:88642"
     >
-      <div className="flex flex-col items-start w-full max-w-md flex-1">
-        <header className="flex flex-col items-start w-full bg-white">
-          <div className="flex items-center justify-between px-5 py-4 w-full">
-            <Button variant="ghost" size="icon" className="h-auto p-0" asChild>
-              <Link to="/">
-                <ChevronLeftIcon className="w-6 h-6" />
-              </Link>
-            </Button>
+      <div className="flex flex-col items-start w-full flex-1">
+        <BackSubHeader />
 
-            <div className="flex items-center gap-4">
-              <Button variant="ghost" size="icon" className="h-auto p-0">
-                <MoreVerticalIcon className="w-6 h-6" />
-              </Button>
-              <Button variant="ghost" size="icon" className="h-auto p-0">
-                <TargetIcon className="w-6 h-6" />
-              </Button>
-            </div>
-          </div>
+        <div className="flex items-center justify-between px-5 py-4 w-full">
+          <h1 className="flex-1 font-title-18-SB font-[number:var(--title-18-SB-font-weight)] text-[#0b0c0e] text-[length:var(--title-18-SB-font-size)] tracking-[var(--title-18-SB-letter-spacing)] leading-[var(--title-18-SB-line-height)] [font-style:var(--title-18-SB-font-style)]">
+            계좌관리
+          </h1>
 
-          <div className="flex items-center justify-between px-5 py-4 w-full">
-            <h1 className="flex-1 font-title-18-SB font-[number:var(--title-18-SB-font-weight)] text-[#0b0c0e] text-[length:var(--title-18-SB-font-size)] tracking-[var(--title-18-SB-letter-spacing)] leading-[var(--title-18-SB-line-height)] [font-style:var(--title-18-SB-font-style)]">
-              계좌관리
-            </h1>
-
-            <Button
-              variant="outline"
-              className="h-auto px-2 py-1.5 border-[#0d56e4] text-[#0d56e4] font-caption-title-13-b font-[number:var(--caption-title-13-b-font-weight)] text-[length:var(--caption-title-13-b-font-size)] tracking-[var(--caption-title-13-b-letter-spacing)] leading-[var(--caption-title-13-b-line-height)] [font-style:var(--caption-title-13-b-font-style)]"
-            >
-              주계좌 설정
-            </Button>
-          </div>
-        </header>
+          <Button
+            variant="outline"
+            className="h-auto px-2 py-1.5 border-[#0d56e4] text-[#0d56e4] font-caption-title-13-b font-[number:var(--caption-title-13-b-font-weight)] text-[length:var(--caption-title-13-b-font-size)] tracking-[var(--caption-title-13-b-letter-spacing)] leading-[var(--caption-title-13-b-line-height)] [font-style:var(--caption-title-13-b-font-style)]"
+          >
+            주계좌 설정
+          </Button>
+        </div>
 
         <main className="flex flex-col items-start gap-4 px-6 py-0 w-full flex-1">
           <Card className="w-full border-[#dfe3ec] rounded-2xl overflow-hidden">
@@ -128,9 +105,7 @@ export const Account = (): JSX.Element => {
       </div>
 
       <footer className="flex flex-col items-center w-full max-w-md">
-        <div className="flex flex-col items-center gap-2.5 px-[105px] py-2 w-full bg-white">
-          <div className="w-[134px] h-[5px] bg-black rounded-[100px]" />
-        </div>
+        <div className="w-full h-4" />
       </footer>
     </div>
   );

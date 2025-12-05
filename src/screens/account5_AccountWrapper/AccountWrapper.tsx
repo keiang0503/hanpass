@@ -1,4 +1,5 @@
 import React from "react";
+import { BackSubHeader } from "../../components/BackSubHeader";
 import { Button } from "../../components/ui/button";
 import { Card, CardContent } from "../../components/ui/card";
 
@@ -8,126 +9,7 @@ export const AccountWrapper = (): JSX.Element => {
       className="flex flex-col min-h-screen bg-white"
       data-model-id="2674:67486"
     >
-      <header className="flex flex-col w-full bg-white">
-        <div className="flex h-6 items-center justify-between px-2.5 py-1 w-full bg-white">
-          <div className="inline-flex items-center gap-2">
-            <div className="inline-flex items-center gap-1">
-              <div className="inline-flex items-center">
-                <div className="[font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm">
-                  9
-                </div>
-                <div className="[font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm">
-                  :
-                </div>
-                <div className="[font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm">
-                  41
-                </div>
-              </div>
-            </div>
-            <div className="[font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm">
-              Sat Jun 11
-            </div>
-          </div>
-
-          <div className="inline-flex items-center gap-1.5">
-            <div className="relative w-[18px] h-2.5">
-              <img
-                className="h-[40.00%] top-[-102560.00%] left-[-66877.78%] absolute w-[16.67%]"
-                alt="Bar"
-                src="/img/bar-1-2.png"
-              />
-              <img
-                className="h-[60.00%] top-[-102580.00%] left-[-66850.00%] absolute w-[16.67%]"
-                alt="Bar"
-                src="/img/bar-2-3.png"
-              />
-              <img
-                className="h-[80.00%] top-[-102600%] left-[-66822.22%] absolute w-[16.67%]"
-                alt="Bar"
-                src="/img/bar-3-3.png"
-              />
-              <img
-                className="h-full top-[-102620.00%] left-[-66794.44%] absolute w-[16.67%]"
-                alt="Bar"
-                src="/img/bar-4-2.png"
-              />
-            </div>
-
-            <div className="relative w-4 h-[11.62px] overflow-hidden">
-              <img
-                className="absolute w-[31.30%] h-[30.17%] top-[-88244.04%] left-[-75353.18%]"
-                alt="Bar"
-                src="/img/bar-1-3.png"
-              />
-              <img
-                className="absolute w-[62.57%] h-[34.44%] top-[-88280.15%] left-[-75368.75%]"
-                alt="Bar"
-                src="/img/bar-2-4.png"
-              />
-              <img
-                className="absolute w-[100.01%] h-[43.03%] top-[-88313.87%] left-[-75387.52%]"
-                alt="Bar"
-                src="/img/bar-3-4.png"
-              />
-            </div>
-
-            <div className="[font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm">
-              100%
-            </div>
-
-            <div className="relative w-6 h-3 overflow-hidden">
-              <img
-                className="absolute w-[87.51%] h-full top-[-85508.33%] left-[-50525.00%]"
-                alt="Border"
-                src="/img/border-2.png"
-              />
-              <div className="absolute w-[70.83%] h-[66.67%] top-[16.67%] left-[8.33%] bg-black rounded-[1px]" />
-              <img
-                className="absolute w-[8.33%] h-[33.33%] top-[-85475.00%] left-[-50433.33%]"
-                alt="Cap"
-                src="/img/cap-2.png"
-              />
-            </div>
-          </div>
-        </div>
-
-        <div className="flex items-center gap-2.5 pl-[34px] pr-5 py-4 w-full">
-          <div className="flex-1 h-5 [font-family:'Pretendard-Medium',Helvetica] font-medium text-black text-[17px] tracking-[-0.41px] leading-[22px] whitespace-nowrap">
-            9:41
-          </div>
-
-          <img
-            className="w-[18px] h-3"
-            alt="Icon mobile signal"
-            src="https://c.animaapp.com/dojq12ez/img/icon---mobile-signal-5.svg"
-          />
-
-          <img
-            className="w-[17px] h-[11.83px]"
-            alt="Wifi"
-            src="https://c.animaapp.com/dojq12ez/img/wifi-5.svg"
-          />
-
-          <img
-            className="w-[27.4px] h-[13px]"
-            alt="Battery"
-            src="https://c.animaapp.com/dojq12ez/img/battery-5.svg"
-          />
-        </div>
-
-        <div className="flex flex-col items-start w-full">
-          <div className="flex flex-col items-start gap-2 w-full">
-            <div className="flex h-[54px] items-center justify-around px-5 py-0 w-full bg-white relative">
-              <div className="flex w-[calc(100%_-_109px)] items-center absolute top-[calc(50.00%_-_16px)] left-1.5" />
-              <img
-                className="absolute h-[calc(100%_-_22px)] top-[11px] right-1.5 w-[87px]"
-                alt="Mini"
-                src="https://c.animaapp.com/dojq12ez/img/mini-5@2x.png"
-              />
-            </div>
-          </div>
-        </div>
-      </header>
+      <BackSubHeader />
 
       <main className="flex flex-col items-center justify-between pt-0 pb-3.5 px-6 flex-1 w-full">
         <div className="flex items-start gap-[50px] w-full flex-col">
@@ -221,13 +103,7 @@ export const AccountWrapper = (): JSX.Element => {
           </div>
         </div>
 
-        <div className="w-[360px] h-4 ml-[-16.50px] mr-[-16.50px]" />
-
-        <div className="flex flex-col items-center gap-2.5 px-[105px] py-2 w-full bg-white">
-          <div className="flex w-[134px] items-center gap-2.5 ml-[-8.50px] mr-[-8.50px] flex-col">
-            <div className="w-[134px] h-[5px] bg-black rounded-[100px]" />
-          </div>
-        </div>
+        <div className="w-full h-4" />
       </footer>
     </div>
   );

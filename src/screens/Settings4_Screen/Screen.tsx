@@ -1,5 +1,5 @@
-import { ChevronLeftIcon, CircleIcon, MoreVerticalIcon } from "lucide-react";
 import React from "react";
+import { BackSubHeader } from "../../components/BackSubHeader";
 import { Button } from "../../components/ui/button";
 import { Card, CardContent } from "../../components/ui/card";
 
@@ -9,45 +9,7 @@ export const Screen = (): JSX.Element => {
       className="flex flex-col min-h-screen items-start relative bg-white"
       data-model-id="36848:80951"
     >
-      <header className="flex items-center justify-between w-full px-4 py-3 bg-white">
-        <Button variant="ghost" size="icon" className="h-10 w-10">
-          <ChevronLeftIcon className="h-6 w-6" />
-        </Button>
-        <div className="flex items-center gap-2">
-          <Button variant="ghost" size="icon" className="h-10 w-10">
-            <MoreVerticalIcon className="h-6 w-6" />
-          </Button>
-          <Button variant="ghost" size="icon" className="h-10 w-10">
-            <CircleIcon className="h-6 w-6" />
-          </Button>
-        </div>
-      </header>
-
-      <div className="flex items-center justify-between w-full px-5 py-4 bg-white">
-        <div className="relative flex-1 h-5 mt-[-1.00px] [font-family:'Pretendard-Medium',Helvetica] font-medium text-black text-[17px] tracking-[-0.41px] leading-[22px] whitespace-nowrap">
-          9:41
-        </div>
-
-        <div className="flex items-center gap-1.5">
-          <img
-            className="relative w-[18px] h-3"
-            alt="Icon mobile signal"
-            src="https://c.animaapp.com/MgOgZxnr/img/icon---mobile-signal-7.svg"
-          />
-
-          <img
-            className="relative w-[17px] h-[11.83px]"
-            alt="Wifi"
-            src="https://c.animaapp.com/MgOgZxnr/img/wifi-7.svg"
-          />
-
-          <img
-            className="relative w-[27.4px] h-[13px]"
-            alt="Battery"
-            src="https://c.animaapp.com/MgOgZxnr/img/battery-7.svg"
-          />
-        </div>
-      </div>
+      <BackSubHeader />
 
       <main className="flex flex-col w-full flex-1 bg-white">
         <div className="flex flex-col items-start pt-[22px] pb-0 px-6 w-full">
@@ -83,18 +45,12 @@ export const Screen = (): JSX.Element => {
         </div>
       </main>
 
-      <footer className="flex flex-col items-center pt-6 pb-0 px-6 w-full">
+      <footer className="flex flex-col items-center pt-6 pb-4 px-6 w-full">
         <Button className="w-full min-h-[54px] bg-[#0d56e4] hover:bg-[#0d56e4]/90 rounded-xl h-auto">
           <span className="font-title-16-b font-[number:var(--title-16-b-font-weight)] text-white text-[length:var(--title-16-b-font-size)] tracking-[var(--title-16-b-letter-spacing)] leading-[var(--title-16-b-line-height)] [font-style:var(--title-16-b-font-style)]">
             업데이트 하기
           </span>
         </Button>
-
-        <div className="flex flex-col items-center gap-2.5 px-[105px] py-2 w-full bg-white">
-          <div className="flex flex-col w-[134px] items-center gap-2.5">
-            <div className="w-[134px] h-[5px] bg-black rounded-[100px]" />
-          </div>
-        </div>
       </footer>
     </div>
   );

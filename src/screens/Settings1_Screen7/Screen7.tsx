@@ -1,37 +1,14 @@
-import { ChevronLeftIcon, CircleIcon, MoreHorizontalIcon } from "lucide-react";
 import React from "react";
-import { Button } from "../../components/ui/button";
+import { BackSubHeader } from "../../components/BackSubHeader";
 import { Input } from "../../components/ui/input";
-import { UiStatusBarSubsection } from "./sections/UiStatusBarSubsection";
-import { ViewSubsection } from "./sections/ViewSubsection";
 
 export const Screen7 = (): JSX.Element => {
   return (
     <div
-      className="w-full min-w-[375px] min-h-[800px] flex"
+      className="flex flex-col w-full min-h-screen bg-white"
       data-model-id="36848:77728"
     >
-      <div className="flex w-[375px] h-[800px] flex-col items-end bg-white">
-        <UiStatusBarSubsection />
-
-        <header className="flex flex-col items-start w-full">
-          <div className="flex flex-col items-start gap-2 w-full">
-            <nav className="flex h-[54px] items-center justify-between px-5 py-0 w-full bg-white">
-              <Button variant="ghost" size="icon" className="h-8 w-8 p-0">
-                <ChevronLeftIcon className="h-6 w-6" />
-              </Button>
-
-              <div className="flex items-center gap-2">
-                <Button variant="ghost" size="icon" className="h-8 w-8 p-0">
-                  <MoreHorizontalIcon className="h-6 w-6" />
-                </Button>
-                <Button variant="ghost" size="icon" className="h-8 w-8 p-0">
-                  <CircleIcon className="h-6 w-6" />
-                </Button>
-              </div>
-            </nav>
-          </div>
-        </header>
+        <BackSubHeader />
 
         <section className="flex flex-col items-start bg-white w-full">
           <div className="flex flex-col gap-2 pt-[22px] pb-0 px-6 w-full">
@@ -68,9 +45,6 @@ export const Screen7 = (): JSX.Element => {
             </div>
           </div>
         </main>
-
-        <ViewSubsection />
-      </div>
     </div>
   );
 };

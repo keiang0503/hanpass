@@ -1,8 +1,7 @@
-import { ChevronLeftIcon, CircleIcon, MoreHorizontalIcon } from "lucide-react";
 import React from "react";
+import { BackSubHeader } from "../../components/BackSubHeader";
 import { Button } from "../../components/ui/button";
 import { Input } from "../../components/ui/input";
-import { UiStatusBarSubsection } from "./sections/UiStatusBarSubsection";
 import { ViewSubsection } from "./sections/ViewSubsection";
 
 export const Signup = (): JSX.Element => {
@@ -12,22 +11,7 @@ export const Signup = (): JSX.Element => {
       data-model-id="40000001:46500"
     >
       <div className="flex flex-col flex-1 w-[375px] bg-white">
-        <UiStatusBarSubsection />
-
-        <header className="flex items-center justify-between h-[54px] px-5 py-0 bg-white">
-          <Button variant="ghost" size="icon" className="h-8 w-8 p-0">
-            <ChevronLeftIcon className="h-6 w-6" />
-          </Button>
-
-          <div className="flex items-center gap-4">
-            <Button variant="ghost" size="icon" className="h-8 w-8 p-0">
-              <MoreHorizontalIcon className="h-6 w-6" />
-            </Button>
-            <Button variant="ghost" size="icon" className="h-8 w-8 p-0">
-              <CircleIcon className="h-6 w-6" />
-            </Button>
-          </div>
-        </header>
+        <BackSubHeader />
 
         <main className="flex flex-col flex-1 bg-white">
           <div className="flex flex-col items-start pt-[22px] pb-0 px-6">

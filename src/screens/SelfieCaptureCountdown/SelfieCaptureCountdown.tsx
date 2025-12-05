@@ -8,9 +8,8 @@ export const SelfieCaptureCountdown = (): JSX.Element => {
       data-model-id="40000003:530210"
     >
       <PopupHeader />
-
       {/* Main Content */}
-      <main className="flex flex-col items-center gap-[41px] pt-3.5 pb-0 px-0 w-full flex-shrink-0">
+      <main className="flex flex-col items-center gap-[41px] pt-8 pb-0 px-0 w-full flex-shrink-0">
         <div className="flex flex-col items-start gap-[7px] px-6 py-0 w-full">
           <h1 className="w-full font-title-24-b font-[number:var(--title-24-b-font-weight)] text-white text-[length:var(--title-24-b-font-size)] text-center tracking-[var(--title-24-b-letter-spacing)] leading-[var(--title-24-b-line-height)] [font-style:var(--title-24-b-font-style)]">
             셀카 촬영
@@ -46,12 +45,6 @@ export const SelfieCaptureCountdown = (): JSX.Element => {
         </div>
       </footer>
 
-      {/* Home Indicator */}
-      <div className="flex flex-col items-center gap-2.5 px-[105px] py-2 w-full flex-shrink-0">
-        <div className="w-[134px] flex flex-col items-center gap-2.5">
-          <div className="w-[134px] h-[5px] bg-white rounded-[100px]" />
-        </div>
-      </div>
     </div>
   );
 };

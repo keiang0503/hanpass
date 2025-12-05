@@ -154,9 +154,6 @@ export const FrameWrapperSubsection = (): JSX.Element => {
           </div>
         </div>
 
-        <div className="relative w-[375px] h-[34px]">
-          <div className="absolute left-[calc(50.00%_-_66px)] bottom-2 w-[134px] h-[5px] bg-black rounded-[100px]" />
-        </div>
       </div>
     </section>
   );

@@ -1,15 +1,9 @@
 import { InfoIcon, XIcon } from "lucide-react";
 import React from "react";
-import { Link } from "react-router-dom";
+import { PopupHeader } from "../../components/PopupHeader";
 import { Alert, AlertDescription } from "../../components/ui/alert";
 import { Button } from "../../components/ui/button";
 import { Card, CardContent } from "../../components/ui/card";
-
-const statusBarData = {
-  time: "9:41",
-  date: "Sat Jun 11",
-  battery: "100%",
-};
 
 const verificationSteps = [
   {
@@ -27,137 +21,12 @@ const verificationSteps = [
 export const SettingsPin = (): JSX.Element => {
   return (
     <div
-      className="overflow-hidden bg-[linear-gradient(0deg,rgba(0,0,0,0.75)_0%,rgba(0,0,0,0.75)_100%),linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(255,255,255,1)_100%)] w-full min-w-[375px] min-h-[800px] flex flex-col justify-between"
+      className="flex flex-col h-screen items-center justify-end relative bg-overlay-dark"
       data-model-id="36848:79114"
     >
-      <header className="flex flex-col w-full">
-        <Link
-          className="w-full flex flex-col items-start gap-2.5"
-          to="/settingsu95031u95u4370u4466u4355u4450u4369u4457u4523-u4364u4453u4535u4363u4466u4363u4469u4523u4364u4467u4540"
-        >
-          <div className="w-full bg-white flex flex-col items-start gap-2.5">
-            <div className="flex h-6 items-center justify-between px-2.5 py-1 w-full bg-white">
-              <div className="inline-flex items-center gap-2">
-                <div className="inline-flex items-center gap-1">
-                  <div className="inline-flex items-center">
-                    <div className="[font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm tracking-[0] leading-[normal]">
-                      9
-                    </div>
-                    <div className="[font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm tracking-[0] leading-[normal]">
-                      :
-                    </div>
-                    <div className="[font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm tracking-[0] leading-[normal]">
-                      41
-                    </div>
-                  </div>
-                </div>
-                <div className="[font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm tracking-[0] leading-[normal]">
-                  {statusBarData.date}
-                </div>
-              </div>
+      <PopupHeader />
 
-              <div className="inline-flex items-center gap-1.5">
-                <div className="relative w-[18px] h-2.5">
-                  <img
-                    className="h-[40.00%] top-[-169820.00%] left-[-24994.44%] absolute w-[16.67%]"
-                    alt="Bar"
-                    src="/img/bar-1-8.png"
-                  />
-                  <img
-                    className="h-[60.00%] top-[-169840.00%] left-[-24966.67%] absolute w-[16.67%]"
-                    alt="Bar"
-                    src="/img/bar-2-9.png"
-                  />
-                  <img
-                    className="h-[80.00%] top-[-169860.00%] left-[-24938.89%] absolute w-[16.67%]"
-                    alt="Bar"
-                    src="/img/bar-3-9.png"
-                  />
-                  <img
-                    className="h-full top-[-169880.00%] left-[-24911.11%] absolute w-[16.67%]"
-                    alt="Bar"
-                    src="/img/bar-4-5.png"
-                  />
-                </div>
-
-                <div className="relative w-4 h-[11.62px] overflow-hidden">
-                  <img
-                    className="absolute w-[31.30%] h-[30.17%] top-[-146131.99%] left-[-28234.43%]"
-                    alt="Bar"
-                    src="/img/bar-1-9.png"
-                  />
-                  <img
-                    className="absolute w-[62.57%] h-[34.44%] top-[-146168.10%] left-[-28250.00%]"
-                    alt="Bar"
-                    src="/img/bar-2-10.png"
-                  />
-                  <img
-                    className="absolute w-[100.01%] h-[43.03%] top-[-146201.82%] left-[-28268.77%]"
-                    alt="Bar"
-                    src="/img/bar-3-10.png"
-                  />
-                </div>
-
-                <div className="[font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm tracking-[0] leading-[normal]">
-                  {statusBarData.battery}
-                </div>
-
-                <div className="relative w-6 h-3 overflow-hidden">
-                  <img
-                    className="absolute w-[87.51%] h-full top-[-141558.33%] left-[-19112.50%]"
-                    alt="Border"
-                    src="/img/border-5.png"
-                  />
-                  <div className="absolute w-[70.83%] h-[66.67%] top-[16.67%] left-[8.33%] bg-black rounded-[1px]" />
-                  <img
-                    className="absolute w-[8.33%] h-[33.33%] top-[-141525.00%] left-[-19020.83%]"
-                    alt="Cap"
-                    src="/img/cap-5.png"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="flex items-center gap-2.5 pl-[34px] pr-5 py-4 w-full">
-            <div className="flex-1 h-5 font-title-16-SB font-[number:var(--title-16-SB-font-weight)] text-white text-[length:var(--title-16-SB-font-size)] tracking-[var(--title-16-SB-letter-spacing)] leading-[var(--title-16-SB-line-height)] whitespace-nowrap [font-style:var(--title-16-SB-font-style)]">
-              {statusBarData.time}
-            </div>
-
-            <img
-              className="w-[18px] h-3"
-              alt="Icon mobile signal"
-              src="https://c.animaapp.com/kp7cm7rf/img/icon---mobile-signal.svg"
-            />
-
-            <img
-              className="w-[17px] h-[11.83px]"
-              alt="Wifi"
-              src="https://c.animaapp.com/kp7cm7rf/img/wifi.svg"
-            />
-
-            <img
-              className="w-[27.4px] h-[13px]"
-              alt="Battery"
-              src="https://c.animaapp.com/kp7cm7rf/img/battery.svg"
-            />
-          </div>
-        </Link>
-
-        <div className="flex flex-col items-start w-full">
-          <div className="flex flex-col items-start gap-2 w-full">
-            <div className="flex h-[54px] items-center justify-around px-5 py-0 w-full">
-              <img
-                className="absolute h-[calc(100%_-_22px)] top-[11px] right-1.5 w-[87px]"
-                alt="Mini"
-                src="https://c.animaapp.com/kp7cm7rf/img/mini-6@2x.png"
-              />
-            </div>
-          </div>
-        </div>
-      </header>
-
-      <main className="flex flex-col w-full">
+      {/* Bottom Sheet */}
         <Card className="gap-1.5 pt-0 pb-3.5 px-6 rounded-[30px_30px_0px_0px] flex flex-col items-center w-full bg-white border-0">
           <CardContent className="flex-col w-full flex items-start p-0">
             <div className="flex-col items-end flex w-full">
@@ -241,15 +110,7 @@ export const SettingsPin = (): JSX.Element => {
             </div>
           </div>
 
-          <div className="w-[360px] h-4 ml-[-16.50px] mr-[-16.50px]" />
-
-          <div className="flex flex-col w-[375px] items-center gap-2.5 px-[105px] py-2 ml-[-24.00px] mr-[-24.00px] bg-white">
-            <div className="flex flex-col w-[134px] items-center gap-2.5">
-              <div className="w-[134px] h-[5px] bg-black rounded-[100px]" />
-            </div>
-          </div>
         </footer>
-      </main>
     </div>
   );
 };

@@ -1,89 +1,9 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { BackSubHeader } from "../../components/BackSubHeader";
 import { Button } from "../../components/ui/button";
 import { Card, CardContent } from "../../components/ui/card";
 
 export const SettingsScreen = (): JSX.Element => {
-  const statusBarIcons = [
-    {
-      src: "https://c.animaapp.com/d5CwqEvt/img/icon---mobile-signal-1.svg",
-      alt: "Icon mobile signal",
-      className: "w-[18px] h-3",
-    },
-    {
-      src: "https://c.animaapp.com/d5CwqEvt/img/wifi-1.svg",
-      alt: "Wifi",
-      className: "w-[17px] h-[11.83px]",
-    },
-    {
-      src: "https://c.animaapp.com/d5CwqEvt/img/battery-1.svg",
-      alt: "Battery",
-      className: "w-[27.4px] h-[13px]",
-    },
-  ];
-
-  const systemStatusIcons = [
-    {
-      src: "/img/bar-1-4.png",
-      alt: "Bar",
-      className:
-        "h-[40.00%] top-[-208140.00%] left-[-41855.56%] absolute w-[16.67%]",
-    },
-    {
-      src: "/img/bar-2-5.png",
-      alt: "Bar",
-      className:
-        "h-[60.00%] top-[-208160.00%] left-[-41827.78%] absolute w-[16.67%]",
-    },
-    {
-      src: "/img/bar-3-5.png",
-      alt: "Bar",
-      className:
-        "h-[80.00%] top-[-208180.00%] left-[-41800%] absolute w-[16.67%]",
-    },
-    {
-      src: "/img/bar-4-3.png",
-      alt: "Bar",
-      className: "h-full top-[-208200%] left-[-41772.22%] absolute w-[16.67%]",
-    },
-  ];
-
-  const wifiIcons = [
-    {
-      src: "/img/bar-1-5.png",
-      alt: "Bar",
-      className:
-        "absolute w-[31.30%] h-[30.17%] top-[-179112.45%] left-[-47203.18%]",
-    },
-    {
-      src: "/img/bar-2-6.png",
-      alt: "Bar",
-      className:
-        "absolute w-[62.57%] h-[34.44%] top-[-179148.56%] left-[-47218.75%]",
-    },
-    {
-      src: "/img/bar-3-6.png",
-      alt: "Bar",
-      className:
-        "absolute w-[100.01%] h-[43.03%] top-[-179182.28%] left-[-47237.52%]",
-    },
-  ];
-
-  const batteryIcons = [
-    {
-      src: "/img/border-3.png",
-      alt: "Border",
-      className:
-        "absolute w-[87.51%] h-full top-[-173491.67%] left-[-31758.34%]",
-    },
-    {
-      src: "/img/cap-3.png",
-      alt: "Cap",
-      className:
-        "absolute w-[8.33%] h-[33.33%] top-[-173458.33%] left-[-31666.67%]",
-    },
-  ];
-
   return (
     <div
       className="w-full min-w-[375px] min-h-[740px] flex"
@@ -137,105 +57,9 @@ export const SettingsScreen = (): JSX.Element => {
           </div>
         </Card>
 
-        <header className="flex flex-col w-full items-start absolute top-0 left-0">
-          <Link
-            className="w-full flex flex-col items-start gap-2.5 self-stretch"
-            to="/settingsu95062u95u4364u4462u4363u4468u4361u4449u4370u4449u4540-u4363u4449u4523u4354u4450"
-          >
-            <div className="w-[360px] bg-white flex flex-col items-start gap-2.5 self-stretch">
-              <div className="flex h-6 items-center justify-between px-2.5 py-1 self-stretch w-full bg-white">
-                <div className="inline-flex items-center gap-2 mt-[-0.50px] mb-[-0.50px]">
-                  <div className="inline-flex items-center gap-1">
-                    <div className="inline-flex items-center">
-                      <div className="w-fit mt-[-1.00px] [font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm tracking-[0] leading-[normal]">
-                        9
-                      </div>
-
-                      <div className="w-fit mt-[-1.00px] [font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm tracking-[0] leading-[normal]">
-                        :
-                      </div>
-
-                      <div className="w-fit mt-[-1.00px] [font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm tracking-[0] leading-[normal]">
-                        41
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="w-fit mt-[-1.00px] [font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm tracking-[0] leading-[normal]">
-                    Sat Jun 11
-                  </div>
-                </div>
-
-                <div className="inline-flex items-center gap-1.5 mt-[-0.50px] mb-[-0.50px]">
-                  <div className="relative w-[18px] h-2.5">
-                    {systemStatusIcons.map((icon, index) => (
-                      <img
-                        key={`system-status-${index}`}
-                        className={icon.className}
-                        alt={icon.alt}
-                        src={icon.src}
-                      />
-                    ))}
-                  </div>
-
-                  <div className="relative w-4 h-[11.62px] overflow-hidden">
-                    {wifiIcons.map((icon, index) => (
-                      <img
-                        key={`wifi-${index}`}
-                        className={icon.className}
-                        alt={icon.alt}
-                        src={icon.src}
-                      />
-                    ))}
-                  </div>
-
-                  <div className="w-fit mt-[-1.00px] [font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm tracking-[0] leading-[normal]">
-                    100%
-                  </div>
-
-                  <div className="relative w-6 h-3 overflow-hidden">
-                    {batteryIcons.map((icon, index) => (
-                      <img
-                        key={`battery-${index}`}
-                        className={icon.className}
-                        alt={icon.alt}
-                        src={icon.src}
-                      />
-                    ))}
-                    <div className="absolute w-[70.83%] h-[66.67%] top-[16.67%] left-[8.33%] bg-black rounded-[1px]" />
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="flex items-center gap-2.5 pl-[34px] pr-5 py-4 self-stretch w-full">
-              <div className="flex-1 h-5 mt-[-1.00px] font-title-16-SB font-[number:var(--title-16-SB-font-weight)] text-white text-[length:var(--title-16-SB-font-size)] tracking-[var(--title-16-SB-letter-spacing)] leading-[var(--title-16-SB-line-height)] whitespace-nowrap [font-style:var(--title-16-SB-font-style)]">
-                9:41
-              </div>
-
-              {statusBarIcons.map((icon, index) => (
-                <img
-                  key={`status-icon-${index}`}
-                  className={icon.className}
-                  alt={icon.alt}
-                  src={icon.src}
-                />
-              ))}
-            </div>
-          </Link>
-
-          <nav className="flex flex-col items-start self-stretch w-full">
-            <div className="flex flex-col items-start gap-2 self-stretch w-full">
-              <div className="flex h-[54px] items-center justify-around px-5 py-0 self-stretch w-full">
-                <img
-                  className="absolute h-[calc(100%_-_22px)] top-[11px] right-1.5 w-[87px]"
-                  alt="Mini"
-                  src="https://c.animaapp.com/d5CwqEvt/img/mini-4@2x.png"
-                />
-              </div>
-            </div>
-          </nav>
-        </header>
+        <div className="absolute top-0 left-0 right-0">
+          <BackSubHeader />
+        </div>
       </div>
     </div>
   );

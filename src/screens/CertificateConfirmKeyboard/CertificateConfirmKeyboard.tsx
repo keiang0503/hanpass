@@ -42,7 +42,7 @@ const bottomRowKeys = [
 export const CertificateConfirmKeyboard = (): JSX.Element => {
   return (
     <div
-      className="flex flex-col w-full h-screen items-center justify-end bg-[linear-gradient(0deg,rgba(0,0,0,0.75)_0%,rgba(0,0,0,0.75)_100%),linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(255,255,255,1)_100%)]"
+      className="flex flex-col w-full h-screen items-center justify-end bg-overlay-dark"
       data-model-id="35213:87606"
     >
       {/* Header */}

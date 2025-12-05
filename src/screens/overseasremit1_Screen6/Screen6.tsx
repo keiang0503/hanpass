@@ -1,11 +1,11 @@
 import React from "react";
+import { BackSubHeader } from "../../components/BackSubHeader";
 import { Button } from "../../components/ui/button";
 import { Separator } from "../../components/ui/separator";
 import { AdditionalNotesSection } from "./sections/AdditionalNotesSection";
 import { PaymentMethodSection } from "./sections/PaymentMethodSection";
 import { ReceiveCountrySection } from "./sections/ReceiveCountrySection";
 import { SenderInformationSection } from "./sections/SenderInformationSection";
-import { TransferDetailsSection } from "./sections/TransferDetailsSection";
 
 export const Screen6 = (): JSX.Element => {
   return (
@@ -13,7 +13,7 @@ export const Screen6 = (): JSX.Element => {
       className="flex flex-col items-start relative bg-white w-full min-h-screen"
       data-model-id="34822:589587"
     >
-      <TransferDetailsSection />
+      <BackSubHeader />
 
       <section className="flex flex-col items-start bg-white relative self-stretch w-full">
         <div className="flex flex-col items-start gap-2 pt-[22px] pb-0 px-6 self-stretch w-full">
@@ -47,12 +47,6 @@ export const Screen6 = (): JSX.Element => {
         </div>
 
         <div className="relative w-full h-4" />
-
-        <nav className="flex flex-col items-center gap-2.5 px-[105px] py-2 relative self-stretch w-full bg-white">
-          <div className="flex flex-col w-[134px] items-center gap-2.5 relative">
-            <div className="relative w-[134px] h-[5px] bg-black rounded-[100px]" />
-          </div>
-        </nav>
       </footer>
     </div>
   );

@@ -1,18 +1,7 @@
-import {
-  ChevronLeftIcon,
-  CircleIcon,
-  InfoIcon,
-  MoreHorizontalIcon,
-} from "lucide-react";
+import { InfoIcon } from "lucide-react";
 import React from "react";
-import { Button } from "../../components/ui/button";
+import { BackSubHeader } from "../../components/BackSubHeader";
 import { Card, CardContent } from "../../components/ui/card";
-
-const statusBarData = {
-  time: "9:41",
-  date: "Sat Jun 11",
-  battery: "100%",
-};
 
 const carrierOptions = [
   { id: 1, name: "SKT", isMvno: false },
@@ -29,128 +18,7 @@ export const SignupWrapper = (): JSX.Element => {
       className="flex flex-col min-h-screen bg-white"
       data-model-id="35213:88115"
     >
-      <header className="flex flex-col w-full bg-white">
-        <div className="flex items-center justify-between px-2.5 py-1 h-6 w-full bg-white">
-          <div className="inline-flex items-center gap-2">
-            <div className="inline-flex items-center gap-1">
-              <div className="inline-flex items-center">
-                <div className="[font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm tracking-[0] leading-[normal]">
-                  9
-                </div>
-                <div className="[font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm tracking-[0] leading-[normal]">
-                  :
-                </div>
-                <div className="[font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm tracking-[0] leading-[normal]">
-                  41
-                </div>
-              </div>
-            </div>
-            <div className="[font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm tracking-[0] leading-[normal]">
-              Sat Jun 11
-            </div>
-          </div>
-
-          <div className="inline-flex items-center gap-1.5">
-            <div className="relative w-[18px] h-2.5">
-              <img
-                className="h-[40.00%] top-[-102560.00%] left-[-39350.00%] absolute w-[16.67%]"
-                alt="Bar"
-                src="/img/bar-1-6.png"
-              />
-              <img
-                className="h-[60.00%] top-[-102580.00%] left-[-39322.22%] absolute w-[16.67%]"
-                alt="Bar"
-                src="/img/bar-2-7.png"
-              />
-              <img
-                className="h-[80.00%] top-[-102600%] left-[-39294.44%] absolute w-[16.67%]"
-                alt="Bar"
-                src="/img/bar-3-7.png"
-              />
-              <img
-                className="h-full top-[-102620.00%] left-[-39266.67%] absolute w-[16.67%]"
-                alt="Bar"
-                src="/img/bar-4-4.png"
-              />
-            </div>
-
-            <div className="relative w-4 h-[11.62px] overflow-hidden">
-              <img
-                className="absolute w-[31.30%] h-[30.17%] top-[-88244.04%] left-[-44384.43%]"
-                alt="Bar"
-                src="/img/bar-1-7.png"
-              />
-              <img
-                className="absolute w-[62.57%] h-[34.44%] top-[-88280.15%] left-[-44400.00%]"
-                alt="Bar"
-                src="/img/bar-2-8.png"
-              />
-              <img
-                className="absolute w-[100.01%] h-[43.03%] top-[-88313.87%] left-[-44418.77%]"
-                alt="Bar"
-                src="/img/bar-3-8.png"
-              />
-            </div>
-
-            <div className="[font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm tracking-[0] leading-[normal]">
-              100%
-            </div>
-
-            <div className="relative w-6 h-3 overflow-hidden">
-              <img
-                className="absolute w-[87.51%] h-full top-[-85508.33%] left-[-29879.17%]"
-                alt="Border"
-                src="/img/border-4.png"
-              />
-              <div className="absolute w-[70.83%] h-[66.67%] top-[16.67%] left-[8.33%] bg-black rounded-[1px]" />
-              <img
-                className="absolute w-[8.33%] h-[33.33%] top-[-85475.00%] left-[-29787.50%]"
-                alt="Cap"
-                src="/img/cap-4.png"
-              />
-            </div>
-          </div>
-        </div>
-
-        <div className="flex items-center justify-between px-5 py-4 w-full">
-          <div className="[font-family:'Pretendard-Medium',Helvetica] font-medium text-black text-[17px] tracking-[-0.41px] leading-[22px]">
-            {statusBarData.time}
-          </div>
-
-          <div className="flex items-center gap-2">
-            <img
-              className="w-[18px] h-3"
-              alt="Icon mobile signal"
-              src="https://c.animaapp.com/UrLjfz9Z/img/icon---mobile-signal-6.svg"
-            />
-            <img
-              className="w-[17px] h-[11.83px]"
-              alt="Wifi"
-              src="https://c.animaapp.com/UrLjfz9Z/img/wifi-6.svg"
-            />
-            <img
-              className="w-[27.4px] h-[13px]"
-              alt="Battery"
-              src="https://c.animaapp.com/UrLjfz9Z/img/battery-6.svg"
-            />
-          </div>
-        </div>
-
-        <nav className="flex items-center justify-between px-5 py-4 w-full bg-white">
-          <Button variant="ghost" size="icon" className="h-8 w-8 p-0">
-            <ChevronLeftIcon className="h-6 w-6" />
-          </Button>
-
-          <div className="flex items-center gap-4">
-            <Button variant="ghost" size="icon" className="h-8 w-8 p-0">
-              <MoreHorizontalIcon className="h-6 w-6" />
-            </Button>
-            <Button variant="ghost" size="icon" className="h-8 w-8 p-0">
-              <CircleIcon className="h-6 w-6" />
-            </Button>
-          </div>
-        </nav>
-      </header>
+      <BackSubHeader />
 
       <main className="flex flex-col flex-1 px-5 pt-8 pb-6 w-full">
         <div className="flex items-center justify-between mb-8">

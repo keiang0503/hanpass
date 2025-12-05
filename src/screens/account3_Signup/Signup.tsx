@@ -1,6 +1,5 @@
-import { ChevronLeftIcon, CircleIcon, MoreHorizontalIcon } from "lucide-react";
 import React from "react";
-import { Link } from "react-router-dom";
+import { BackSubHeader } from "../../components/BackSubHeader";
 import { Button } from "../../components/ui/button";
 import { ScrollArea } from "../../components/ui/scroll-area";
 
@@ -30,93 +29,13 @@ export const Signup = (): JSX.Element => {
       className="flex flex-col min-h-screen bg-white"
       data-model-id="35202:91607"
     >
-      <header className="flex flex-col w-full bg-white">
-        <div className="flex h-11 items-center justify-between px-4 py-2 bg-white">
-          <div className="flex items-center gap-2">
-            <span className="[font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm">
-              9:41
-            </span>
-          </div>
+      <BackSubHeader />
 
-          <div className="flex items-center gap-1.5">
-            <div className="relative w-[18px] h-2.5">
-              <img
-                className="absolute w-[16.67%] h-[40.00%]"
-                alt="Bar"
-                src="/img/bar-1-10.png"
-              />
-              <img
-                className="absolute w-[16.67%] h-[60.00%]"
-                alt="Bar"
-                src="/img/bar-2-11.png"
-              />
-              <img
-                className="absolute w-[16.67%] h-[80.00%]"
-                alt="Bar"
-                src="/img/bar-3-11.png"
-              />
-              <img
-                className="absolute w-[16.67%] h-full"
-                alt="Bar"
-                src="/img/bar-4-6.png"
-              />
-            </div>
-
-            <div className="relative w-4 h-[11.62px] overflow-hidden">
-              <img
-                className="absolute w-[31.30%] h-[30.17%]"
-                alt="Bar"
-                src="/img/bar-1-11.png"
-              />
-              <img
-                className="absolute w-[62.57%] h-[34.44%]"
-                alt="Bar"
-                src="/img/bar-2-12.png"
-              />
-              <img
-                className="absolute w-[100.01%] h-[43.03%]"
-                alt="Bar"
-                src="/img/bar-3-12.png"
-              />
-            </div>
-
-            <span className="[font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm">
-              100%
-            </span>
-
-            <div className="relative w-6 h-3 overflow-hidden">
-              <img
-                className="absolute w-[87.51%] h-full"
-                alt="Border"
-                src="/img/border-6.png"
-              />
-              <div className="absolute w-[70.83%] h-[66.67%] top-[16.67%] left-[8.33%] bg-black rounded-[1px]" />
-              <img
-                className="absolute w-[8.33%] h-[33.33%]"
-                alt="Cap"
-                src="/img/cap-6.png"
-              />
-            </div>
-          </div>
-        </div>
-
-        <nav className="flex items-center justify-between px-4 py-4 bg-white">
-          <Link to="/frame-1597887393" className="flex items-center">
-            <ChevronLeftIcon className="w-6 h-6 text-black" />
-          </Link>
-
-          <div className="flex items-center gap-4">
-            <MoreHorizontalIcon className="w-6 h-6 text-black" />
-            <CircleIcon className="w-6 h-6 text-black" />
-          </div>
-        </nav>
-
-        <div className="flex flex-col px-6 pt-[22px] pb-0 bg-white">
-          <h1 className="font-title-24-b font-[number:var(--title-24-b-font-weight)] text-[#0b0c0e] text-[length:var(--title-24-b-font-size)] tracking-[var(--title-24-b-letter-spacing)] leading-[var(--title-24-b-line-height)] [font-style:var(--title-24-b-font-style)]">
-            서비스 이용약관
-          </h1>
-        </div>
-      </header>
+      <div className="flex flex-col px-6 pt-[22px] pb-0 bg-white">
+        <h1 className="font-title-24-b font-[number:var(--title-24-b-font-weight)] text-[#0b0c0e] text-[length:var(--title-24-b-font-size)] tracking-[var(--title-24-b-letter-spacing)] leading-[var(--title-24-b-line-height)] [font-style:var(--title-24-b-font-style)]">
+          서비스 이용약관
+        </h1>
+      </div>
 
       <ScrollArea className="flex-1 w-full">
         <main className="flex flex-col gap-5 px-6 pt-[22px] pb-6">
@@ -153,9 +72,6 @@ export const Signup = (): JSX.Element => {
           </Button>
         </div>
 
-        <div className="flex justify-center py-2 bg-white">
-          <div className="w-[134px] h-[5px] bg-black rounded-[100px]" />
-        </div>
       </footer>
     </div>
   );

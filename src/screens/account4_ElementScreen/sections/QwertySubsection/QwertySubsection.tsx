@@ -37,9 +37,9 @@ const bottomRowKeys = [
 
 export const QwertySubsection = (): JSX.Element => {
   return (
-    <section className="relative w-full h-[291px]">
-      <div className="w-full h-[calc(100%_-_75px)] flex">
-        <div className="flex-1 flex flex-col px-0 py-1 items-center min-h-full bg-[#d3d6e2] backdrop-blur-[13.59px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(13.59px)_brightness(100%)]">
+    <section className="relative w-full h-[291px] bg-[#d3d6e2]">
+      <div className="w-full h-full flex">
+        <div className="flex-1 flex flex-col px-0 py-1 items-center backdrop-blur-[13.59px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(13.59px)_brightness(100%)]">
           <div className="w-[365px] h-[42px] relative mt-1.5">
             {topRowKeys.map((key, index) => (
               <div
@@ -152,15 +152,12 @@ export const QwertySubsection = (): JSX.Element => {
         </div>
       </div>
 
+      {/* 지구본+마이크 아이콘 영역 */}
       <img
-        className="absolute w-full h-[25.77%] top-[74.23%] left-0"
+        className="absolute w-full h-[75px] bottom-0 left-0"
         alt="Group"
         src="https://c.animaapp.com/UrLjfz9Z/img/group.svg"
       />
-
-      <div className="absolute top-[257px] left-0 w-full h-[34px] flex items-end justify-center">
-        <div className="mb-2 w-[134px] h-[5px] ml-px bg-black rounded-[100px]" />
-      </div>
     </section>
   );
 };

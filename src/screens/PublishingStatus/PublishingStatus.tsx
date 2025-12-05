@@ -1947,12 +1947,6 @@ const publishingData: PublishingItem[] = [
     status: "completed",
     description: "History1 Screen6 화면",
   },
-  // History2 Section
-  {
-    id: "history2-section",
-    name: "History2",
-    type: "section",
-  },
   {
     id: "history2-history",
     name: "History",

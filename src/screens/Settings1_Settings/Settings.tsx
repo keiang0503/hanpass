@@ -1,6 +1,6 @@
-import { ChevronLeftIcon, CircleIcon, MoreVerticalIcon } from "lucide-react";
 import React from "react";
 import { Link } from "react-router-dom";
+import { BackSubHeader } from "../../components/BackSubHeader";
 import { Button } from "../../components/ui/button";
 import { Input } from "../../components/ui/input";
 import { Label } from "../../components/ui/label";
@@ -22,101 +22,7 @@ export const Settings = (): JSX.Element => {
       className="flex flex-col min-h-screen items-start relative bg-white"
       data-model-id="36848:77668"
     >
-      <header className="w-full flex flex-col items-start relative bg-white">
-        <div className="flex h-11 items-center justify-between px-4 py-2 relative w-full bg-white">
-          <div className="inline-flex items-center gap-2 relative">
-            <div className="inline-flex items-center gap-1 relative">
-              <div className="inline-flex items-center relative">
-                <div className="relative w-fit [font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm tracking-[0] leading-[normal]">
-                  9
-                </div>
-                <div className="w-fit [font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm tracking-[0] leading-[normal] relative">
-                  :
-                </div>
-                <div className="relative w-fit [font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm tracking-[0] leading-[normal]">
-                  41
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="inline-flex items-center gap-1.5 relative">
-            <div className="relative w-[18px] h-2.5">
-              <img
-                className="h-[40.00%] top-[-169820.00%] left-[-1550.00%] absolute w-[16.67%]"
-                alt="Bar"
-                src="/img/bar-1.png"
-              />
-              <img
-                className="h-[60.00%] top-[-169840.00%] left-[-1522.22%] absolute w-[16.67%]"
-                alt="Bar"
-                src="/img/bar-2.png"
-              />
-              <img
-                className="h-[80.00%] top-[-169860.00%] left-[-1494.44%] absolute w-[16.67%]"
-                alt="Bar"
-                src="/img/bar-3.png"
-              />
-              <img
-                className="h-full top-[-169880.00%] left-[-1466.67%] absolute w-[16.67%]"
-                alt="Bar"
-                src="/img/bar-4.png"
-              />
-            </div>
-
-            <div className="relative w-4 h-[11.62px] overflow-hidden">
-              <img
-                className="absolute w-[31.30%] h-[30.17%] top-[-146131.99%] left-[-1859.43%]"
-                alt="Bar"
-                src="/img/image.png"
-              />
-              <img
-                className="absolute w-[62.57%] h-[34.44%] top-[-146168.10%] left-[-1875.00%]"
-                alt="Bar"
-                src="/img/bar-2-2.png"
-              />
-              <img
-                className="absolute w-[100.01%] h-[43.03%] top-[-146201.82%] left-[-1893.77%]"
-                alt="Bar"
-                src="/img/bar-3-2.png"
-              />
-            </div>
-
-            <div className="relative w-fit [font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm tracking-[0] leading-[normal]">
-              100%
-            </div>
-
-            <div className="relative w-6 h-3 overflow-hidden">
-              <img
-                className="absolute w-[87.51%] h-full top-[-141558.33%] left-[-1529.17%]"
-                alt="Border"
-                src="/img/border.png"
-              />
-              <div className="absolute w-[70.83%] h-[66.67%] top-[16.67%] left-[8.33%] bg-black rounded-[1px]" />
-              <img
-                className="absolute w-[8.33%] h-[33.33%] top-[-141525.00%] left-[-1437.50%]"
-                alt="Cap"
-                src="/img/cap.png"
-              />
-            </div>
-          </div>
-        </div>
-
-        <nav className="flex items-center justify-between px-4 py-3 relative w-full">
-          <Button variant="ghost" size="icon" className="h-auto p-0">
-            <ChevronLeftIcon className="w-6 h-6 text-black" />
-          </Button>
-
-          <div className="flex items-center gap-4">
-            <Button variant="ghost" size="icon" className="h-auto p-0">
-              <MoreVerticalIcon className="w-6 h-6 text-black" />
-            </Button>
-            <Button variant="ghost" size="icon" className="h-auto p-0">
-              <CircleIcon className="w-6 h-6 text-black" />
-            </Button>
-          </div>
-        </nav>
-      </header>
+      <BackSubHeader />
 
       <main className="flex flex-col items-start gap-9 pt-6 pb-[30px] px-6 relative flex-1 w-full">
         <div className="flex flex-col items-start w-full">
@@ -248,11 +154,6 @@ export const Settings = (): JSX.Element => {
 
         <div className="w-full h-4" />
 
-        <div className="flex flex-col items-center gap-2.5 px-[105px] py-2 w-full bg-white">
-          <div className="flex flex-col w-[134px] items-center gap-2.5">
-            <div className="w-[134px] h-[5px] bg-black rounded-[100px]" />
-          </div>
-        </div>
       </footer>
     </div>
   );

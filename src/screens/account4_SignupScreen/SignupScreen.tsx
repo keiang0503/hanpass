@@ -1,5 +1,5 @@
-import { ChevronLeftIcon, CircleIcon, MoreVerticalIcon } from "lucide-react";
 import React from "react";
+import { BackSubHeader } from "../../components/BackSubHeader";
 import { Button } from "../../components/ui/button";
 
 const cardOptions = [
@@ -37,53 +37,16 @@ export const SignupScreen = (): JSX.Element => {
       className="flex flex-col min-h-screen bg-white"
       data-model-id="35213:88072"
     >
-      <header className="flex flex-col w-full bg-white">
-        <div className="flex items-center justify-between px-5 py-4 w-full">
-          <div className="flex-1 [font-family:'Pretendard-Medium',Helvetica] font-medium text-black text-[17px] tracking-[-0.41px] leading-[22px]">
-            9:41
-          </div>
-          <div className="flex items-center gap-1.5">
-            <img
-              className="w-[18px] h-3"
-              alt="Icon mobile signal"
-              src="https://c.animaapp.com/UrLjfz9Z/img/icon---mobile-signal-6.svg"
-            />
-            <img
-              className="w-[17px] h-[11.83px]"
-              alt="Wifi"
-              src="https://c.animaapp.com/UrLjfz9Z/img/wifi-6.svg"
-            />
-            <img
-              className="w-[27.4px] h-[13px]"
-              alt="Battery"
-              src="https://c.animaapp.com/UrLjfz9Z/img/battery-6.svg"
-            />
-          </div>
-        </div>
+      <BackSubHeader />
 
-        <nav className="flex items-center justify-between px-5 py-4 w-full">
-          <Button variant="ghost" size="icon" className="h-8 w-8 p-0">
-            <ChevronLeftIcon className="h-6 w-6" />
-          </Button>
-          <div className="flex items-center gap-4">
-            <Button variant="ghost" size="icon" className="h-8 w-8 p-0">
-              <MoreVerticalIcon className="h-6 w-6" />
-            </Button>
-            <Button variant="ghost" size="icon" className="h-8 w-8 p-0">
-              <CircleIcon className="h-6 w-6" />
-            </Button>
-          </div>
-        </nav>
-
-        <div className="flex items-center justify-between px-5 py-4 w-full">
-          <h1 className="[font-family:'Pretendard',Helvetica] font-semibold text-black text-lg tracking-[-0.36px] leading-normal">
-            카드본인확인서비스
-          </h1>
-          <div className="[font-family:'Pretendard',Helvetica] font-bold text-[#0066CC] text-sm tracking-[-0.28px] leading-normal">
-            KG 이니시스
-          </div>
+      <div className="flex items-center justify-between px-5 py-4 w-full">
+        <h1 className="[font-family:'Pretendard',Helvetica] font-semibold text-black text-lg tracking-[-0.36px] leading-normal">
+          카드본인확인서비스
+        </h1>
+        <div className="[font-family:'Pretendard',Helvetica] font-bold text-[#0066CC] text-sm tracking-[-0.28px] leading-normal">
+          KG 이니시스
         </div>
-      </header>
+      </div>
 
       <main className="flex flex-col flex-1 px-5 py-6 w-full">
         <div className="grid grid-cols-2 gap-4 mb-6">

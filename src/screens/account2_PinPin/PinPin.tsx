@@ -1,11 +1,6 @@
-import {
-  ChevronLeftIcon,
-  CircleIcon,
-  MoreHorizontalIcon,
-  RotateCcwIcon,
-  XIcon,
-} from "lucide-react";
+import { RotateCcwIcon, XIcon } from "lucide-react";
 import React from "react";
+import { BackSubHeader } from "../../components/BackSubHeader";
 import { Button } from "../../components/ui/button";
 
 const statusBarData = {
@@ -31,134 +26,10 @@ const keypadButtons = [
 export const PinPin = (): JSX.Element => {
   return (
     <div
-      className="w-full min-w-[375px] min-h-[800px] flex"
+      className="flex flex-col w-full min-h-screen bg-white"
       data-model-id="34892:269046"
     >
-      <div className="flex w-[375px] h-[800px] relative flex-col items-start bg-white">
-        <header className="flex flex-col items-start relative self-stretch w-full bg-white">
-          <div className="flex flex-col h-6 items-start px-2.5 py-1 relative self-stretch w-full bg-white">
-            <div className="flex items-center justify-between w-full">
-              <div className="inline-flex items-center gap-2">
-                <div className="inline-flex items-center gap-1">
-                  <div className="inline-flex items-center">
-                    <span className="[font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm tracking-[0] leading-[normal]">
-                      {statusBarData.time.split(":")[0]}
-                    </span>
-                    <span className="[font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm tracking-[0] leading-[normal]">
-                      :
-                    </span>
-                    <span className="[font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm tracking-[0] leading-[normal]">
-                      {statusBarData.time.split(":")[1]}
-                    </span>
-                  </div>
-                </div>
-                <span className="[font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm tracking-[0] leading-[normal]">
-                  {statusBarData.date}
-                </span>
-              </div>
-
-              <div className="inline-flex items-center gap-1.5">
-                <div className="relative w-[18px] h-2.5">
-                  <img
-                    className="h-[40.00%] top-[-67240.00%] left-[-12438.89%] absolute w-[16.67%]"
-                    alt="Bar"
-                    src="/img/bar-1-4.png"
-                  />
-                  <img
-                    className="h-[60.00%] top-[-67260.00%] left-[-12411.11%] absolute w-[16.67%]"
-                    alt="Bar"
-                    src="/img/bar-2-5.png"
-                  />
-                  <img
-                    className="h-[80.00%] top-[-67280.00%] left-[-12383.33%] absolute w-[16.67%]"
-                    alt="Bar"
-                    src="/img/bar-3-5.png"
-                  />
-                  <img
-                    className="h-full top-[-67300%] left-[-12355.56%] absolute w-[16.67%]"
-                    alt="Bar"
-                    src="/img/bar-4-3.png"
-                  />
-                </div>
-
-                <div className="relative w-4 h-[11.62px] overflow-hidden">
-                  <img
-                    className="absolute w-[31.30%] h-[30.17%] top-[-57845.56%] left-[-14109.43%]"
-                    alt="Bar"
-                    src="/img/bar-1-5.png"
-                  />
-                  <img
-                    className="absolute w-[62.57%] h-[34.44%] top-[-57881.67%] left-[-14125.00%]"
-                    alt="Bar"
-                    src="/img/bar-2-6.png"
-                  />
-                  <img
-                    className="absolute w-[100.01%] h-[43.03%] top-[-57915.39%] left-[-14143.77%]"
-                    alt="Bar"
-                    src="/img/bar-3-6.png"
-                  />
-                </div>
-
-                <span className="[font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm tracking-[0] leading-[normal]">
-                  100%
-                </span>
-
-                <div className="relative w-6 h-3 overflow-hidden">
-                  <img
-                    className="absolute w-[87.51%] h-full top-[-56075.00%] left-[-9695.84%]"
-                    alt="Border"
-                    src="/img/border-3.png"
-                  />
-                  <div className="absolute w-[70.83%] h-[66.67%] top-[16.67%] left-[8.33%] bg-black rounded-[1px]" />
-                  <img
-                    className="absolute w-[8.33%] h-[33.33%] top-[-56041.67%] left-[-9604.17%]"
-                    alt="Cap"
-                    src="/img/cap-3.png"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="flex items-center gap-2.5 pl-[34px] pr-5 py-4 relative self-stretch w-full">
-            <span className="relative flex-1 h-5 mt-[-1.00px] [font-family:'Pretendard-Medium',Helvetica] font-medium text-black text-[17px] tracking-[-0.41px] leading-[22px] whitespace-nowrap">
-              {statusBarData.time}
-            </span>
-
-            <img
-              className="relative w-[18px] h-3"
-              alt="Icon mobile signal"
-              src="https://c.animaapp.com/X2DaSZUE/img/icon---mobile-signal-7.svg"
-            />
-
-            <img
-              className="relative w-[17px] h-[11.83px]"
-              alt="Wifi"
-              src="https://c.animaapp.com/X2DaSZUE/img/wifi-6.svg"
-            />
-
-            <img
-              className="relative w-[27.4px] h-[13px]"
-              alt="Battery"
-              src="https://c.animaapp.com/X2DaSZUE/img/battery-7.svg"
-            />
-          </div>
-
-          <nav className="flex items-center justify-between px-5 py-4 relative self-stretch w-full">
-            <Button variant="ghost" size="icon" className="h-auto p-0">
-              <ChevronLeftIcon className="w-6 h-6 text-black" />
-            </Button>
-
-            <div className="flex items-center gap-4">
-              <Button variant="ghost" size="icon" className="h-auto p-0">
-                <MoreHorizontalIcon className="w-6 h-6 text-black" />
-              </Button>
-              <Button variant="ghost" size="icon" className="h-auto p-0">
-                <CircleIcon className="w-6 h-6 text-black" />
-              </Button>
-            </div>
-          </nav>
-        </header>
+        <BackSubHeader />
 
         <main className="flex flex-col items-center gap-[50px] px-6 py-0 relative self-stretch w-full flex-1">
           <div className="flex flex-col items-center gap-[26px] relative self-stretch w-full">
@@ -247,13 +118,7 @@ export const PinPin = (): JSX.Element => {
             </div>
           </div>
 
-          <div className="flex flex-col items-center gap-2.5 px-[105px] py-2 relative self-stretch w-full bg-[#0d56e4]">
-            <div className="flex flex-col w-[134px] items-center gap-2.5">
-              <div className="w-[134px] h-[5px] bg-black rounded-[100px]" />
-            </div>
-          </div>
         </footer>
-      </div>
     </div>
   );
 };

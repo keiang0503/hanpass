@@ -18,7 +18,7 @@ const menuOptions = [
 export const IdRegistrationMethod = (): JSX.Element => {
   return (
     <div
-      className="flex flex-col w-full h-screen items-center justify-end gap-2.5 relative bg-[linear-gradient(0deg,rgba(0,0,0,0.75)_0%,rgba(0,0,0,0.75)_100%),linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(255,255,255,1)_100%)]"
+      className="flex flex-col w-full h-screen items-center justify-end gap-2.5 relative bg-overlay-dark"
       data-model-id="40000003:653090"
     >
       {/* Header */}
@@ -79,8 +79,6 @@ export const IdRegistrationMethod = (): JSX.Element => {
           </div>
         </div>
 
-        <div className="flex flex-col h-[21px] items-center gap-2.5 px-[105px] py-2 w-full bg-white">
-        </div>
       </section>
     </div>
   );

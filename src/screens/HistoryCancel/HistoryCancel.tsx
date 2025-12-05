@@ -23,7 +23,7 @@ const timelineSteps = [
 export const HistoryCancel = (): JSX.Element => {
   return (
     <div
-      className="flex flex-col w-full h-screen items-center justify-end relative bg-[linear-gradient(0deg,rgba(0,0,0,0.75)_0%,rgba(0,0,0,0.75)_100%),linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(255,255,255,1)_100%)]"
+      className="flex flex-col w-full h-screen items-center justify-end relative bg-overlay-dark"
       data-model-id="35139:58372"
     >
       {/* Header */}
@@ -123,10 +123,6 @@ export const HistoryCancel = (): JSX.Element => {
           </div>
         </div>
       </main>
-
-      {/* Footer */}
-      <footer className="flex flex-col items-center gap-2.5 px-[105px] py-2 relative self-stretch w-full flex-[0_0_auto] bg-white">
-      </footer>
     </div>
   );
 };

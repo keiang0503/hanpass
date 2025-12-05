@@ -1,6 +1,7 @@
 import { XIcon } from "lucide-react";
 import React from "react";
 import { Input } from "../../../../components/ui/input";
+import { Button } from "../../../../components/ui/button";
 
 export const BottomsheetSubsection = (): JSX.Element => {
   return (
@@ -51,6 +52,15 @@ export const BottomsheetSubsection = (): JSX.Element => {
               </div>
             </div>
           </div>
+        </div>
+
+        {/* 확인 버튼 */}
+        <div className="flex flex-col items-start gap-3.5 w-full pt-4">
+          <Button className="min-h-[54px] w-full bg-[#0d56e4] hover:bg-[#0d56e4]/90 rounded-xl h-auto">
+            <span className="font-title-16-b font-[number:var(--title-16-b-font-weight)] text-white text-center text-[length:var(--title-16-b-font-size)] tracking-[var(--title-16-b-letter-spacing)] leading-[var(--title-16-b-line-height)] [font-style:var(--title-16-b-font-style)]">
+              확인
+            </span>
+          </Button>
         </div>
       </div>
     </section>

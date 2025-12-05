@@ -11,12 +11,12 @@ import { Label } from "../../components/ui/label";
 export const DivWrapper = (): JSX.Element => {
   return (
     <div
-      className="flex flex-col min-h-screen items-center bg-white"
+      className="flex flex-col w-full min-h-screen bg-white"
       data-model-id="36848:68869"
     >
       <BackSubHeader />
 
-      <section className="w-full max-w-[375px] bg-white pt-[22px] px-6">
+      <section className="w-full bg-white pt-[22px] px-6">
         <div className="flex flex-col items-start gap-2">
           <h1 className="font-title-24-b font-[number:var(--title-24-b-font-weight)] text-[#0b0c0e] text-[length:var(--title-24-b-font-size)] tracking-[var(--title-24-b-letter-spacing)] leading-[var(--title-24-b-line-height)] [font-style:var(--title-24-b-font-style)]">
             신분증 관리
@@ -27,7 +27,7 @@ export const DivWrapper = (): JSX.Element => {
         </div>
       </section>
 
-      <main className="flex flex-col flex-1 w-full max-w-[375px] gap-9 pt-[42px] pb-[30px] px-6">
+      <main className="flex flex-col flex-1 w-full gap-9 pt-[42px] pb-[30px] px-6">
         <div className="flex flex-col items-start gap-[22px] relative">
           <img
             className="absolute h-[calc(100%_-_54px)] top-7 left-[5px] w-px object-cover"
@@ -70,7 +70,7 @@ export const DivWrapper = (): JSX.Element => {
         </div>
       </main>
 
-      <footer className="w-full max-w-[375px] flex flex-col items-center px-6 bg-white">
+      <footer className="w-full flex flex-col items-center px-6 bg-white">
         <div className="flex flex-col items-center gap-6 w-full">
           <Button
             disabled

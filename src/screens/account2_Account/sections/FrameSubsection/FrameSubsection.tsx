@@ -1,8 +1,5 @@
 import {
   ChevronDownIcon,
-  ChevronLeftIcon,
-  CircleIcon,
-  MoreVerticalIcon,
   XIcon,
 } from "lucide-react";
 import React from "react";
@@ -40,20 +37,6 @@ const keypadButtons = [
 export const FrameSubsection = (): JSX.Element => {
   return (
     <div className="flex flex-col items-start relative w-full bg-white">
-      <header className="flex items-center justify-between px-5 py-4 relative w-full bg-white">
-        <Button variant="ghost" size="icon" className="h-auto p-0">
-          <ChevronLeftIcon className="w-6 h-6 text-black" />
-        </Button>
-        <div className="flex items-center gap-4">
-          <Button variant="ghost" size="icon" className="h-auto p-0">
-            <MoreVerticalIcon className="w-6 h-6 text-black" />
-          </Button>
-          <Button variant="ghost" size="icon" className="h-auto p-0">
-            <CircleIcon className="w-6 h-6 text-black" />
-          </Button>
-        </div>
-      </header>
-
       <main className="flex flex-col items-start gap-9 px-6 py-0 relative w-full">
         <h1 className="relative w-full font-title-24-b font-[number:var(--title-24-b-font-weight)] text-[#0b0c0e] text-[length:var(--title-24-b-font-size)] tracking-[var(--title-24-b-letter-spacing)] leading-[var(--title-24-b-line-height)] [font-style:var(--title-24-b-font-style)]">
           계좌정보를 등록해주세요.

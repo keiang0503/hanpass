@@ -1,7 +1,7 @@
 import React from "react";
+import { BackSubHeader } from "../../components/BackSubHeader";
 import { DisplaySection } from "./sections/DisplaySection";
 import { MainContentSection } from "./sections/MainContentSection";
-import { StatusBarSection } from "./sections/StatusBarSection";
 
 export const Screen4 = (): JSX.Element => {
   return (
@@ -9,7 +9,7 @@ export const Screen4 = (): JSX.Element => {
       className="flex flex-col min-h-screen items-start relative bg-white"
       data-model-id="34820:539228"
     >
-      <StatusBarSection />
+      <BackSubHeader />
 
       <section className="flex flex-col items-start bg-white relative self-stretch w-full">
         <div className="flex flex-col items-start gap-2 pt-[22px] pb-0 px-6 self-stretch w-full">

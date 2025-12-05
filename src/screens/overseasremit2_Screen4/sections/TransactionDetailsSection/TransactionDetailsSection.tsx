@@ -75,52 +75,24 @@ export const TransactionDetailsSection = (): JSX.Element => {
           <Card className="w-full bg-[#003fbb] border-0 rounded-xl overflow-hidden">
             <CardContent className="flex flex-col items-start gap-4 p-5">
               <div className="flex flex-col items-end gap-1 w-full">
-                <div className="flex items-end gap-3 w-full">
-                  <img
-                    className="flex-1 h-[13.02px]"
-                    alt="Image"
-                    src="https://c.animaapp.com/vuYaFJZH/img/-----@4x.png"
-                  />
-                  <img
-                    className="flex-1 h-[10.19px]"
-                    alt="Element"
-                    src="https://c.animaapp.com/vuYaFJZH/img/12437576787@4x.png"
-                  />
+                <div className="flex items-center justify-between w-full">
+                  <span className="text-white/70 text-sm">받는 사람</span>
+                  <span className="text-white text-sm font-medium">12437576787</span>
                 </div>
-                <img
-                  className="w-full h-[10.9px]"
-                  alt="Test TEAHWI"
-                  src="https://c.animaapp.com/vuYaFJZH/img/test-teahwi@4x.png"
-                />
+                <div className="w-full text-right">
+                  <span className="text-white text-sm font-medium">TEST TEAHWI</span>
+                </div>
               </div>
 
               <Separator className="bg-white/20" />
 
               <div className="flex flex-col items-start gap-1.5 w-full">
                 {amountItems.map((item, index) => (
-                  <div key={index} className="flex items-end gap-3 w-full">
-                    <img
-                      className="flex-1 h-[12.15px]"
-                      alt={item.label}
-                      src={
-                        index === 0
-                          ? "https://c.animaapp.com/vuYaFJZH/img/------@4x.png"
-                          : index === 1
-                            ? "https://c.animaapp.com/vuYaFJZH/img/------1@4x.png"
-                            : "https://c.animaapp.com/vuYaFJZH/img/---@4x.png"
-                      }
-                    />
-                    <img
-                      className={`flex-1 ${
-                        item.isHighlighted ? "h-[16.61px]" : "h-[12.84px]"
-                      }`}
-                      alt={item.value}
-                      src={
-                        item.isHighlighted
-                          ? "https://c.animaapp.com/vuYaFJZH/img/10-000-krw-2@4x.png"
-                          : "https://c.animaapp.com/vuYaFJZH/img/10-000-krw-1@4x.png"
-                      }
-                    />
+                  <div key={index} className="flex items-center justify-between w-full">
+                    <span className="text-white/70 text-sm">{item.label}</span>
+                    <span className={`text-white text-sm ${item.isHighlighted ? "font-bold text-base" : "font-medium"}`}>
+                      {item.value}
+                    </span>
                   </div>
                 ))}
               </div>
@@ -130,44 +102,15 @@ export const TransactionDetailsSection = (): JSX.Element => {
           <Card className="w-full bg-[#f4f7fd] border-0 rounded-xl">
             <CardContent className="flex flex-col items-start gap-2.5 p-5">
               {feeItems.map((item, index) => (
-                <div key={index} className="flex items-start gap-4 w-full">
-                  <img
-                    className={`${
-                      index === 0
-                        ? "w-[49.77px] h-[12.15px]"
-                        : index === 1
-                          ? "w-[61.64px] h-[11.96px]"
-                          : "w-[76.75px] h-[12.18px]"
-                    }`}
-                    alt={item.label}
-                    src={
-                      index === 0
-                        ? "https://c.animaapp.com/vuYaFJZH/img/------2@4x.png"
-                        : index === 1
-                          ? "https://c.animaapp.com/vuYaFJZH/img/-------1@4x.png"
-                          : "https://c.animaapp.com/vuYaFJZH/img/--------@4x.png"
-                    }
-                  />
-                  {index === 1 ? (
-                    <div className="flex items-center justify-end gap-1 flex-1">
-                      <div className="flex items-center gap-0.5 flex-1">
-                        <div className="flex items-center gap-2.5 flex-1">
-                          <div className="flex-1 font-body-14-b font-[number:var(--body-14-b-font-weight)] text-[#b7ccf7] text-right tracking-[var(--body-14-b-letter-spacing)] leading-[var(--body-14-b-line-height)] mt-[-1.00px] text-[length:var(--body-14-b-font-size)] [font-style:var(--body-14-b-font-style)]">
-                            {item.strikethrough}
-                          </div>
-                          <div className="mt-[-1.00px] font-body-14-b font-[number:var(--body-14-b-font-weight)] text-[#1c253f] text-[length:var(--body-14-b-font-size)] text-right tracking-[var(--body-14-b-letter-spacing)] leading-[var(--body-14-b-line-height)] whitespace-nowrap [font-style:var(--body-14-b-font-style)]">
-                            0
-                          </div>
-                        </div>
-                        <div className="w-8 mt-[-1.00px] font-body-14-b font-[number:var(--body-14-b-font-weight)] text-[#1c253f] text-[length:var(--body-14-b-font-size)] text-right tracking-[var(--body-14-b-letter-spacing)] leading-[var(--body-14-b-line-height)] [font-style:var(--body-14-b-font-style)]">
-                          KRW
-                        </div>
-                      </div>
+                <div key={index} className="flex items-center justify-between w-full">
+                  <span className="text-[#85888e] text-sm">{item.label}</span>
+                  {item.strikethrough ? (
+                    <div className="flex items-center gap-2">
+                      <span className="text-[#b7ccf7] text-sm line-through">{item.strikethrough}</span>
+                      <span className="text-[#1c253f] text-sm font-semibold">{item.value}</span>
                     </div>
                   ) : (
-                    <div className="flex-1 mt-[-1.00px] font-body-14-b font-[number:var(--body-14-b-font-weight)] text-[#1c253f] text-[length:var(--body-14-b-font-size)] text-right tracking-[var(--body-14-b-letter-spacing)] leading-[var(--body-14-b-line-height)] [font-style:var(--body-14-b-font-style)]">
-                      {item.value}
-                    </div>
+                    <span className="text-[#1c253f] text-sm font-semibold">{item.value}</span>
                   )}
                 </div>
               ))}

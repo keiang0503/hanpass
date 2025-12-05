@@ -1,27 +1,6 @@
-import { ChevronLeftIcon, CircleIcon, MoreVerticalIcon } from "lucide-react";
 import React from "react";
-import { Link } from "react-router-dom";
-import { Button } from "../../components/ui/button";
+import { BackSubHeader } from "../../components/BackSubHeader";
 import { ScrollArea } from "../../components/ui/scroll-area";
-
-const statusBarData = {
-  time: "9:41",
-  date: "Sat Jun 11",
-  battery: "100%",
-};
-
-const signalBars = [
-  { height: "h-[40.00%]", src: "/img/bar-1-8.png" },
-  { height: "h-[60.00%]", src: "/img/bar-2-9.png" },
-  { height: "h-[80.00%]", src: "/img/bar-3-9.png" },
-  { height: "h-full", src: "/img/bar-4-5.png" },
-];
-
-const wifiBars = [
-  { width: "w-[31.30%]", height: "h-[30.17%]", src: "/img/bar-1-9.png" },
-  { width: "w-[62.57%]", height: "h-[34.44%]", src: "/img/bar-2-10.png" },
-  { width: "w-[100.01%]", height: "h-[43.03%]", src: "/img/bar-3-10.png" },
-];
 
 const termsContent = [
   {
@@ -97,157 +76,7 @@ export const Screen6 = (): JSX.Element => {
       className="flex flex-col min-h-screen items-start relative bg-white"
       data-model-id="36848:80767"
     >
-      <header className="w-full flex flex-col items-start relative bg-white">
-        <Link
-          className="w-full flex flex-col items-start gap-2.5 relative bg-white"
-          to="/u4359u4453u4364u4453u4523u4364u4453u4540u4359u4457"
-        >
-          <div className="w-full flex flex-col items-start gap-2.5 relative bg-white">
-            <div className="flex h-6 items-center justify-between px-2.5 py-1 relative w-full bg-white">
-              <div className="inline-flex items-center gap-2 relative">
-                <div className="inline-flex items-center gap-1 relative">
-                  <div className="inline-flex items-center relative">
-                    <span className="[font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm tracking-[0] leading-[normal]">
-                      9
-                    </span>
-                    <span className="[font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm tracking-[0] leading-[normal]">
-                      :
-                    </span>
-                    <span className="[font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm tracking-[0] leading-[normal]">
-                      41
-                    </span>
-                  </div>
-                </div>
-                <span className="[font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm tracking-[0] leading-[normal]">
-                  {statusBarData.date}
-                </span>
-              </div>
-
-              <div className="inline-flex items-center gap-1.5 relative">
-                <div className="relative w-[18px] h-2.5">
-                  {signalBars.map((bar, index) => (
-                    <img
-                      key={`signal-bar-${index}`}
-                      className={`${bar.height} absolute w-[16.67%]`}
-                      style={{
-                        top:
-                          index === 0
-                            ? "-208140.00%"
-                            : index === 1
-                              ? "-208160.00%"
-                              : index === 2
-                                ? "-208180.00%"
-                                : "-208200%",
-                        left:
-                          index === 0
-                            ? "-16405.56%"
-                            : index === 1
-                              ? "-16377.78%"
-                              : index === 2
-                                ? "-16350.00%"
-                                : "-16322.22%",
-                      }}
-                      alt="Bar"
-                      src={bar.src}
-                    />
-                  ))}
-                </div>
-
-                <div className="relative w-4 h-[11.62px] overflow-hidden">
-                  {wifiBars.map((bar, index) => (
-                    <img
-                      key={`wifi-bar-${index}`}
-                      className={`absolute ${bar.width} ${bar.height}`}
-                      style={{
-                        top:
-                          index === 0
-                            ? "-179112.45%"
-                            : index === 1
-                              ? "-179148.56%"
-                              : "-179182.28%",
-                        left:
-                          index === 0
-                            ? "-18571.93%"
-                            : index === 1
-                              ? "-18587.50%"
-                              : "-18606.27%",
-                      }}
-                      alt="Bar"
-                      src={bar.src}
-                    />
-                  ))}
-                </div>
-
-                <span className="[font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm tracking-[0] leading-[normal]">
-                  {statusBarData.battery}
-                </span>
-
-                <div className="relative w-6 h-3 overflow-hidden">
-                  <img
-                    className="absolute w-[87.51%] h-full"
-                    style={{ top: "-173491.67%", left: "-12670.84%" }}
-                    alt="Border"
-                    src="/img/border-5.png"
-                  />
-                  <div className="absolute w-[70.83%] h-[66.67%] top-[16.67%] left-[8.33%] bg-black rounded-[1px]" />
-                  <img
-                    className="absolute w-[8.33%] h-[33.33%]"
-                    style={{ top: "-173458.33%", left: "-12579.17%" }}
-                    alt="Cap"
-                    src="/img/cap-5.png"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="flex items-center gap-2.5 pl-[34px] pr-5 py-4 relative w-full">
-            <span className="flex-1 [font-family:'Pretendard-Medium',Helvetica] font-medium text-black text-[17px] tracking-[-0.41px] leading-[22px] whitespace-nowrap">
-              {statusBarData.time}
-            </span>
-            <img
-              className="relative w-[18px] h-3"
-              alt="Icon mobile signal"
-              src="https://c.animaapp.com/MgOgZxnr/img/icon---mobile-signal-7.svg"
-            />
-            <img
-              className="relative w-[17px] h-[11.83px]"
-              alt="Wifi"
-              src="https://c.animaapp.com/MgOgZxnr/img/wifi-7.svg"
-            />
-            <img
-              className="relative w-[27.4px] h-[13px]"
-              alt="Battery"
-              src="https://c.animaapp.com/MgOgZxnr/img/battery-7.svg"
-            />
-          </div>
-        </Link>
-
-        <nav className="flex flex-col items-start relative w-full bg-white">
-          <div className="flex flex-col items-start gap-2 relative w-full">
-            <div className="flex h-[54px] items-center justify-between px-5 py-0 relative w-full bg-white">
-              <Button
-                variant="ghost"
-                size="icon"
-                className="h-8 w-8 p-0"
-                asChild
-              >
-                <Link to="/u4359u4453u4364u4453u4523u4364u4453u4540u4359u4457">
-                  <ChevronLeftIcon className="h-8 w-8" />
-                </Link>
-              </Button>
-              <div className="flex items-center gap-2">
-                <Button variant="ghost" size="icon" className="h-8 w-8 p-0">
-                  <MoreVerticalIcon className="h-6 w-6" />
-                </Button>
-                <Button variant="ghost" size="icon" className="h-8 w-8 p-0">
-                  <CircleIcon className="h-8 w-8" />
-                </Button>
-              </div>
-            </div>
-          </div>
-        </nav>
-      </header>
+      <BackSubHeader />
 
       <main className="flex flex-col items-start relative w-full bg-white">
         <div className="flex flex-col items-start gap-2 pt-[22px] pb-0 px-6 relative w-full">
@@ -317,9 +146,6 @@ export const Screen6 = (): JSX.Element => {
 
       <footer className="flex flex-col items-center justify-end px-6 py-0 relative w-full">
         <div className="relative w-full h-4" />
-        <div className="flex flex-col items-center gap-2.5 px-[105px] py-2 relative w-full bg-white">
-          <div className="w-[134px] h-[5px] bg-black rounded-[100px]" />
-        </div>
       </footer>
     </div>
   );

@@ -1,32 +1,9 @@
-import {
-  ChevronDownIcon,
-  ChevronLeftIcon,
-  CircleIcon,
-  MoreHorizontalIcon,
-} from "lucide-react";
+import { ChevronDownIcon } from "lucide-react";
 import React from "react";
-import { Link } from "react-router-dom";
+import { BackSubHeader } from "../../components/BackSubHeader";
 import { Button } from "../../components/ui/button";
 
 export const AccountArs = (): JSX.Element => {
-  const statusBarIcons = [
-    {
-      type: "signal",
-      src: "https://c.animaapp.com/dojq12ez/img/icon---mobile-signal-5.svg",
-      className: "w-[18px] h-3",
-    },
-    {
-      type: "wifi",
-      src: "https://c.animaapp.com/dojq12ez/img/wifi-5.svg",
-      className: "w-[17px] h-[11.83px]",
-    },
-    {
-      type: "battery",
-      src: "https://c.animaapp.com/dojq12ez/img/battery-5.svg",
-      className: "w-[27.4px] h-[13px]",
-    },
-  ];
-
   const instructions = [
     {
       text: "본인확인을 위해 ARS 인증 받을 번호 선택 후 ",
@@ -43,33 +20,7 @@ export const AccountArs = (): JSX.Element => {
       className="flex flex-col min-h-screen bg-white"
       data-model-id="2674:67457"
     >
-      <header className="flex flex-col w-full bg-white">
-        <div className="flex items-center justify-between px-5 py-4 w-full">
-          <div className="flex-1 font-[number:var(--title-16-b-font-weight)] text-black text-[17px] tracking-[-0.41px] leading-[22px]">
-            9:41
-          </div>
-
-          {statusBarIcons.map((icon, index) => (
-            <img
-              key={`status-icon-${index}`}
-              className={icon.className}
-              alt={icon.type}
-              src={icon.src}
-            />
-          ))}
-        </div>
-
-        <nav className="flex items-center justify-between px-5 py-4 w-full">
-          <Link to="/accountu95006u8232u4361u4469u4523u4359u4462u4523u4364u4467u4540u4364u4453u4540u4359u4457-u4364u4450u4363u4469u4536u4357u4455u4520u95u4363u4455u4352u4463u4523u40u4361u4469u4527u4358u4455u4540u4359u4453u4523u4370u4457-u4359u4462u4527u4363u4469u4527u4366u4469-u4361u4469u41">
-            <ChevronLeftIcon className="w-6 h-6" />
-          </Link>
-
-          <div className="flex items-center gap-4">
-            <MoreHorizontalIcon className="w-6 h-6" />
-            <CircleIcon className="w-6 h-6" />
-          </div>
-        </nav>
-      </header>
+      <BackSubHeader />
 
       <main className="flex flex-col flex-1 w-full">
         <section className="flex flex-col px-6 pt-[22px] pb-0 bg-white">
@@ -171,10 +122,6 @@ export const AccountArs = (): JSX.Element => {
         </div>
 
         <div className="h-4" />
-
-        <div className="flex justify-center py-2">
-          <div className="w-[134px] h-[5px] bg-black rounded-[100px]" />
-        </div>
       </footer>
     </div>
   );

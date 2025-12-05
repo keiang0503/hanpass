@@ -1,6 +1,7 @@
 import { XIcon } from "lucide-react";
 import React from "react";
 import { Button } from "../../components/ui/button";
+import { PopupHeader } from "../../components/PopupHeader";
 
 const menuItems = [
   { id: 1, label: "모든쿠폰" },
@@ -12,16 +13,10 @@ const menuItems = [
 export const MypageScreen = (): JSX.Element => {
   return (
     <div
-      className="flex flex-col min-h-screen items-center justify-end gap-2.5 relative bg-[linear-gradient(0deg,rgba(0,0,0,0.75)_0%,rgba(0,0,0,0.75)_100%),linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(255,255,255,1)_100%)]"
+      className="flex flex-col h-screen items-center justify-end gap-2.5 relative bg-overlay-dark"
       data-model-id="36848:90425"
     >
-      <header className="absolute w-full top-0 left-0 h-[106px] object-cover">
-        <img
-          className="w-full h-full"
-          alt="Image"
-          src="https://c.animaapp.com/emBHvnWi/img/--.svg"
-        />
-      </header>
+      <PopupHeader />
 
       <section className="flex flex-col items-start self-stretch w-full relative">
         <div className="flex flex-col items-center gap-1.5 pt-0 pb-3.5 px-6 relative self-stretch w-full bg-white rounded-[30px_30px_0px_0px]">
@@ -65,12 +60,6 @@ export const MypageScreen = (): JSX.Element => {
               </Button>
             ))}
           </nav>
-        </div>
-
-        <div className="flex flex-col h-[21px] items-center gap-2.5 px-[105px] py-2 relative self-stretch w-full bg-white">
-          <div className="flex flex-col w-[134px] items-center gap-2.5">
-            <div className="w-[134px] h-[5px] bg-black rounded-[100px]" />
-          </div>
         </div>
       </section>
     </div>

@@ -1,5 +1,5 @@
-import { ChevronLeftIcon, CircleIcon, MoreHorizontalIcon } from "lucide-react";
 import React from "react";
+import { BackSubHeader } from "../../components/BackSubHeader";
 import { Button } from "../../components/ui/button";
 import { Card, CardContent } from "../../components/ui/card";
 import { Input } from "../../components/ui/input";
@@ -10,126 +10,7 @@ export const Signup = (): JSX.Element => {
       className="flex flex-col min-h-screen items-center relative bg-white"
       data-model-id="40000008:1182598"
     >
-      <header className="w-full flex flex-col items-start relative self-stretch flex-[0_0_auto] bg-white">
-        <div className="w-full flex flex-col items-start bg-white">
-          <div className="flex h-6 items-center justify-between px-2.5 py-1 relative self-stretch w-full bg-white">
-            <div className="inline-flex items-center gap-2 relative flex-[0_0_auto] mt-[-0.50px] mb-[-0.50px]">
-              <div className="inline-flex items-center gap-1 relative flex-[0_0_auto]">
-                <div className="inline-flex items-center relative flex-[0_0_auto]">
-                  <div className="relative w-fit mt-[-1.00px] [font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm tracking-[0] leading-[normal]">
-                    9
-                  </div>
-                  <div className="w-fit [font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black tracking-[0] leading-[normal] relative mt-[-1.00px] text-sm">
-                    :
-                  </div>
-                  <div className="relative w-fit mt-[-1.00px] [font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm tracking-[0] leading-[normal]">
-                    41
-                  </div>
-                </div>
-              </div>
-              <div className="relative w-fit mt-[-1.00px] [font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm tracking-[0] leading-[normal]">
-                Sat Jun 11
-              </div>
-            </div>
-            <div className="inline-flex items-center gap-1.5 relative flex-[0_0_auto] mt-[-0.50px] mb-[-0.50px]">
-              <div className="relative w-[18px] h-2.5">
-                <img
-                  className="h-[40.00%] top-[-67240.00%] left-[-9800%] absolute w-[16.67%]"
-                  alt="Bar"
-                  src="/img/bar-1-12.png"
-                />
-                <img
-                  className="h-[60.00%] top-[-67260.00%] left-[-9772.22%] absolute w-[16.67%]"
-                  alt="Bar"
-                  src="/img/bar-2-13.png"
-                />
-                <img
-                  className="h-[80.00%] top-[-67280.00%] left-[-9744.44%] absolute w-[16.67%]"
-                  alt="Bar"
-                  src="/img/bar-3-13.png"
-                />
-                <img
-                  className="h-full top-[-67300%] left-[-9716.67%] absolute w-[16.67%]"
-                  alt="Bar"
-                  src="/img/bar-4-7.png"
-                />
-              </div>
-              <div className="relative w-4 h-[11.62px] overflow-hidden">
-                <img
-                  className="absolute w-[31.30%] h-[30.17%] top-[-57845.56%] left-[-11140.68%]"
-                  alt="Bar"
-                  src="/img/bar-1-13.png"
-                />
-                <img
-                  className="absolute w-[62.57%] h-[34.44%] top-[-57881.67%] left-[-11156.25%]"
-                  alt="Bar"
-                  src="/img/bar-2-14.png"
-                />
-                <img
-                  className="absolute w-[100.01%] h-[43.03%] top-[-57915.39%] left-[-11175.02%]"
-                  alt="Bar"
-                  src="/img/bar-3-14.png"
-                />
-              </div>
-              <div className="relative w-fit mt-[-1.00px] [font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm tracking-[0] leading-[normal]">
-                100%
-              </div>
-              <div className="relative w-6 h-3 overflow-hidden">
-                <img
-                  className="absolute w-[87.51%] h-full top-[-56075.00%] left-[-7716.67%]"
-                  alt="Border"
-                  src="/img/border-7.png"
-                />
-                <div className="absolute w-[70.83%] h-[66.67%] top-[16.67%] left-[8.33%] bg-black rounded-[1px]" />
-                <img
-                  className="absolute w-[8.33%] h-[33.33%] top-[-56041.67%] left-[-7625.00%]"
-                  alt="Cap"
-                  src="/img/cap-7.png"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="flex items-center gap-2.5 pl-[34px] pr-5 py-4 relative self-stretch w-full flex-[0_0_auto]">
-          <div className="relative flex-1 h-5 mt-[-1.00px] [font-family:'Pretendard-Medium',Helvetica] font-medium text-black text-[17px] tracking-[-0.41px] leading-[22px] whitespace-nowrap">
-            9:41
-          </div>
-          <img
-            className="relative w-[18px] h-3"
-            alt="Icon mobile signal"
-            src="https://c.animaapp.com/X2DaSZUE/img/icon---mobile-signal-7.svg"
-          />
-          <img
-            className="relative w-[17px] h-[11.83px]"
-            alt="Wifi"
-            src="https://c.animaapp.com/X2DaSZUE/img/wifi-7.svg"
-          />
-          <img
-            className="relative w-[27.4px] h-[13px]"
-            alt="Battery"
-            src="https://c.animaapp.com/X2DaSZUE/img/battery-4.svg"
-          />
-        </div>
-      </header>
-
-      <nav className="flex-col items-start flex relative self-stretch w-full flex-[0_0_auto]">
-        <div className="flex-col gap-2 self-stretch w-full flex-[0_0_auto] flex items-start relative">
-          <div className="flex h-[54px] items-center justify-between px-5 py-0 relative self-stretch w-full bg-white">
-            <Button variant="ghost" size="icon" className="h-8 w-8 p-0">
-              <ChevronLeftIcon className="h-8 w-8" />
-            </Button>
-            <div className="flex items-center gap-2">
-              <Button variant="ghost" size="icon" className="h-8 w-8 p-0">
-                <MoreHorizontalIcon className="h-8 w-8" />
-              </Button>
-              <Button variant="ghost" size="icon" className="h-8 w-8 p-0">
-                <CircleIcon className="h-8 w-8" />
-              </Button>
-            </div>
-          </div>
-        </div>
-      </nav>
+      <BackSubHeader />
 
       <section className="flex-col items-start bg-white flex relative self-stretch w-full flex-[0_0_auto]">
         <div className="flex-col gap-2 pt-[22px] pb-0 px-6 self-stretch w-full flex-[0_0_auto] flex items-start relative">
@@ -265,11 +146,6 @@ export const Signup = (): JSX.Element => {
 
         <div className="relative self-stretch w-full h-4 z-0" />
 
-        <div className="flex flex-col items-center gap-2.5 px-[105px] py-2 relative self-stretch w-full flex-[0_0_auto] z-[-1] bg-white">
-          <div className="flex flex-col w-[134px] items-center gap-2.5 relative flex-[0_0_auto] ml-[-8.50px] mr-[-8.50px]">
-            <div className="relative w-[134px] h-[5px] bg-black rounded-[100px]" />
-          </div>
-        </div>
       </footer>
     </div>
   );

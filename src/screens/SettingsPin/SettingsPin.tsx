@@ -22,7 +22,7 @@ const verificationSteps = [
 export const SettingsPin = (): JSX.Element => {
   return (
     <div
-      className="overflow-hidden bg-[linear-gradient(0deg,rgba(0,0,0,0.75)_0%,rgba(0,0,0,0.75)_100%),linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(255,255,255,1)_100%)] w-full min-h-screen flex flex-col justify-between"
+      className="overflow-hidden bg-overlay-dark w-full min-h-screen flex flex-col justify-between"
       data-model-id="36848:79114"
     >
       <PopupHeader />
@@ -111,10 +111,6 @@ export const SettingsPin = (): JSX.Element => {
             </div>
           </div>
 
-          <div className="w-[360px] h-4 ml-[-16.50px] mr-[-16.50px]" />
-
-          <div className="flex flex-col w-[375px] items-center gap-2.5 px-[105px] py-2 ml-[-24.00px] mr-[-24.00px] bg-white">
-          </div>
         </footer>
       </main>
     </div>
