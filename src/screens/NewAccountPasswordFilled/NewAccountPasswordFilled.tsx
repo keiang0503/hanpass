@@ -3,6 +3,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { BackSubHeader } from "../../components/BackSubHeader";
 import { Button } from "../../components/ui/button";
+import { Input } from "../../components/ui/input";
 
 export const NewAccountPasswordFilled = (): JSX.Element => {
   return (
@@ -106,8 +107,47 @@ export const NewAccountPasswordFilled = (): JSX.Element => {
               <CheckIcon className="w-3 h-3 text-[#717682]" />
             </div>
             <span className="font-caption-title-13-r font-[number:var(--caption-title-13-r-font-weight)] text-[#717682] text-[length:var(--caption-title-13-r-font-size)] tracking-[var(--caption-title-13-r-letter-spacing)] leading-[var(--caption-title-13-r-line-height)] [font-style:var(--caption-title-13-r-font-style)]">
-              로그인 아이디 포함 불가
+              로그인 ID 입력 불가
             </span>
+          </div>
+        </div>
+
+        {/* Password Confirmation Input */}
+        <div className="flex flex-col items-start gap-1.5 w-full">
+          <div className="flex flex-col items-start gap-2.5 w-full">
+            <div className="w-full h-[17px]">
+              <div className="inline-flex items-center gap-1">
+                <div className="inline-flex items-center gap-0.5">
+                  <span className="font-body-14-m font-[number:var(--body-14-m-font-weight)] text-[#85888e] text-[length:var(--body-14-m-font-size)] tracking-[var(--body-14-m-letter-spacing)] leading-[var(--body-14-m-line-height)] [font-style:var(--body-14-m-font-style)]">
+                    비밀번호
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="flex flex-col items-start gap-2.5 w-full">
+            <div className="flex flex-col min-h-[42px] items-start gap-2.5 w-full">
+              <div className="flex flex-col h-[42px] items-start w-full">
+                <div className="flex flex-1 w-full items-center">
+                  <div className="flex gap-[7px] pl-1 pr-0 py-0 flex-1 items-center">
+                    <div className="flex items-center flex-1">
+                      <div className="flex items-center gap-2 flex-1">
+                        <Input
+                          type="password"
+                          placeholder="비밀번호를 다시 한번 입력해주세요."
+                          className="border-0 border-b-0 rounded-none p-0 h-auto shadow-none font-body-16-r font-[number:var(--body-16-r-font-weight)] text-[length:var(--body-16-r-font-size)] tracking-[var(--body-16-r-letter-spacing)] leading-[var(--body-16-r-line-height)] [font-style:var(--body-16-r-font-style)] placeholder:text-[#acb2c1] focus-visible:ring-0 focus-visible:ring-offset-0"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="w-full h-0.5">
+                  <div className="w-full h-px bg-[#dfe3ec]" />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>

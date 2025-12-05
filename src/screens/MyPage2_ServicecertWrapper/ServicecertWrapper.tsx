@@ -1,7 +1,6 @@
 import React from "react";
-import { UiStatusBarWrapperSubsection } from "../MypageScreen/sections/UiStatusBarWrapperSubsection";
+import { BackSubHeader } from "../../components/BackSubHeader";
 import { ContentsSubsection } from "./sections/ContentsSubsection";
-import { UiStatusBarSubsection } from "./sections/UiStatusBarSubsection";
 import { ViewSubsection } from "./sections/ViewSubsection";
 
 export const ServicecertWrapper = (): JSX.Element => {
@@ -10,8 +9,7 @@ export const ServicecertWrapper = (): JSX.Element => {
       className="flex flex-col min-h-screen items-center relative bg-white"
       data-model-id="36848:89371"
     >
-      <UiStatusBarSubsection />
-      <UiStatusBarWrapperSubsection />
+      <BackSubHeader />
 
       <div className="flex-col items-start bg-white flex relative self-stretch w-full flex-[0_0_auto]">
         <div className="flex-col gap-2 pt-[22px] pb-0 px-6 self-stretch w-full flex-[0_0_auto] flex items-start relative">

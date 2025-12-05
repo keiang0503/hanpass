@@ -1,0 +1,1 @@
+export { ReceiverInformationSection } from "./ReceiverInformationSection";

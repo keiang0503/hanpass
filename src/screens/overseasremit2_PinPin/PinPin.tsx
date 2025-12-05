@@ -1,0 +1,231 @@
+import {
+  ChevronLeftIcon,
+  ChevronRightIcon,
+  CircleIcon,
+  DeleteIcon,
+  MoreVerticalIcon,
+  RotateCcwIcon,
+} from "lucide-react";
+import React from "react";
+import { Link } from "react-router-dom";
+import { Button } from "../../components/ui/button";
+
+const statusBarData = {
+  time: "9:41",
+  date: "Sat Jun 11",
+};
+
+const pinDots = [
+  { filled: true },
+  { filled: true },
+  { filled: true },
+  { filled: true },
+  { filled: false },
+  { filled: false },
+];
+
+const keypadButtons = [
+  { row: 0, col: 0, value: "7" },
+  { row: 0, col: 1, value: "5" },
+  { row: 0, col: 2, value: "2" },
+  { row: 1, col: 0, value: "1" },
+  { row: 1, col: 1, value: "4" },
+  { row: 1, col: 2, value: "6" },
+  { row: 2, col: 0, value: "8" },
+  { row: 2, col: 1, value: "0" },
+  { row: 2, col: 2, value: "3" },
+  { row: 3, col: 0, value: "refresh", icon: true },
+  { row: 3, col: 1, value: "9" },
+  { row: 3, col: 2, value: "delete", icon: true },
+];
+
+export const PinPin = (): JSX.Element => {
+  return (
+    <div
+      className="flex flex-col min-h-screen items-start bg-white"
+      data-model-id="40000008:1187249"
+    >
+      <header className="flex flex-col items-start w-full bg-white">
+        <div className="flex flex-col items-start gap-2.5 w-full bg-white">
+          <div className="flex h-6 items-center justify-between px-2.5 py-1 w-full bg-white">
+            <div className="inline-flex items-center gap-2">
+              <div className="inline-flex items-center gap-1">
+                <div className="inline-flex items-center">
+                  <div className="[font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm tracking-[0] leading-[normal]">
+                    {statusBarData.time.split(":")[0]}
+                  </div>
+                  <div className="[font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm tracking-[0] leading-[normal]">
+                    :
+                  </div>
+                  <div className="[font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm tracking-[0] leading-[normal]">
+                    {statusBarData.time.split(":")[1]}
+                  </div>
+                </div>
+              </div>
+              <div className="[font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm tracking-[0] leading-[normal]">
+                {statusBarData.date}
+              </div>
+            </div>
+
+            <div className="inline-flex items-center gap-1.5">
+              <div className="relative w-[18px] h-2.5">
+                <img
+                  className="h-[40.00%] top-[-310.00%] left-[-42788.89%] absolute w-[16.67%]"
+                  alt="Bar"
+                  src="/img/bar-1-18.png"
+                />
+                <img
+                  className="h-[60.00%] top-[-330.00%] left-[-42761.11%] absolute w-[16.67%]"
+                  alt="Bar"
+                  src="/img/bar-2-19.png"
+                />
+                <img
+                  className="h-[80.00%] top-[-350.00%] left-[-42733.33%] absolute w-[16.67%]"
+                  alt="Bar"
+                  src="/img/bar-3-19.png"
+                />
+                <img
+                  className="h-full top-[-370.00%] left-[-42705.56%] absolute w-[16.67%]"
+                  alt="Bar"
+                  src="/img/bar-4-10.png"
+                />
+              </div>
+              <div className="relative w-4 h-[11.62px] overflow-hidden">
+                <img
+                  className="absolute w-[31.30%] h-[30.17%] top-[-241.64%] left-[-48253.18%]"
+                  alt="Bar"
+                  src="/img/bar-1-19.png"
+                />
+                <img
+                  className="absolute w-[62.57%] h-[34.44%] top-[-277.74%] left-[-48268.75%]"
+                  alt="Bar"
+                  src="/img/bar-2-20.png"
+                />
+                <img
+                  className="absolute w-[100.01%] h-[43.03%] top-[-311.47%] left-[-48287.52%]"
+                  alt="Bar"
+                  src="/img/bar-3-20.png"
+                />
+              </div>
+              <div className="[font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm tracking-[0] leading-[normal]">
+                100%
+              </div>
+              <div className="relative w-6 h-3 overflow-hidden">
+                <img
+                  className="absolute w-[87.51%] h-full top-[-300%] left-[-32458.34%]"
+                  alt="Border"
+                  src="/img/border-10.png"
+                />
+                <div className="absolute w-[70.83%] h-[66.67%] top-[16.67%] left-[8.33%] bg-black rounded-[1px]" />
+                <img
+                  className="absolute w-[8.33%] h-[33.33%] top-[-266.67%] left-[-32366.67%]"
+                  alt="Cap"
+                  src="/img/cap-10.png"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <nav className="flex items-center justify-between px-5 py-4 w-full">
+          <Button variant="ghost" size="icon" className="h-auto p-0" asChild>
+            <Link to="/overseasremitu95012-u4361u4457u4540u4352u4467u4535u4352u4455u4527u4352u4458u95u4361u4453u4540u4352u4457u4540">
+              <ChevronLeftIcon className="w-6 h-6" />
+            </Link>
+          </Button>
+
+          <div className="flex items-center gap-4">
+            <Button variant="ghost" size="icon" className="h-auto p-0">
+              <MoreVerticalIcon className="w-6 h-6" />
+            </Button>
+            <Button variant="ghost" size="icon" className="h-auto p-0">
+              <CircleIcon className="w-6 h-6" />
+            </Button>
+          </div>
+        </nav>
+
+        <div className="flex items-center px-5 py-2 w-full">
+          <img
+            className="w-8 h-8"
+            alt="Wechat hd"
+            src="https://c.animaapp.com/vuYaFJZH/img/wechat-hd-6.svg"
+          />
+          <img
+            className="ml-auto w-[87px] h-[21px]"
+            alt="Mini"
+            src="https://c.animaapp.com/vuYaFJZH/img/mini-9@2x.png"
+          />
+        </div>
+      </header>
+
+      <main className="flex flex-col flex-1 w-full">
+        <div className="flex flex-col items-center gap-[50px] px-6 py-8">
+          <div className="flex flex-col items-center gap-[26px] w-full">
+            <h1 className="font-title-20-b font-[number:var(--title-20-b-font-weight)] text-[#0b0c0e] text-[length:var(--title-20-b-font-size)] text-center tracking-[var(--title-20-b-letter-spacing)] leading-[var(--title-20-b-line-height)] [font-style:var(--title-20-b-font-style)]">
+              6자리 비밀번호를
+              <br />
+              입력해 주세요
+            </h1>
+
+            <div className="flex items-center justify-center gap-3">
+              {pinDots.map((dot, index) => (
+                <div
+                  key={index}
+                  className={`w-4 h-4 rounded-full ${
+                    dot.filled ? "bg-[#0d56e4]" : "bg-[#e5e7eb]"
+                  }`}
+                />
+              ))}
+            </div>
+          </div>
+
+          <Button
+            variant="ghost"
+            className="h-auto inline-flex items-center justify-center px-0 py-1.5 gap-1"
+          >
+            <span className="font-body-14-m font-[number:var(--body-14-m-font-weight)] text-[#85888e] text-[length:var(--body-14-m-font-size)] tracking-[var(--body-14-m-letter-spacing)] leading-[var(--body-14-m-line-height)] [font-style:var(--body-14-m-font-style)]">
+              6자리 비밀번호(PIN) 변경
+            </span>
+            <ChevronRightIcon className="w-4 h-4 text-[#85888e]" />
+          </Button>
+        </div>
+
+        <div className="flex items-center justify-center px-6 py-4">
+          <p className="font-caption-title-13-r font-[number:var(--caption-title-13-r-font-weight)] text-[#a2a8bf] text-[length:var(--caption-title-13-r-font-size)] text-center tracking-[var(--caption-title-13-r-letter-spacing)] leading-[var(--caption-title-13-r-line-height)] [font-style:var(--caption-title-13-r-font-style)]">
+            6자리 비밀번호(PIN)는 한패스 서비스를 이용할 때 필요하며, 비밀번호
+            입력 대신 Face ID 및 지문 인증을 이용할 수 있습니다.(해외송금,
+            국내송금, 월렛 충전 등)
+          </p>
+        </div>
+      </main>
+
+      <div className="w-full bg-[#0d56e4] pb-8">
+        <div className="grid grid-cols-3 gap-0 px-6 py-8">
+          {keypadButtons.map((button, index) => (
+            <Button
+              key={index}
+              variant="ghost"
+              className="h-auto flex items-center justify-center py-4 text-white hover:bg-white/10"
+            >
+              {button.icon ? (
+                button.value === "refresh" ? (
+                  <RotateCcwIcon className="w-8 h-8" />
+                ) : (
+                  <DeleteIcon className="w-8 h-8" />
+                )
+              ) : (
+                <span className="font-title-22-b font-[number:var(--title-22-b-font-weight)] text-[length:var(--title-22-b-font-size)] tracking-[var(--title-22-b-letter-spacing)] leading-[var(--title-22-b-line-height)] [font-style:var(--title-22-b-font-style)]">
+                  {button.value}
+                </span>
+              )}
+            </Button>
+          ))}
+        </div>
+
+        <div className="flex justify-center px-[105px] py-2">
+          <div className="w-[134px] h-[5px] bg-black rounded-[100px]" />
+        </div>
+      </div>
+    </div>
+  );
+};

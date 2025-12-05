@@ -109,14 +109,38 @@ export const NewAccountPassword = (): JSX.Element => {
             </span>
           </div>
         </div>
+
+        {/* Password Confirmation Input - Disabled */}
+        <div className="flex flex-col items-start gap-1.5 w-full">
+          <div className="flex flex-col items-start gap-2.5 w-full">
+            <div className="w-full h-[17px]">
+              <div className="inline-flex items-center gap-1">
+                <div className="inline-flex items-center gap-0.5">
+                  <span className="font-body-14-m font-[number:var(--body-14-m-font-weight)] text-[#85888e] text-[length:var(--body-14-m-font-size)] tracking-[var(--body-14-m-letter-spacing)] leading-[var(--body-14-m-line-height)] [font-style:var(--body-14-m-font-style)]">
+                    비밀번호
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="flex items-center w-full px-4 py-3 bg-[#F7F7F8] rounded-lg">
+            <Input
+              type="password"
+              placeholder="비밀번호를 다시 한번 입력해주세요."
+              disabled
+              className="border-0 bg-transparent p-0 h-auto shadow-none font-body-16-r text-[#acb2c1] placeholder:text-[#acb2c1] focus-visible:ring-0 focus-visible:ring-offset-0 disabled:opacity-100 disabled:cursor-not-allowed"
+            />
+          </div>
+        </div>
       </section>
 
       {/* Bottom Section */}
-      <section className="flex flex-col items-start w-full mt-auto">
-        <div className="min-h-[54px] items-center justify-center gap-2 rounded-xl flex w-full">
+      <section className="flex flex-col items-start w-full mt-auto px-6 pb-6">
+        <div className="min-h-[54px] items-center justify-center gap-2 flex w-full">
           <div className="min-h-[54px] items-start flex-1 grow flex">
             <Button
-              className="flex min-h-[54px] items-center justify-center gap-2 px-[26px] py-1.5 flex-1 self-stretch grow bg-[#dfe3ec] hover:bg-[#c7ccd6] rounded-none h-auto"
+              className="flex min-h-[54px] items-center justify-center gap-2 px-[26px] py-1.5 flex-1 self-stretch grow bg-[#dfe3ec] hover:bg-[#c7ccd6] rounded-xl h-auto"
               asChild
             >
               <Link to="/newaccountpasswordfilledu95015">

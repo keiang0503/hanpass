@@ -1,6 +1,5 @@
-import { ChevronLeftIcon, CircleIcon, MoreVerticalIcon } from "lucide-react";
 import React from "react";
-import { Link } from "react-router-dom";
+import { BackSubHeader } from "../../components/BackSubHeader";
 import { Button } from "../../components/ui/button";
 
 const basicInfoData = [
@@ -22,103 +21,7 @@ export const Mypage = (): JSX.Element => {
       className="flex flex-col min-h-screen items-center relative bg-white"
       data-model-id="36848:88137"
     >
-      <header className="w-full flex flex-col items-start relative self-stretch flex-[0_0_auto] bg-white">
-        <div className="flex h-6 items-center justify-between px-2.5 py-1 relative self-stretch w-full bg-white">
-          <div className="inline-flex items-center gap-2 relative flex-[0_0_auto] mt-[-0.50px] mb-[-0.50px]">
-            <div className="inline-flex items-center gap-1 relative flex-[0_0_auto]">
-              <div className="inline-flex items-center relative flex-[0_0_auto]">
-                <div className="relative w-fit mt-[-1.00px] [font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm tracking-[0] leading-[normal]">
-                  9
-                </div>
-                <div className="relative w-fit mt-[-1.00px] [font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm tracking-[0] leading-[normal]">
-                  :
-                </div>
-                <div className="relative w-fit mt-[-1.00px] [font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm tracking-[0] leading-[normal]">
-                  41
-                </div>
-              </div>
-            </div>
-            <div className="relative w-fit mt-[-1.00px] [font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm tracking-[0] leading-[normal]">
-              Sat Jun 11
-            </div>
-          </div>
-
-          <div className="inline-flex items-center gap-1.5 relative flex-[0_0_auto] mt-[-0.50px] mb-[-0.50px]">
-            <div className="relative w-[18px] h-2.5">
-              <img
-                className="h-[40.00%] top-[170.00%] left-[-33272.22%] absolute w-[16.67%]"
-                alt="Bar"
-                src="/img/bar-1.png"
-              />
-              <img
-                className="h-[60.00%] top-[150.00%] left-[-33244.44%] absolute w-[16.67%]"
-                alt="Bar"
-                src="/img/bar-2.png"
-              />
-              <img
-                className="h-[80.00%] top-[130.00%] left-[-33216.67%] absolute w-[16.67%]"
-                alt="Bar"
-                src="/img/bar-3.png"
-              />
-              <img
-                className="h-full top-[110.00%] left-[-33188.89%] absolute w-[16.67%]"
-                alt="Bar"
-                src="/img/bar-4.png"
-              />
-            </div>
-
-            <div className="relative w-4 h-[11.62px] overflow-hidden">
-              <img
-                className="absolute w-[31.30%] h-[30.17%] top-[171.48%] left-[-37546.93%]"
-                alt="Bar"
-                src="/img/image.png"
-              />
-              <img
-                className="absolute w-[62.57%] h-[34.44%] top-[135.37%] left-[-37562.50%]"
-                alt="Bar"
-                src="/img/bar-2-2.png"
-              />
-              <img
-                className="absolute w-[100.01%] h-[43.03%] top-[101.65%] left-[-37581.27%]"
-                alt="Bar"
-                src="/img/bar-3-2.png"
-              />
-            </div>
-
-            <div className="relative w-fit mt-[-1.00px] [font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm tracking-[0] leading-[normal]">
-              100%
-            </div>
-
-            <div className="relative w-6 h-3 overflow-hidden">
-              <img
-                className="absolute w-[87.51%] h-full top-full left-[-25320.84%]"
-                alt="Border"
-                src="/img/border.png"
-              />
-              <div className="absolute w-[70.83%] h-[66.67%] top-[16.67%] left-[8.33%] bg-black rounded-[1px]" />
-              <img
-                className="absolute w-[8.33%] h-[33.33%] top-[133.33%] left-[-25229.17%]"
-                alt="Cap"
-                src="/img/cap.png"
-              />
-            </div>
-          </div>
-        </div>
-
-        <nav className="flex items-center justify-between px-5 py-4 relative self-stretch w-full flex-[0_0_auto]">
-          <Link to="/" className="flex items-center">
-            <ChevronLeftIcon className="w-6 h-6 text-black" />
-          </Link>
-          <div className="flex items-center gap-4">
-            <button className="flex items-center">
-              <MoreVerticalIcon className="w-6 h-6 text-black" />
-            </button>
-            <button className="flex items-center">
-              <CircleIcon className="w-6 h-6 text-black" />
-            </button>
-          </div>
-        </nav>
-      </header>
+      <BackSubHeader />
 
       <main className="flex flex-col items-start px-6 py-0 relative flex-1 self-stretch w-full grow">
         <section className="flex flex-col items-start gap-2 pt-[22px] pb-0 px-0 relative self-stretch w-full flex-[0_0_auto]">
@@ -184,10 +87,6 @@ export const Mypage = (): JSX.Element => {
         </Button>
 
         <div className="relative w-full h-4" />
-
-        <div className="flex flex-col items-center gap-2.5 px-[105px] py-2 relative self-stretch w-full flex-[0_0_auto] bg-white">
-          <div className="relative w-[134px] h-[5px] bg-black rounded-[100px]" />
-        </div>
       </footer>
     </div>
   );

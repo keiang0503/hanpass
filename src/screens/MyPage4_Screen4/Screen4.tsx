@@ -1,11 +1,6 @@
-import {
-  ChevronLeftIcon,
-  CircleIcon,
-  InfoIcon,
-  MoreVerticalIcon,
-} from "lucide-react";
+import { InfoIcon } from "lucide-react";
 import React from "react";
-import { Link } from "react-router-dom";
+import { BackSubHeader } from "../../components/BackSubHeader";
 import { Badge } from "../../components/ui/badge";
 import { Button } from "../../components/ui/button";
 import { Card, CardContent } from "../../components/ui/card";
@@ -37,55 +32,7 @@ export const Screen4 = (): JSX.Element => {
       className="flex flex-col min-h-screen items-start bg-white"
       data-model-id="35313:100077"
     >
-      <header className="w-full flex flex-col items-start bg-white">
-        <div className="w-full flex items-center justify-between px-5 py-4 h-auto">
-          <div className="flex-1 flex items-center gap-2">
-            <span className="[font-family:'Pretendard-Medium',Helvetica] font-medium text-black text-[17px] tracking-[-0.41px] leading-[22px]">
-              9:41
-            </span>
-          </div>
-
-          <div className="flex items-center gap-1.5">
-            <img
-              className="w-[18px] h-3"
-              alt="Icon mobile signal"
-              src="https://c.animaapp.com/2nKnhQUO/img/icon---mobile-signal-6.svg"
-            />
-            <img
-              className="w-[17px] h-[11.83px]"
-              alt="Wifi"
-              src="https://c.animaapp.com/2nKnhQUO/img/wifi-6.svg"
-            />
-            <img
-              className="w-[27.4px] h-[13px]"
-              alt="Battery"
-              src="https://c.animaapp.com/2nKnhQUO/img/battery-6.svg"
-            />
-          </div>
-        </div>
-
-        <nav className="w-full flex items-center justify-between px-5 py-4 h-auto">
-          <Button
-            variant="ghost"
-            size="icon"
-            className="h-auto w-auto p-0"
-            asChild
-          >
-            <Link to="/mypageu95066-u4363u4455u4352u4463u4523u4364u4453u4540u4359u4457-u4370u4458u4520u4363u4469u4523-u45-u4363u4460u4352u4462u4520u4363u4469u4523">
-              <ChevronLeftIcon className="w-6 h-6 text-black" />
-            </Link>
-          </Button>
-
-          <div className="flex items-center gap-2">
-            <Button variant="ghost" size="icon" className="h-auto w-auto p-0">
-              <MoreVerticalIcon className="w-6 h-6 text-black" />
-            </Button>
-            <Button variant="ghost" size="icon" className="h-auto w-auto p-0">
-              <CircleIcon className="w-6 h-6 text-black" />
-            </Button>
-          </div>
-        </nav>
-      </header>
+      <BackSubHeader />
 
       <main className="flex flex-col w-full flex-1">
         <div className="flex flex-col items-start px-6 pt-[22px] pb-0 w-full bg-white">
@@ -171,9 +118,6 @@ export const Screen4 = (): JSX.Element => {
 
         <div className="w-full h-4" />
 
-        <div className="flex flex-col items-center gap-2.5 px-[105px] py-2 w-full bg-white">
-          <div className="w-[134px] h-[5px] bg-black rounded-[100px]" />
-        </div>
       </footer>
     </div>
   );

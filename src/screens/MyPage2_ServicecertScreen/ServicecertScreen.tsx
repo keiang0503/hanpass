@@ -1,11 +1,6 @@
-import {
-  ChevronLeftIcon,
-  CircleIcon,
-  InfoIcon,
-  MoreHorizontalIcon,
-} from "lucide-react";
+import { InfoIcon } from "lucide-react";
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { BackSubHeader } from "../../components/BackSubHeader";
 import { Button } from "../../components/ui/button";
 import { Input } from "../../components/ui/input";
 import { Label } from "../../components/ui/label";
@@ -15,162 +10,12 @@ export const ServicecertScreen = (): JSX.Element => {
     "email",
   );
 
-  const statusBarIcons = [
-    {
-      src: "/img/bar-1-10.png",
-      className:
-        "h-[40.00%] top-[170.00%] left-[-59350.00%] absolute w-[16.67%]",
-    },
-    {
-      src: "/img/bar-2-11.png",
-      className:
-        "h-[60.00%] top-[150.00%] left-[-59322.22%] absolute w-[16.67%]",
-    },
-    {
-      src: "/img/bar-3-11.png",
-      className:
-        "h-[80.00%] top-[130.00%] left-[-59294.44%] absolute w-[16.67%]",
-    },
-    {
-      src: "/img/bar-4-6.png",
-      className: "h-full top-[110.00%] left-[-59266.67%] absolute w-[16.67%]",
-    },
-  ];
-
-  const wifiIcons = [
-    {
-      src: "/img/bar-1-11.png",
-      className:
-        "absolute w-[31.30%] h-[30.17%] top-[171.48%] left-[-66884.43%]",
-    },
-    {
-      src: "/img/bar-2-12.png",
-      className:
-        "absolute w-[62.57%] h-[34.44%] top-[135.37%] left-[-66900.00%]",
-    },
-    {
-      src: "/img/bar-3-12.png",
-      className:
-        "absolute w-[100.01%] h-[43.03%] top-[101.65%] left-[-66918.77%]",
-    },
-  ];
-
   return (
     <div
       className="flex flex-col min-h-screen items-center justify-between relative bg-white"
       data-model-id="36848:89352"
     >
-      <header className="w-full flex flex-col items-start gap-2.5 relative self-stretch flex-[0_0_auto] bg-white">
-        <div className="w-[360px] flex flex-col items-start gap-2.5 relative self-stretch flex-[0_0_auto] bg-white">
-          <div className="flex h-6 items-center justify-between px-2.5 py-1 relative self-stretch w-full bg-white">
-            <div className="inline-flex items-center gap-2 relative flex-[0_0_auto] mt-[-0.50px] mb-[-0.50px]">
-              <div className="inline-flex items-center gap-1 relative flex-[0_0_auto]">
-                <div className="inline-flex items-center relative flex-[0_0_auto]">
-                  <div className="relative w-fit mt-[-1.00px] [font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm tracking-[0] leading-[normal]">
-                    9
-                  </div>
-                  <div className="mt-[-1.00px] [font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black tracking-[0] leading-[normal] relative w-fit text-sm">
-                    :
-                  </div>
-                  <div className="relative w-fit mt-[-1.00px] [font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm tracking-[0] leading-[normal]">
-                    41
-                  </div>
-                </div>
-              </div>
-              <div className="relative w-fit mt-[-1.00px] [font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm tracking-[0] leading-[normal]">
-                Sat Jun 11
-              </div>
-            </div>
-
-            <div className="inline-flex items-center gap-1.5 relative flex-[0_0_auto] mt-[-0.50px] mb-[-0.50px]">
-              <div className="relative w-[18px] h-2.5">
-                {statusBarIcons.map((icon, index) => (
-                  <img
-                    key={`status-bar-${index}`}
-                    className={icon.className}
-                    alt="Bar"
-                    src={icon.src}
-                  />
-                ))}
-              </div>
-
-              <div className="relative w-4 h-[11.62px] overflow-hidden">
-                {wifiIcons.map((icon, index) => (
-                  <img
-                    key={`wifi-${index}`}
-                    className={icon.className}
-                    alt="Bar"
-                    src={icon.src}
-                  />
-                ))}
-              </div>
-
-              <div className="relative w-fit mt-[-1.00px] [font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm tracking-[0] leading-[normal]">
-                100%
-              </div>
-
-              <div className="relative w-6 h-3 overflow-hidden">
-                <img
-                  className="absolute w-[87.51%] h-full top-full left-[-44879.17%]"
-                  alt="Border"
-                  src="/img/border-6.png"
-                />
-                <div className="absolute w-[70.83%] h-[66.67%] top-[16.67%] left-[8.33%] bg-black rounded-[1px]" />
-                <img
-                  className="absolute w-[8.33%] h-[33.33%] top-[133.33%] left-[-44787.50%]"
-                  alt="Cap"
-                  src="/img/cap-6.png"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <nav className="flex items-center gap-2.5 pl-[34px] pr-5 py-4 relative self-stretch w-full flex-[0_0_auto]">
-          <div className="relative flex-1 h-5 mt-[-1.00px] [font-family:'Pretendard-Medium',Helvetica] font-medium text-black text-[17px] tracking-[-0.41px] leading-[22px] whitespace-nowrap">
-            9:41
-          </div>
-
-          <img
-            className="relative w-[18px] h-3"
-            alt="Icon mobile signal"
-            src="https://c.animaapp.com/Oax14zk6/img/icon---mobile-signal-8.svg"
-          />
-
-          <img
-            className="relative w-[17px] h-[11.83px]"
-            alt="Wifi"
-            src="https://c.animaapp.com/Oax14zk6/img/wifi-8.svg"
-          />
-
-          <img
-            className="relative w-[27.4px] h-[13px]"
-            alt="Battery"
-            src="https://c.animaapp.com/Oax14zk6/img/battery-8.svg"
-          />
-        </nav>
-      </header>
-
-      <nav className="flex flex-col items-start relative self-stretch w-full flex-[0_0_auto]">
-        <div className="flex flex-col items-start gap-2 relative self-stretch w-full flex-[0_0_auto]">
-          <div className="flex h-[54px] items-center justify-between px-5 py-0 relative self-stretch w-full bg-white">
-            <Button variant="ghost" size="icon" className="h-8 w-8 p-0" asChild>
-              <Link to="/servicecertu95003u95u4370u4458u4520u4363u4469u4523u4364u4467u4540-u4359u4449u4527u4352u4467u4536-u4359u4449u4540u4359u4453u4536-u4361u4453u4523u4368u4450u4520">
-                <ChevronLeftIcon className="h-8 w-8" />
-              </Link>
-            </Button>
-
-            <div className="flex items-center gap-2">
-              <Button variant="ghost" size="icon" className="h-8 w-8 p-0">
-                <MoreHorizontalIcon className="h-6 w-6" />
-              </Button>
-              <Button variant="ghost" size="icon" className="h-8 w-8 p-0">
-                <CircleIcon className="h-8 w-8" />
-              </Button>
-            </div>
-          </div>
-        </div>
-      </nav>
+      <BackSubHeader />
 
       <main className="flex-col items-start bg-white flex relative self-stretch w-full flex-[0_0_auto]">
         <div className="flex-col gap-2 pt-[22px] pb-0 px-6 self-stretch w-full flex-[0_0_auto] flex items-start relative">
@@ -341,12 +186,6 @@ export const ServicecertScreen = (): JSX.Element => {
         </div>
 
         <div className="relative self-stretch w-full h-4 z-0" />
-
-        <div className="flex flex-col items-center gap-2.5 px-[105px] py-2 relative self-stretch w-full flex-[0_0_auto] z-[-1] bg-white">
-          <div className="flex flex-col w-[134px] items-center gap-2.5 relative flex-[0_0_auto] ml-[-8.50px] mr-[-8.50px]">
-            <div className="relative w-[134px] h-[5px] bg-black rounded-[100px]" />
-          </div>
-        </div>
       </footer>
     </div>
   );

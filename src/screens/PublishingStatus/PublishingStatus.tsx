@@ -1,7 +1,25 @@
-import { FolderIcon, CheckCircleIcon, ClockIcon, ExternalLinkIcon, CopyIcon, LockIcon, CheckIcon, LayoutGridIcon } from "lucide-react";
+import { FolderIcon, CheckCircleIcon, ClockIcon, ExternalLinkIcon, CopyIcon, LockIcon, CheckIcon, LayoutGridIcon, PencilIcon, XIcon, RotateCcwIcon, GripVerticalIcon, ToggleLeftIcon, ToggleRightIcon, Layers2Icon, LayersIcon, Trash2Icon, AlertTriangleIcon } from "lucide-react";
 import { Link } from "react-router-dom";
-import React, { useState, useEffect } from "react";
-import { DownloadAllButton } from "../../components/DownloadButton";
+import React, { useState, useEffect, useMemo, useRef, useCallback } from "react";
+import {
+  DndContext,
+  closestCenter,
+  KeyboardSensor,
+  PointerSensor,
+  useSensor,
+  useSensors,
+  DragEndEvent,
+  DragStartEvent,
+  DragOverlay,
+} from "@dnd-kit/core";
+import {
+  arrayMove,
+  SortableContext,
+  sortableKeyboardCoordinates,
+  verticalListSortingStrategy,
+  useSortable,
+} from "@dnd-kit/sortable";
+import { CSS } from "@dnd-kit/utilities";
 
 // 퍼블리싱 화면 데이터
 type PublishingItem = {
@@ -262,6 +280,41 @@ const publishingData: PublishingItem[] = [
     description: "iOS 스타일 숫자 키패드 비밀번호 입력 화면",
   },
   {
+    id: "newaccount4-divwrapper",
+    name: "DivWrapper",
+    path: "/newaccount4divwrapper",
+    status: "completed",
+    description: "newaccount4 DivWrapper 화면",
+  },
+  {
+    id: "newaccount4-login",
+    name: "Login",
+    path: "/newaccount4login",
+    status: "completed",
+    description: "newaccount4 Login 화면",
+  },
+  {
+    id: "newaccount4-loginscreen",
+    name: "LoginScreen",
+    path: "/newaccount4loginscreen",
+    status: "completed",
+    description: "newaccount4 LoginScreen 화면",
+  },
+  {
+    id: "newaccount4-loginwrapper",
+    name: "LoginWrapper",
+    path: "/newaccount4loginwrapper",
+    status: "completed",
+    description: "newaccount4 LoginWrapper 화면",
+  },
+  {
+    id: "newaccount4-signup",
+    name: "Signup",
+    path: "/newaccount4signup",
+    status: "completed",
+    description: "newaccount4 Signup 화면",
+  },
+  {
     id: "section-verification",
     name: "인증",
     type: "section",
@@ -433,11 +486,6 @@ const publishingData: PublishingItem[] = [
     path: "/signupcompletependingu95047",
     status: "completed",
     description: "회원가입 완료 화면 (신분증 승인 대기)",
-  },
-  {
-    id: "section-account",
-    name: "Account",
-    type: "section",
   },
   {
     id: "account",
@@ -692,11 +740,6 @@ const publishingData: PublishingItem[] = [
     description: "여권정보 입력 화면",
   },
   {
-    id: "section-overseasremit",
-    name: "OverseasRemit",
-    type: "section",
-  },
-  {
     id: "overseasremit",
     name: "해외송금 메인 (BT)",
     path: "/overseasremitu95084",
@@ -800,11 +843,6 @@ const publishingData: PublishingItem[] = [
     path: "/overseasremitpinu95098",
     status: "completed",
     description: "해외송금 6자리 비밀번호 입력 화면",
-  },
-  {
-    id: "section-history",
-    name: "History",
-    type: "section",
   },
   {
     id: "historymain",
@@ -1230,18 +1268,1241 @@ const publishingData: PublishingItem[] = [
     status: "completed",
     description: "MyPage5 Screen7 화면",
   },
+  {
+    id: "section-settings",
+    name: "SETTINGS",
+    type: "section",
+  },
+  {
+    id: "settings1_account",
+    name: "Settings1_001_Account",
+    path: "/settings1_accountu95157",
+    status: "completed",
+    description: "Settings1 Account 화면",
+  },
+  {
+    id: "settings1_accountscreen",
+    name: "Settings1_002_AccountScreen",
+    path: "/settings1_accountscreenu95158",
+    status: "completed",
+    description: "Settings1 AccountScreen 화면",
+  },
+  {
+    id: "settings1_accountwrapper",
+    name: "Settings1_003_AccountWrapper",
+    path: "/settings1_accountwrapperu95159",
+    status: "completed",
+    description: "Settings1 AccountWrapper 화면",
+  },
+  {
+    id: "settings1_divwrapper",
+    name: "Settings1_004_DivWrapper",
+    path: "/settings1_divwrapperu95160",
+    status: "completed",
+    description: "Settings1 DivWrapper 화면",
+  },
+  {
+    id: "settings1_screen7",
+    name: "Settings1_005_Screen7",
+    path: "/settings1_screen7u95161",
+    status: "completed",
+    description: "Settings1 Screen7 화면",
+  },
+  {
+    id: "settings1_settings",
+    name: "Settings1_006_Settings",
+    path: "/settings1_settingsu95162",
+    status: "completed",
+    description: "Settings1 Settings 화면",
+  },
+  {
+    id: "settings1_settingsscreen",
+    name: "Settings1_007_SettingsScreen",
+    path: "/settings1_settingsscreenu95163",
+    status: "completed",
+    description: "Settings1 SettingsScreen 화면",
+  },
+  {
+    id: "settings1_settingswrapper",
+    name: "Settings1_008_SettingsWrapper",
+    path: "/settings1_settingswrapperu95164",
+    status: "completed",
+    description: "Settings1 SettingsWrapper 화면",
+  },
+  {
+    id: "settings2_mypage",
+    name: "Settings2_001_Mypage",
+    path: "/settings2_mypageu95165",
+    status: "completed",
+    description: "Settings2 Mypage 화면",
+  },
+  {
+    id: "settings2_pinpin",
+    name: "Settings2_002_PinPin",
+    path: "/settings2_pinpinu95166",
+    status: "completed",
+    description: "Settings2 PinPin 화면",
+  },
+  {
+    id: "settings2_pinpinscreen",
+    name: "Settings2_003_PinPinScreen",
+    path: "/settings2_pinpinscreenu95167",
+    status: "completed",
+    description: "Settings2 PinPinScreen 화면",
+  },
+  {
+    id: "settings2_settings",
+    name: "Settings2_004_Settings",
+    path: "/settings2_settingsu95168",
+    status: "completed",
+    description: "Settings2 Settings 화면",
+  },
+  {
+    id: "settings2_settingspin",
+    name: "Settings2_005_SettingsPin",
+    path: "/settings2_settingspinu95169",
+    status: "completed",
+    description: "Settings2 SettingsPin 화면",
+  },
+  {
+    id: "settings2_settingsscreen",
+    name: "Settings2_006_SettingsScreen",
+    path: "/settings2_settingsscreenu95170",
+    status: "completed",
+    description: "Settings2 SettingsScreen 화면",
+  },
+  {
+    id: "settings2_signup",
+    name: "Settings2_007_Signup",
+    path: "/settings2_signupu95171",
+    status: "completed",
+    description: "Settings2 Signup 화면",
+  },
+  {
+    id: "settings2_signupscreen",
+    name: "Settings2_008_SignupScreen",
+    path: "/settings2_signupscreenu95172",
+    status: "completed",
+    description: "Settings2 SignupScreen 화면",
+  },
+  {
+    id: "settings3_pinpin",
+    name: "Settings3_001_PinPin",
+    path: "/settings3_pinpinu95173",
+    status: "completed",
+    description: "Settings3 PinPin 화면",
+  },
+  {
+    id: "settings3_settings",
+    name: "Settings3_002_Settings",
+    path: "/settings3_settingsu95174",
+    status: "completed",
+    description: "Settings3 Settings 화면",
+  },
+  {
+    id: "settings3_settingsfaceid",
+    name: "Settings3_003_SettingsFaceid",
+    path: "/settings3_settingsfaceidu95175",
+    status: "completed",
+    description: "Settings3 SettingsFaceid 화면",
+  },
+  {
+    id: "settings3_settingsfaceidscreen",
+    name: "Settings3_004_SettingsFaceidScreen",
+    path: "/settings3_settingsfaceidscreenu95176",
+    status: "completed",
+    description: "Settings3 SettingsFaceidScreen 화면",
+  },
+  {
+    id: "settings4_screen",
+    name: "Settings4_001_Screen",
+    path: "/settings4_screenu95177",
+    status: "completed",
+    description: "Settings4 Screen 화면",
+  },
+  {
+    id: "settings4_screen4",
+    name: "Settings4_002_Screen4",
+    path: "/settings4_screen4u95178",
+    status: "completed",
+    description: "Settings4 Screen4 화면",
+  },
+  {
+    id: "settings4_screen5",
+    name: "Settings4_003_Screen5",
+    path: "/settings4_screen5u95179",
+    status: "completed",
+    description: "Settings4 Screen5 화면",
+  },
+  {
+    id: "settings4_screen6",
+    name: "Settings4_004_Screen6",
+    path: "/settings4_screen6u95180",
+    status: "completed",
+    description: "Settings4 Screen6 화면",
+  },
+  {
+    id: "settings4_screen7",
+    name: "Settings4_005_Screen7",
+    path: "/settings4_screen7u95181",
+    status: "completed",
+    description: "Settings4 Screen7 화면",
+  },
+  {
+    id: "settings4_settings",
+    name: "Settings4_006_Settings",
+    path: "/settings4_settingsu95182",
+    status: "completed",
+    description: "Settings4 Settings 화면",
+  },
+  {
+    id: "settings4_settingsscreen",
+    name: "Settings4_007_SettingsScreen",
+    path: "/settings4_settingsscreenu95183",
+    status: "completed",
+    description: "Settings4 SettingsScreen 화면",
+  },
+  {
+    id: "settings4_settingswrapper",
+    name: "Settings4_008_SettingsWrapper",
+    path: "/settings4_settingswrapperu95184",
+    status: "completed",
+    description: "Settings4 SettingsWrapper 화면",
+  },
+  {
+    id: "settings5_divwrapper",
+    name: "Settings5_001_DivWrapper",
+    path: "/settings5_divwrapperu95185",
+    status: "completed",
+    description: "Settings5 DivWrapper 화면",
+  },
+  {
+    id: "settings5_screen4",
+    name: "Settings5_002_Screen4",
+    path: "/settings5_screen4u95186",
+    status: "completed",
+    description: "Settings5 Screen4 화면",
+  },
+  {
+    id: "settings5_settings",
+    name: "Settings5_003_Settings",
+    path: "/settings5_settingsu95187",
+    status: "completed",
+    description: "Settings5 Settings 화면",
+  },
+  {
+    id: "settings5_settingsscreen",
+    name: "Settings5_004_SettingsScreen",
+    path: "/settings5_settingsscreenu95188",
+    status: "completed",
+    description: "Settings5 SettingsScreen 화면",
+  },
+  {
+    id: "settings5_settingswrapper",
+    name: "Settings5_005_SettingsWrapper",
+    path: "/settings5_settingswrapperu95189",
+    status: "completed",
+    description: "Settings5 SettingsWrapper 화면",
+  },
+  {
+    id: "section-account1",
+    name: "Account",
+    type: "section",
+  },
+  {
+    id: "account1-account",
+    name: "Account",
+    path: "/account1account",
+    status: "completed",
+    description: "account1 Account 화면",
+  },
+  {
+    id: "account1-accountscreen",
+    name: "AccountScreen",
+    path: "/account1accountscreen",
+    status: "completed",
+    description: "account1 AccountScreen 화면",
+  },
+  {
+    id: "account1-accountwrapper",
+    name: "AccountWrapper",
+    path: "/account1accountwrapper",
+    status: "completed",
+    description: "account1 AccountWrapper 화면",
+  },
+  {
+    id: "account1-divwrapper",
+    name: "DivWrapper",
+    path: "/account1divwrapper",
+    status: "completed",
+    description: "account1 DivWrapper 화면",
+  },
+  {
+    id: "account1-login",
+    name: "Login",
+    path: "/account1login",
+    status: "completed",
+    description: "account1 Login 화면",
+  },
+  {
+    id: "account1-loginscreen",
+    name: "LoginScreen",
+    path: "/account1loginscreen",
+    status: "completed",
+    description: "account1 LoginScreen 화면",
+  },
+  {
+    id: "account1-screen6",
+    name: "Screen6",
+    path: "/account1screen6",
+    status: "completed",
+    description: "account1 Screen6 화면",
+  },
+  {
+    id: "account2-account",
+    name: "Account",
+    path: "/account2account",
+    status: "completed",
+    description: "account2 Account 화면",
+  },
+  {
+    id: "account2-accountscreen",
+    name: "AccountScreen",
+    path: "/account2accountscreen",
+    status: "completed",
+    description: "account2 AccountScreen 화면",
+  },
+  {
+    id: "account2-accountwrapper",
+    name: "AccountWrapper",
+    path: "/account2accountwrapper",
+    status: "completed",
+    description: "account2 AccountWrapper 화면",
+  },
+  {
+    id: "account2-commonpin",
+    name: "CommonPin",
+    path: "/account2commonpin",
+    status: "completed",
+    description: "account2 CommonPin 화면",
+  },
+  {
+    id: "account2-divwrapper",
+    name: "DivWrapper",
+    path: "/account2divwrapper",
+    status: "completed",
+    description: "account2 DivWrapper 화면",
+  },
+  {
+    id: "account2-pinpin",
+    name: "PinPin",
+    path: "/account2pinpin",
+    status: "completed",
+    description: "account2 PinPin 화면",
+  },
+  {
+    id: "account2-signup",
+    name: "Signup",
+    path: "/account2signup",
+    status: "completed",
+    description: "account2 Signup 화면",
+  },
+  {
+    id: "account2-signuppin",
+    name: "SignupPin",
+    path: "/account2signuppin",
+    status: "completed",
+    description: "account2 SignupPin 화면",
+  },
+  {
+    id: "account3-account",
+    name: "Account",
+    path: "/account3account",
+    status: "completed",
+    description: "account3 Account 화면",
+  },
+  {
+    id: "account3-accountci",
+    name: "AccountCi",
+    path: "/account3accountci",
+    status: "completed",
+    description: "account3 AccountCi 화면",
+  },
+  {
+    id: "account3-accountscreen",
+    name: "AccountScreen",
+    path: "/account3accountscreen",
+    status: "completed",
+    description: "account3 AccountScreen 화면",
+  },
+  {
+    id: "account3-accountwrapper",
+    name: "AccountWrapper",
+    path: "/account3accountwrapper",
+    status: "completed",
+    description: "account3 AccountWrapper 화면",
+  },
+  {
+    id: "account3-divwrapper",
+    name: "DivWrapper",
+    path: "/account3divwrapper",
+    status: "completed",
+    description: "account3 DivWrapper 화면",
+  },
+  {
+    id: "account3-element",
+    name: "Element",
+    path: "/account3element",
+    status: "completed",
+    description: "account3 Element 화면",
+  },
+  {
+    id: "account3-framescreen",
+    name: "FrameScreen",
+    path: "/account3framescreen",
+    status: "completed",
+    description: "account3 FrameScreen 화면",
+  },
+  {
+    id: "account3-signup",
+    name: "Signup",
+    path: "/account3signup",
+    status: "completed",
+    description: "account3 Signup 화면",
+  },
+  {
+    id: "account4-divwrapper",
+    name: "DivWrapper",
+    path: "/account4divwrapper",
+    status: "completed",
+    description: "account4 DivWrapper 화면",
+  },
+  {
+    id: "account4-element",
+    name: "Element",
+    path: "/account4element",
+    status: "completed",
+    description: "account4 Element 화면",
+  },
+  {
+    id: "account4-elementscreen",
+    name: "ElementScreen",
+    path: "/account4elementscreen",
+    status: "completed",
+    description: "account4 ElementScreen 화면",
+  },
+  {
+    id: "account4-elementwrapper",
+    name: "ElementWrapper",
+    path: "/account4elementwrapper",
+    status: "completed",
+    description: "account4 ElementWrapper 화면",
+  },
+  {
+    id: "account4-signup",
+    name: "Signup",
+    path: "/account4signup",
+    status: "completed",
+    description: "account4 Signup 화면",
+  },
+  {
+    id: "account4-signupscreen",
+    name: "SignupScreen",
+    path: "/account4signupscreen",
+    status: "completed",
+    description: "account4 SignupScreen 화면",
+  },
+  {
+    id: "account4-signupwrapper",
+    name: "SignupWrapper",
+    path: "/account4signupwrapper",
+    status: "completed",
+    description: "account4 SignupWrapper 화면",
+  },
+  {
+    id: "account5-account",
+    name: "Account",
+    path: "/account5account",
+    status: "completed",
+    description: "account5 Account 화면",
+  },
+  {
+    id: "account5-accountars",
+    name: "AccountArs",
+    path: "/account5accountars",
+    status: "completed",
+    description: "account5 AccountArs 화면",
+  },
+  {
+    id: "account5-accountscreen",
+    name: "AccountScreen",
+    path: "/account5accountscreen",
+    status: "completed",
+    description: "account5 AccountScreen 화면",
+  },
+  {
+    id: "account5-accountwrapper",
+    name: "AccountWrapper",
+    path: "/account5accountwrapper",
+    status: "completed",
+    description: "account5 AccountWrapper 화면",
+  },
+  {
+    id: "account5-divwrapper",
+    name: "DivWrapper",
+    path: "/account5divwrapper",
+    status: "completed",
+    description: "account5 DivWrapper 화면",
+  },
+  {
+    id: "account5-screen5",
+    name: "Screen5",
+    path: "/account5screen5",
+    status: "completed",
+    description: "account5 Screen5 화면",
+  },
+  {
+    id: "section-overseasremit",
+    name: "OverseasRemit",
+    type: "section",
+  },
+  {
+    id: "overseasremit1-overseasremit",
+    name: "Overseasremit",
+    path: "/overseasremit1overseasremit",
+    status: "completed",
+    description: "OverseasRemit1 Overseasremit 화면",
+  },
+  {
+    id: "overseasremit1-overseasremitscreen",
+    name: "OverseasremitScreen",
+    path: "/overseasremit1overseasremitscreen",
+    status: "completed",
+    description: "OverseasRemit1 OverseasremitScreen 화면",
+  },
+  {
+    id: "overseasremit1-overseasremitwrapper",
+    name: "OverseasremitWrapper",
+    path: "/overseasremit1overseasremitwrapper",
+    status: "completed",
+    description: "OverseasRemit1 OverseasremitWrapper 화면",
+  },
+  {
+    id: "overseasremit1-screen3",
+    name: "Screen3",
+    path: "/overseasremit1screen3",
+    status: "completed",
+    description: "OverseasRemit1 Screen3 화면",
+  },
+  {
+    id: "overseasremit1-screen4",
+    name: "Screen4",
+    path: "/overseasremit1screen4",
+    status: "completed",
+    description: "OverseasRemit1 Screen4 화면",
+  },
+  {
+    id: "overseasremit1-screen5",
+    name: "Screen5",
+    path: "/overseasremit1screen5",
+    status: "completed",
+    description: "OverseasRemit1 Screen5 화면",
+  },
+  {
+    id: "overseasremit1-screen6",
+    name: "Screen6",
+    path: "/overseasremit1screen6",
+    status: "completed",
+    description: "OverseasRemit1 Screen6 화면",
+  },
+  {
+    id: "overseasremit1-screen7",
+    name: "Screen7",
+    path: "/overseasremit1screen7",
+    status: "completed",
+    description: "OverseasRemit1 Screen7 화면",
+  },
+  {
+    id: "overseasremit2-overseasremit",
+    name: "Overseasremit",
+    path: "/overseasremit2overseasremit",
+    status: "completed",
+    description: "OverseasRemit2 Overseasremit 화면",
+  },
+  {
+    id: "overseasremit2-overseasremitscreen",
+    name: "OverseasremitScreen",
+    path: "/overseasremit2overseasremitscreen",
+    status: "completed",
+    description: "OverseasRemit2 OverseasremitScreen 화면",
+  },
+  {
+    id: "overseasremit2-overseasremitwrapper",
+    name: "OverseasremitWrapper",
+    path: "/overseasremit2overseasremitwrapper",
+    status: "completed",
+    description: "OverseasRemit2 OverseasremitWrapper 화면",
+  },
+  {
+    id: "overseasremit2-pinpin",
+    name: "PinPin",
+    path: "/overseasremit2pinpin",
+    status: "completed",
+    description: "OverseasRemit2 PinPin 화면",
+  },
+  {
+    id: "overseasremit2-screen4",
+    name: "Screen4",
+    path: "/overseasremit2screen4",
+    status: "completed",
+    description: "OverseasRemit2 Screen4 화면",
+  },
+  {
+    id: "overseasremit2-screen5",
+    name: "Screen5",
+    path: "/overseasremit2screen5",
+    status: "completed",
+    description: "OverseasRemit2 Screen5 화면",
+  },
+  {
+    id: "overseasremit2-screen6",
+    name: "Screen6",
+    path: "/overseasremit2screen6",
+    status: "completed",
+    description: "OverseasRemit2 Screen6 화면",
+  },
+  {
+    id: "overseasremit2-screen7",
+    name: "Screen7",
+    path: "/overseasremit2screen7",
+    status: "completed",
+    description: "OverseasRemit2 Screen7 화면",
+  },
+  {
+    id: "overseasremit2-screen8",
+    name: "Screen8",
+    path: "/overseasremit2screen8",
+    status: "completed",
+    description: "OverseasRemit2 Screen8 화면",
+  },
+  {
+    id: "overseasremit2-screen9",
+    name: "Screen9",
+    path: "/overseasremit2screen9",
+    status: "completed",
+    description: "OverseasRemit2 Screen9 화면",
+  },
+  // HISTORY Section
+  {
+    id: "history-section",
+    name: "HISTORY",
+    type: "section",
+  },
+  {
+    id: "history1-divwrapper",
+    name: "DivWrapper",
+    path: "/history1divwrapper",
+    status: "completed",
+    description: "History1 DivWrapper 화면",
+  },
+  {
+    id: "history1-history",
+    name: "History",
+    path: "/history1history",
+    status: "completed",
+    description: "History1 History 화면",
+  },
+  {
+    id: "history1-historyscreen",
+    name: "HistoryScreen",
+    path: "/history1historyscreen",
+    status: "completed",
+    description: "History1 HistoryScreen 화면",
+  },
+  {
+    id: "history1-historywrapper",
+    name: "HistoryWrapper",
+    path: "/history1historywrapper",
+    status: "completed",
+    description: "History1 HistoryWrapper 화면",
+  },
+  {
+    id: "history1-screen4",
+    name: "Screen4",
+    path: "/history1screen4",
+    status: "completed",
+    description: "History1 Screen4 화면",
+  },
+  {
+    id: "history1-screen5",
+    name: "Screen5",
+    path: "/history1screen5",
+    status: "completed",
+    description: "History1 Screen5 화면",
+  },
+  {
+    id: "history1-screen6",
+    name: "Screen6",
+    path: "/history1screen6",
+    status: "completed",
+    description: "History1 Screen6 화면",
+  },
+  // History2 Section
+  {
+    id: "history2-section",
+    name: "History2",
+    type: "section",
+  },
+  {
+    id: "history2-history",
+    name: "History",
+    path: "/history2history",
+    status: "completed",
+    description: "History2 History 화면",
+  },
+  {
+    id: "history2-historyscreen",
+    name: "HistoryScreen",
+    path: "/history2historyscreen",
+    status: "completed",
+    description: "History2 HistoryScreen 화면",
+  },
+  {
+    id: "history2-historywrapper",
+    name: "HistoryWrapper",
+    path: "/history2historywrapper",
+    status: "completed",
+    description: "History2 HistoryWrapper 화면",
+  },
+  {
+    id: "history2-screen4",
+    name: "Screen4",
+    path: "/history2screen4",
+    status: "completed",
+    description: "History2 Screen4 화면",
+  },
+  {
+    id: "history2-screen5",
+    name: "Screen5",
+    path: "/history2screen5",
+    status: "completed",
+    description: "History2 Screen5 화면",
+  },
+  {
+    id: "history2-screen6",
+    name: "Screen6",
+    path: "/history2screen6",
+    status: "completed",
+    description: "History2 Screen6 화면",
+  },
+  {
+    id: "history2-servicecert",
+    name: "Servicecert",
+    path: "/history2servicecert",
+    status: "completed",
+    description: "History2 Servicecert 화면",
+  },
 ];
+
+// SortableMenuItem 컴포넌트 - 드래그 가능한 메뉴 아이템
+interface SortableMenuItemProps {
+  item: PublishingItem;
+  selectedScreen: string;
+  editingId: string | null;
+  editingName: string;
+  customNames: Record<string, string>;
+  onSelect: (id: string) => void;
+  onStartEdit: (id: string, name: string, e: React.MouseEvent) => void;
+  onSaveEdit: (id: string, e: React.MouseEvent) => void;
+  onResetName: (id: string, e: React.MouseEvent) => void;
+  onCancelEdit: (e: React.MouseEvent) => void;
+  onEditingNameChange: (name: string) => void;
+  onDeleteItem: (id: string, e: React.MouseEvent) => void;
+  getMenuName: (id: string, originalName: string) => string;
+  isDragMode: boolean;
+  activeId: string | null;
+}
+
+const SortableMenuItem: React.FC<SortableMenuItemProps> = ({
+  item,
+  selectedScreen,
+  editingId,
+  editingName,
+  customNames,
+  onSelect,
+  onStartEdit,
+  onSaveEdit,
+  onResetName,
+  onCancelEdit,
+  onEditingNameChange,
+  onDeleteItem,
+  getMenuName,
+  isDragMode,
+  activeId,
+}) => {
+  const {
+    attributes,
+    listeners,
+    setNodeRef,
+    transform,
+    transition,
+    isDragging,
+  } = useSortable({ id: item.id, disabled: !isDragMode });
+
+  const style = {
+    transform: CSS.Transform.toString(transform),
+    transition,
+    opacity: isDragging ? 0.5 : 1,
+    zIndex: isDragging ? 1000 : 1,
+  };
+
+  // 섹션 타입인 경우
+  if (item.type === "section") {
+    return (
+      <div
+        ref={setNodeRef}
+        style={style}
+        className={`px-3 py-2 mt-4 mb-1 ${isDragMode ? "cursor-move" : ""}`}
+        {...(isDragMode ? { ...attributes, ...listeners } : {})}
+      >
+        <div className="flex items-center gap-2">
+          {isDragMode && (
+            <GripVerticalIcon className="w-3 h-3 text-gray-400 flex-shrink-0" />
+          )}
+          <span className="text-xs font-semibold text-gray-500 uppercase tracking-wider">
+            {item.name}
+          </span>
+        </div>
+      </div>
+    );
+  }
+
+  // 메뉴 타입인 경우
+  return (
+    <div
+      ref={setNodeRef}
+      style={style}
+      onClick={() => !isDragMode && editingId !== item.id && onSelect(item.id)}
+      className={`group w-full flex items-center gap-2 px-3 py-2.5 rounded-lg text-left transition-colors ${
+        isDragMode ? "cursor-move" : "cursor-pointer"
+      } ${
+        selectedScreen === item.id
+          ? "bg-blue-50 text-blue-700 border border-blue-200"
+          : "hover:bg-gray-100 text-gray-700"
+      } ${isDragging ? "shadow-lg ring-2 ring-blue-400" : ""}`}
+      {...(isDragMode ? { ...attributes, ...listeners } : {})}
+    >
+      {isDragMode ? (
+        <GripVerticalIcon className="w-4 h-4 text-gray-400 flex-shrink-0" />
+      ) : (
+        <FolderIcon className="w-4 h-4 flex-shrink-0" />
+      )}
+      {editingId === item.id ? (
+        // 편집 모드
+        <div className="flex-1 flex items-center gap-1">
+          <input
+            type="text"
+            value={editingName}
+            onChange={(e) => onEditingNameChange(e.target.value)}
+            onClick={(e) => e.stopPropagation()}
+            onKeyDown={(e) => {
+              if (e.key === "Enter") {
+                onSaveEdit(item.id, e as unknown as React.MouseEvent);
+              } else if (e.key === "Escape") {
+                onCancelEdit(e as unknown as React.MouseEvent);
+              }
+            }}
+            className="flex-1 px-2 py-1 text-xs border border-blue-300 rounded focus:outline-none focus:ring-1 focus:ring-blue-500"
+            autoFocus
+          />
+          <button
+            onClick={(e) => onSaveEdit(item.id, e)}
+            className="p-1 hover:bg-green-100 rounded"
+            title="저장"
+          >
+            <CheckIcon className="w-3.5 h-3.5 text-green-600" />
+          </button>
+          {customNames[item.id] && (
+            <button
+              onClick={(e) => onResetName(item.id, e)}
+              className="p-1 hover:bg-orange-100 rounded"
+              title="원래 이름으로 되돌리기"
+            >
+              <RotateCcwIcon className="w-3.5 h-3.5 text-orange-600" />
+            </button>
+          )}
+          <button
+            onClick={onCancelEdit}
+            className="p-1 hover:bg-gray-100 rounded"
+            title="취소"
+          >
+            <XIcon className="w-3.5 h-3.5 text-gray-500" />
+          </button>
+          <div className="w-px h-4 bg-gray-300 mx-0.5" />
+          <button
+            onClick={(e) => onDeleteItem(item.id, e)}
+            className="p-1 hover:bg-red-100 rounded"
+            title="메뉴 및 페이지 삭제"
+          >
+            <Trash2Icon className="w-3.5 h-3.5 text-red-600" />
+          </button>
+        </div>
+      ) : (
+        // 일반 모드
+        <>
+          <span className="flex-1 font-medium text-xs">
+            {getMenuName(item.id, item.name)}
+            {customNames[item.id] && (
+              <span className="ml-1 text-[10px] text-gray-400" title={`원래 이름: ${item.name}`}>
+                (수정됨)
+              </span>
+            )}
+          </span>
+          {customNames[item.id] && (
+            <button
+              onClick={(e) => onResetName(item.id, e)}
+              className={`p-1 hover:bg-orange-100 rounded transition-opacity ${isDragMode ? "opacity-100" : "opacity-0 group-hover:opacity-100"}`}
+              title={`원래 이름으로 되돌리기 (${item.name})`}
+            >
+              <RotateCcwIcon className="w-3.5 h-3.5 text-orange-500" />
+            </button>
+          )}
+          <button
+            onClick={(e) => onStartEdit(item.id, item.name, e)}
+            className={`p-1 hover:bg-gray-200 rounded transition-opacity ${isDragMode ? "opacity-100" : "opacity-0 group-hover:opacity-100"}`}
+            title="이름 수정"
+          >
+            <PencilIcon className="w-3.5 h-3.5 text-gray-500" />
+          </button>
+        </>
+      )}
+      {"status" in item && item.status === "completed" ? (
+        <CheckCircleIcon className="w-4 h-4 text-green-500 flex-shrink-0" />
+      ) : (
+        <ClockIcon className="w-4 h-4 text-yellow-500 flex-shrink-0" />
+      )}
+    </div>
+  );
+};
 
 export const PublishingStatus = (): JSX.Element => {
   const [selectedScreen, setSelectedScreen] = useState<string>("login");
   const [copied, setCopied] = useState(false);
   const [baseUrl, setBaseUrl] = useState("");
+  const [editingId, setEditingId] = useState<string | null>(null);
+  const [editingName, setEditingName] = useState("");
+  const [customNames, setCustomNames] = useState<Record<string, string>>({});
+
+  // 드래그 앤 드롭 상태
+  const [menuOrder, setMenuOrder] = useState<string[]>(() => publishingData.map(item => item.id));
+  const [dragMode, setDragMode] = useState<"section" | "free">("section"); // 섹션 내 이동 vs 자유 이동
+  const [isDragEnabled, setIsDragEnabled] = useState(false);
+  const [activeId, setActiveId] = useState<string | null>(null);
+
+  // 삭제된 메뉴 상태
+  const [deletedItems, setDeletedItems] = useState<string[]>([]);
+  const [deleteConfirmOpen, setDeleteConfirmOpen] = useState(false);
+  const [itemToDelete, setItemToDelete] = useState<{ id: string; name: string; path: string } | null>(null);
+
+  // LNB 리사이즈 상태
+  const [sidebarWidth, setSidebarWidth] = useState(307);
+  const [isResizing, setIsResizing] = useState(false);
+  const sidebarRef = useRef<HTMLElement>(null);
+
+  // LNB 리사이즈 핸들러
+  const handleMouseDown = useCallback((e: React.MouseEvent) => {
+    e.preventDefault();
+    setIsResizing(true);
+  }, []);
+
+  const handleMouseMove = useCallback((e: MouseEvent) => {
+    if (!isResizing) return;
+    const newWidth = e.clientX;
+    // 최소 200px, 최대 1200px로 제한
+    if (newWidth >= 200 && newWidth <= 1200) {
+      setSidebarWidth(newWidth);
+    }
+  }, [isResizing]);
+
+  const handleMouseUp = useCallback(() => {
+    setIsResizing(false);
+  }, []);
+
+  // 리사이즈 이벤트 리스너
+  useEffect(() => {
+    if (isResizing) {
+      window.addEventListener('mousemove', handleMouseMove);
+      window.addEventListener('mouseup', handleMouseUp);
+    }
+    return () => {
+      window.removeEventListener('mousemove', handleMouseMove);
+      window.removeEventListener('mouseup', handleMouseUp);
+    };
+  }, [isResizing, handleMouseMove, handleMouseUp]);
+
+  // 드래그 앤 드롭 센서 설정
+  const sensors = useSensors(
+    useSensor(PointerSensor, {
+      activationConstraint: {
+        distance: 8, // 8px 이동 후 드래그 시작
+      },
+    }),
+    useSensor(KeyboardSensor, {
+      coordinateGetter: sortableKeyboardCoordinates,
+    })
+  );
+
+  // 정렬된 메뉴 데이터 계산 (삭제된 항목 제외)
+  const sortedMenuData = useMemo(() => {
+    return menuOrder
+      .map(id => publishingData.find(item => item.id === id))
+      .filter((item): item is PublishingItem => item !== undefined)
+      .filter(item => !deletedItems.includes(item.id));
+  }, [menuOrder, deletedItems]);
+
+  // 섹션별로 그룹화된 메뉴 (섹션 모드용)
+  const menuBySection = useMemo(() => {
+    const sections: { section: PublishingItem | null; items: PublishingItem[] }[] = [];
+    let currentSection: { section: PublishingItem | null; items: PublishingItem[] } = { section: null, items: [] };
+
+    sortedMenuData.forEach(item => {
+      if (item.type === "section") {
+        if (currentSection.section !== null || currentSection.items.length > 0) {
+          sections.push(currentSection);
+        }
+        currentSection = { section: item, items: [] };
+      } else {
+        currentSection.items.push(item);
+      }
+    });
+
+    if (currentSection.section !== null || currentSection.items.length > 0) {
+      sections.push(currentSection);
+    }
+
+    return sections;
+  }, [sortedMenuData]);
 
   const selectedData = publishingData.find((item) => item.id === selectedScreen);
+
+  // localStorage에서 커스텀 이름 로드
+  useEffect(() => {
+    const savedNames = localStorage.getItem("publishingCustomNames");
+    if (savedNames) {
+      setCustomNames(JSON.parse(savedNames));
+    }
+  }, []);
+
+  // 커스텀 이름 저장
+  useEffect(() => {
+    if (Object.keys(customNames).length > 0) {
+      localStorage.setItem("publishingCustomNames", JSON.stringify(customNames));
+    }
+  }, [customNames]);
+
+  // localStorage에서 삭제된 항목 로드
+  useEffect(() => {
+    const savedDeletedItems = localStorage.getItem("publishingDeletedItems");
+    if (savedDeletedItems) {
+      setDeletedItems(JSON.parse(savedDeletedItems));
+    }
+  }, []);
+
+  // 삭제된 항목 저장
+  useEffect(() => {
+    if (deletedItems.length > 0) {
+      localStorage.setItem("publishingDeletedItems", JSON.stringify(deletedItems));
+    }
+  }, [deletedItems]);
 
   useEffect(() => {
     setBaseUrl(window.location.origin);
   }, []);
+
+  // localStorage에서 메뉴 순서 로드
+  useEffect(() => {
+    const savedOrder = localStorage.getItem("publishingMenuOrder");
+    if (savedOrder) {
+      const order = JSON.parse(savedOrder);
+      // 새로운 메뉴 아이템이 추가된 경우를 위해 기존 순서 + 새 아이템 병합
+      const allIds = publishingData.map(item => item.id);
+      const validOrder = order.filter((id: string) => allIds.includes(id));
+      const newIds = allIds.filter(id => !validOrder.includes(id));
+      setMenuOrder([...validOrder, ...newIds]);
+    }
+  }, []);
+
+  // 메뉴 순서 저장
+  useEffect(() => {
+    const defaultOrder = publishingData.map(item => item.id);
+    const isDefaultOrder = JSON.stringify(menuOrder) === JSON.stringify(defaultOrder);
+
+    if (!isDefaultOrder) {
+      localStorage.setItem("publishingMenuOrder", JSON.stringify(menuOrder));
+    }
+  }, [menuOrder]);
+
+  // 드래그 시작 핸들러
+  const handleDragStart = (event: DragStartEvent) => {
+    setActiveId(event.active.id as string);
+  };
+
+  // 드래그 종료 핸들러
+  const handleDragEnd = (event: DragEndEvent) => {
+    const { active, over } = event;
+    setActiveId(null);
+
+    if (!over || active.id === over.id) {
+      return;
+    }
+
+    const activeIndex = menuOrder.indexOf(active.id as string);
+    const overIndex = menuOrder.indexOf(over.id as string);
+
+    if (activeIndex === -1 || overIndex === -1) {
+      return;
+    }
+
+    // 섹션 모드인 경우 같은 섹션 내에서만 이동 가능
+    if (dragMode === "section") {
+      const activeItem = publishingData.find(item => item.id === active.id);
+      const overItem = publishingData.find(item => item.id === over.id);
+
+      // 섹션 자체는 섹션끼리만 이동 가능
+      if (activeItem?.type === "section" && overItem?.type !== "section") {
+        return;
+      }
+
+      // 메뉴 아이템은 같은 섹션 내에서만 이동
+      if (activeItem?.type !== "section" && overItem?.type !== "section") {
+        // 현재 섹션 찾기
+        const findSectionForItem = (itemId: string): string | null => {
+          let currentSectionId: string | null = null;
+          for (let i = menuOrder.indexOf(itemId) - 1; i >= 0; i--) {
+            const item = publishingData.find(p => p.id === menuOrder[i]);
+            if (item?.type === "section") {
+              currentSectionId = item.id;
+              break;
+            }
+          }
+          return currentSectionId;
+        };
+
+        const activeSection = findSectionForItem(active.id as string);
+        const overSection = findSectionForItem(over.id as string);
+
+        // 다른 섹션으로 이동 불가
+        if (activeSection !== overSection) {
+          return;
+        }
+      }
+    }
+
+    setMenuOrder(arrayMove(menuOrder, activeIndex, overIndex));
+  };
+
+  // 메뉴 순서 초기화
+  const handleResetOrder = () => {
+    if (window.confirm("메뉴 순서를 기본값으로 초기화하시겠습니까?")) {
+      const defaultOrder = publishingData.map(item => item.id);
+      setMenuOrder(defaultOrder);
+      localStorage.removeItem("publishingMenuOrder");
+    }
+  };
+
+  // 메뉴 이름 편집 시작
+  const handleStartEdit = (id: string, currentName: string, e: React.MouseEvent) => {
+    e.stopPropagation();
+    setEditingId(id);
+    setEditingName(customNames[id] || currentName);
+  };
+
+  // 메뉴 이름 저장
+  const handleSaveEdit = (id: string, e: React.MouseEvent) => {
+    e.stopPropagation();
+    if (editingName.trim()) {
+      if (window.confirm("메뉴명을 변경하시겠습니까?")) {
+        setCustomNames((prev) => ({ ...prev, [id]: editingName.trim() }));
+        setEditingId(null);
+        setEditingName("");
+      }
+    } else {
+      setEditingId(null);
+      setEditingName("");
+    }
+  };
+
+  // 메뉴 이름 초기화 (원래 이름으로 되돌리기)
+  const handleResetName = (id: string, e: React.MouseEvent) => {
+    e.stopPropagation();
+    if (window.confirm("원래 이름으로 되돌리시겠습니까?")) {
+      setCustomNames((prev) => {
+        const newNames = { ...prev };
+        delete newNames[id];
+        // localStorage 업데이트
+        if (Object.keys(newNames).length === 0) {
+          localStorage.removeItem("publishingCustomNames");
+        } else {
+          localStorage.setItem("publishingCustomNames", JSON.stringify(newNames));
+        }
+        return newNames;
+      });
+      setEditingId(null);
+      setEditingName("");
+    }
+  };
+
+  // 메뉴 이름 편집 취소
+  const handleCancelEdit = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    setEditingId(null);
+    setEditingName("");
+  };
+
+  // 메뉴 삭제 요청 (확인 다이얼로그 열기)
+  const handleDeleteItem = (id: string, e: React.MouseEvent) => {
+    e.stopPropagation();
+    const item = publishingData.find(i => i.id === id);
+    if (item && "path" in item) {
+      setItemToDelete({
+        id: item.id,
+        name: customNames[item.id] || item.name,
+        path: item.path
+      });
+      setDeleteConfirmOpen(true);
+      setEditingId(null);
+      setEditingName("");
+    }
+  };
+
+  // 삭제 확인
+  const handleConfirmDelete = () => {
+    if (itemToDelete) {
+      setDeletedItems(prev => [...prev, itemToDelete.id]);
+      // 삭제된 항목이 현재 선택된 화면이면 다른 화면 선택
+      if (selectedScreen === itemToDelete.id) {
+        const firstAvailable = publishingData.find(
+          item => "path" in item && item.id !== itemToDelete.id && !deletedItems.includes(item.id)
+        );
+        if (firstAvailable) {
+          setSelectedScreen(firstAvailable.id);
+        }
+      }
+      setDeleteConfirmOpen(false);
+      setItemToDelete(null);
+    }
+  };
+
+  // 삭제 취소
+  const handleCancelDelete = () => {
+    setDeleteConfirmOpen(false);
+    setItemToDelete(null);
+  };
+
+  // 메뉴 이름 가져오기 (커스텀 이름 우선)
+  const getMenuName = (id: string, originalName: string) => {
+    return customNames[id] || originalName;
+  };
 
   const getFullUrl = (path: string) => `${baseUrl}${path}`;
 
@@ -1255,47 +2516,128 @@ export const PublishingStatus = (): JSX.Element => {
   };
 
   return (
-    <div className="flex h-screen bg-gray-50">
+    <div
+      className="flex h-screen bg-gray-50"
+      style={isResizing ? { userSelect: 'none', cursor: 'col-resize' } : undefined}
+    >
       {/* LNB (Left Navigation Bar) */}
-      <aside className="w-[307px] bg-white border-r border-gray-200 flex flex-col flex-shrink-0">
+      <aside
+        ref={sidebarRef}
+        className="bg-white border-r border-gray-200 flex flex-col flex-shrink-0 relative"
+        style={{ width: sidebarWidth }}
+      >
         {/* LNB Header */}
         <div className="p-4 border-b border-gray-200">
-          <h1 className="text-lg font-bold text-gray-900">퍼블리싱 현황</h1>
+          <div className="flex items-center justify-between">
+            <h1 className="text-lg font-bold text-gray-900">퍼블리싱 현황</h1>
+            <button
+              onClick={() => setIsDragEnabled(!isDragEnabled)}
+              className={`p-1.5 rounded-lg transition-colors ${
+                isDragEnabled
+                  ? "bg-blue-100 text-blue-600"
+                  : "hover:bg-gray-100 text-gray-400"
+              }`}
+              title={isDragEnabled ? "드래그 모드 비활성화" : "드래그 모드 활성화"}
+            >
+              <GripVerticalIcon className="w-4 h-4" />
+            </button>
+          </div>
           <p className="text-sm text-gray-500 mt-1">화면 목록</p>
+
+          {/* 드래그 모드 옵션 */}
+          {isDragEnabled && (
+            <div className="mt-3 p-2 bg-gray-50 rounded-lg space-y-2">
+              <div className="flex items-center gap-2">
+                <span className="text-xs font-medium text-gray-600">이동 모드:</span>
+                <div className="flex gap-1">
+                  <button
+                    onClick={() => setDragMode("section")}
+                    className={`flex items-center gap-1 px-2 py-1 rounded text-xs transition-colors ${
+                      dragMode === "section"
+                        ? "bg-blue-500 text-white"
+                        : "bg-white text-gray-600 border border-gray-200 hover:bg-gray-100"
+                    }`}
+                    title="섹션 내에서만 이동 가능"
+                  >
+                    <LayersIcon className="w-3 h-3" />
+                    섹션 내
+                  </button>
+                  <button
+                    onClick={() => setDragMode("free")}
+                    className={`flex items-center gap-1 px-2 py-1 rounded text-xs transition-colors ${
+                      dragMode === "free"
+                        ? "bg-blue-500 text-white"
+                        : "bg-white text-gray-600 border border-gray-200 hover:bg-gray-100"
+                    }`}
+                    title="전체 자유 이동"
+                  >
+                    <Layers2Icon className="w-3 h-3" />
+                    자유
+                  </button>
+                </div>
+              </div>
+              <button
+                onClick={handleResetOrder}
+                className="flex items-center gap-1 text-xs text-orange-600 hover:text-orange-700"
+              >
+                <RotateCcwIcon className="w-3 h-3" />
+                순서 초기화
+              </button>
+            </div>
+          )}
         </div>
 
         {/* LNB Menu List */}
         <nav className="flex-1 overflow-y-auto p-2">
-          <ul className="space-y-1">
-            {publishingData.map((item) => (
-              <li key={item.id}>
-                {item.type === "section" ? (
-                  <div className="px-3 py-2 mt-4 mb-1">
-                    <span className="text-xs font-semibold text-gray-500 uppercase tracking-wider">
-                      {item.name}
-                    </span>
-                  </div>
-                ) : (
-                  <button
-                    onClick={() => setSelectedScreen(item.id)}
-                    className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-lg text-left transition-colors ${
-                      selectedScreen === item.id
-                        ? "bg-blue-50 text-blue-700 border border-blue-200"
-                        : "hover:bg-gray-100 text-gray-700"
-                    }`}
-                  >
-                    <FolderIcon className="w-4 h-4 flex-shrink-0" />
-                    <span className="flex-1 font-medium text-xs">{item.name}</span>
-                    {"status" in item && item.status === "completed" ? (
-                      <CheckCircleIcon className="w-4 h-4 text-green-500" />
-                    ) : (
-                      <ClockIcon className="w-4 h-4 text-yellow-500" />
+          <DndContext
+            sensors={sensors}
+            collisionDetection={closestCenter}
+            onDragStart={handleDragStart}
+            onDragEnd={handleDragEnd}
+          >
+            <SortableContext
+              items={menuOrder}
+              strategy={verticalListSortingStrategy}
+            >
+              <ul className="space-y-1">
+                {sortedMenuData.map((item) => (
+                  <li key={item.id}>
+                    <SortableMenuItem
+                      item={item}
+                      selectedScreen={selectedScreen}
+                      editingId={editingId}
+                      editingName={editingName}
+                      customNames={customNames}
+                      onSelect={setSelectedScreen}
+                      onStartEdit={handleStartEdit}
+                      onSaveEdit={handleSaveEdit}
+                      onResetName={handleResetName}
+                      onCancelEdit={handleCancelEdit}
+                      onEditingNameChange={setEditingName}
+                      onDeleteItem={handleDeleteItem}
+                      getMenuName={getMenuName}
+                      isDragMode={isDragEnabled}
+                      activeId={activeId}
+                    />
+                  </li>
+                ))}
+              </ul>
+            </SortableContext>
+
+            {/* 드래그 오버레이 */}
+            <DragOverlay>
+              {activeId && isDragEnabled ? (
+                <div className="bg-white shadow-lg rounded-lg px-3 py-2.5 border-2 border-blue-400">
+                  <span className="text-xs font-medium text-gray-700">
+                    {getMenuName(
+                      activeId,
+                      publishingData.find(item => item.id === activeId)?.name || ""
                     )}
-                  </button>
-                )}
-              </li>
-            ))}
-          </ul>
+                  </span>
+                </div>
+              ) : null}
+            </DragOverlay>
+          </DndContext>
         </nav>
 
         {/* LNB Footer - Summary */}
@@ -1303,16 +2645,25 @@ export const PublishingStatus = (): JSX.Element => {
           <div className="flex justify-between text-sm">
             <span className="text-gray-600">완료</span>
             <span className="font-medium text-green-600">
-              {publishingData.filter((item) => item.status === "completed").length}
+              {publishingData.filter((item) => item.status === "completed" && !deletedItems.includes(item.id)).length}
             </span>
           </div>
           <div className="flex justify-between text-sm mt-1">
             <span className="text-gray-600">대기</span>
             <span className="font-medium text-yellow-600">
-              {publishingData.filter((item) => item.status === "pending").length}
+              {publishingData.filter((item) => item.status === "pending" && !deletedItems.includes(item.id)).length}
             </span>
           </div>
         </div>
+
+        {/* 리사이즈 핸들 */}
+        <div
+          onMouseDown={handleMouseDown}
+          className={`absolute top-0 right-0 w-1 h-full cursor-col-resize hover:bg-blue-400 transition-colors ${
+            isResizing ? 'bg-blue-500' : 'bg-transparent hover:bg-blue-300'
+          }`}
+          style={{ zIndex: 10 }}
+        />
       </aside>
 
       {/* Content Area */}
@@ -1320,22 +2671,7 @@ export const PublishingStatus = (): JSX.Element => {
         {selectedData ? (
           <>
             {/* Info Bar */}
-            <div className="flex items-center justify-between px-4 py-3 bg-white border-b border-gray-200">
-              <div className="flex items-center gap-3">
-                <h2 className="font-semibold text-gray-900">{selectedData.name}</h2>
-                <span className="text-sm text-gray-500">{selectedData.description}</span>
-                {selectedData.status === "completed" ? (
-                  <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-700">
-                    <CheckCircleIcon className="w-3 h-3" />
-                    완료
-                  </span>
-                ) : (
-                  <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-medium bg-yellow-100 text-yellow-700">
-                    <ClockIcon className="w-3 h-3" />
-                    대기
-                  </span>
-                )}
-              </div>
+            <div className="flex items-center justify-start px-4 py-3 bg-white border-b border-gray-200">
               <div className="flex items-center gap-2">
                 {/* 브라우저 스타일 URL 바 */}
                 <div className="flex items-center bg-gray-100 rounded-lg border border-gray-200 px-3 py-1.5 min-w-input-container">
@@ -1356,8 +2692,6 @@ export const PublishingStatus = (): JSX.Element => {
                   </button>
                 </div>
                 {selectedData.status === "completed" && (
-                  <>
-                    <DownloadAllButton />
                     <a
                       href={selectedData.path}
                       target="_blank"
@@ -1367,7 +2701,6 @@ export const PublishingStatus = (): JSX.Element => {
                       <ExternalLinkIcon className="w-4 h-4" />
                       새 탭
                     </a>
-                  </>
                 )}
               </div>
             </div>
@@ -1399,6 +2732,46 @@ export const PublishingStatus = (): JSX.Element => {
           </div>
         )}
       </main>
+
+      {/* 삭제 확인 다이얼로그 */}
+      {deleteConfirmOpen && itemToDelete && (
+        <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
+          <div className="bg-white rounded-lg shadow-xl max-w-md w-full mx-4 overflow-hidden">
+            <div className="p-6">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 rounded-full bg-red-100 flex items-center justify-center">
+                  <AlertTriangleIcon className="w-5 h-5 text-red-600" />
+                </div>
+                <h3 className="text-lg font-semibold text-gray-900">메뉴 삭제</h3>
+              </div>
+              <p className="text-gray-600 mb-2">
+                다음 메뉴와 페이지를 삭제하시겠습니까?
+              </p>
+              <div className="bg-gray-50 rounded-lg p-3 mb-4">
+                <p className="font-medium text-gray-900">{itemToDelete.name}</p>
+                <p className="text-sm text-gray-500 mt-1">{itemToDelete.path}</p>
+              </div>
+              <p className="text-sm text-red-600">
+                ⚠️ 이 작업은 되돌릴 수 없습니다.
+              </p>
+            </div>
+            <div className="flex border-t border-gray-200">
+              <button
+                onClick={handleCancelDelete}
+                className="flex-1 px-4 py-3 text-gray-700 hover:bg-gray-50 font-medium transition-colors"
+              >
+                취소
+              </button>
+              <button
+                onClick={handleConfirmDelete}
+                className="flex-1 px-4 py-3 text-white bg-red-600 hover:bg-red-700 font-medium transition-colors"
+              >
+                삭제
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

@@ -1,8 +1,8 @@
 import React from "react";
+import { BackSubHeader } from "../../components/BackSubHeader";
 import { Button } from "../../components/ui/button";
 import { FrameWrapperSubsection } from "./sections/FrameWrapperSubsection";
 import { TopWrapperSubsection } from "./sections/TopWrapperSubsection";
-import { UiStatusBar1Subsection } from "./sections/UiStatusBar1Subsection";
 import { View1Subsection } from "./sections/View1Subsection";
 import { View2Subsection } from "./sections/View2Subsection";
 import { View3Subsection } from "./sections/View3Subsection";
@@ -10,25 +10,10 @@ import { View3Subsection } from "./sections/View3Subsection";
 export const Screen5 = (): JSX.Element => {
   return (
     <div
-      className="flex flex-col items-center justify-start w-full min-h-screen bg-white"
+      className="flex flex-col items-center w-full min-h-screen bg-white"
       data-model-id="40000008:1188384"
     >
-      <UiStatusBar1Subsection />
-
-      <header className="flex items-center justify-between px-5 py-3 w-full bg-white">
-        <div className="flex items-center">
-          <img
-            className="w-8 h-8"
-            alt="Wechat hd"
-            src="https://c.animaapp.com/emBHvnWi/img/wechat-hd-5.svg"
-          />
-        </div>
-        <img
-          className="h-8 w-[87px]"
-          alt="Mini"
-          src="https://c.animaapp.com/emBHvnWi/img/mini-7@2x.png"
-        />
-      </header>
+      <BackSubHeader />
 
       <TopWrapperSubsection />
 
@@ -54,13 +39,6 @@ export const Screen5 = (): JSX.Element => {
           로그아웃
         </Button>
       </div>
-
-      <footer className="flex flex-col items-center justify-end px-6 py-0 w-full">
-        <div className="w-full h-4" />
-        <div className="flex flex-col items-center gap-2.5 px-[105px] py-2 w-full bg-white">
-          <div className="w-[134px] h-[5px] bg-black rounded-[100px]" />
-        </div>
-      </footer>
     </div>
   );
 };

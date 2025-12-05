@@ -1,5 +1,6 @@
 import { ChevronDownIcon, ChevronRightIcon, InfoIcon } from "lucide-react";
 import React from "react";
+import { BackSubHeader } from "../../components/BackSubHeader";
 import { Button } from "../../components/ui/button";
 import { Card, CardContent } from "../../components/ui/card";
 import { CodeSharingSection } from "./sections/CodeSharingSection";
@@ -14,27 +15,8 @@ export const Screen6 = (): JSX.Element => {
       className="flex flex-col items-start relative bg-white min-h-screen"
       data-model-id="36848:76611"
     >
+      <BackSubHeader />
       <WalletSection />
-
-      <header className="flex flex-col items-start relative self-stretch w-full">
-        <div className="flex flex-col items-start gap-2 relative self-stretch w-full">
-          <div className="flex h-[54px] items-center justify-around px-5 py-0 relative self-stretch w-full bg-white">
-            <div className="flex w-[calc(100%_-_109px)] items-center absolute top-[calc(50.00%_-_16px)] left-1.5">
-              <img
-                className="relative w-8 h-8"
-                alt="Wechat hd"
-                src="https://c.animaapp.com/pWVLYNoL/img/wechat-hd-4.svg"
-              />
-            </div>
-
-            <img
-              className="absolute h-[calc(100%_-_22px)] top-[11px] right-1.5 w-[87px]"
-              alt="Mini"
-              src="https://c.animaapp.com/pWVLYNoL/img/mini-6@2x.png"
-            />
-          </div>
-        </div>
-      </header>
 
       <main className="flex flex-col items-start gap-[42px] pt-0 pb-6 px-0 relative self-stretch w-full">
         <CouponSection />
@@ -88,13 +70,7 @@ export const Screen6 = (): JSX.Element => {
           </div>
         </div>
 
-        <div className="relative w-[360px] h-4 ml-[-16.50px] mr-[-16.50px]" />
-
-        <div className="flex flex-col items-center gap-2.5 px-[105px] py-2 relative self-stretch w-full bg-white">
-          <div className="flex flex-col w-[134px] items-center gap-2.5 relative ml-[-8.50px] mr-[-8.50px]">
-            <div className="relative w-[134px] h-[5px] bg-black rounded-[100px]" />
-          </div>
-        </div>
+        <div className="relative w-full h-4" />
       </footer>
     </div>
   );

@@ -1,8 +1,6 @@
 import React from "react";
 import { Button } from "../../components/ui/button";
 import { Dialog, DialogContent } from "../../components/ui/dialog";
-import { Input } from "../../components/ui/input";
-import { Label } from "../../components/ui/label";
 import { PopupHeader } from "../../components/PopupHeader";
 
 export const ReferralCodeInput = (): JSX.Element => {
@@ -14,64 +12,6 @@ export const ReferralCodeInput = (): JSX.Element => {
       data-model-id="36893:39789"
     >
       <PopupHeader />
-
-      <main className="flex flex-col bg-white">
-        <section className="flex flex-col gap-2 pt-[22px] pb-0 px-6">
-          <h1 className="font-title-24-b font-[number:var(--title-24-b-font-weight)] text-[#0b0c0e] text-[length:var(--title-24-b-font-size)] tracking-[var(--title-24-b-letter-spacing)] leading-[var(--title-24-b-line-height)] [font-style:var(--title-24-b-font-style)]">
-            추천인 초대 코드 또는
-            <br />
-            파트너 코드를 입력해 주세요.
-          </h1>
-        </section>
-      </main>
-
-      <div className="flex flex-col gap-9 pt-[34px] pb-0 px-6 flex-1">
-        <div className="flex flex-col gap-1.5 bg-white border border-solid border-[#f10000]">
-          <div className="flex flex-col gap-2.5">
-            <div className="h-[17px]">
-              <div className="inline-flex items-center gap-1">
-                <div className="inline-flex items-center gap-0.5">
-                  <Label className="font-body-14-m font-[number:var(--body-14-m-font-weight)] text-[#85888e] text-[length:var(--body-14-m-font-size)] tracking-[var(--body-14-m-letter-spacing)] leading-[var(--body-14-m-line-height)] whitespace-nowrap [font-style:var(--body-14-m-font-style)]">
-                    추천인 초대코드/파트너 코드 (선택)
-                  </Label>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="flex flex-col gap-2.5">
-            <div className="flex flex-col h-[42px] gap-2.5 bg-[#f7f7f8]">
-              <div className="flex flex-col flex-1">
-                <div className="flex items-center flex-1">
-                  <div className="flex items-center gap-[7px] pl-1 pr-0 py-0 flex-1">
-                    <Input
-                      defaultValue="Wechat"
-                      className="flex-1 font-body-20-r font-[number:var(--body-20-r-font-weight)] text-[#5e616b] text-[length:var(--body-20-r-font-size)] tracking-[var(--body-20-r-letter-spacing)] leading-[var(--body-20-r-line-height)] [font-style:var(--body-20-r-font-style)] border-0 bg-transparent focus-visible:ring-0 focus-visible:ring-offset-0"
-                    />
-                  </div>
-                </div>
-                <div className="w-full h-0.5">
-                  <div className="w-full h-px bg-[#dfe3ec]" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <footer className="flex flex-col items-center justify-end px-6 py-0">
-        <div className="min-h-[54px] items-center justify-center gap-2 rounded-xl flex w-full">
-          <div className="min-h-[54px] flex-1 flex items-start">
-            <Button className="flex min-h-[54px] items-center justify-center gap-2 px-[26px] py-1.5 flex-1 bg-[#0d56e4] rounded-xl h-auto hover:bg-[#0d56e4]/90">
-              <span className="flex-1 font-title-16-b font-[number:var(--title-16-b-font-weight)] text-white text-[length:var(--title-16-b-font-size)] text-center tracking-[var(--title-16-b-letter-spacing)] leading-[var(--title-16-b-line-height)] [font-style:var(--title-16-b-font-style)]">
-                다음
-              </span>
-            </Button>
-          </div>
-        </div>
-
-        <div className="w-full h-4" />
-      </footer>
 
       <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
         <DialogContent className="flex flex-col max-w-[312px] items-start justify-center bg-white rounded-[22px] shadow-[0px_10px_14px_#5a5a5a29] border-0">
@@ -113,7 +53,7 @@ export const ReferralCodeInput = (): JSX.Element => {
             </div>
           </div>
 
-          <div className="flex min-h-[54px] items-center justify-center gap-2 pt-0 pb-3.5 px-3.5 w-full rounded-xl shadow-[0px_-20px_20px_#ffffff]">
+          <div className="flex min-h-[54px] items-center justify-center gap-2 pt-0 pb-3.5 px-3.5 w-full rounded-xl">
             <div className="flex min-h-12 max-h-12 items-start gap-[7px] flex-1">
               <Button
                 onClick={() => setIsDialogOpen(false)}

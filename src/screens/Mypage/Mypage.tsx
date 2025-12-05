@@ -1,13 +1,9 @@
-import {
-  ChevronLeftIcon,
-  MoreHorizontalIcon,
-  SettingsIcon,
-} from "lucide-react";
+import { ChevronLeftIcon } from "lucide-react";
 import React from "react";
+import { BackSubHeader } from "../../components/BackSubHeader";
 import { Button } from "../../components/ui/button";
 import { Separator } from "../../components/ui/separator";
 import { TopSubsection } from "./sections/TopSubsection";
-import { UiStatusBarSubsection } from "./sections/UiStatusBarSubsection";
 import { ViewSubsection } from "./sections/ViewSubsection";
 import { ViewWrapperSubsection } from "./sections/ViewWrapperSubsection";
 
@@ -24,21 +20,7 @@ export const Mypage = (): JSX.Element => {
       className="flex flex-col items-center relative bg-white min-h-screen"
       data-model-id="36848:75748"
     >
-      <UiStatusBarSubsection />
-
-      <header className="flex items-center justify-between px-4 py-3 relative w-full bg-white">
-        <Button variant="ghost" size="icon" className="h-10 w-10">
-          <ChevronLeftIcon className="h-6 w-6" />
-        </Button>
-        <div className="flex items-center gap-2">
-          <Button variant="ghost" size="icon" className="h-10 w-10">
-            <MoreHorizontalIcon className="h-6 w-6" />
-          </Button>
-          <Button variant="ghost" size="icon" className="h-10 w-10">
-            <SettingsIcon className="h-6 w-6" />
-          </Button>
-        </div>
-      </header>
+      <BackSubHeader />
 
       <TopSubsection />
 
@@ -77,12 +59,6 @@ export const Mypage = (): JSX.Element => {
           로그인
         </Button>
       </div>
-
-      <footer className="flex flex-col items-center justify-end px-6 w-full mt-auto">
-        <div className="flex flex-col items-center gap-2.5 px-[105px] py-2 w-full bg-white">
-          <div className="w-[134px] h-[5px] bg-black rounded-[100px]" />
-        </div>
-      </footer>
     </main>
   );
 };

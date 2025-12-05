@@ -35,6 +35,11 @@ import { PasswordReset } from "./screens/PasswordReset";
 import { SelfieCapture } from "./screens/SelfieCapture";
 import { SelfieVerification } from "./screens/SelfieVerification";
 import { PasswordInputKeypad } from "./screens/PasswordInputKeypad";
+import { DivWrapper as Newaccount4DivWrapper } from "./screens/newaccount4_DivWrapper";
+import { Login as Newaccount4Login } from "./screens/newaccount4_Login";
+import { LoginScreen as Newaccount4LoginScreen } from "./screens/newaccount4_LoginScreen";
+import { LoginWrapper as Newaccount4LoginWrapper } from "./screens/newaccount4_LoginWrapper";
+import { Signup as Newaccount4Signup } from "./screens/newaccount4_Signup";
 import { VerificationSteps } from "./screens/VerificationSteps";
 import { IdRegistrationMethod } from "./screens/IdRegistrationMethod";
 import { CaptureTips } from "./screens/CaptureTips";
@@ -168,6 +173,107 @@ import { MypageWrapper as MyPage5_MypageWrapper } from "./screens/MyPage5_Mypage
 import { Screen5 as MyPage5_Screen5 } from "./screens/MyPage5_Screen5";
 import { Screen6 as MyPage5_Screen6 } from "./screens/MyPage5_Screen6";
 import { Screen7 as MyPage5_Screen7 } from "./screens/MyPage5_Screen7";
+import { Account as Settings1_Account } from "./screens/Settings1_Account";
+import { AccountScreen as Settings1_AccountScreen } from "./screens/Settings1_AccountScreen";
+import { AccountWrapper as Settings1_AccountWrapper } from "./screens/Settings1_AccountWrapper";
+import { DivWrapper as Settings1_DivWrapper } from "./screens/Settings1_DivWrapper";
+import { Screen7 as Settings1_Screen7 } from "./screens/Settings1_Screen7";
+import { Settings as Settings1_Settings } from "./screens/Settings1_Settings";
+import { SettingsScreen as Settings1_SettingsScreen } from "./screens/Settings1_SettingsScreen";
+import { SettingsWrapper as Settings1_SettingsWrapper } from "./screens/Settings1_SettingsWrapper";
+import { Mypage as Settings2_Mypage } from "./screens/Settings2_Mypage";
+import { PinPin as Settings2_PinPin } from "./screens/Settings2_PinPin";
+import { PinPinScreen as Settings2_PinPinScreen } from "./screens/Settings2_PinPinScreen";
+import { Settings as Settings2_Settings } from "./screens/Settings2_Settings";
+import { SettingsPin as Settings2_SettingsPin } from "./screens/Settings2_SettingsPin";
+import { SettingsScreen as Settings2_SettingsScreen } from "./screens/Settings2_SettingsScreen";
+import { Signup as Settings2_Signup } from "./screens/Settings2_Signup";
+import { SignupScreen as Settings2_SignupScreen } from "./screens/Settings2_SignupScreen";
+import { PinPin as Settings3_PinPin } from "./screens/Settings3_PinPin";
+import { Settings as Settings3_Settings } from "./screens/Settings3_Settings";
+import { SettingsFaceid as Settings3_SettingsFaceid } from "./screens/Settings3_SettingsFaceid";
+import { SettingsFaceidScreen as Settings3_SettingsFaceidScreen } from "./screens/Settings3_SettingsFaceidScreen";
+import { Screen as Settings4_Screen } from "./screens/Settings4_Screen";
+import { Screen4 as Settings4_Screen4 } from "./screens/Settings4_Screen4";
+import { Screen5 as Settings4_Screen5 } from "./screens/Settings4_Screen5";
+import { Screen6 as Settings4_Screen6 } from "./screens/Settings4_Screen6";
+import { Screen7 as Settings4_Screen7 } from "./screens/Settings4_Screen7";
+import { Settings as Settings4_Settings } from "./screens/Settings4_Settings";
+import { SettingsScreen as Settings4_SettingsScreen } from "./screens/Settings4_SettingsScreen";
+import { SettingsWrapper as Settings4_SettingsWrapper } from "./screens/Settings4_SettingsWrapper";
+import { DivWrapper as Settings5_DivWrapper } from "./screens/Settings5_DivWrapper";
+import { Screen4 as Settings5_Screen4 } from "./screens/Settings5_Screen4";
+import { Settings as Settings5_Settings } from "./screens/Settings5_Settings";
+import { SettingsScreen as Settings5_SettingsScreen } from "./screens/Settings5_SettingsScreen";
+import { SettingsWrapper as Settings5_SettingsWrapper } from "./screens/Settings5_SettingsWrapper";
+import { Account as Account1_Account } from "./screens/account1_Account";
+import { AccountScreen as Account1_AccountScreen } from "./screens/account1_AccountScreen";
+import { AccountWrapper as Account1_AccountWrapper } from "./screens/account1_AccountWrapper";
+import { DivWrapper as Account1_DivWrapper } from "./screens/account1_DivWrapper";
+import { Login as Account1_Login } from "./screens/account1_Login";
+import { LoginScreen as Account1_LoginScreen } from "./screens/account1_LoginScreen";
+import { Screen6 as Account1_Screen6 } from "./screens/account1_Screen6";
+import { Account as Account2_Account } from "./screens/account2_Account";
+import { AccountScreen as Account2_AccountScreen } from "./screens/account2_AccountScreen";
+import { AccountWrapper as Account2_AccountWrapper } from "./screens/account2_AccountWrapper";
+import { CommonPin as Account2_CommonPin } from "./screens/account2_CommonPin";
+import { DivWrapper as Account2_DivWrapper } from "./screens/account2_DivWrapper";
+import { PinPin as Account2_PinPin } from "./screens/account2_PinPin";
+import { Signup as Account2_Signup } from "./screens/account2_Signup";
+import { SignupPin as Account2_SignupPin } from "./screens/account2_SignupPin";
+import { Account as Account3_Account } from "./screens/account3_Account";
+import { AccountCi as Account3_AccountCi } from "./screens/account3_AccountCi";
+import { AccountScreen as Account3_AccountScreen } from "./screens/account3_AccountScreen";
+import { AccountWrapper as Account3_AccountWrapper } from "./screens/account3_AccountWrapper";
+import { DivWrapper as Account3_DivWrapper } from "./screens/account3_DivWrapper";
+import { Element as Account3_Element } from "./screens/account3_Element";
+import { FrameScreen as Account3_FrameScreen } from "./screens/account3_FrameScreen";
+import { Signup as Account3_Signup } from "./screens/account3_Signup";
+import { DivWrapper as Account4_DivWrapper } from "./screens/account4_DivWrapper";
+import { Element as Account4_Element } from "./screens/account4_Element";
+import { ElementScreen as Account4_ElementScreen } from "./screens/account4_ElementScreen";
+import { ElementWrapper as Account4_ElementWrapper } from "./screens/account4_ElementWrapper";
+import { Signup as Account4_Signup } from "./screens/account4_Signup";
+import { SignupScreen as Account4_SignupScreen } from "./screens/account4_SignupScreen";
+import { SignupWrapper as Account4_SignupWrapper } from "./screens/account4_SignupWrapper";
+import { Account as Account5_Account } from "./screens/account5_Account";
+import { AccountArs as Account5_AccountArs } from "./screens/account5_AccountArs";
+import { AccountScreen as Account5_AccountScreen } from "./screens/account5_AccountScreen";
+import { AccountWrapper as Account5_AccountWrapper } from "./screens/account5_AccountWrapper";
+import { DivWrapper as Account5_DivWrapper } from "./screens/account5_DivWrapper";
+import { Screen5 as Account5_Screen5 } from "./screens/account5_Screen5";
+import { Overseasremit as Overseasremit1_Overseasremit } from "./screens/overseasremit1_Overseasremit";
+import { OverseasremitScreen as Overseasremit1_OverseasremitScreen } from "./screens/overseasremit1_OverseasremitScreen";
+import { OverseasremitWrapper as Overseasremit1_OverseasremitWrapper } from "./screens/overseasremit1_OverseasremitWrapper";
+import { Screen3 as Overseasremit1_Screen3 } from "./screens/overseasremit1_Screen3";
+import { Screen4 as Overseasremit1_Screen4 } from "./screens/overseasremit1_Screen4";
+import { Screen5 as Overseasremit1_Screen5 } from "./screens/overseasremit1_Screen5";
+import { Screen6 as Overseasremit1_Screen6 } from "./screens/overseasremit1_Screen6";
+import { Screen7 as Overseasremit1_Screen7 } from "./screens/overseasremit1_Screen7";
+import { Overseasremit as Overseasremit2_Overseasremit } from "./screens/overseasremit2_Overseasremit";
+import { OverseasremitScreen as Overseasremit2_OverseasremitScreen } from "./screens/overseasremit2_OverseasremitScreen";
+import { OverseasremitWrapper as Overseasremit2_OverseasremitWrapper } from "./screens/overseasremit2_OverseasremitWrapper";
+import { PinPin as Overseasremit2_PinPin } from "./screens/overseasremit2_PinPin";
+import { Screen4 as Overseasremit2_Screen4 } from "./screens/overseasremit2_Screen4";
+import { Screen5 as Overseasremit2_Screen5 } from "./screens/overseasremit2_Screen5";
+import { Screen6 as Overseasremit2_Screen6 } from "./screens/overseasremit2_Screen6";
+import { Screen7 as Overseasremit2_Screen7 } from "./screens/overseasremit2_Screen7";
+import { Screen8 as Overseasremit2_Screen8 } from "./screens/overseasremit2_Screen8";
+import { Screen9 as Overseasremit2_Screen9 } from "./screens/overseasremit2_Screen9";
+import { DivWrapper as History1_DivWrapper } from "./screens/history1_DivWrapper";
+import { History as History1_History } from "./screens/history1_History";
+import { HistoryScreen as History1_HistoryScreen } from "./screens/history1_HistoryScreen";
+import { HistoryWrapper as History1_HistoryWrapper } from "./screens/history1_HistoryWrapper";
+import { Screen4 as History1_Screen4 } from "./screens/history1_Screen4";
+import { Screen5 as History1_Screen5 } from "./screens/history1_Screen5";
+import { Screen6 as History1_Screen6 } from "./screens/history1_Screen6";
+import { History as History2_History } from "./screens/history2_History";
+import { HistoryScreen as History2_HistoryScreen } from "./screens/history2_HistoryScreen";
+import { HistoryWrapper as History2_HistoryWrapper } from "./screens/history2_HistoryWrapper";
+import { Screen4 as History2_Screen4 } from "./screens/history2_Screen4";
+import { Screen5 as History2_Screen5 } from "./screens/history2_Screen5";
+import { Screen6 as History2_Screen6 } from "./screens/history2_Screen6";
+import { Servicecert as History2_Servicecert } from "./screens/history2_Servicecert";
 const router = createBrowserRouter([
   {
     path: "/*",
@@ -312,6 +418,26 @@ const router = createBrowserRouter([
   {
     path: "/passwordinputkeypadu95023",
     element: <PasswordInputKeypad />,
+  },
+  {
+    path: "/newaccount4divwrapper",
+    element: <Newaccount4DivWrapper />,
+  },
+  {
+    path: "/newaccount4login",
+    element: <Newaccount4Login />,
+  },
+  {
+    path: "/newaccount4loginscreen",
+    element: <Newaccount4LoginScreen />,
+  },
+  {
+    path: "/newaccount4loginwrapper",
+    element: <Newaccount4LoginWrapper />,
+  },
+  {
+    path: "/newaccount4signup",
+    element: <Newaccount4Signup />,
   },
   {
     path: "/verificationstepsu95024",
@@ -844,6 +970,410 @@ const router = createBrowserRouter([
   {
     path: "/mypage5_screen7u95156",
     element: <MyPage5_Screen7 />,
+  },
+  {
+    path: "/settings1_accountu95157",
+    element: <Settings1_Account />,
+  },
+  {
+    path: "/settings1_accountscreenu95158",
+    element: <Settings1_AccountScreen />,
+  },
+  {
+    path: "/settings1_accountwrapperu95159",
+    element: <Settings1_AccountWrapper />,
+  },
+  {
+    path: "/settings1_divwrapperu95160",
+    element: <Settings1_DivWrapper />,
+  },
+  {
+    path: "/settings1_screen7u95161",
+    element: <Settings1_Screen7 />,
+  },
+  {
+    path: "/settings1_settingsu95162",
+    element: <Settings1_Settings />,
+  },
+  {
+    path: "/settings1_settingsscreenu95163",
+    element: <Settings1_SettingsScreen />,
+  },
+  {
+    path: "/settings1_settingswrapperu95164",
+    element: <Settings1_SettingsWrapper />,
+  },
+  {
+    path: "/settings2_mypageu95165",
+    element: <Settings2_Mypage />,
+  },
+  {
+    path: "/settings2_pinpinu95166",
+    element: <Settings2_PinPin />,
+  },
+  {
+    path: "/settings2_pinpinscreenu95167",
+    element: <Settings2_PinPinScreen />,
+  },
+  {
+    path: "/settings2_settingsu95168",
+    element: <Settings2_Settings />,
+  },
+  {
+    path: "/settings2_settingspinu95169",
+    element: <Settings2_SettingsPin />,
+  },
+  {
+    path: "/settings2_settingsscreenu95170",
+    element: <Settings2_SettingsScreen />,
+  },
+  {
+    path: "/settings2_signupu95171",
+    element: <Settings2_Signup />,
+  },
+  {
+    path: "/settings2_signupscreenu95172",
+    element: <Settings2_SignupScreen />,
+  },
+  {
+    path: "/settings3_pinpinu95173",
+    element: <Settings3_PinPin />,
+  },
+  {
+    path: "/settings3_settingsu95174",
+    element: <Settings3_Settings />,
+  },
+  {
+    path: "/settings3_settingsfaceidu95175",
+    element: <Settings3_SettingsFaceid />,
+  },
+  {
+    path: "/settings3_settingsfaceidscreenu95176",
+    element: <Settings3_SettingsFaceidScreen />,
+  },
+  {
+    path: "/settings4_screenu95177",
+    element: <Settings4_Screen />,
+  },
+  {
+    path: "/settings4_screen4u95178",
+    element: <Settings4_Screen4 />,
+  },
+  {
+    path: "/settings4_screen5u95179",
+    element: <Settings4_Screen5 />,
+  },
+  {
+    path: "/settings4_screen6u95180",
+    element: <Settings4_Screen6 />,
+  },
+  {
+    path: "/settings4_screen7u95181",
+    element: <Settings4_Screen7 />,
+  },
+  {
+    path: "/settings4_settingsu95182",
+    element: <Settings4_Settings />,
+  },
+  {
+    path: "/settings4_settingsscreenu95183",
+    element: <Settings4_SettingsScreen />,
+  },
+  {
+    path: "/settings4_settingswrapperu95184",
+    element: <Settings4_SettingsWrapper />,
+  },
+  {
+    path: "/settings5_divwrapperu95185",
+    element: <Settings5_DivWrapper />,
+  },
+  {
+    path: "/settings5_screen4u95186",
+    element: <Settings5_Screen4 />,
+  },
+  {
+    path: "/settings5_settingsu95187",
+    element: <Settings5_Settings />,
+  },
+  {
+    path: "/settings5_settingsscreenu95188",
+    element: <Settings5_SettingsScreen />,
+  },
+  {
+    path: "/settings5_settingswrapperu95189",
+    element: <Settings5_SettingsWrapper />,
+  },
+  {
+    path: "/account1account",
+    element: <Account1_Account />,
+  },
+  {
+    path: "/account1accountscreen",
+    element: <Account1_AccountScreen />,
+  },
+  {
+    path: "/account1accountwrapper",
+    element: <Account1_AccountWrapper />,
+  },
+  {
+    path: "/account1divwrapper",
+    element: <Account1_DivWrapper />,
+  },
+  {
+    path: "/account1login",
+    element: <Account1_Login />,
+  },
+  {
+    path: "/account1loginscreen",
+    element: <Account1_LoginScreen />,
+  },
+  {
+    path: "/account1screen6",
+    element: <Account1_Screen6 />,
+  },
+  {
+    path: "/account2account",
+    element: <Account2_Account />,
+  },
+  {
+    path: "/account2accountscreen",
+    element: <Account2_AccountScreen />,
+  },
+  {
+    path: "/account2accountwrapper",
+    element: <Account2_AccountWrapper />,
+  },
+  {
+    path: "/account2commonpin",
+    element: <Account2_CommonPin />,
+  },
+  {
+    path: "/account2divwrapper",
+    element: <Account2_DivWrapper />,
+  },
+  {
+    path: "/account2pinpin",
+    element: <Account2_PinPin />,
+  },
+  {
+    path: "/account2signup",
+    element: <Account2_Signup />,
+  },
+  {
+    path: "/account2signuppin",
+    element: <Account2_SignupPin />,
+  },
+  {
+    path: "/account3account",
+    element: <Account3_Account />,
+  },
+  {
+    path: "/account3accountci",
+    element: <Account3_AccountCi />,
+  },
+  {
+    path: "/account3accountscreen",
+    element: <Account3_AccountScreen />,
+  },
+  {
+    path: "/account3accountwrapper",
+    element: <Account3_AccountWrapper />,
+  },
+  {
+    path: "/account3divwrapper",
+    element: <Account3_DivWrapper />,
+  },
+  {
+    path: "/account3element",
+    element: <Account3_Element />,
+  },
+  {
+    path: "/account3framescreen",
+    element: <Account3_FrameScreen />,
+  },
+  {
+    path: "/account3signup",
+    element: <Account3_Signup />,
+  },
+  {
+    path: "/account4divwrapper",
+    element: <Account4_DivWrapper />,
+  },
+  {
+    path: "/account4element",
+    element: <Account4_Element />,
+  },
+  {
+    path: "/account4elementscreen",
+    element: <Account4_ElementScreen />,
+  },
+  {
+    path: "/account4elementwrapper",
+    element: <Account4_ElementWrapper />,
+  },
+  {
+    path: "/account4signup",
+    element: <Account4_Signup />,
+  },
+  {
+    path: "/account4signupscreen",
+    element: <Account4_SignupScreen />,
+  },
+  {
+    path: "/account4signupwrapper",
+    element: <Account4_SignupWrapper />,
+  },
+  {
+    path: "/account5account",
+    element: <Account5_Account />,
+  },
+  {
+    path: "/account5accountars",
+    element: <Account5_AccountArs />,
+  },
+  {
+    path: "/account5accountscreen",
+    element: <Account5_AccountScreen />,
+  },
+  {
+    path: "/account5accountwrapper",
+    element: <Account5_AccountWrapper />,
+  },
+  {
+    path: "/account5divwrapper",
+    element: <Account5_DivWrapper />,
+  },
+  {
+    path: "/account5screen5",
+    element: <Account5_Screen5 />,
+  },
+  {
+    path: "/overseasremit1overseasremit",
+    element: <Overseasremit1_Overseasremit />,
+  },
+  {
+    path: "/overseasremit1overseasremitscreen",
+    element: <Overseasremit1_OverseasremitScreen />,
+  },
+  {
+    path: "/overseasremit1overseasremitwrapper",
+    element: <Overseasremit1_OverseasremitWrapper />,
+  },
+  {
+    path: "/overseasremit1screen3",
+    element: <Overseasremit1_Screen3 />,
+  },
+  {
+    path: "/overseasremit1screen4",
+    element: <Overseasremit1_Screen4 />,
+  },
+  {
+    path: "/overseasremit1screen5",
+    element: <Overseasremit1_Screen5 />,
+  },
+  {
+    path: "/overseasremit1screen6",
+    element: <Overseasremit1_Screen6 />,
+  },
+  {
+    path: "/overseasremit1screen7",
+    element: <Overseasremit1_Screen7 />,
+  },
+  {
+    path: "/overseasremit2overseasremit",
+    element: <Overseasremit2_Overseasremit />,
+  },
+  {
+    path: "/overseasremit2overseasremitscreen",
+    element: <Overseasremit2_OverseasremitScreen />,
+  },
+  {
+    path: "/overseasremit2overseasremitwrapper",
+    element: <Overseasremit2_OverseasremitWrapper />,
+  },
+  {
+    path: "/overseasremit2pinpin",
+    element: <Overseasremit2_PinPin />,
+  },
+  {
+    path: "/overseasremit2screen4",
+    element: <Overseasremit2_Screen4 />,
+  },
+  {
+    path: "/overseasremit2screen5",
+    element: <Overseasremit2_Screen5 />,
+  },
+  {
+    path: "/overseasremit2screen6",
+    element: <Overseasremit2_Screen6 />,
+  },
+  {
+    path: "/overseasremit2screen7",
+    element: <Overseasremit2_Screen7 />,
+  },
+  {
+    path: "/overseasremit2screen8",
+    element: <Overseasremit2_Screen8 />,
+  },
+  {
+    path: "/overseasremit2screen9",
+    element: <Overseasremit2_Screen9 />,
+  },
+  {
+    path: "/history1divwrapper",
+    element: <History1_DivWrapper />,
+  },
+  {
+    path: "/history1history",
+    element: <History1_History />,
+  },
+  {
+    path: "/history1historyscreen",
+    element: <History1_HistoryScreen />,
+  },
+  {
+    path: "/history1historywrapper",
+    element: <History1_HistoryWrapper />,
+  },
+  {
+    path: "/history1screen4",
+    element: <History1_Screen4 />,
+  },
+  {
+    path: "/history1screen5",
+    element: <History1_Screen5 />,
+  },
+  {
+    path: "/history1screen6",
+    element: <History1_Screen6 />,
+  },
+  {
+    path: "/history2history",
+    element: <History2_History />,
+  },
+  {
+    path: "/history2historyscreen",
+    element: <History2_HistoryScreen />,
+  },
+  {
+    path: "/history2historywrapper",
+    element: <History2_HistoryWrapper />,
+  },
+  {
+    path: "/history2screen4",
+    element: <History2_Screen4 />,
+  },
+  {
+    path: "/history2screen5",
+    element: <History2_Screen5 />,
+  },
+  {
+    path: "/history2screen6",
+    element: <History2_Screen6 />,
+  },
+  {
+    path: "/history2servicecert",
+    element: <History2_Servicecert />,
   },
 ]);
 

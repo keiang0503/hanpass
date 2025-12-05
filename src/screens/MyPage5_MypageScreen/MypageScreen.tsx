@@ -1,11 +1,9 @@
 import {
   CameraIcon,
   CheckCircle2Icon,
-  ChevronLeftIcon,
-  CircleIcon,
-  MoreHorizontalIcon,
 } from "lucide-react";
 import React from "react";
+import { BackSubHeader } from "../../components/BackSubHeader";
 import { Button } from "../../components/ui/button";
 import { Card, CardContent } from "../../components/ui/card";
 
@@ -17,48 +15,7 @@ export const MypageScreen = (): JSX.Element => {
       className="flex flex-col min-h-screen bg-white"
       data-model-id="36848:72208"
     >
-      <header className="flex flex-col w-full bg-white">
-        <div className="flex items-center justify-between px-5 py-4 w-full">
-          <div className="flex-1 [font-family:'Pretendard-Medium',Helvetica] font-medium text-black text-[17px] tracking-[-0.41px] leading-[22px]">
-            9:41
-          </div>
-
-          <div className="flex items-center gap-1.5">
-            <img
-              className="w-[18px] h-3"
-              alt="Icon mobile signal"
-              src="https://c.animaapp.com/KuxympCS/img/icon---mobile-signal-7.svg"
-            />
-
-            <img
-              className="w-[17px] h-[11.83px]"
-              alt="Wifi"
-              src="https://c.animaapp.com/KuxympCS/img/wifi-7.svg"
-            />
-
-            <img
-              className="w-[27.4px] h-[13px]"
-              alt="Battery"
-              src="https://c.animaapp.com/KuxympCS/img/battery-7.svg"
-            />
-          </div>
-        </div>
-
-        <nav className="flex items-center justify-between px-5 py-4 w-full">
-          <Button variant="ghost" size="icon" className="h-auto p-0">
-            <ChevronLeftIcon className="w-6 h-6 text-black" />
-          </Button>
-
-          <div className="flex items-center gap-4">
-            <Button variant="ghost" size="icon" className="h-auto p-0">
-              <MoreHorizontalIcon className="w-6 h-6 text-black" />
-            </Button>
-            <Button variant="ghost" size="icon" className="h-auto p-0">
-              <CircleIcon className="w-6 h-6 text-black" />
-            </Button>
-          </div>
-        </nav>
-      </header>
+      <BackSubHeader />
 
       <main className="flex flex-col flex-1 w-full">
         <section className="flex flex-col px-6 pt-[22px] pb-0 w-full bg-white">
@@ -119,10 +76,6 @@ export const MypageScreen = (): JSX.Element => {
         </div>
 
         <div className="w-full h-4" />
-
-        <div className="flex justify-center py-2 w-full">
-          <div className="w-[134px] h-[5px] bg-black rounded-[100px]" />
-        </div>
       </footer>
     </div>
   );

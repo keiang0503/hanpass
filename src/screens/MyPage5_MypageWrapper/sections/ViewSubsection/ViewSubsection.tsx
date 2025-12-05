@@ -156,9 +156,6 @@ export const ViewSubsection = (): JSX.Element => {
           src="https://c.animaapp.com/KuxympCS/img/group.svg"
         />
 
-        <div className="absolute top-[257px] left-0 w-full h-[34px] flex items-end justify-center">
-          <div className="mb-2 w-[134px] h-[5px] ml-px bg-black rounded-[100px]" />
-        </div>
       </div>
     </section>
   );

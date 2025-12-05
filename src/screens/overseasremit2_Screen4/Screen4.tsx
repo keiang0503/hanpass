@@ -1,0 +1,37 @@
+import React from "react";
+import { Button } from "../../components/ui/button";
+import { StatusBarSection } from "./sections/StatusBarSection";
+import { TransactionDetailsSection } from "./sections/TransactionDetailsSection";
+import { UserInformationSection } from "./sections/UserInformationSection";
+
+export const Screen4 = (): JSX.Element => {
+  return (
+    <div className="flex flex-col relative bg-white" data-model-id="2674:65950">
+      <StatusBarSection />
+
+      <UserInformationSection />
+
+      <main className="flex-1 w-full">
+        <TransactionDetailsSection />
+      </main>
+
+      <footer className="flex flex-col items-center justify-end px-6 py-0 relative w-full bg-white">
+        <div className="flex flex-col items-center gap-6 w-full">
+          <Button className="w-full min-h-[54px] h-auto bg-[#0d56e4] hover:bg-[#0d56e4]/90 rounded-xl">
+            <span className="font-title-16-b font-[number:var(--title-16-b-font-weight)] text-[length:var(--title-16-b-font-size)] tracking-[var(--title-16-b-letter-spacing)] leading-[var(--title-16-b-line-height)] [font-style:var(--title-16-b-font-style)]">
+              송금
+            </span>
+          </Button>
+        </div>
+
+        <div className="relative w-full h-4" />
+
+        <div className="flex flex-col items-center gap-2.5 px-[105px] py-2 relative w-full bg-white">
+          <div className="flex flex-col w-[134px] items-center gap-2.5">
+            <div className="w-[134px] h-[5px] bg-black rounded-[100px]" />
+          </div>
+        </div>
+      </footer>
+    </div>
+  );
+};

@@ -17,7 +17,7 @@ export const SignupHistoryDialog = (): JSX.Element => {
             </p>
           </CardContent>
 
-          <div className="flex min-h-[54px] items-center justify-center gap-2 pt-0 pb-3.5 px-3.5 rounded-xl shadow-[0px_-20px_20px_#ffffff]">
+          <div className="flex min-h-[54px] items-center justify-center gap-2 pt-0 pb-3.5 px-3.5 rounded-xl">
             <div className="flex min-h-12 max-h-12 items-start gap-[7px] flex-1">
               <Button
                 variant="secondary"

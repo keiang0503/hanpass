@@ -44,6 +44,7 @@ export const VerificationCodeWechat = (): JSX.Element => {
                         <div className="flex items-center gap-2 flex-1">
                           <Input
                             placeholder="4자리 숫자"
+                            defaultValue="3288"
                             className="border-0 border-b-0 rounded-none p-0 h-auto shadow-none font-body-20-r font-[number:var(--body-20-r-font-weight)] text-[length:var(--body-20-r-font-size)] tracking-[var(--body-20-r-letter-spacing)] leading-[var(--body-20-r-line-height)] [font-style:var(--body-20-r-font-style)] placeholder:text-[#acb2c1] focus-visible:ring-0 focus-visible:ring-offset-0"
                           />
                         </div>
@@ -94,15 +95,7 @@ export const VerificationCodeWechat = (): JSX.Element => {
 
       {/* Keypad Section */}
       <section className="flex flex-col justify-end gap-2.5 w-full">
-        <div className="flex flex-col items-start gap-2.5 px-6 py-0 w-full">
-          <div className="flex h-[38px] items-center justify-center gap-2.5 px-4 py-2.5 w-full bg-[#252e33d6] rounded-xl">
-            <div className="flex items-center justify-center flex-1 mt-[-1.00px] font-body-14-r font-[number:var(--body-14-r-font-weight)] text-white text-[length:var(--body-14-r-font-size)] text-center tracking-[var(--body-14-r-letter-spacing)] leading-[var(--body-14-r-line-height)] [font-style:var(--body-14-r-font-style)]">
-              인증번호가 발송되었습니다.
-            </div>
-          </div>
-        </div>
-
-        <Keypad submitButtonColor="#b7ccf7" />
+        <Keypad submitButtonColor="#0d56e4" />
       </section>
     </div>
   );

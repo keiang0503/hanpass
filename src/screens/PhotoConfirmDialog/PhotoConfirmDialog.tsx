@@ -26,7 +26,7 @@ export const PhotoConfirmDialog = (): JSX.Element => {
               </div>
             </div>
 
-            <div className="min-h-[54px] items-center justify-center gap-2 pt-0 pb-3.5 px-3.5 rounded-xl shadow-[0px_-20px_20px_#ffffff] flex self-stretch w-full">
+            <div className="min-h-[54px] items-center justify-center gap-2 pt-0 pb-3.5 px-3.5 rounded-xl flex self-stretch w-full">
               <div className="flex min-h-12 max-h-12 items-start gap-[7px] flex-1">
                 <Button className="w-[100px] px-2 py-1 bg-[#afb4ca] hover:bg-[#9ba0b5] min-h-12 rounded-[14px] h-auto">
                   <span className="flex-1 font-title-15-b font-[number:var(--title-15-b-font-weight)] text-white text-[length:var(--title-15-b-font-size)] text-center tracking-[var(--title-15-b-letter-spacing)] leading-[var(--title-15-b-line-height)] [font-style:var(--title-15-b-font-style)]">

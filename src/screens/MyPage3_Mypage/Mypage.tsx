@@ -1,10 +1,9 @@
 import { ChevronRightIcon } from "lucide-react";
 import React from "react";
+import { BackSubHeader } from "../../components/BackSubHeader";
 import { Button } from "../../components/ui/button";
 import { Card, CardContent } from "../../components/ui/card";
-import { ActionButtonSection } from "./sections/ActionButtonSection";
 import { ReferralInfoSection } from "./sections/ReferralInfoSection";
-import { StatusBarSection } from "./sections/StatusBarSection";
 import { TransactionSummarySection } from "./sections/TransactionSummarySection";
 import { UserInfoSection } from "./sections/UserInfoSection";
 import { WalletSection } from "./sections/WalletSection";
@@ -15,8 +14,7 @@ export const Mypage = (): JSX.Element => {
       className="flex flex-col items-start relative bg-white min-h-screen"
       data-model-id="36848:76489"
     >
-      <StatusBarSection />
-      <ActionButtonSection />
+      <BackSubHeader />
       <WalletSection />
       <TransactionSummarySection />
       <ReferralInfoSection />
@@ -53,12 +51,6 @@ export const Mypage = (): JSX.Element => {
         </div>
 
         <div className="relative w-full h-4" />
-
-        <div className="flex flex-col items-center gap-2.5 px-[105px] py-2 relative self-stretch w-full bg-white">
-          <div className="flex flex-col w-[134px] items-center gap-2.5 relative">
-            <div className="relative w-[134px] h-[5px] bg-black rounded-[100px]" />
-          </div>
-        </div>
       </footer>
     </div>
   );

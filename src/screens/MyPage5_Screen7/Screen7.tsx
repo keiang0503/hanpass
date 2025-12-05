@@ -1,6 +1,5 @@
-import { ChevronLeftIcon, MoreVerticalIcon, TargetIcon } from "lucide-react";
 import React from "react";
-import { Link } from "react-router-dom";
+import { BackSubHeader } from "../../components/BackSubHeader";
 import { Button } from "../../components/ui/button";
 import { Card, CardContent } from "../../components/ui/card";
 import { Input } from "../../components/ui/input";
@@ -49,104 +48,7 @@ export const Screen7 = (): JSX.Element => {
       className="flex flex-col min-h-screen items-center relative bg-white"
       data-model-id="36848:68037"
     >
-      <Link
-        className="w-full flex flex-col items-start gap-2.5 relative self-stretch flex-[0_0_auto] bg-white"
-        to="/mypageu95108u95u4361u4469u4523u4359u4462u4523u4364u4467u4540-u4366u4458u4527u4363u4455u4540-u4364u4462u4523u4359u4469u95u4363u4460u4352u4462u4520u4363u4469u4523u4355u4467u4540u4357u4457u4520u4364u4467u4540u47u4352u4462u4520u4354u4450u4352u4453u4361u4457u4361u4469u4523u4352u4457u4364u4467u4540u40u4363u4460u4352u4462u4520u4363u4469u4523u41"
-      >
-        <div className="w-full flex flex-col items-start gap-2.5 relative self-stretch flex-[0_0_auto] bg-white">
-          <div className="flex h-6 items-center justify-between px-2.5 py-1 relative self-stretch w-full bg-white">
-            <div className="inline-flex items-center gap-2 relative flex-[0_0_auto] mt-[-0.50px] mb-[-0.50px]">
-              <div className="inline-flex items-center gap-1 relative flex-[0_0_auto]">
-                <div className="inline-flex items-center relative flex-[0_0_auto]">
-                  <div className="relative w-fit mt-[-1.00px] [font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm tracking-[0] leading-[normal]">
-                    {statusBarData.time.split(":")[0]}
-                  </div>
-                  <div className="relative w-fit mt-[-1.00px] [font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm tracking-[0] leading-[normal]">
-                    :
-                  </div>
-                  <div className="relative w-fit mt-[-1.00px] [font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm tracking-[0] leading-[normal]">
-                    {statusBarData.time.split(":")[1]}
-                  </div>
-                </div>
-              </div>
-              <div className="relative w-fit mt-[-1.00px] [font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm tracking-[0] leading-[normal]">
-                {statusBarData.date}
-              </div>
-            </div>
-            <div className="inline-flex items-center gap-1.5 relative flex-[0_0_auto] mt-[-0.50px] mb-[-0.50px]">
-              <div className="relative w-[18px] h-2.5">
-                <img
-                  className="h-[40.00%] top-[-125060.00%] left-[-33800%] absolute w-[16.67%]"
-                  alt="Bar"
-                  src="/img/bar-1-4.png"
-                />
-                <img
-                  className="h-[60.00%] top-[-125080.00%] left-[-33772.22%] absolute w-[16.67%]"
-                  alt="Bar"
-                  src="/img/bar-2-5.png"
-                />
-                <img
-                  className="h-[80.00%] top-[-125100%] left-[-33744.44%] absolute w-[16.67%]"
-                  alt="Bar"
-                  src="/img/bar-3-5.png"
-                />
-                <img
-                  className="h-full top-[-125120.00%] left-[-33716.67%] absolute w-[16.67%]"
-                  alt="Bar"
-                  src="/img/bar-4-3.png"
-                />
-              </div>
-              <div className="relative w-4 h-[11.62px] overflow-hidden">
-                <img
-                  className="absolute w-[31.30%] h-[30.17%] top-[-107608.88%] left-[-38140.68%]"
-                  alt="Bar"
-                  src="/img/bar-1-5.png"
-                />
-                <img
-                  className="absolute w-[62.57%] h-[34.44%] top-[-107644.98%] left-[-38156.25%]"
-                  alt="Bar"
-                  src="/img/bar-2-6.png"
-                />
-                <img
-                  className="absolute w-[100.01%] h-[43.03%] top-[-107678.70%] left-[-38175.02%]"
-                  alt="Bar"
-                  src="/img/bar-3-6.png"
-                />
-              </div>
-              <div className="relative w-fit mt-[-1.00px] [font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm tracking-[0] leading-[normal]">
-                {statusBarData.battery}
-              </div>
-              <div className="relative w-6 h-3 overflow-hidden">
-                <img
-                  className="absolute w-[87.51%] h-full top-[-104258.33%] left-[-25716.67%]"
-                  alt="Border"
-                  src="/img/border-3.png"
-                />
-                <div className="absolute w-[70.83%] h-[66.67%] top-[16.67%] left-[8.33%] bg-black rounded-[1px]" />
-                <img
-                  className="absolute w-[8.33%] h-[33.33%] top-[-104225.00%] left-[-25625.00%]"
-                  alt="Cap"
-                  src="/img/cap-3.png"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </Link>
-
-      <header className="flex items-center justify-between px-5 py-4 relative self-stretch w-full">
-        <Button variant="ghost" size="icon" className="h-auto p-0">
-          <ChevronLeftIcon className="w-6 h-6 text-black" />
-        </Button>
-        <div className="flex items-center gap-4">
-          <Button variant="ghost" size="icon" className="h-auto p-0">
-            <MoreVerticalIcon className="w-6 h-6 text-black" />
-          </Button>
-          <Button variant="ghost" size="icon" className="h-auto p-0">
-            <TargetIcon className="w-6 h-6 text-black" />
-          </Button>
-        </div>
-      </header>
+      <BackSubHeader />
 
       <main className="flex flex-col items-start w-full flex-1">
         <section className="flex flex-col gap-2 pt-[22px] pb-0 px-6 w-full">
@@ -262,9 +164,6 @@ export const Screen7 = (): JSX.Element => {
           </Button>
         </div>
         <div className="w-full h-4" />
-        <div className="flex flex-col items-center gap-2.5 px-[105px] py-2 w-full bg-white">
-          <div className="w-[134px] h-[5px] bg-black rounded-[100px]" />
-        </div>
       </footer>
     </div>
   );

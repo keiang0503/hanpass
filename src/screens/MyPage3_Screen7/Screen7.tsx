@@ -1,6 +1,6 @@
 import { ChevronDownIcon, ChevronRightIcon, InfoIcon } from "lucide-react";
 import React from "react";
-import { Link } from "react-router-dom";
+import { BackSubHeader } from "../../components/BackSubHeader";
 import { Button } from "../../components/ui/button";
 import { Card, CardContent } from "../../components/ui/card";
 import {
@@ -11,7 +11,6 @@ import {
 import { GiftCardSection } from "./sections/GiftCardSection";
 import { MainContentSection } from "./sections/MainContentSection";
 import { QRCodeSection } from "./sections/QRCodeSection";
-import { StatusBarSection } from "./sections/StatusBarSection";
 import { WalletSection } from "./sections/WalletSection";
 
 export const Screen7 = (): JSX.Element => {
@@ -20,27 +19,7 @@ export const Screen7 = (): JSX.Element => {
       className="flex flex-col items-start relative bg-white"
       data-model-id="36848:76733"
     >
-      <StatusBarSection />
-
-      <Link
-        className="flex-col items-start flex relative self-stretch w-full flex-[0_0_auto]"
-        to="/mypageu95022u95u4366u4469u4523u4352u4462u4366u4457u4355u4450-u4354u4450u4363u4455u4520-u40u4354u4462u4364u4453u4520u4357u4469u4363u4463u4355u4467-u4359u4457u4352u4469u41"
-      >
-        <header className="flex flex-col items-start gap-2 relative self-stretch w-full flex-[0_0_auto]">
-          <div className="flex h-[54px] items-center justify-between px-5 py-0 relative self-stretch w-full bg-white">
-            <img
-              className="relative w-8 h-8"
-              alt="Wechat hd"
-              src="https://c.animaapp.com/pWVLYNoL/img/wechat-hd-4.svg"
-            />
-            <img
-              className="relative h-8 w-[87px]"
-              alt="Mini"
-              src="https://c.animaapp.com/pWVLYNoL/img/mini-6@2x.png"
-            />
-          </div>
-        </header>
-      </Link>
+      <BackSubHeader />
 
       <main className="flex flex-col items-start gap-[42px] pt-0 pb-6 px-0 relative self-stretch w-full flex-[0_0_auto]">
         <MainContentSection />
@@ -92,12 +71,6 @@ export const Screen7 = (): JSX.Element => {
         </div>
 
         <div className="relative w-full h-4" />
-
-        <div className="flex flex-col items-center gap-2.5 px-[105px] py-2 relative self-stretch w-full flex-[0_0_auto] bg-white">
-          <div className="flex flex-col w-[134px] items-center gap-2.5 relative flex-[0_0_auto]">
-            <div className="relative w-[134px] h-[5px] bg-black rounded-[100px]" />
-          </div>
-        </div>
       </footer>
     </div>
   );
