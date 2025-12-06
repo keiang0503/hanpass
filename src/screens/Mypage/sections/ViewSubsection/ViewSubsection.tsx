@@ -25,51 +25,51 @@ export const ViewSubsection = (): JSX.Element => {
       <div className="flex-col items-start gap-4 w-full flex">
         <div className="flex items-center gap-1 w-full">
           <div className="items-center gap-1 flex-1 flex">
-            <div className="w-fit mt-[-1.00px] font-caption-title-13-b font-[number:var(--caption-title-13-b-font-weight)] text-[#85888e] text-[length:var(--caption-title-13-b-font-size)] tracking-[var(--caption-title-13-b-letter-spacing)] leading-[var(--caption-title-13-b-line-height)] whitespace-nowrap [font-style:var(--caption-title-13-b-font-style)]">
+            <div className="w-fit mt-[-1.00px] text-caption-title-13-b-style text-gray-secondary whitespace-nowrap">
               {limitData.title}
             </div>
-            <InfoIcon className="w-4 h-4 text-[#85888e]" />
+            <InfoIcon className="w-4 h-4 text-gray-secondary" />
           </div>
         </div>
 
         <div className="relative w-full">
-          <Card className="w-full bg-white rounded-2xl border border-solid border-[#e6eaec]">
+          <Card className="w-full bg-white rounded-2xl border border-solid border-card-light">
             <CardContent className="flex flex-col items-center justify-center gap-4 p-4">
               <div className="flex flex-col items-start gap-4 w-full">
-                <div className="flex flex-wrap items-center gap-[4px_4px] w-full">
-                  <div className="w-[120px] mt-[-1.00px] font-body-14-SB font-[number:var(--body-14-SB-font-weight)] text-[#5c6580] text-[length:var(--body-14-SB-font-size)] tracking-[var(--body-14-SB-letter-spacing)] leading-[var(--body-14-SB-line-height)] [font-style:var(--body-14-SB-font-style)]">
+                <div className="flex flex-wrap items-center gap-1px w-full">
+                  <div className="w-120 mt-[-1.00px] text-body-14-SB-style text-gray-slate">
                     연간 한도
                   </div>
-                  <div className="flex-1 mt-[-1.00px] font-body-14-SB font-[number:var(--body-14-SB-font-weight)] text-[#0b0c0e] text-[length:var(--body-14-SB-font-size)] text-right tracking-[var(--body-14-SB-letter-spacing)] leading-[var(--body-14-SB-line-height)] [font-style:var(--body-14-SB-font-style)]">
+                  <div className="flex-1 mt-[-1.00px] text-body-14-SB-style text-primary-dark text-right">
                     {limitData.annualLimit}
                   </div>
                 </div>
 
-                <Progress value={0} className="w-full h-2 bg-[#dfe3ec]" />
+                <Progress value={0} className="w-full h-2 bg-gray-progress" />
               </div>
 
               <div className="flex flex-col items-start gap-3 w-full">
-                <div className="flex-col items-start gap-3 p-4 w-full bg-[#f7f7f8] rounded-lg flex">
+                <div className="flex-col items-start gap-3 p-4 w-full bg-gray-light-bg rounded-lg flex">
                   <div className="flex items-center gap-1 w-full">
-                    <div className="w-[120px] mt-[-1.00px] font-caption-title-13-r font-[number:var(--caption-title-13-r-font-weight)] text-[#717682] text-[length:var(--caption-title-13-r-font-size)] tracking-[var(--caption-title-13-r-letter-spacing)] leading-[var(--caption-title-13-r-line-height)] [font-style:var(--caption-title-13-r-font-style)]">
+                    <div className="w-120 mt-[-1.00px] text-caption-title-13-r-style text-gray-muted">
                       송금액
                     </div>
-                    <div className="flex-1 mt-[-1.00px] font-caption-title-13-r font-[number:var(--caption-title-13-r-font-weight)] text-[#0d56e4] text-[length:var(--caption-title-13-r-font-size)] text-right tracking-[var(--caption-title-13-r-letter-spacing)] leading-[var(--caption-title-13-r-line-height)] [font-style:var(--caption-title-13-r-font-style)]">
+                    <div className="flex-1 mt-[-1.00px] text-caption-title-13-r-style text-primary-blue text-right">
                       {limitData.transferAmount}
                     </div>
                   </div>
 
                   <div className="flex items-center gap-1 w-full">
-                    <div className="w-[120px] mt-[-1.00px] font-caption-title-13-r font-[number:var(--caption-title-13-r-font-weight)] text-[#717682] text-[length:var(--caption-title-13-r-font-size)] tracking-[var(--caption-title-13-r-letter-spacing)] leading-[var(--caption-title-13-r-line-height)] [font-style:var(--caption-title-13-r-font-style)]">
+                    <div className="w-120 mt-[-1.00px] text-caption-title-13-r-style text-gray-muted">
                       잔여 한도
                     </div>
-                    <div className="flex-1 mt-[-1.00px] font-caption-title-13-r font-[number:var(--caption-title-13-r-font-weight)] text-[#0b0c0e] text-[length:var(--caption-title-13-r-font-size)] text-right tracking-[var(--caption-title-13-r-letter-spacing)] leading-[var(--caption-title-13-r-line-height)] [font-style:var(--caption-title-13-r-font-style)]">
+                    <div className="flex-1 mt-[-1.00px] text-caption-title-13-r-style text-primary-dark text-right">
                       {limitData.remainingLimit}
                     </div>
                   </div>
                 </div>
 
-                <p className="font-caption-title-13-r font-[number:var(--caption-title-13-r-font-weight)] text-[#a2a8bf] text-[length:var(--caption-title-13-r-font-size)] tracking-[var(--caption-title-13-r-letter-spacing)] leading-[var(--caption-title-13-r-line-height)] [font-style:var(--caption-title-13-r-font-style)]">
+                <p className="text-caption-title-13-r-style text-gray-light">
                   {limitData.disclaimer}
                 </p>
               </div>
@@ -77,7 +77,7 @@ export const ViewSubsection = (): JSX.Element => {
           </Card>
 
           {showTooltip && (
-            <div className="inline-flex flex-col items-start absolute left-0 bottom-[215px]">
+            <div className="inline-flex flex-col items-start absolute left-0 bottom-tooltip">
               <div className="flex h-1.5 items-center pl-[34px] pr-0 py-0 w-full z-[1]">
                 <img
                   className="w-[11px] h-1.5"
@@ -86,8 +86,8 @@ export const ViewSubsection = (): JSX.Element => {
                 />
               </div>
 
-              <div className="flex items-center justify-end gap-0.5 px-4 py-3 w-full -mt-0.5 z-0 bg-white rounded-[20px] border-2 border-solid border-[#6df1c3] shadow-[0px_4px_8px_#00000014]">
-                <div className="flex items-center justify-center w-fit mt-[-2.00px] font-caption-title-13-b font-[number:var(--caption-title-13-b-font-weight)] text-[#37373d] text-[length:var(--caption-title-13-b-font-size)] tracking-[var(--caption-title-13-b-letter-spacing)] leading-[var(--caption-title-13-b-line-height)] whitespace-nowrap [font-style:var(--caption-title-13-b-font-style)]">
+              <div className="flex items-center justify-end gap-0.5 px-4 py-3 w-full -mt-0.5 z-0 bg-white rounded-20 border-2 border-solid border-tooltip shadow-card-soft">
+                <div className="flex items-center justify-center w-fit mt-[-2.00px] text-caption-title-13-b-style text-tooltip whitespace-nowrap">
                   {tooltipData.message}
                 </div>
 
@@ -97,7 +97,7 @@ export const ViewSubsection = (): JSX.Element => {
                   className="h-4 w-4 p-0 hover:bg-transparent"
                   onClick={() => setShowTooltip(false)}
                 >
-                  <XIcon className="w-4 h-4 text-[#37373d]" />
+                  <XIcon className="w-4 h-4 text-tooltip" />
                 </Button>
               </div>
             </div>

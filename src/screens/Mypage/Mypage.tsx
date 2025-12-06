@@ -24,11 +24,11 @@ export const Mypage = (): JSX.Element => {
 
       <TopSubsection />
 
-      <Separator className="h-3 bg-[#f7f7f8]" />
+      <Separator className="h-3 bg-gray-light-bg" />
 
       <ViewSubsection />
 
-      <Separator className="h-3 bg-[#f7f7f8]" />
+      <Separator className="h-3 bg-gray-light-bg" />
 
       <ViewWrapperSubsection />
 
@@ -38,13 +38,13 @@ export const Mypage = (): JSX.Element => {
             <React.Fragment key={item.key}>
               <Button
                 variant="ghost"
-                className="w-full h-auto justify-between px-0 py-4 font-body-16-r font-[number:var(--body-16-r-font-weight)] text-[length:var(--body-16-r-font-size)] tracking-[var(--body-16-r-letter-spacing)] leading-[var(--body-16-r-line-height)] [font-style:var(--body-16-r-font-style)]"
+                className="w-full h-auto justify-between px-0 py-4 text-body-16-r-style"
               >
-                <span className="text-[#1a1a1a]">{item.label}</span>
-                <ChevronLeftIcon className="h-5 w-5 rotate-180 text-[#85888e]" />
+                <span className="text-primary">{item.label}</span>
+                <ChevronLeftIcon className="h-5 w-5 rotate-180 text-gray-secondary" />
               </Button>
               {index < settingsItems.length - 1 && (
-                <Separator className="bg-[#f0f0f0]" />
+                <Separator className="bg-separator" />
               )}
             </React.Fragment>
           ))}
@@ -54,7 +54,7 @@ export const Mypage = (): JSX.Element => {
       <div className="flex items-center justify-center py-8 w-full">
         <Button
           variant="link"
-          className="h-auto font-body-15-r font-[number:var(--body-15-r-font-weight)] text-[#85888e] text-[length:var(--body-15-r-font-size)] tracking-[var(--body-15-r-letter-spacing)] leading-[var(--body-15-r-line-height)] [font-style:var(--body-15-r-font-style)] underline"
+          className="h-auto font-body-15-r text-body-15-r-style text-gray-secondary underline"
         >
           로그인
         </Button>

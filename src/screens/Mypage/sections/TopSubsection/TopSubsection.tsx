@@ -15,15 +15,15 @@ const menuItems = [
 export const TopSubsection = (): JSX.Element => {
   return (
     <section className="flex flex-col items-start gap-8 pt-0 pb-8 px-5 w-full">
-      <Card className="w-full bg-white rounded-2xl border border-solid border-[#e6eaec] shadow-[0px_4px_8px_#00000014]">
+      <Card className="w-full bg-white rounded-2xl border border-solid border-card-light shadow-card-soft">
         <CardContent className="flex flex-col items-center gap-4 p-4">
-          <div className="flex h-[52px] items-center gap-3 w-full">
-            <h2 className="flex-1 font-title-18-b font-[number:var(--title-18-b-font-weight)] text-[#0b0c0e] text-[length:var(--title-18-b-font-size)] tracking-[var(--title-18-b-letter-spacing)] leading-[var(--title-18-b-line-height)] overflow-hidden text-ellipsis [display:-webkit-box] [-webkit-line-clamp:2] [-webkit-box-orient:vertical] [font-style:var(--title-18-b-font-style)]">
+          <div className="flex h-52px items-center gap-3 w-full">
+            <h2 className="flex-1 text-title-18-b-style text-primary-dark overflow-hidden text-ellipsis line-clamp-2">
               로그인을 해주세요
             </h2>
           </div>
 
-          <div className="flex items-center gap-4 px-2 py-3 w-full bg-[#f7f7f8] rounded-lg">
+          <div className="flex items-center gap-4 px-2 py-3 w-full bg-gray-light-bg rounded-lg">
             {menuItems.map((item, index) => (
               <React.Fragment key={index}>
                 {index > 0 && (
@@ -38,7 +38,7 @@ export const TopSubsection = (): JSX.Element => {
                     className="w-8 h-8 bg-cover bg-[50%_50%]"
                     style={{ backgroundImage: `url(${item.icon})` }}
                   />
-                  <div className="self-stretch font-body-14-SB font-[number:var(--body-14-SB-font-weight)] text-[#525357] text-[length:var(--body-14-SB-font-size)] text-center tracking-[var(--body-14-SB-letter-spacing)] leading-[var(--body-14-SB-line-height)] overflow-hidden text-ellipsis [display:-webkit-box] [-webkit-line-clamp:3] [-webkit-box-orient:vertical] [font-style:var(--body-14-SB-font-style)]">
+                  <div className="self-stretch text-body-14-SB-style text-gray-medium text-center overflow-hidden text-ellipsis line-clamp-3">
                     {item.label}
                   </div>
                 </button>
@@ -48,20 +48,20 @@ export const TopSubsection = (): JSX.Element => {
         </CardContent>
       </Card>
 
-      <Card className="w-full bg-[#f4f7fd] rounded-2xl overflow-hidden border-0">
+      <Card className="w-full bg-blue-light rounded-2xl overflow-hidden border-0">
         <CardContent className="flex items-center p-0">
           <div className="flex items-center justify-center gap-2 flex-1 self-stretch">
             <div className="flex flex-col items-start justify-center gap-1 px-4 py-3 flex-1">
-              <h3 className="font-title-16-SB font-[number:var(--title-16-SB-font-weight)] text-[#0b0c0e] text-[length:var(--title-16-SB-font-size)] tracking-[var(--title-16-SB-letter-spacing)] leading-[var(--title-16-SB-line-height)] self-stretch [font-style:var(--title-16-SB-font-style)]">
+              <h3 className="text-title-16-SB-style text-primary-dark self-stretch">
                 가입이 어렵다면?
               </h3>
-              <p className="font-caption-title-13-r font-[number:var(--caption-title-13-r-font-weight)] text-[#4f4f4f] text-[length:var(--caption-title-13-r-font-size)] tracking-[var(--caption-title-13-r-letter-spacing)] leading-[var(--caption-title-13-r-line-height)] self-stretch [font-style:var(--caption-title-13-r-font-style)]">
+              <p className="text-caption-title-13-r-style text-gray-dark self-stretch">
                 간편하게 상담해 보세요
               </p>
             </div>
           </div>
 
-          <div className="inline-flex items-center gap-2.5 px-4 py-[22px]">
+          <div className="inline-flex items-center gap-2.5 px-4 py-22">
             <div
               className="w-10 h-10 aspect-[1] bg-cover bg-[50%_50%]"
               style={{

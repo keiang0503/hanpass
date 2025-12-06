@@ -17,10 +17,10 @@ export const ViewSubsection = (): JSX.Element => {
   return (
     <section className="flex flex-col justify-end gap-2.5 w-full items-center relative">
       <div className="flex flex-col items-start relative w-full">
-        <div className="min-h-[54px] items-center justify-center gap-2 rounded-xl shadow-[0px_-20px_20px_#ffffff] flex relative w-full">
-          <div className="min-h-[54px] flex-1 flex items-start relative">
-            <Button className="flex min-h-[54px] items-center justify-center gap-2 px-[26px] py-1.5 relative flex-1 grow bg-[#b7ccf7] hover:bg-[#a3bef5] rounded-xl h-auto">
-              <span className="relative flex-1 font-title-16-b font-[number:var(--title-16-b-font-weight)] text-white text-[length:var(--title-16-b-font-size)] text-center tracking-[var(--title-16-b-letter-spacing)] leading-[var(--title-16-b-line-height)] [font-style:var(--title-16-b-font-style)]">
+        <div className="min-h-54 items-center justify-center gap-2 rounded-xl shadow-white-up flex relative w-full">
+          <div className="min-h-54 flex-1 flex items-start relative">
+            <Button className="flex min-h-54 items-center justify-center gap-2 px-26 py-1.5 relative flex-1 grow bg-btn-disabled-blue hover:bg-btn-hover-blue rounded-xl h-auto">
+              <span className="relative flex-1 font-title-16-b text-title-16-b-style text-white text-center">
                 확인
               </span>
             </Button>
@@ -29,12 +29,12 @@ export const ViewSubsection = (): JSX.Element => {
 
         <div className="gap-10 w-full flex flex-col items-start relative bg-[linear-gradient(0deg,rgba(211,214,226,1)_0%,rgba(211,214,226,1)_100%),linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(255,255,255,1)_100%)]">
           <div className="w-full gap-2.5 flex flex-col items-start relative bg-[linear-gradient(0deg,rgba(211,214,226,1)_0%,rgba(211,214,226,1)_100%),linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(255,255,255,1)_100%)]">
-            <div className="relative w-full h-[216px] backdrop-blur-[13.59px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(13.59px)_brightness(100%)]">
+            <div className="relative w-full h-216 backdrop-blur-[13.59px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(13.59px)_brightness(100%)]">
               <div className="grid grid-cols-3 gap-x-[1.33%] gap-y-[3.24%] px-0 py-[2.78%]">
                 {keypadData.slice(0, 3).map((key, index) => (
                   <button
                     key={`key-${index}`}
-                    className={`relative h-[46px] ${key.className}`}
+                    className={`relative h-46 ${key.className}`}
                   >
                     <img
                       className="absolute w-full h-full top-0 left-0"
@@ -64,7 +64,7 @@ export const ViewSubsection = (): JSX.Element => {
                 {keypadData.slice(3, 6).map((key, index) => (
                   <button
                     key={`key-${index + 3}`}
-                    className={`relative h-[47px] ${key.className}`}
+                    className={`relative h-47 ${key.className}`}
                   >
                     <img
                       className="absolute w-[96.69%] h-full top-0 left-0"
@@ -83,7 +83,7 @@ export const ViewSubsection = (): JSX.Element => {
                 {keypadData.slice(6, 9).map((key, index) => (
                   <button
                     key={`key-${index + 6}`}
-                    className={`relative h-[47px] ${key.className}`}
+                    className={`relative h-47 ${key.className}`}
                   >
                     <img
                       className="absolute w-[96.69%] h-full top-0 left-0"

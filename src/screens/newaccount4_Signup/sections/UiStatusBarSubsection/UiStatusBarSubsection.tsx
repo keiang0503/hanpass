@@ -51,34 +51,34 @@ export const UiStatusBarSubsection = (): JSX.Element => {
 
   return (
     <Link
-      className="w-full flex flex-col items-start gap-2.5 relative self-stretch flex-[0_0_auto] bg-white"
+      className="w-full flex flex-col items-start gap-2.5 relative self-stretch flex-none bg-white"
       to="/loginu95006-u4361u4454u4527u4367u4449u4366u4458u4527u4363u4455u4540"
     >
-      <div className="w-full flex flex-col items-start gap-2.5 relative self-stretch flex-[0_0_auto] bg-white">
+      <div className="w-full flex flex-col items-start gap-2.5 relative self-stretch flex-none bg-white">
         <div className="flex h-6 items-center justify-between px-2.5 py-1 relative self-stretch w-full bg-white">
-          <div className="inline-flex items-center gap-2 relative flex-[0_0_auto] mt-[-0.50px] mb-[-0.50px]">
-            <div className="inline-flex items-center gap-1 relative flex-[0_0_auto]">
-              <div className="inline-flex items-center relative flex-[0_0_auto]">
-                <div className="relative w-fit mt-[-1.00px] [font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm tracking-[0] leading-[normal]">
+          <div className="inline-flex items-center gap-2 relative flex-none mt-neg-0-5 mb-neg-0-5">
+            <div className="inline-flex items-center gap-1 relative flex-none">
+              <div className="inline-flex items-center relative flex-none">
+                <div className="relative w-fit mt-neg-1 [font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm tracking-[0] leading-[normal]">
                   9
                 </div>
 
-                <div className="relative w-fit mt-[-1.00px] [font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm tracking-[0] leading-[normal]">
+                <div className="relative w-fit mt-neg-1 [font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm tracking-[0] leading-[normal]">
                   :
                 </div>
 
-                <div className="relative w-fit mt-[-1.00px] [font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm tracking-[0] leading-[normal]">
+                <div className="relative w-fit mt-neg-1 [font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm tracking-[0] leading-[normal]">
                   41
                 </div>
               </div>
             </div>
 
-            <div className="relative w-fit mt-[-1.00px] [font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm tracking-[0] leading-[normal]">
+            <div className="relative w-fit mt-neg-1 [font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm tracking-[0] leading-[normal]">
               Sat Jun 11
             </div>
           </div>
 
-          <div className="inline-flex items-center gap-1.5 relative flex-[0_0_auto] mt-[-0.50px] mb-[-0.50px]">
+          <div className="inline-flex items-center gap-1.5 relative flex-none mt-neg-0-5 mb-neg-0-5">
             <div className="relative w-[18px] h-2.5">
               {signalBars.map((bar, index) => (
                 <img
@@ -90,7 +90,7 @@ export const UiStatusBarSubsection = (): JSX.Element => {
               ))}
             </div>
 
-            <div className="relative w-4 h-[11.62px] overflow-hidden">
+            <div className="relative w-4 h-11-62 overflow-hidden">
               {wifiBars.map((bar, index) => (
                 <img
                   key={`wifi-bar-${index}`}
@@ -101,7 +101,7 @@ export const UiStatusBarSubsection = (): JSX.Element => {
               ))}
             </div>
 
-            <div className="relative w-fit mt-[-1.00px] [font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm tracking-[0] leading-[normal]">
+            <div className="relative w-fit mt-neg-1 [font-family:'SF_Pro_Display-Medium',Helvetica] font-medium text-black text-sm tracking-[0] leading-[normal]">
               100%
             </div>
 
@@ -124,8 +124,8 @@ export const UiStatusBarSubsection = (): JSX.Element => {
         </div>
       </div>
 
-      <div className="flex items-center gap-2.5 pl-[34px] pr-5 py-4 relative self-stretch w-full flex-[0_0_auto]">
-        <div className="relative flex-1 h-5 mt-[-1.00px] font-title-16-SB font-[number:var(--title-16-SB-font-weight)] text-black text-[length:var(--title-16-SB-font-size)] tracking-[var(--title-16-SB-letter-spacing)] leading-[var(--title-16-SB-line-height)] whitespace-nowrap [font-style:var(--title-16-SB-font-style)]">
+      <div className="flex items-center gap-2.5 pl-34 pr-5 py-4 relative self-stretch w-full flex-none">
+        <div className="relative flex-1 h-5 mt-neg-1 font-title-16-SB text-title-16-SB-style text-black whitespace-nowrap">
           9:41
         </div>
 
@@ -142,7 +142,7 @@ export const UiStatusBarSubsection = (): JSX.Element => {
         />
 
         <img
-          className="relative w-[27.4px] h-[13px]"
+          className="relative w-27-4 h-13"
           alt="Battery"
           src="https://c.animaapp.com/shEJQFEJ/img/battery-5.svg"
         />
