@@ -20,22 +20,22 @@ export const Screen6 = (): JSX.Element => {
 
       <View4Subsection />
 
-      <Separator className="w-full h-3 bg-[#f7f7f8]" />
+      <Separator className="w-full h-3 bg-gray-light-bg" />
 
       <View5Subsection />
 
-      <Separator className="w-full h-3 bg-[#f7f7f8]" />
+      <Separator className="w-full h-3 bg-gray-light-bg" />
 
       <View6Subsection />
 
-      <Separator className="w-full h-3 bg-[#f7f7f8]" />
+      <Separator className="w-full h-3 bg-gray-light-bg" />
 
       <Frame1Subsection />
 
       <div className="inline-flex items-center justify-center gap-2.5 px-0 py-8">
         <Button
           variant="link"
-          className="h-auto font-body-15-r font-[number:var(--body-15-r-font-weight)] text-[#85888e] text-[length:var(--body-15-r-font-size)] tracking-[var(--body-15-r-letter-spacing)] leading-[var(--body-15-r-line-height)] underline [font-style:var(--body-15-r-font-style)] p-0"
+          className="h-auto text-body-15-r-style text-gray-secondary underline p-0"
         >
           로그아웃
         </Button>

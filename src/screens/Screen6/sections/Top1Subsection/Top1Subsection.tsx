@@ -17,12 +17,12 @@ const actionItems = [
 export const Top1Subsection = (): JSX.Element => {
   return (
     <section className="flex flex-col items-start gap-2 px-5 py-0 w-full">
-      <Card className="w-full border-[#e6eaec] shadow-[0px_4px_8px_#00000014]">
+      <Card className="w-full border-card-light shadow-card-soft">
         <CardContent className="flex flex-col items-center gap-4 p-4">
-          <div className="flex h-[52px] items-center gap-3 w-full">
-            <div className="relative w-[30px] h-[30px] bg-[url(https://c.animaapp.com/emBHvnWi/img/country-2.svg)] bg-[100%_100%] flex-shrink-0" />
+          <div className="flex h-52px items-center gap-3 w-full">
+            <div className="relative country-flag bg-[url(https://c.animaapp.com/emBHvnWi/img/country-2.svg)] bg-[100%_100%] flex-shrink-0" />
 
-            <h2 className="flex-1 font-title-18-b font-[number:var(--title-18-b-font-weight)] text-[#0b0c0e] text-[length:var(--title-18-b-font-size)] tracking-[var(--title-18-b-letter-spacing)] leading-[var(--title-18-b-line-height)] overflow-hidden text-ellipsis [display:-webkit-box] [-webkit-line-clamp:2] [-webkit-box-orient:vertical] [font-style:var(--title-18-b-font-style)]">
+            <h2 className="flex-1 text-title-18-b-style text-primary-dark overflow-hidden text-ellipsis [display:-webkit-box] [-webkit-line-clamp:2] [-webkit-box-orient:vertical]">
               HanpassName 이름이 길어질 경우 2줄 까지 노출HanpassName 이름이
               길어질 경우 2줄 까지 노출HanpassName 이름이 길어질 경우 2줄 까지
               노출
@@ -41,13 +41,13 @@ export const Top1Subsection = (): JSX.Element => {
             </Button>
           </div>
 
-          <div className="flex items-center gap-4 px-2 py-3 w-full bg-[#f7f7f8] rounded-lg">
+          <div className="flex items-center gap-4 px-2 py-3 w-full bg-gray-light-bg rounded-lg">
             {actionItems.map((item, index) => (
               <React.Fragment key={index}>
                 {index > 0 && (
                   <Separator
                     orientation="vertical"
-                    className="h-auto bg-[#e6eaec]"
+                    className="h-auto bg-separator-alt"
                   />
                 )}
                 <Button
@@ -58,7 +58,7 @@ export const Top1Subsection = (): JSX.Element => {
                     className="w-8 h-8 bg-cover bg-[50%_50%]"
                     style={{ backgroundImage: `url(${item.icon})` }}
                   />
-                  <span className="font-body-14-SB font-[number:var(--body-14-SB-font-weight)] text-[#525357] text-[length:var(--body-14-SB-font-size)] tracking-[var(--body-14-SB-letter-spacing)] leading-[var(--body-14-SB-line-height)] overflow-hidden text-ellipsis [display:-webkit-box] [-webkit-line-clamp:3] [-webkit-box-orient:vertical] [font-style:var(--body-14-SB-font-style)]">
+                  <span className="text-body-14-SB-style text-gray-medium overflow-hidden text-ellipsis [display:-webkit-box] [-webkit-line-clamp:3] [-webkit-box-orient:vertical]">
                     {item.label}
                   </span>
                 </Button>

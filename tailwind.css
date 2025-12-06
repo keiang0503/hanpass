@@ -1362,6 +1362,122 @@
     line-height: var(--title-15-b-line-height, 130%);
   }
 
+  /* ========================================
+     Screen6 페이지 전용 유틸리티 클래스
+     ======================================== */
+
+  /* 텍스트 색상 유틸리티 */
+  .text-title-dark {
+    color: #1a1a1a;
+  }
+
+  /* 폰트 스타일 유틸리티 - title-15-SB */
+  .text-title-15-SB-style {
+    font-family: var(--title-15-SB-font-family, "Pretendard", Helvetica);
+    font-weight: var(--title-15-SB-font-weight, 600);
+    font-size: var(--title-15-SB-font-size, 15px);
+    font-style: var(--title-15-SB-font-style, normal);
+    letter-spacing: var(--title-15-SB-letter-spacing, -0.3px);
+    line-height: var(--title-15-SB-line-height, 130%);
+  }
+
+  /* 폰트 스타일 유틸리티 - navigation-12-b */
+  .text-navigation-12-b-style {
+    font-family: var(--navigation-12-b-font-family, "Pretendard", Helvetica);
+    font-weight: var(--navigation-12-b-font-weight, 700);
+    font-size: var(--navigation-12-b-font-size, 12px);
+    font-style: var(--navigation-12-b-font-style, normal);
+    letter-spacing: var(--navigation-12-b-letter-spacing, -0.24px);
+    line-height: var(--navigation-12-b-line-height, 130%);
+  }
+
+  /* 포지셔닝 유틸리티 */
+  .pos-top-46 {
+    top: 46px;
+  }
+
+  /* 배경색 유틸리티 */
+  .bg-separator-alt {
+    background-color: #e6eaec;
+  }
+
+  .hover\:bg-blue-light-hover:hover {
+    background-color: #e8eef9;
+  }
+
+  .bg-primary-blue {
+    background-color: #0d56e4;
+  }
+
+  .hover\:bg-primary-blue:hover {
+    background-color: #0d56e4;
+  }
+
+  /* 둥근 모서리 유틸리티 */
+  .rounded-full-999 {
+    border-radius: 999px;
+  }
+
+  .rounded-20 {
+    border-radius: 20px;
+  }
+
+  /* 텍스트 색상 유틸리티 - View4Subsection */
+  .text-gray-muted {
+    color: #717682;
+  }
+
+  .text-tooltip {
+    color: #37373d;
+  }
+
+  /* 테두리 색상 유틸리티 */
+  .border-tooltip {
+    border-color: #6df1c3;
+  }
+
+  /* 텍스트 색상 유틸리티 - View5Subsection */
+  .text-primary-blue {
+    color: #0d56e4;
+  }
+
+  .text-gray-label {
+    color: #5c6580;
+  }
+
+  .text-gray-disclaimer {
+    color: #a2a8bf;
+  }
+
+  /* 폰트 스타일 유틸리티 - navigation-12-SB */
+  .text-navigation-12-SB-style {
+    font-family: var(--navigation-12-SB-font-family, "Pretendard", Helvetica);
+    font-weight: var(--navigation-12-SB-font-weight, 600);
+    font-size: var(--navigation-12-SB-font-size, 12px);
+    font-style: var(--navigation-12-SB-font-style, normal);
+    letter-spacing: var(--navigation-12-SB-letter-spacing, -0.24px);
+    line-height: var(--navigation-12-SB-line-height, 130%);
+  }
+
+  /* 폰트 스타일 유틸리티 - body-14-SB */
+  .text-body-14-SB-style {
+    font-family: var(--body-14-SB-font-family, "Pretendard", Helvetica);
+    font-weight: var(--body-14-SB-font-weight, 600);
+    font-size: var(--body-14-SB-font-size, 14px);
+    font-style: var(--body-14-SB-font-style, normal);
+    letter-spacing: var(--body-14-SB-letter-spacing, -0.28px);
+    line-height: var(--body-14-SB-line-height, 130%);
+  }
+
+  /* 배경색 유틸리티 - Progress */
+  .bg-progress-track {
+    background-color: #dfe3ec;
+  }
+
+  .bg-progress-fill {
+    background-color: #45a6ff;
+  }
+
   /* LoginWrapper 페이지 유틸리티 */
   .h-154 {
     height: 154px;
